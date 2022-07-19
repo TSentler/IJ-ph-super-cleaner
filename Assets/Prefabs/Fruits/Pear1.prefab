@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6819154524831761034}
   - component: {fileID: 1942601620156906280}
   - component: {fileID: 968528496}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2a2193c7e228da48353b144130c0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 150
 --- !u!1 &5936948656943488428
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +142,7 @@ GameObject:
   - component: {fileID: 5936948656943841740}
   - component: {fileID: 5936948656944611754}
   - component: {fileID: 5936948656945742826}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pear1_Leaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +225,7 @@ GameObject:
   - component: {fileID: 5936948656943841742}
   - component: {fileID: 5936948656944611756}
   - component: {fileID: 5936948656945742828}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pear1_Stalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

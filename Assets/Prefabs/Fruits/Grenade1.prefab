@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 473812884594860009}
   - component: {fileID: 2011812990385330749}
   - component: {fileID: 1544019925}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grenade1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2a2193c7e228da48353b144130c0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 150
 --- !u!1 &8334703035038136411
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +141,7 @@ GameObject:
   - component: {fileID: 8334703035038491707}
   - component: {fileID: 8334703035039261785}
   - component: {fileID: 8334703035040392729}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grenade1_Stalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4404311473026074934}
   - component: {fileID: 968528469}
   - component: {fileID: 968528470}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cherries1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2a2193c7e228da48353b144130c0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 150
 --- !u!1 &5993174491879782731
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +155,7 @@ GameObject:
   - component: {fileID: 5993174491879613803}
   - component: {fileID: 5993174491878843723}
   - component: {fileID: 5993174491877844875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cherries1_Stalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9086879402733829193}
   - component: {fileID: 7667580291030577915}
   - component: {fileID: 968528461}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cherry3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2a2193c7e228da48353b144130c0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 150
 --- !u!1 &7960373209258199021
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +155,7 @@ GameObject:
   - component: {fileID: 7960373209257778061}
   - component: {fileID: 7960373209259105261}
   - component: {fileID: 7960373209260202413}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cherry3_Leaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +238,7 @@ GameObject:
   - component: {fileID: 7960373209257778063}
   - component: {fileID: 7960373209259105263}
   - component: {fileID: 7960373209260202415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cherry3_Stalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

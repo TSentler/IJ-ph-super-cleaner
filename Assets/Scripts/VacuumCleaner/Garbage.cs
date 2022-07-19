@@ -15,11 +15,6 @@ public class Garbage : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
     
-    public void Suck(Transform target)
-    {
-        _target = target;
-    }
-    
     private void FixedUpdate()
     {
         if (_target == null)
@@ -29,5 +24,10 @@ public class Garbage : MonoBehaviour
         var direction = (_target.position - transform.position).normalized;
 
         _rb.velocity = direction * deltaSpeed;
+    }
+    
+    public void Suck(Transform target)
+    {
+        _target = target;
     }
 }

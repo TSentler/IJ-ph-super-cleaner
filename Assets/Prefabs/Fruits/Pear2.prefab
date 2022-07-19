@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2263214972045261449}
   - component: {fileID: 2263214972046555883}
   - component: {fileID: 2263214972047685803}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pear2_Stalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3628342689287443762}
   - component: {fileID: 13606750093777523}
   - component: {fileID: 1636357336}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,3 +212,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2a2193c7e228da48353b144130c0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 150
