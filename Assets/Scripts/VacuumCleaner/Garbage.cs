@@ -8,7 +8,7 @@ public class Garbage : MonoBehaviour
     private Rigidbody _rb;
     private Transform _target;
     
-    [SerializeField] private float _speed = 150.0f;
+    [SerializeField] private float _speed = 200.0f;
 
     private void Awake()
     {
