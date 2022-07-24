@@ -7,7 +7,7 @@ public class Repellent : MonoBehaviour
 {
     private Rigidbody _rb;
 
-    [SerializeField] private float _speed = 200f;
+    [SerializeField] private float _speed = 300f;
         
     private void Awake()
     {
@@ -16,7 +16,9 @@ public class Repellent : MonoBehaviour
 
     public void Push(Vector3 point)
     {
-        _rb.AddForceAtPosition(Vector3.up * _speed, point, 
-            ForceMode.Force);
+        _rb.AddForceAtPosition(
+            Vector3.up * _speed * Time.deltaTime,
+            point, 
+            ForceMode.Impulse);
     }
 }
