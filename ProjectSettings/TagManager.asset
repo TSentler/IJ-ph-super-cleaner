@@ -13,9 +13,9 @@ TagManager:
   - UI
   - Payer
   - Garbage
-  - 
-  - 
-  - 
+  - Rope
+  - RopeCollider
+  - Ground
   - 
   - 
   - 
