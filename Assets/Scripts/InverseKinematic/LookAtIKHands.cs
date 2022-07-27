@@ -31,7 +31,6 @@ public class LookAtIKHands : MonoBehaviour
         _animator.SetIKPosition(AvatarIKGoal.RightHand, _handTarget.position);
         _animator.SetIKRotation(AvatarIKGoal.LeftHand, _handTarget.rotation);
         _animator.SetIKRotation(AvatarIKGoal.RightHand, _handTarget.rotation);
-        Debug.Log("123");
     }
 
     private void SetIKWeight(float weight)
