@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43854627, g: 0.48665088, b: 0.56692123, a: 1}
+  m_IndirectSpecularColor: {r: 0.43853837, g: 0.48664063, b: 0.56691533, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4099,6 +4099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u0421ar (1)"
       objectReference: {fileID: 0}
+    - target: {fileID: 3645438711679891496, guid: f80f5d8f61cd299b59bbb4403f5dd5e1, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4216967388596419864, guid: f80f5d8f61cd299b59bbb4403f5dd5e1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4829,7 +4833,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.8
+  m_fontSize: 55.05
   m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5195,6 +5199,10 @@ PrefabInstance:
     - target: {fileID: 3645438711679891496, guid: f80f5d8f61cd299b59bbb4403f5dd5e1, type: 3}
       propertyPath: m_Name
       value: "\u0421ar"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645438711679891496, guid: f80f5d8f61cd299b59bbb4403f5dd5e1, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4216967388596419864, guid: f80f5d8f61cd299b59bbb4403f5dd5e1, type: 3}
       propertyPath: m_RootOrder
@@ -5870,7 +5878,7 @@ Transform:
   - {fileID: 968528481}
   - {fileID: 7452472634819412995}
   - {fileID: 1078084068}
-  - {fileID: 62865930}
+  - {fileID: 1847382868}
   - {fileID: 947253411}
   - {fileID: 1020313709}
   - {fileID: 1964306115}
@@ -5881,7 +5889,6 @@ Transform:
   - {fileID: 1475705992}
   - {fileID: 273055215}
   - {fileID: 1006481159}
-  - {fileID: 1847382868}
   - {fileID: 807707486}
   - {fileID: 729279637}
   - {fileID: 332696213}
@@ -5889,6 +5896,7 @@ Transform:
   - {fileID: 801490565}
   - {fileID: 1239875077}
   - {fileID: 596652627}
+  - {fileID: 62865930}
   - {fileID: 429354913}
   - {fileID: 226324938}
   - {fileID: 709144607}
@@ -9101,7 +9109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34492a852a8af131a6dd3eae8831258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 0.5
+  _duration: 0.8
 --- !u!1 &627195265773172090
 GameObject:
   m_ObjectHideFlags: 0
