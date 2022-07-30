@@ -9,7 +9,7 @@ public class GarbageDisposal : MonoBehaviour
     {
         if (other.TryGetComponent(out Garbage garbage))
         {
-            other.gameObject.SetActive(false);
+            garbage.Sucked();
         }
     }
 }

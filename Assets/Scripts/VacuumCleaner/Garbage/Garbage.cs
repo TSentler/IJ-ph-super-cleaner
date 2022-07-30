@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Garbage : MonoBehaviour
@@ -9,6 +10,8 @@ public class Garbage : MonoBehaviour
     private Transform _target;
     
     [SerializeField] private float _speed = 200.0f;
+
+    public event UnityAction OnSucked;   
 
     private void Awake()
     {
@@ -29,5 +32,11 @@ public class Garbage : MonoBehaviour
     public void Suck(Transform target)
     {
         _target = target;
+    }
+
+    public void Sucked()
+    {
+        gameObject.SetActive(false);
+        OnSucked.Invoke();
     }
 }
