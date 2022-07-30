@@ -12,10 +12,7 @@ public class Follow : MonoBehaviour
     private void OnValidate()
     {
         if (_target == null)
-        {
-            throw new MissingReferenceException(
-                "Tracking object missing");
-        }
+            Debug.LogWarning("Tracking object was not found!", this);
     }
 
     private void Start()
