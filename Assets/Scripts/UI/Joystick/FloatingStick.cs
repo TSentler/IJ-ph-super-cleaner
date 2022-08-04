@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace UI.Joystick
 {
-    public class StickSnap : MonoBehaviour
+    public class FloatingStick : MonoBehaviour
     {
         [SerializeField] private StickPointer _stickPointer;
         [SerializeField] private CanvasGroup _stickGroup; 
@@ -47,6 +47,8 @@ namespace UI.Joystick
         private void HideStick()
         {
             _stickGroup.alpha = 0;
+            _stickKnob.localPosition = 
+                new Vector3(0f, 0f, _stickKnob.localPosition.z);
         }
         
         private void MoveStickKnob(Vector2 position)

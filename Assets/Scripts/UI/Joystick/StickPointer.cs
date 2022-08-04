@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace UI.Joystick
 {
-    public class StickPointer : MonoBehaviour,
+    public class StickPointer : MonoBehaviour, IDragHandler,
         IPointerDownHandler, IPointerUpHandler
     {
         private readonly float _deadZone = 0.05f;
@@ -18,7 +18,6 @@ namespace UI.Joystick
         public event UnityAction<Vector2> FingerDown, FingerMove;
 
         public bool IsTouch => _isTouch;
-        public Vector2 Position => _stickVector;
     
         private void OnValidate()
         {
@@ -26,11 +25,6 @@ namespace UI.Joystick
                 Debug.LogWarning("RectTransform was not found!", this);
         }
     
-        private void Update()
-        {
-            MovePointer();
-        }
-
         private Vector2 CalculateStickVector(Vector2 position, Vector2 pressPosition)
         {
             var stickVector = pressPosition - position;
@@ -45,23 +39,6 @@ namespace UI.Joystick
             return stickVector;
         }
 
-        private void MovePointer()
-        {
-            if (_isTouch == false)
-                return;
-
-            Vector2 targetTouch;
-            if (Input.touchCount == 0)
-                targetTouch = Input.mousePosition;
-            else
-                targetTouch = Input.GetTouch(0).position;
-
-            _stickVector = CalculateStickVector(_startTouch,
-                targetTouch);
-
-            FingerMove?.Invoke(_stickVector);
-        }
-    
         private bool IsPrimaryFinger(int pointerId)
         {
             return pointerId == 0 || pointerId == -1;
@@ -69,7 +46,7 @@ namespace UI.Joystick
     
         public void OnPointerUp(PointerEventData eventData)
         {
-            if (eventData.dragging || IsPrimaryFinger(eventData.pointerId) == false)
+            if (IsPrimaryFinger(eventData.pointerId) == false)
                 return;
 
             _isTouch = false;
@@ -85,6 +62,23 @@ namespace UI.Joystick
         
             _isTouch = true;
             FingerDown?.Invoke(_startTouch);
+        }
+
+        public void OnDrag(PointerEventData eventData)
+        {
+            if (_isTouch == false || IsPrimaryFinger(eventData.pointerId) == false)
+                return;
+
+            Vector2 targetTouch;
+            if (Input.touchCount == 0)
+                targetTouch = Input.mousePosition;
+            else
+                targetTouch = Input.GetTouch(0).position;
+
+            _stickVector = CalculateStickVector(_startTouch,
+                targetTouch);
+
+            FingerMove?.Invoke(_stickVector);
         }
     }
 }
