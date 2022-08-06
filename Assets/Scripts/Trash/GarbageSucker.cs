@@ -8,6 +8,7 @@ namespace Trash
 
         private void OnTriggerEnter(Collider other)
         {
+            
             if (other.TryGetComponent(out Garbage garbage))
             {
                 garbage.Suck(_garbageDisposalCenter);

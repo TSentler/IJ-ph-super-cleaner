@@ -12,16 +12,19 @@ namespace Trash
     
         private void Awake()
         {
+            var parent = transform.parent;
+            transform.parent = null;
             transform.localScale = GenerateScale();
+            transform.parent = parent;
         }
 
         private Vector3 GenerateScale()
         {
             var size = Random.Range(_minSize, _maxSize);
             var scale = new Vector3(
-                _x ? size : transform.localScale.x,
-                _y ? size : transform.localScale.y,
-                _z ? size : transform.localScale.z);
+                (_x ? size : 1f) * transform.localScale.x,
+                (_y ? size : 1f) * transform.localScale.y,
+                (_z ? size : 1f) * transform.localScale.z);
             return scale;
         }
     }
