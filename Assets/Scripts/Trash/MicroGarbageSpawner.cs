@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 
 namespace Trash
 {
-    public class GarbageSpawner : MonoBehaviour
+    public class MicroGarbageSpawner : MonoBehaviour
     {
         [SerializeField] private List<BoxCollider> _boxColliders;
         [SerializeField] private GameObject _garbage;
@@ -13,15 +13,20 @@ namespace Trash
 
         private void OnValidate()
         {
+            if (_garbage.TryGetComponent(out MicroGarbage garbage) == false)
+            {
+                Debug.LogError("MicroGarbage prefab not to found", this);
+            }
             if (_boxColliders.Count == 0)
             {
                 Debug.LogWarning("BoxCollider list is empty!", this);
             }
         }
 
-        private void SpawnAsGrid(Vector3 startPosition, 
+        private List<MicroGarbage> SpawnAsGrid(Vector3 startPosition, 
             float rows, float columns, Transform parent)
         {
+            List<MicroGarbage> trash = new();
             var rowPosition = startPosition;
             for (int i = 0; i < rows; i++)
             {
@@ -29,14 +34,16 @@ namespace Trash
                 for (int j = 0; j < columns; j++)
                 {
                     rowPosition += Vector3.right * _distance;
-                    Spawn(rowPosition, parent);
+                    trash.Add(Spawn(rowPosition, parent));
                 }
                 rowPosition = new Vector3(startPosition.x, 
                     rowPosition.y, rowPosition.z);
             }
+
+            return trash;
         }
 
-        private void Spawn(Vector3 position, Transform parent)
+        private MicroGarbage Spawn(Vector3 position, Transform parent)
         {
             var garbage = Instantiate(_garbage);
             garbage.transform.parent = parent;
@@ -44,11 +51,13 @@ namespace Trash
                 position
                 + Vector3.right * Random.Range(-_offset, _offset)
                 + Vector3.forward * Random.Range(-_offset, _offset);
-
+            
+            return garbage.GetComponent<MicroGarbage>();
         }
 
-        public void SpawnInsideAllColliders()
+        public List<MicroGarbage> SpawnInsideAllColliders()
         {
+            List<MicroGarbage> trash = new();
             foreach (var box in _boxColliders)
             {
                 var startPosition = new Vector3(
@@ -58,22 +67,11 @@ namespace Trash
 
                 var columns = box.size.x / _distance - 1f;
                 var rows = box.size.z / _distance - 1f;
+                trash.AddRange(SpawnAsGrid(startPosition, rows, columns,
+                    box.transform));
+            }
 
-                SpawnAsGrid(startPosition, rows, columns, 
-                    box.transform);
-            }
-        }
-        
-        public void Clear()
-        {
-            foreach (var box in _boxColliders)
-            {
-                var trash = box.GetComponentsInChildren<Garbage>();
-                foreach (var garbage in trash)
-                {
-                    DestroyImmediate(garbage.gameObject);
-                }
-            }
+            return trash;
         }
     }
 }

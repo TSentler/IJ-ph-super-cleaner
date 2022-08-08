@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UI;
@@ -7,20 +8,25 @@ namespace Trash
 {
     public class GarbageBag : MonoBehaviour
     {
-        private int _collected = 0;
+        private float _collected = 0f,
+            _countMicroGarbage = 0f,        
+            _count = 0f;
         
-        [SerializeField] private List<Garbage> _childTrash = new();
+        [SerializeField] private List<Garbage> _trash = new();
         [SerializeField] private CollectedText _collectedText;
         [SerializeField] private SmoothSlider _collectedSlider;
+
+        private int Collected => Mathf.RoundToInt(_collected);
+        private int Count => Mathf.RoundToInt(_count);
         
         private void OnValidate()
         {
-            if (_childTrash.Count == 0)
+            if (_trash.Count == 0)
             {
                 var childTrash = GetComponentsInChildren<Garbage>();
                 if (childTrash.Length != 0)
                 {
-                    _childTrash = childTrash.ToList();
+                    _trash = childTrash.ToList();
                 }
             }
             if (_collectedText == null)
@@ -31,7 +37,7 @@ namespace Trash
 
         private void OnEnable()
         {
-            foreach (var garbage in _childTrash)
+            foreach (var garbage in _trash)
             {
                 garbage.OnSucked += SuckedHandler;
             }
@@ -39,7 +45,7 @@ namespace Trash
 
         private void OnDisable()
         {
-            foreach (var garbage in _childTrash)
+            foreach (var garbage in _trash)
             {
                 garbage.OnSucked -= SuckedHandler;
             }
@@ -47,14 +53,18 @@ namespace Trash
 
         private void Start()
         {
-            _collectedText.SetCount(_childTrash.Count);
+            foreach (var garbage in _trash)
+            {
+                _count += garbage.Count;
+            }
+            _collectedText.SetCount(Count);
         }
-
-        private void SuckedHandler()
+        
+        private void SuckedHandler(float count)
         {
-            _collected++;
-            _collectedText.SetCollected(_collected);
-            float sliderValue = (float)_collected / _childTrash.Count;
+            _collected += count;
+            _collectedText.SetCollected(Collected);
+            float sliderValue = (float)Collected / _count;
             _collectedSlider.SetValue(sliderValue);
         }
     }

@@ -3,19 +3,19 @@ using UnityEngine;
 
 namespace Trash
 {
-    [CustomEditor(typeof(GarbageSpawner))]
-    class GarbageSpawnerButton : Editor {
+    [CustomEditor(typeof(MicroGarbageEditorAutoSpawner))]
+    class MicroGarbageEditorAutoSpawnerButton : Editor {
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
-            GarbageSpawner _spawner = (GarbageSpawner)target;
+            var _spawner = (MicroGarbageEditorAutoSpawner)target;
             if (GUILayout.Button("Spawn"))
             {
-                _spawner.SpawnInsideAllColliders();
+                _spawner.SpawnButton();
             }
             if (GUILayout.Button("Clear"))
             {
-                _spawner.Clear();
+                _spawner.ClearButton();
             }
         }
     }

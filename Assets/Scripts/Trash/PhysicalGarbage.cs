@@ -6,10 +6,11 @@ namespace Trash
     public class PhysicalGarbage : Garbage
     {
         private Rigidbody _rb;
-    
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody>();
+            SetCount(1f);
         }
     
         private void FixedUpdate()
@@ -18,7 +19,8 @@ namespace Trash
                 return;
 
             var deltaSpeed = _speed * Time.deltaTime;
-            var direction = (_target.position - transform.position).normalized;
+            var direction = 
+                (_target.position - transform.position).normalized;
 
             _rb.velocity = direction * deltaSpeed;
         }
