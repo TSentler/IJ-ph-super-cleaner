@@ -6,9 +6,9 @@ namespace Trash
 {
     public abstract class Garbage : MonoBehaviour
     {
-        protected Transform _target;
-        
         [Min(1), SerializeField] private float _count = 0f;
+        
+        protected Transform _target;
 
         [SerializeField] protected float _speed = 200.0f;
 
@@ -26,6 +26,18 @@ namespace Trash
 
             return isPositive;
         }
+        
+        protected virtual void SuckHandler()
+        {
+            
+        }
+        
+        protected void MoveToTarget()
+        {
+            var deltaSpeed = _speed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(
+                transform.position, _target.position, deltaSpeed);
+        }
 
         public void SetCount(float value)
         {
@@ -38,6 +50,7 @@ namespace Trash
         public void Suck(Transform target)
         {
             _target = target;
+            SuckHandler();
         }
         
         public void Sucked()

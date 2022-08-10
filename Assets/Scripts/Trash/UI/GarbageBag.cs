@@ -8,9 +8,7 @@ namespace Trash
 {
     public class GarbageBag : MonoBehaviour
     {
-        private float _collected = 0f,
-            _countMicroGarbage = 0f,        
-            _count = 0f;
+        private float _collected = 0f, _count = 0f;
         
         [SerializeField] private List<Garbage> _trash = new();
         [SerializeField] private CollectedText _collectedText;

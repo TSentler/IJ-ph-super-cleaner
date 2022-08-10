@@ -21,7 +21,6 @@ namespace Trash
             var deltaSpeed = _speed * Time.deltaTime;
             var direction = 
                 (_target.position - transform.position).normalized;
-
             _rb.velocity = direction * deltaSpeed;
         }
     }
