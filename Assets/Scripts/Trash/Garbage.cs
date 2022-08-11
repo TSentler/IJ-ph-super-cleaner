@@ -4,13 +4,14 @@ using UnityEngine.Events;
 
 namespace Trash
 {
+    [RequireComponent(typeof(Collider))]
     public abstract class Garbage : MonoBehaviour
     {
         [Min(1), SerializeField] private float _count = 0f;
         
         protected Transform _target;
 
-        [SerializeField] protected float _speed = 200.0f;
+        [SerializeField] protected float _speed = 10f;
 
         public event UnityAction<float> OnSucked;
 

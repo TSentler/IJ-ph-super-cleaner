@@ -7,8 +7,16 @@ namespace Trash
     public class Deformator : MonoBehaviour
     {
         [SerializeField] private Transform _scaleCenter;
-        [SerializeField] private float _time, _multiplier;
+        [Min(0.001f), SerializeField] private float _time = 0.2f, 
+            _multiplier = 2f;
 
+        
+        private void OnValidate()
+        {
+            if (_scaleCenter == null)
+                Debug.LogWarning("ScaleCenter was not found!", this);
+        }
+        
         private IEnumerator DeformationCoroutine()
         {
             GetDeformScales(out var startScale, out var endScale);
@@ -22,7 +30,8 @@ namespace Trash
             }
         }
 
-        private void GetDeformScales(out Vector3 startScale, out Vector3 endScale)
+        private void GetDeformScales(out Vector3 startScale, 
+            out Vector3 endScale)
         {
             SetChildRoot(transform, _scaleCenter);
             startScale = _scaleCenter.localScale;
@@ -31,10 +40,12 @@ namespace Trash
             endScale.z *= _multiplier;
         }
 
-        private void ResizeScaleCenter(Vector3 startScale, Vector3 endScale, float elapsed)
+        private void ResizeScaleCenter(Vector3 startScale, Vector3 endScale, 
+            float elapsed)
         {
             SetChildRoot(transform, _scaleCenter);
-            _scaleCenter.localScale = Vector3.Lerp(startScale, endScale, elapsed);
+            _scaleCenter.localScale = 
+                Vector3.Lerp(startScale, endScale, elapsed);
             SetChildRoot(_scaleCenter, transform);
         }
 

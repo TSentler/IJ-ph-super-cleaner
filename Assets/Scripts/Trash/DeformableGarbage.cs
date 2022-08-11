@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace Trash
 {
-    [RequireComponent(typeof(Deformator), typeof(SizeReducer))]
+    [RequireComponent(typeof(Deformator),
+        typeof(SizeReducer))]
     public class DeformableGarbage : Garbage
     {
         private Coroutine _suckCoroutine;

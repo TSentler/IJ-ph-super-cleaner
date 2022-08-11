@@ -1,0 +1,17 @@
+{
+    "name": "Trash.UI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:34bc99d99493a6c0d8ffbe0f5967fd13",
+        "GUID:ad0cbaf957503f550b1e4a5e4cd7cd29"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

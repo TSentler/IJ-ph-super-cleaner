@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace Trash
 {
-    [RequireComponent(typeof(GarbageBag))]
     public class MicroGarbageEditorAutoSpawner : MonoBehaviour
     {
         [SerializeField] private GameObject _microGarbageRoot;
@@ -31,7 +30,8 @@ namespace Trash
         
         public void ClearButton()
         {
-            var trash = _microGarbageRoot.GetComponentsInChildren<MicroGarbage>();
+            var trash = 
+                _microGarbageRoot.GetComponentsInChildren<MicroGarbage>();
             foreach (var garbage in trash)
             {
                 DestroyImmediate(garbage.gameObject);

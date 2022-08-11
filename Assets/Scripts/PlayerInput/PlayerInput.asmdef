@@ -1,0 +1,17 @@
+{
+    "name": "PlayerInput",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ad0cbaf957503f550b1e4a5e4cd7cd29",
+        "GUID:fc6d263af0107e336b9a109bc8bb395b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

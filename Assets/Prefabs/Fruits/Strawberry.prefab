@@ -178,9 +178,9 @@ GameObject:
   - component: {fileID: 1658998516143090480}
   - component: {fileID: 1658998516141959536}
   - component: {fileID: 6486383393084378477}
-  - component: {fileID: 2555428252970738703}
   - component: {fileID: 2555428252970738702}
   - component: {fileID: 2555428252970738737}
+  - component: {fileID: 2555428252970738703}
   m_Layer: 7
   m_Name: Strawberry
   m_TagString: Untagged
@@ -195,7 +195,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658998516143896374}
-  m_LocalRotation: {x: -0, y: -0.8643228, z: -0, w: 0.5029376}
+  m_LocalRotation: {x: -0.61382234, y: 0.12681256, z: 0.31144002, w: 0.714245}
   m_LocalPosition: {x: -1.8873632, y: -0.6806497, z: -1.022821}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -205,7 +205,7 @@ Transform:
   - {fileID: 7959836899060021592}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -72.907, y: -43.195, z: 79.72}
 --- !u!33 &1658998516143090480
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -269,20 +269,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.109138414
   m_Center: {x: -0.00000002607704, y: -0.000000026077032, z: -0.01}
---- !u!114 &2555428252970738703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658998516143896374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f483e3fbdcf633c6a8a95909ba1c7d5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _count: 0
-  _speed: 10
 --- !u!114 &2555428252970738702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,8 +282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scaleCenter: {fileID: 7959836899060021592}
-  _time: 0.2
-  _multiplier: 2
+  _time: 0.18
+  _multiplier: 1.8
 --- !u!114 &2555428252970738737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +298,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _multiplier: 0.1
   _speed: 10
+--- !u!114 &2555428252970738703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658998516143896374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f483e3fbdcf633c6a8a95909ba1c7d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _count: 0
+  _speed: 10
+  _direction: {x: 0, y: 0, z: 1}
 --- !u!1 &7959836899060021595
 GameObject:
   m_ObjectHideFlags: 0

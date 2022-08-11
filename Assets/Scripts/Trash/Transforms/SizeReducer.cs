@@ -5,7 +5,8 @@ namespace Trash
 {
     public class SizeReducer : MonoBehaviour
     {
-        [SerializeField] private float _multiplier = 0.1f, _speed; 
+        [SerializeField] private float _multiplier = 0.1f, 
+            _speed = 10f;
 
         private IEnumerator ReduceSizeCoroutine()
         {
@@ -15,14 +16,15 @@ namespace Trash
             while (delta < 1f)
             {
                 delta += _speed * Time.deltaTime;
-                transform.localScale = Vector3.Lerp(startScale, endScale, delta);
+                transform.localScale =
+                    Vector3.Lerp(startScale, endScale, delta);
                 yield return null;
             }
         }
         
-        public Coroutine Apply()
+        public void Apply()
         {
-            return StartCoroutine(ReduceSizeCoroutine());
+            StartCoroutine(ReduceSizeCoroutine());
         }
     }
 }

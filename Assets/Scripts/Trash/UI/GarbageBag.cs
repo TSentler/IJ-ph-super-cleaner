@@ -27,6 +27,7 @@ namespace Trash
                     _trash = childTrash.ToList();
                 }
             }
+
             if (_collectedText == null)
                 Debug.LogWarning("CollectedText was not found!", this);
             if (_collectedSlider == null)
