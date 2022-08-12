@@ -6,7 +6,7 @@ namespace Trash
     {
         private void Update()
         {
-            if (_target == null)
+            if (Target == null)
                 return;
 
             MoveToTarget();

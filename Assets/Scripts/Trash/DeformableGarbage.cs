@@ -1,32 +1,35 @@
 using System;
 using System.Collections;
+using Trash.Transforms;
 using UnityEngine;
 
 namespace Trash
 {
     [RequireComponent(typeof(Deformator),
-        typeof(SizeReducer))]
+        typeof(SizeReducer), 
+        typeof(LookAtRotator))]
     public class DeformableGarbage : Garbage
     {
         private Coroutine _suckCoroutine;
         private Deformator _deformator;
         private SizeReducer _sizeReducer;
+        private LookAtRotator _lookAtRotator;
         
         private void Awake()
         {
             _deformator = GetComponent<Deformator>();
             _sizeReducer = GetComponent<SizeReducer>();
-            SetCount(1f);
+            _lookAtRotator = GetComponent<LookAtRotator>();
         }
 
         private void Update()
         {
-            if (_target == null)
+            if (Target == null)
                 return;
-            
-            transform.LookAt(_target);
-        }
 
+            _lookAtRotator.Apply(Target);
+        }
+        
         private IEnumerator SuckCoroutine()
         {
             var deformationCoroutine = _deformator.Apply();

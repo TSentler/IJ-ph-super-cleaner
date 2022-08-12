@@ -7,25 +7,24 @@ namespace Trash
     [RequireComponent(typeof(Collider))]
     public abstract class Garbage : MonoBehaviour
     {
-        [Min(1), SerializeField] private float _count = 0f;
+        private Transform _target;
         
-        protected Transform _target;
+        [Min(0), SerializeField] private float _count = 0f;
+        [SerializeField] private float _speed = 10f;
 
-        [SerializeField] protected float _speed = 10f;
-
-        public event UnityAction<float> OnSucked;
-
-        public float Count => CheckPositive(_count) ? _count : 1f;
+        public event UnityAction OnSuck;
+        
+        public Transform Target => _target;
+        public float Count => CheckPositive(_count) ? _count : 0f;
 
         private bool CheckPositive(float value)
         {
-            var isPositive = value > 0f;
-            if (isPositive == false)
+            if (value < 0f)
             {
-                Debug.LogWarning("Count of garbage less than 1", this);
+                Debug.LogWarning("Count of garbage less than 0", this);
             }
 
-            return isPositive;
+            return value > 0f;
         }
         
         protected virtual void SuckHandler()
@@ -52,12 +51,12 @@ namespace Trash
         {
             _target = target;
             SuckHandler();
+            OnSuck?.Invoke();
         }
         
         public void Sucked()
         {
             gameObject.SetActive(false);
-            OnSucked?.Invoke(Count);
         }
     }
 }
