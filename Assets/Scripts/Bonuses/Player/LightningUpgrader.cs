@@ -1,23 +1,24 @@
+using System;
 using System.Collections;
 using PlayerAbilities.Move;
 using Trash;
 using Trash.Boosters;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Bonuses.Player
 {
     public class LightningUpgrader : MonoBehaviour
     {
-        private float _timePassed = float.MaxValue;
-        private Coroutine _coroutine;
-
+        [SerializeField] private TemporaryBonus _temporaryBonus;
         [SerializeField] private GarbageDisposal _garbageDisposal;
         [SerializeField] private Movement _movement;
         [SerializeField] private SuckerBooster _sucker;
-        [SerializeField] private float _duration = 1f;
 
         private void OnValidate()
         {
+            if (_temporaryBonus == null)
+                Debug.LogWarning("TemporaryBonus was not found!", this);
             if (_garbageDisposal == null)
                 Debug.LogWarning("GarbageDisposal was not found!", this);
             if (_movement == null)
@@ -25,46 +26,40 @@ namespace Bonuses.Player
             if (_sucker == null)
                 Debug.LogWarning("GarbageSucker was not found!", this);
         }
-    
+
         private void OnEnable()
         {
+            _temporaryBonus.OnTimerStart += TimerStartHandler;
+            _temporaryBonus.OnTimerEnd += TimerEndHandler;
             _garbageDisposal.OnSucked += SuckedHandler;
         }
     
         private void OnDisable()
         {
+            _temporaryBonus.OnTimerStart -= TimerStartHandler;
+            _temporaryBonus.OnTimerEnd -= TimerEndHandler;
             _garbageDisposal.OnSucked -= SuckedHandler;
         }
 
+        private void TimerStartHandler()
+        {
+            _movement.BoostSpeed();
+            _sucker.IncreaseSize();
+        }
+
+        private void TimerEndHandler()
+        {
+            _movement.ResetSpeed();
+            _sucker.ResetSize();
+        }
+        
         private void SuckedHandler(Garbage garbage)
         {
             if (garbage.TryGetComponent<Lightning>(
                     out var lightningBonus))
             {
-                if (_coroutine != null && _timePassed < _duration)
-                {
-                    _timePassed = 0f;
-                }
-                else
-                {
-                    _coroutine = StartCoroutine(LightningCoroutine());
-                }
+                _temporaryBonus.Apply();
             }
-        }
-        
-        public IEnumerator LightningCoroutine()
-        {
-            _movement.BoostSpeed();
-            _sucker.IncreaseSize();
-            _timePassed = 0f;
-            while (_timePassed < _duration)
-            {
-                yield return null;
-                _timePassed += Time.deltaTime;
-            }
-            _movement.ResetSpeed();
-            _sucker.ResetSize();
-            _coroutine = null;
         }
     }
 }

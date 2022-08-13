@@ -9,8 +9,7 @@ namespace UI
     {
         private Slider _slider;
         private Coroutine _slideCoroutine;
-        private float _previous, 
-            _target;
+        private float _previous, _target;
 
         [SerializeField] private float _duration = 1f; 
     
@@ -46,6 +45,5 @@ namespace UI
             _target = value;
             _slideCoroutine = StartCoroutine(SlideCoroutine());
         }
-
     }
 }
