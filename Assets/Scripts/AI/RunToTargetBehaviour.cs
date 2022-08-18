@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.Events;
 
 namespace AI
 {
     public class RunToTargetBehaviour : StateMachineBehaviour
     {
-        public event UnityAction OnRunStart, OnRunUpdate;
+        public event UnityAction OnRunStart, OnRunUpdate, OnRunEnd;
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
@@ -19,6 +20,13 @@ namespace AI
         {
             base.OnStateUpdate(animator, stateInfo, layerIndex);
             OnRunUpdate?.Invoke();
+        }
+
+        public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex,
+            AnimatorControllerPlayable controller)
+        {
+            base.OnStateExit(animator, stateInfo, layerIndex, controller);
+            OnRunEnd?.Invoke();
         }
     }
 }

@@ -38,10 +38,15 @@ namespace AI
             return GetDirectionTo(_exit.position);
         }
 
+
         public void PickUpTarget()
         {
             _target.PickUp(_carryPosition);
-            
+        }
+        
+        public void DropTarget()
+        {
+            _target.Drop();
         }
     }
 }

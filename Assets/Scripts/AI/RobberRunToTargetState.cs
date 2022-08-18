@@ -37,12 +37,14 @@ namespace AI
         {
             _runToTargetBehaviour.OnRunStart += RunToTargetStartHandler;
             _runToTargetBehaviour.OnRunUpdate += RunToTargetUpdateHandler;
+            _runToTargetBehaviour.OnRunEnd += RunToTargetEndHandler;
         }
 
         private void OnDisable()
         {
             _runToTargetBehaviour.OnRunStart -= RunToTargetStartHandler;
             _runToTargetBehaviour.OnRunUpdate -= RunToTargetUpdateHandler;
+            _runToTargetBehaviour.OnRunEnd -= RunToTargetEndHandler;
         }
 
         private void RunToTargetStartHandler()
@@ -61,6 +63,11 @@ namespace AI
                 _animator.SetTrigger(_carryName);
                 _robber.PickUpTarget();
             }
+        }
+
+        private void RunToTargetEndHandler()
+        {
+            _movement.Move(Vector2.zero);
         }
     }
 }

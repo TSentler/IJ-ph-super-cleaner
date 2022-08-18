@@ -47,8 +47,7 @@ namespace AI
 
         private void RunToExitEndHandler()
         {
-            _rb.isKinematic = true;
-            _rb.useGravity = false;
+            _movement.Move(Vector2.zero);
         }
         
         private void RunToExitUpdateHandler()
