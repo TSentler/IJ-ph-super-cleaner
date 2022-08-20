@@ -7,7 +7,7 @@ namespace PlayerCamera
     {
         private Camera _camera;
 
-        [SerializeField] private float _minZoom = 110f, 
+        [Min(0f), SerializeField] private float _minZoom = 110f, 
             _maxZoom = 50f,
             _zoomLimiter = 20f;
 

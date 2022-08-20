@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7893438657625749401}
   - component: {fileID: 2108953045498947490}
   - component: {fileID: 2108953045498947491}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 7005289051945516452}
   - component: {fileID: 539600592688659452}
   - component: {fileID: 539600592688659453}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 8425336471646711639}
   - component: {fileID: 795691380644030513}
   - component: {fileID: 795691380644030518}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 2298940230427674993}
   - component: {fileID: 2298940230427674995}
   - component: {fileID: 2298940230427674992}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ GameObject:
   - component: {fileID: 392357332155539322}
   - component: {fileID: 392357332155539316}
   - component: {fileID: 392357332155539317}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 5632725994426938065}
   - component: {fileID: 1128076142782023839}
   - component: {fileID: 1128076142782023836}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +855,7 @@ GameObject:
   - component: {fileID: 4234941480044357128}
   - component: {fileID: 1273663861964231590}
   - component: {fileID: 1273663861964231591}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1053,6 +1053,54 @@ Transform:
   m_Father: {fileID: 2859514567929375121}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1579739551895327438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590097899649003768}
+  - component: {fileID: 4338443144473118503}
+  m_Layer: 13
+  m_Name: RobberActivator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590097899649003768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579739551895327438}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.29000023, y: -1.7550001, z: 2.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8041074067286538902}
+  m_Father: {fileID: 7502182514868082255}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4338443144473118503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579739551895327438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52a0b8c3957ee59ff9008795870da49b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _object: {fileID: 7267810266732585004}
+  _minSeconds: 3
+  _maxSeconds: 6
 --- !u!1 &1844291341549709440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1114,7 @@ GameObject:
   - component: {fileID: 3210143514622441587}
   - component: {fileID: 1844291341549709442}
   - component: {fileID: 1844291341549709443}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1212,7 +1260,7 @@ GameObject:
   - component: {fileID: 5591160555031348515}
   - component: {fileID: 2229237755846954093}
   - component: {fileID: 2229237755846954098}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1485,7 @@ GameObject:
   - component: {fileID: 3198045444920402057}
   - component: {fileID: 836521745977555367}
   - component: {fileID: 836521745977555364}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1617,7 +1665,7 @@ GameObject:
   - component: {fileID: 4022744687832164974}
   - component: {fileID: 4022744687832164968}
   - component: {fileID: 4022744687832164969}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1731,7 +1779,7 @@ GameObject:
   - component: {fileID: 3645283634380115262}
   - component: {fileID: 498750516805879341}
   - component: {fileID: 498750516805879346}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1845,7 +1893,7 @@ GameObject:
   - component: {fileID: 3296767940004944294}
   - component: {fileID: 3473597133947572516}
   - component: {fileID: 3473597133947572517}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2050,7 +2098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5222819168588765136}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2151,7 +2199,7 @@ GameObject:
   - component: {fileID: 1431876254381048597}
   - component: {fileID: 1431876254381048599}
   - component: {fileID: 1431876254381048596}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2265,7 +2313,7 @@ GameObject:
   - component: {fileID: 4168492154315082888}
   - component: {fileID: 972996133988336504}
   - component: {fileID: 972996133988336505}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2427,7 @@ GameObject:
   - component: {fileID: 8916222800063428287}
   - component: {fileID: 385626754356167177}
   - component: {fileID: 385626754356167182}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2525,12 +2573,12 @@ GameObject:
   - component: {fileID: 9158830239597958314}
   - component: {fileID: 1040785033253149751}
   - component: {fileID: 1040785033253149748}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6178949677342343372
 Transform:
@@ -2668,7 +2716,7 @@ GameObject:
   - component: {fileID: 7081669571664306200}
   - component: {fileID: 3917305687321261512}
   - component: {fileID: 3917305687321261513}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2909,7 +2957,7 @@ GameObject:
   - component: {fileID: 6724984233583125873}
   - component: {fileID: 1438690379018081457}
   - component: {fileID: 1438690379018081462}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3087,7 +3135,7 @@ GameObject:
   - component: {fileID: 3371098179919798428}
   - component: {fileID: 752098541124099206}
   - component: {fileID: 752098541124099207}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3264,7 +3312,7 @@ GameObject:
   - component: {fileID: 6033642889972375943}
   - component: {fileID: 3607594416159905898}
   - component: {fileID: 3607594416159905899}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3378,7 +3426,7 @@ GameObject:
   - component: {fileID: 4724534508530386592}
   - component: {fileID: 2693271080919897202}
   - component: {fileID: 2693271080919897203}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3516,14 +3564,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7267810266732585004}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.28999996, y: -1.7550001, z: 2.7399998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2578293806431885826}
   - {fileID: 2152551071975756376}
-  m_Father: {fileID: 7502182514868082255}
+  m_Father: {fileID: 590097899649003768}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &4140935158432129260
@@ -3790,7 +3838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7502182513916078597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.3999996, y: -1.505, z: -4.21}
+  m_LocalPosition: {x: 2.9, y: -1.505, z: -15.07}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3825,7 +3873,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf1fa8fbee13dbfd5837fb0d930d76fd, type: 2}
+  - {fileID: 2100000, guid: e7041d8631ba9614c941e613e3827acb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3897,7 +3945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7502182513990128136}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: GlassFragments
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3973,12 +4021,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7502182514716537490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2550002, z: 0}
+  m_LocalPosition: {x: 0, y: -1.2550001, z: 0}
   m_LocalScale: {x: 1.5, y: 1, z: 0.16}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7502182514868082255}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7502182514716537486
 MeshFilter:
@@ -4008,7 +4056,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2e028fd622a36ac2d995792859e1f827, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4037,7 +4085,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7502182514716537490}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 35035e973c4c52d1bab5f1c6da0b5386, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4066,19 +4114,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7502182514868082252}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.71, y: 0.8650001, z: 6.14}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -9.82, y: 0.8650001, z: -6.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8041074067286538902}
+  - {fileID: 590097899649003768}
   - {fileID: 5222819168588765136}
-  - {fileID: 7502182515167664279}
   - {fileID: 7502182514716537485}
+  - {fileID: 7502182515167664279}
   - {fileID: 7502182513916078592}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &7502182515167664283
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,7 +4145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7502182515167664279
 Transform:
   m_ObjectHideFlags: 0
@@ -4106,12 +4154,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7502182515167664283}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.2550001, z: 0}
+  m_LocalPosition: {x: 0, y: 1.2550002, z: 0}
   m_LocalScale: {x: 1.5, y: 1, z: 0.16}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7502182514868082255}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7502182515167664276
 MeshFilter:
@@ -4141,7 +4189,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2e028fd622a36ac2d995792859e1f827, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4284,7 +4332,7 @@ GameObject:
   - component: {fileID: 3543950175643647891}
   - component: {fileID: 3543950175643647885}
   - component: {fileID: 3543950175643647890}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4398,7 +4446,7 @@ GameObject:
   - component: {fileID: 122426648393521727}
   - component: {fileID: 122426648393521721}
   - component: {fileID: 122426648393521726}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4512,7 +4560,7 @@ GameObject:
   - component: {fileID: 5723348752613264752}
   - component: {fileID: 1789094222641111965}
   - component: {fileID: 1789094222641111970}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4722,7 +4770,7 @@ GameObject:
   - component: {fileID: 5387874113860248928}
   - component: {fileID: 5489988106532232193}
   - component: {fileID: 5489988106532232198}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4868,7 +4916,7 @@ GameObject:
   - component: {fileID: 4629360909090090449}
   - component: {fileID: 4629360909090090451}
   - component: {fileID: 4629360909090090448}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4982,7 +5030,7 @@ GameObject:
   - component: {fileID: 1570842648200219873}
   - component: {fileID: 1570842648200219875}
   - component: {fileID: 1570842648200219872}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Glass.001_cell.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}

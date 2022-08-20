@@ -1,4 +1,3 @@
-using PlayerAbilities.Move;
 using UnityEngine;
 
 namespace AI

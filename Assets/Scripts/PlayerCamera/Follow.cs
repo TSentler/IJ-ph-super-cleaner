@@ -7,7 +7,7 @@ namespace PlayerCamera
         private Vector3 _velocity;
         
         [SerializeField] private Vector3 _offset;
-        [SerializeField] private float _smoothTime = 0.3f;
+        [Min(0f), SerializeField] private float _smoothTime = 0.3f;
 
         public void Apply(Vector3 centerPoint)
         {
