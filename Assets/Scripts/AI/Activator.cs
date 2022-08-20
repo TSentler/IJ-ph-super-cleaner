@@ -21,7 +21,6 @@ namespace AI
         
         private void Awake()
         {
-            _object.SetActive(false);
             _seconds = Random.Range(_minSeconds, _maxSeconds);
             StartCoroutine(WaitCoroutine());
         }

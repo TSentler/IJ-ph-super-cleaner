@@ -27,7 +27,7 @@ namespace AI
         
         private void Awake()
         {
-            _animator = GetComponent<Animator>(); 
+            _animator = GetComponent<Animator>();
             _runToTargetBehaviour = _animator.GetBehaviour<RunToTargetBehaviour>();
             _movement = GetComponent<Movement>();
             _rb = GetComponent<Rigidbody>();
@@ -49,6 +49,7 @@ namespace AI
 
         private void RunToTargetStartHandler()
         {
+            Debug.Log("fuck");
             _rb.isKinematic = false;
             _rb.useGravity = true;
         }
