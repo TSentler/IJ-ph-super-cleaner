@@ -4,33 +4,16 @@ namespace PlayerCamera
 {
     public class Follow : MonoBehaviour
     {
-        private Vector3 _offset;
+        private Vector3 _velocity;
+        
+        [SerializeField] private Vector3 _offset;
+        [SerializeField] private float _smoothTime = 0.3f;
 
-        [SerializeField] private Transform _target;
-        [SerializeField] private float _speed = 2.0f;
-
-        private void OnValidate()
+        public void Apply(Vector3 centerPoint)
         {
-            if (_target == null)
-                Debug.LogWarning("Tracking object was not found!", this);
-        }
-
-        private void Start()
-        {
-            _offset = transform.position - _target.position;
-        }
-
-        private void Update () {
-            float interpolation = _speed * Time.deltaTime;
-
-            Vector3 position = transform.position;
-            Vector3 targetWithOffset = _target.position +_offset;
-            position.x = Mathf.Lerp(position.x,
-                targetWithOffset.x, interpolation);
-            position.z = Mathf.Lerp(position.z, 
-                targetWithOffset.z, interpolation);
-
-            transform.position = position;
+            Vector3 targetPosition = centerPoint + _offset;
+            transform.position = Vector3.SmoothDamp(transform.position,
+                targetPosition, ref _velocity, _smoothTime);
         }
     }
 }
