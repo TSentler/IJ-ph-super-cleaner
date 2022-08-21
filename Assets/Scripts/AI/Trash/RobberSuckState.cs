@@ -52,6 +52,7 @@ namespace AI
 
         private void SuckAnimationStartHandler()
         {
+            gameObject.SetActive(true);
             _rb.isKinematic = true;
             _rb.useGravity = false;
         }

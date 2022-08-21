@@ -10,42 +10,28 @@ namespace AI
         private Animator _animator;
         private Rigidbody _rb;
         
-        [SerializeField] private Robber _robber;
-        
-        private void OnValidate()
-        {
-            if (_robber == null)
-                Debug.LogWarning("Robber was not found!", this);
-        }
-        
         private void Awake()
         {
             _animator = GetComponent<Animator>(); 
-            _flipToExitBehaviour = _animator.GetBehaviour<FlipToExitBehaviour>();
+            _flipToExitBehaviour = 
+                _animator.GetBehaviour<FlipToExitBehaviour>();
             _rb = GetComponent<Rigidbody>(); 
         }
 
         private void OnEnable()
         {
-            _flipToExitBehaviour.OnRunStart += RunToExitStartHandler;
-            _flipToExitBehaviour.OnRunEnd += RunToExitEndHandler;
+            _flipToExitBehaviour.OnFLipStart += FLipToExitStartHandler;
         }
 
         private void OnDisable()
         {
-            _flipToExitBehaviour.OnRunStart -= RunToExitStartHandler;
-            _flipToExitBehaviour.OnRunEnd -= RunToExitEndHandler;
+            _flipToExitBehaviour.OnFLipStart -= FLipToExitStartHandler;
         }
 
-        private void RunToExitStartHandler()
+        private void FLipToExitStartHandler()
         {
             _rb.isKinematic = true;
             _rb.useGravity = false;
-        }
-
-        private void RunToExitEndHandler()
-        {
-            gameObject.SetActive(false);
         }
     }
 }

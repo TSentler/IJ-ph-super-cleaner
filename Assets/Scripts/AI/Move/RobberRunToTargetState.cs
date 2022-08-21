@@ -49,7 +49,6 @@ namespace AI
 
         private void RunToTargetStartHandler()
         {
-            Debug.Log("fuck");
             _rb.isKinematic = false;
             _rb.useGravity = true;
         }
