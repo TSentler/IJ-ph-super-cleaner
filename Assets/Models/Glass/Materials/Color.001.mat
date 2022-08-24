@@ -35,9 +35,9 @@ Material:
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
-  - SHADOWCASTER
-  - DepthOnly
   - SRPDEFAULTUNLIT
+  - DepthOnly
+  - SHADOWCASTER
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -117,7 +117,7 @@ Material:
     m_Floats:
     - _AllowAlphaOverflow: 0
     - _AlphaClip: 0
-    - _Blend: 3
+    - _Blend: 0
     - _BumpScale: 1
     - _CameraDistanceFadeClose: 0
     - _CameraDistanceFadeFar: 10
@@ -135,7 +135,7 @@ Material:
     - _Depth: 100
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _EnvironmentReflections: 1
     - _FadeDistance: 0.5
     - _FlatRimEdgeSmoothness: 0.5
@@ -193,7 +193,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularEnabled: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 2
+    - _SrcBlend: 5
     - _Surface: 1
     - _TextureBlendingMode: 0
     - _TextureImpact: 1
@@ -216,7 +216,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.9510722, b: 1, a: 0.2901961}
+    - _BaseColor: {r: 0.42352945, g: 0.7803922, b: 0.9607844, a: 0.6431373}
     - _Color: {r: 0, g: 0.9510722, b: 1, a: 1}
     - _ColorDeep: {r: 0.65, g: 0.9, b: 1, a: 1}
     - _ColorDim: {r: 0.24746348, g: 0.45212528, b: 0.6320754, a: 1}
