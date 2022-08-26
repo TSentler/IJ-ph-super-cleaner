@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 public class RobberTarget : MonoBehaviour
 {
     private Transform _parent;
     private bool _isPickuped, _isKinematic, _useGravity;
-    
+
     public void PickUp(Transform carryPosition)
     {
         if (_isPickuped)
@@ -22,7 +23,7 @@ public class RobberTarget : MonoBehaviour
         _parent = transform.parent;
         transform.parent = carryPosition;
         transform.localPosition = Vector3.zero;
-        transform.rotation = Quaternion.identity;
+        transform.localRotation = Quaternion.identity;
     }
 
     public void Drop()
