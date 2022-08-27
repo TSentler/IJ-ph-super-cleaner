@@ -1,15 +1,24 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Trash
 {
     public class MicroGarbage : Garbage
     {
-        private void Update()
+        private IEnumerator SuckCoroutine()
         {
-            if (Target == null)
-                return;
-
-            MoveToTarget();
+            while (Target != null)
+            {
+                MoveToTarget();
+                yield return null;
+            }
         }
+        
+        protected override void SuckHandler()
+        {
+            base.SuckHandler();
+            StartCoroutine(SuckCoroutine());
+        }
+
     }
 }
