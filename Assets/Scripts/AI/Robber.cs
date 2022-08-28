@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace AI
 {
@@ -7,6 +9,8 @@ namespace AI
     {
         [SerializeField] private RobberTarget _target;
         [SerializeField] private Transform _exit, _carryPosition;
+
+        public event UnityAction OnDeactivate;
         
         private void OnValidate()
         {
@@ -16,6 +20,11 @@ namespace AI
                 Debug.LogWarning("Exit was not found!", this);
             if (_carryPosition == null)
                 Debug.LogWarning("CarryPosition was not found!", this);
+        }
+
+        private void OnDisable()
+        {
+            OnDeactivate?.Invoke();
         }
 
         private Vector2 GetDirectionTo(Vector3 position)

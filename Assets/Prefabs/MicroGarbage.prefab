@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 679176089859395748}
   - component: {fileID: 822874119606724393}
-  - component: {fileID: 5793462244242744523}
-  - component: {fileID: 455296304114283818}
   - component: {fileID: 3621164365492521467}
   m_Layer: 7
   m_Name: MicroGarbage
@@ -49,40 +47,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5793462244242744523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6575447956505666412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7bf19e1c68916bfa72bb5e811d96f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _minSize: 0.4
-  _maxSize: 1
-  _x: 1
-  _y: 0
-  _z: 1
---- !u!114 &455296304114283818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6575447956505666412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 821b13bc3a5a4e41be7a007ffed651f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _angleMin: 0
-  _angleMax: 90
-  _x: 0
-  _y: 1
-  _z: 0
 --- !u!114 &3621164365492521467
 MonoBehaviour:
   m_ObjectHideFlags: 0

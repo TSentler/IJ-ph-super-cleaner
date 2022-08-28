@@ -45,13 +45,12 @@ namespace Trash
 
         private MicroGarbage Spawn(Vector3 position, Transform parent)
         {
-            var garbage = Instantiate(_garbage);
-            garbage.transform.parent = parent;
-            garbage.transform.localPosition =
+            var garbage = Instantiate(_garbage).transform;
+            garbage.parent = parent;
+            garbage.localPosition =
                 position
                 + Vector3.right * Random.Range(-_offset, _offset)
                 + Vector3.forward * Random.Range(-_offset, _offset);
-            
             return garbage.GetComponent<MicroGarbage>();
         }
 

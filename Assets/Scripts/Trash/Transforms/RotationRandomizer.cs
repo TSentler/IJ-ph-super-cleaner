@@ -10,12 +10,7 @@ namespace Trash
         [SerializeField] private bool _x;
         [SerializeField] private bool _y, _z;
     
-        private void Awake()
-        {
-            transform.localRotation = GenerateRotation();
-        }
-
-        private Quaternion GenerateRotation()
+        public Quaternion GenerateRotation()
         {
             var angle = Random.Range(_angleMin, _angleMax);
             var rotation = Quaternion.Euler(

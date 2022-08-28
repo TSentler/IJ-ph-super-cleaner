@@ -9,16 +9,8 @@ namespace Trash
         [Header("Axises")] 
         [SerializeField] private bool _x;
         [SerializeField] private bool _y, _z;
-    
-        private void Awake()
-        {
-            var parent = transform.parent;
-            transform.parent = null;
-            transform.localScale = GenerateScale();
-            transform.parent = parent;
-        }
 
-        private Vector3 GenerateScale()
+        public Vector3 GenerateScale()
         {
             var size = Random.Range(_minSize, _maxSize);
             var scale = new Vector3(

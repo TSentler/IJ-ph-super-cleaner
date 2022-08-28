@@ -3,8 +3,13 @@ using UnityEngine;
 
 namespace Trash
 {
+    [RequireComponent(typeof(ScaleRandomizer), 
+        typeof(RotationRandomizer))]
     public class MicroGarbageEditorAutoSpawner : MonoBehaviour
     {
+        private ScaleRandomizer _scaleRandomizer;
+        private RotationRandomizer _rotationRandomizer;
+
         [SerializeField] private GameObject _microGarbageRoot;
         [SerializeField] private MicroGarbageSpawner _spawner;
         [Min(1), SerializeField] private int _countMicroGarbage = 1;
@@ -19,11 +24,18 @@ namespace Trash
 
         public void SpawnButton()
         {
+            _scaleRandomizer = GetComponent<ScaleRandomizer>();
+            _rotationRandomizer = GetComponent<RotationRandomizer>();
+
             List<MicroGarbage> trash = _spawner.SpawnInsideAllColliders();
             
             var oneGarbageCount = (float)_countMicroGarbage / trash.Count;
             foreach (var garbage in trash)
             {
+                garbage.transform.localScale = 
+                    _scaleRandomizer.GenerateScale();
+                garbage.transform.localRotation = 
+                    _rotationRandomizer.GenerateRotation();
                 garbage.SetCount(oneGarbageCount);
             }
         }        
