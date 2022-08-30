@@ -42,7 +42,6 @@ namespace Robber
             return GetDirectionTo(_exit.position);
         }
 
-
         public void PickUpTarget()
         {
             _theftTarget.PickUp(_carryPosition);
