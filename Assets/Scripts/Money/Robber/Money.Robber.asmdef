@@ -1,0 +1,17 @@
+{
+    "name": "Money.Robber",
+    "rootNamespace": "",
+    "references": [
+        "GUID:09333de930c0ebd46a74e6fe4335da92",
+        "GUID:bbacbfaeb9135fe35b5cac00814a1223"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

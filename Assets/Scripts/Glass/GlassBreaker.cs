@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using AI;
+using Robber;
 
 namespace Glass
 {
@@ -21,7 +21,7 @@ namespace Glass
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent(out Robber robber))
+            if (other.TryGetComponent(out RobberAI robber))
             {
                 _fragments.SetActive(true);
                 gameObject.SetActive(false);
