@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7447570819719022319}
   - component: {fileID: 318765997506967970}
   - component: {fileID: 5368369555798768308}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lightning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
