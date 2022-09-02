@@ -35,11 +35,6 @@ namespace Trash
             var deformationCoroutine = _deformator.Apply();
             yield return deformationCoroutine;
             _sizeReducer.Apply();
-            StartCoroutine(MoveCoroutine());
-        }
-        
-        private IEnumerator MoveCoroutine()
-        {
             while (true)
             {
                 MoveToTarget();

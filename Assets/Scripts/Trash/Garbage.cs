@@ -4,8 +4,13 @@ using UnityEngine.Events;
 
 namespace Trash
 {
+    public interface ISuckable
+    {
+        void Suck(Transform target);
+    }
+
     [RequireComponent(typeof(Collider))]
-    public abstract class Garbage : MonoBehaviour
+    public abstract class Garbage : MonoBehaviour, ISuckable
     {
         private Transform _target;
         
@@ -49,6 +54,8 @@ namespace Trash
         
         public void Suck(Transform target)
         {
+            if (target == null)
+                return;
             _target = target;
             SuckHandler();
             OnSuck?.Invoke();

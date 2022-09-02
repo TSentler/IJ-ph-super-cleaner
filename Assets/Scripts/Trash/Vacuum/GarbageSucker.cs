@@ -10,9 +10,16 @@ namespace Trash
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent(out Garbage garbage))
+            if (other.TryGetComponent(out ISuckable garbage))
             {
                 garbage.Suck(_garbageDisposalCenter);
+            }
+        }
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.TryGetComponent(out ISuckable environment))
+            {
+                environment.Suck(null);
             }
         }
     }

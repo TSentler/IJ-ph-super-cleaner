@@ -1,3 +1,5 @@
+using System;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace Robber
@@ -5,7 +7,14 @@ namespace Robber
     public class TheftTarget : MonoBehaviour
     {
         private Transform _parent;
+        private int _layer;
         private bool _isPickuped, _isKinematic, _useGravity;
+
+        private void Awake()
+        {
+            _layer = gameObject.layer;
+            _parent = transform.parent;
+        }
 
         public void PickUp(Transform carryPosition)
         {
@@ -21,7 +30,7 @@ namespace Robber
                 rb.useGravity = false;
             }
 
-            _parent = transform.parent;
+            gameObject.layer = carryPosition.gameObject.layer;
             transform.parent = carryPosition;
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;
@@ -40,6 +49,8 @@ namespace Robber
             }
         
             transform.parent = _parent;
+            gameObject.layer = _layer;
+
         }
     }
 }

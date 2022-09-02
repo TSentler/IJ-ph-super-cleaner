@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7112235212230128558}
   - component: {fileID: 7112235212230128559}
   - component: {fileID: 7112235212230128553}
+  - component: {fileID: 1729393852456531537}
   m_Layer: 0
   m_Name: TableLamp
   m_TagString: Untagged
@@ -109,7 +110,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7958658717185160977}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 8259282dc86577644add5f8ed77036b9, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -128,3 +129,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 300
+--- !u!114 &1729393852456531537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7958658717185160977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf374d607992e04f9b572f1ccf4b726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 150
