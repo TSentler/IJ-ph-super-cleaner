@@ -8,19 +8,14 @@ namespace Trash
 {
     public class GarbageCountPresenter : MonoBehaviour
     {
-        private float _collected = 0f, _count = 0f;
-
-        [SerializeField] private GarbageDisposal _garbageDisposal;
+        [SerializeField] private GarbageCounter _garbageCounter;
         [SerializeField] private CollectedText _collectedText;
         [SerializeField] private SmoothSlider _collectedSlider;
 
-        private int Collected => Mathf.RoundToInt(_collected);
-        private int Count => Mathf.RoundToInt(_count);
-        
         private void OnValidate()
         {
-            if (_garbageDisposal == null)
-                Debug.LogWarning("GarbageDisposal was not found!", this);
+            if (_garbageCounter == null)
+                Debug.LogWarning("GarbageCounter was not found!", this);
             if (_collectedText == null)
                 Debug.LogWarning("CollectedText was not found!", this);
             if (_collectedSlider == null)
@@ -29,33 +24,25 @@ namespace Trash
 
         private void OnEnable()
         {
-            _garbageDisposal.OnSucked += SuckedHandler;
+            _garbageCounter.OnCollect += CollectHandler;
+            _garbageCounter.OnCountChange += CountChangeHandler;
         }
 
         private void OnDisable()
         {
-            _garbageDisposal.OnSucked -= SuckedHandler;
-        }
-
-        private void Start()
-        {
-            var childTrash = GetComponentsInChildren<Garbage>();
-            if (childTrash.Length != 0)
-            {
-                var trash = childTrash.ToList();
-                foreach (var garbage in trash)
-                {
-                    _count += garbage.Count;
-                }
-                _collectedText.SetCount(Count);
-            }
+            _garbageCounter.OnCollect -= CollectHandler;
+            _garbageCounter.OnCountChange -= CountChangeHandler;
         }
         
-        private void SuckedHandler(Garbage garbage)
+        private void CountChangeHandler(int count)
         {
-            _collected += garbage.Count;
-            _collectedText.SetCollected(Collected);
-            float sliderValue = (float)Collected / _count;
+            _collectedText.SetCount(count);
+        }
+        
+        private void CollectHandler(int collected)
+        {
+            _collectedText.SetCollected(collected);
+            float sliderValue = (float)collected / _garbageCounter.Count;
             _collectedSlider.SetValue(sliderValue);
         }
     }

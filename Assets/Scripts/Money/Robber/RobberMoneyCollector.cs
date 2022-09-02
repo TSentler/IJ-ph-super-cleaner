@@ -40,6 +40,7 @@ namespace Money
         
         private void SuckHandler()
         {
+            _suckBehaviour.OnSuckStart -= SuckHandler;
             _moneyCounter.Collect(_count);
             _money.transform.parent = null;
             _money.SetActive(true);

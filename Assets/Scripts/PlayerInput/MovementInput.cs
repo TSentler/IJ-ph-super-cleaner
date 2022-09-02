@@ -6,6 +6,8 @@ namespace PlayerInput
 {
     public class MovementInput : MonoBehaviour
     {
+        private bool _isPause;
+        
         [SerializeField] private StickPointer _stick;
         [SerializeField] private MovementPresenter _presenter;
         [SerializeField] private Movement _movement;
@@ -57,8 +59,17 @@ namespace PlayerInput
         
         private void Move(Vector2 direction)
         {
+            if (_isPause)
+                return;
+            
             _presenter.SetDirection(direction);
             _movement.Move(direction);
+        }
+
+        public void Pause()
+        {
+            StickOff();
+            _isPause = true;
         }
     }
 }
