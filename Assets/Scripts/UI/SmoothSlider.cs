@@ -9,41 +9,37 @@ namespace UI
     {
         private Slider _slider;
         private Coroutine _slideCoroutine;
-        private float _previous, _target;
+        private float _previous, _target, _elapsed;
 
-        [SerializeField] private float _duration = 1f; 
-    
+        [SerializeField] private float _duration = 1f;
+
+        private bool InProgress => _elapsed < _duration;
+        
         private void Awake()
         {
             _slider = GetComponent<Slider>();
             _slider.minValue = 0f;
             _slider.maxValue = 1f;
             _slider.value = _slider.minValue;
+            _elapsed = _duration;
         }
     
-        private IEnumerator SlideCoroutine()
+        private void Update()
         {
-            var elapsed = 0f;
-            while (elapsed < _duration)
+            if (InProgress)
             {
                 _slider.value = Mathf.Lerp(_previous, _target, 
-                    elapsed / _duration);
-                yield return null;
-                elapsed += Time.deltaTime;
+                    _elapsed / _duration);
+                _elapsed += Time.deltaTime;
             }
-
-            _slider.value = _target;
-            _slideCoroutine = null;
         }
     
         public void SetValue(float value)
         {
-            if (_slideCoroutine != null)
-                StopCoroutine(_slideCoroutine);
-
             _previous = _slider.value;
             _target = value;
-            _slideCoroutine = StartCoroutine(SlideCoroutine());
+            if (InProgress == false)
+                _elapsed = 0f;
         }
     }
 }
