@@ -221,6 +221,12 @@ public class StylizedSurfaceEditor : BaseShaderGUI {
             materialEditor.EnableInstancingField();
         }
 
+        if (_target.IsKeywordEnabled("_UNITYSHADOWMODE_NONE")) {
+            _target.EnableKeyword("_RECEIVE_SHADOWS_OFF");
+        } else {
+            _target.DisableKeyword("_RECEIVE_SHADOWS_OFF");
+        }
+
         // Toggle the outline pass.
         _target.SetShaderPassEnabled("SRPDefaultUnlit", _target.IsKeywordEnabled("DR_OUTLINE_ON"));
 

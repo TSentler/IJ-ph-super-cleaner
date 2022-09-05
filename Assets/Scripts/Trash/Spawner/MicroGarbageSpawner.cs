@@ -9,7 +9,7 @@ namespace Trash
     {
         [SerializeField] private List<BoxCollider> _boxColliders;
         [SerializeField] private GameObject _garbage;
-        [SerializeField, Range(0f, 0.5f)] private float _distance, _offset;
+        [SerializeField, Range(0f, 1.5f)] private float _distance, _offset;
 
         private void OnValidate()
         {

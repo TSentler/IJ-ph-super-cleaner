@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+
 // ReSharper disable RedundantDefaultMemberInitializer
 
 namespace FlatKit {
@@ -7,42 +8,45 @@ namespace FlatKit {
 public class OutlineSettings : ScriptableObject {
     public Color edgeColor = Color.white;
 
-    [Range(0, 5)] public int thickness = 1;
+    [Range(0, 5)]public int thickness = 1;
 
-    [Space] public bool useDepth = true;
+    [Tooltip("If enabled, the line width will stay constant regardless of the rendering resolution. " +
+             "However, some of the lines may appear blurry.")]
+    public bool resolutionInvariant = false;
+
+    [Space]public bool useDepth = true;
     public bool useNormals = false;
     public bool useColor = false;
 
-    [Header("Advanced settings")] [Space(25)]
+    [Header("Advanced settings")]
     public float minDepthThreshold = 0f;
 
     public float maxDepthThreshold = 0.25f;
-    [Space] public float minNormalsThreshold = 0f;
+    [Space]public float minNormalsThreshold = 0f;
     public float maxNormalsThreshold = 0.25f;
-    [Space] public float minColorThreshold = 0f;
+    [Space]public float minColorThreshold = 0f;
     public float maxColorThreshold = 0.25f;
 
-    [Space] public RenderPassEvent renderEvent = RenderPassEvent.AfterRenderingTransparents;
+    [Space, Tooltip("The render stage at which the effect is applied. To exclude transparent objects, like water or UI elements, " +
+                    "set this to \"Before Transparent\".")]
+    public RenderPassEvent renderEvent = RenderPassEvent.BeforeRenderingPostProcessing;
 
-    [Space(20)] public bool outlineOnly = false;
+    [Space]public bool outlineOnly = false;
 
     private void OnValidate() {
         if (minDepthThreshold > maxDepthThreshold) {
-            Debug.LogWarning(
-                "[FlatKit] Outline configuration error: 'Min Depth Threshold' must not " +
-                "be greater than 'Max Depth Threshold'");
+            Debug.LogWarning("[FlatKit] Outline configuration error: 'Min Depth Threshold' must not " +
+                             "be greater than 'Max Depth Threshold'");
         }
 
         if (minNormalsThreshold > maxNormalsThreshold) {
-            Debug.LogWarning(
-                "[FlatKit] Outline configuration error: 'Min Normals Threshold' must not " +
-                "be greater than 'Max Normals Threshold'");
+            Debug.LogWarning("[FlatKit] Outline configuration error: 'Min Normals Threshold' must not " +
+                             "be greater than 'Max Normals Threshold'");
         }
 
         if (minColorThreshold > maxColorThreshold) {
-            Debug.LogWarning(
-                "[FlatKit] Outline configuration error: 'Min Color Threshold' must not " +
-                "be greater than 'Max Color Threshold'");
+            Debug.LogWarning("[FlatKit] Outline configuration error: 'Min Color Threshold' must not " +
+                             "be greater than 'Max Color Threshold'");
         }
     }
 }

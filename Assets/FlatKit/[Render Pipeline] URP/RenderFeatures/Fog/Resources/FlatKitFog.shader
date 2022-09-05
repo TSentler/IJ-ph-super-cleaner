@@ -30,15 +30,21 @@ Shader "Hidden/FlatKit/FogFilter"
     {
         Tags
         {
-            "RenderType" = "Opaque"
+            "RenderType" = "Opaque" "RenderPipeline" = "UniversalPipeline"
         }
-        LOD 200
+        LOD 100
+        ZWrite Off Cull Off
 
         Pass
         {
+            Name "Fog"
+
             HLSLPROGRAM
             #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareNormalsTexture.hlsl"
+
+            #pragma multi_compile _ _USE_DRAW_PROCEDURAL
 
             sampler2D _DistanceLUT;
             float _Near;
@@ -59,7 +65,7 @@ Shader "Hidden/FlatKit/FogFilter"
             #define ALMOST_ONE 0.999
 
             // Using `_CameraColorTexture` instead of the opaque texture `SampleSceneColor` to handle transparency.
-            TEXTURE2D(_CameraColorTexture);
+            TEXTURE2D_X(_CameraColorTexture);
             SAMPLER(sampler_CameraColorTexture);
             float4 _CameraColorTexture_TexelSize;
 
@@ -73,6 +79,11 @@ Shader "Hidden/FlatKit/FogFilter"
                 return (1.0 - isOrtho * z) / (isPers * z + _ZBufferParams.y);
             }
 
+            float4 SampleCameraColor(float2 uv)
+            {
+                return SAMPLE_TEXTURE2D_X(_CameraColorTexture, sampler_CameraColorTexture, UnityStereoTransformScreenSpaceTex(uv));
+            }
+
             float LinearEyeDepth(float z)
             {
                 return rcp(_ZBufferParams.z * z + _ZBufferParams.w);
@@ -80,8 +91,7 @@ Shader "Hidden/FlatKit/FogFilter"
 
             float4 Fog(float2 uv, float3 screen_pos)
             {
-                float4 original = SAMPLE_TEXTURE2D_X(_CameraColorTexture, sampler_CameraColorTexture,
-                                                     UnityStereoTransformScreenSpaceTex(uv));
+                float4 original = SampleCameraColor(uv);
 
                 const float depthPacked = SampleSceneDepth(uv);
                 const float depthEye = LinearEyeDepth(depthPacked);
@@ -115,6 +125,8 @@ Shader "Hidden/FlatKit/FogFilter"
             {
                 float4 positionOS: POSITION;
                 float2 uv: TEXCOORD0;
+                
+                UNITY_VERTEX_INPUT_INSTANCE_ID
             };
 
             struct Varyings
@@ -122,6 +134,7 @@ Shader "Hidden/FlatKit/FogFilter"
                 float2 uv: TEXCOORD0;
                 float3 screen_pos: TEXCOORD1;
                 float4 vertex: SV_POSITION;
+                
                 UNITY_VERTEX_OUTPUT_STEREO
             };
 
@@ -130,11 +143,18 @@ Shader "Hidden/FlatKit/FogFilter"
                 Varyings output = (Varyings)0;
                 
                 UNITY_SETUP_INSTANCE_ID(input);
-                UNITY_TRANSFER_INSTANCE_ID(input, output);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(output);
 
+                #if _USE_DRAW_PROCEDURAL
+                output.vertex = float4(input.positionOS.xyz, 1.0);
+                #if UNITY_UV_STARTS_AT_TOP
+                output.vertex.y *= -1;
+                #endif
+                #else
                 const VertexPositionInputs vertexInput = GetVertexPositionInputs(input.positionOS.xyz);
                 output.vertex = vertexInput.positionCS;
+                #endif
+
                 output.uv = input.uv;
                 output.screen_pos = ComputeScreenPos(output.vertex).xyz;
 
@@ -143,7 +163,6 @@ Shader "Hidden/FlatKit/FogFilter"
 
             half4 frag(Varyings input): SV_Target
             {
-                UNITY_SETUP_INSTANCE_ID(input);
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
 
                 float4 c = Fog(input.uv, input.screen_pos);

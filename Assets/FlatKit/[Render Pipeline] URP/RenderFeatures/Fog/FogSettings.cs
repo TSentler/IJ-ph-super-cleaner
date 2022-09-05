@@ -23,8 +23,10 @@ public class FogSettings : ScriptableObject {
     [Header("Blending")]
     [Space] [Range(0, 1)] public float distanceHeightBlend = 0.5f;
 
-    [Header("Rendering")]
-    public RenderPassEvent renderEvent = RenderPassEvent.AfterRenderingTransparents;
+    [Header("Advanced settings")]
+    [Space, Tooltip("The render stage at which the effect is applied. To exclude transparent objects, like water or UI elements, " +
+                    "set this to \"Before Transparent\".")]
+    public RenderPassEvent renderEvent = RenderPassEvent.BeforeRenderingPostProcessing;
 
     private void OnValidate() {
         if (low > high) {

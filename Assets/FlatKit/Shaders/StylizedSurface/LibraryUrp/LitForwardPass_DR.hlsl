@@ -4,14 +4,6 @@
 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 #include "Lighting_DR.hlsl"
 
-/* start CurvedWorld */
-// #pragma shader_feature_local CURVEDWORLD_BEND_TYPE_CLASSICRUNNER_X_POSITIVE CURVEDWORLD_BEND_TYPE_CLASSICRUNNER_Z_POSITIVE
-// #define CURVEDWORLD_BEND_ID_1
-// #pragma shader_feature_local CURVEDWORLD_DISABLED_ON
-// #pragma shader_feature_local CURVEDWORLD_NORMAL_TRANSFORMATION_ON
-// #include "Assets/Amazing Assets/Curved World/Shaders/Core/CurvedWorldTransform.cginc"
-/* end CurvedWorld */
-
 struct Attributes
 {
     float4 positionOS   : POSITION;
@@ -118,7 +110,6 @@ void InitializeInputData(Varyings input, half3 normalTS, out InputData inputData
 
 Varyings StylizedPassVertex(Attributes input)
 {
-    /* start CurvedWorld */
     #if defined(CURVEDWORLD_IS_INSTALLED) && !defined(CURVEDWORLD_DISABLED_ON)
     #ifdef CURVEDWORLD_NORMAL_TRANSFORMATION_ON
         CURVEDWORLD_TRANSFORM_VERTEX_AND_NORMAL(input.positionOS, input.normalOS, input.tangentOS)
@@ -126,7 +117,6 @@ Varyings StylizedPassVertex(Attributes input)
         CURVEDWORLD_TRANSFORM_VERTEX(input.positionOS)
     #endif
     #endif
-    /* end CurvedWorld */
 
     UNITY_SETUP_INSTANCE_ID(input);
 

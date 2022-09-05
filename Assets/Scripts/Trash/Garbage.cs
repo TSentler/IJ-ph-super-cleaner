@@ -4,23 +4,18 @@ using UnityEngine.Events;
 
 namespace Trash
 {
-    public interface ISuckable
-    {
-        void Suck(Transform target);
-    }
-
     [RequireComponent(typeof(Collider))]
     public abstract class Garbage : MonoBehaviour, ISuckable
     {
         private Transform _target;
         
         [Min(0), SerializeField] private float _count = 0f;
-        [SerializeField] private float _speed = 10f;
 
         public event UnityAction OnSuck;
         
-        public Transform Target => _target;
-        public float Count => CheckPositive(_count) ? _count : 0f;
+        protected Transform Target => _target;
+        
+        public float Count => _count;
 
         private bool CheckPositive(float value)
         {
@@ -31,18 +26,8 @@ namespace Trash
 
             return value > 0f;
         }
-        
-        protected virtual void SuckHandler()
-        {
-            
-        }
-        
-        protected void MoveToTarget()
-        {
-            var deltaSpeed = _speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(
-                transform.position, _target.position, deltaSpeed);
-        }
+
+        protected abstract void SuckHandler();
 
         public void SetCount(float value)
         {
@@ -54,9 +39,10 @@ namespace Trash
         
         public void Suck(Transform target)
         {
-            if (target == null)
-                return;
             _target = target;
+            if (Target == null)
+                return;
+            
             SuckHandler();
             OnSuck?.Invoke();
         }

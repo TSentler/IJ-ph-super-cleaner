@@ -147,16 +147,12 @@ half4 UniversalFragment_DSTRM(InputData inputData, half3 albedo, half3 emission,
 
     // Apply Flat Kit stylizing to `inputData.bakedGI` (which is half3).
 #if LIGHTMAP_ON
-    const half sharpness01 = (_UnityShadowSharpness - 1.0) / (10.0 - 1.0);  // UI range is set to 1.0 - 10.0.
-    const half blur = max(1.0 - sharpness01, 0.001);
-    const half transitionPoint = 1.0 - (_LightFalloffSize + 0.001);
-    inputData.bakedGI = smoothstep(transitionPoint, transitionPoint + blur, length(inputData.bakedGI));
-
     #if defined(_UNITYSHADOWMODE_MULTIPLY)
         inputData.bakedGI *= _UnityShadowPower;
     #endif
     #if defined(_UNITYSHADOWMODE_COLOR)
-        inputData.bakedGI = lerp(inputData.bakedGI, _UnityShadowColor.rgb, _UnityShadowColor.a * inputData.bakedGI);
+        float giLength = length(inputData.bakedGI);
+        inputData.bakedGI = lerp(giLength, _UnityShadowColor.rgb, _UnityShadowColor.a * giLength);
     #endif
 #endif
 

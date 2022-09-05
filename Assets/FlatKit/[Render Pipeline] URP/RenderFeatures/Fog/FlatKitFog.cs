@@ -8,72 +8,23 @@ using UnityEngine.Rendering.Universal;
 
 namespace FlatKit {
 public class FlatKitFog : ScriptableRendererFeature {
-    class EffectPass : ScriptableRenderPass {
-        private readonly ProfilingSampler _profilingSampler = new ProfilingSampler("Flat Kit Fog");
-        private ScriptableRenderer _renderer;
-        private RenderTargetHandle _destination;
-        private readonly Material _effectMaterial = null;
-        private RenderTargetHandle _temporaryColorTexture;
-
-        public EffectPass(Material effectMaterial) {
-            _effectMaterial = effectMaterial;
-        }
-
-        public void Setup(ScriptableRenderer renderer, RenderTargetHandle dst) {
-            _renderer = renderer;
-            _destination = dst;
-#if UNITY_2020_3_OR_NEWER
-            ConfigureInput(ScriptableRenderPassInput.Depth);
-#endif
-        }
-
-#if UNITY_2020_3_OR_NEWER
-        public override void OnCameraSetup(CommandBuffer cmd, ref RenderingData renderingData) {
-#else
-        public override void Configure(CommandBuffer cmd,
-            RenderTextureDescriptor cameraTextureDescriptor) {
-#endif
-            ConfigureClear(ClearFlag.None, Color.white);
-        }
-
-        public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData) {
-            CommandBuffer cmd = CommandBufferPool.Get();
-            using (new ProfilingScope(cmd, _profilingSampler)) {
-                RenderTextureDescriptor opaqueDescriptor = renderingData.cameraData.cameraTargetDescriptor;
-                opaqueDescriptor.depthBufferBits = 0;
-
-                if (_destination == RenderTargetHandle.CameraTarget) {
-                    cmd.GetTemporaryRT(_temporaryColorTexture.id, opaqueDescriptor, FilterMode.Point);
-                    cmd.Blit(_renderer.cameraColorTarget, _temporaryColorTexture.Identifier(), _effectMaterial);
-                    cmd.Blit(_temporaryColorTexture.Identifier(), _renderer.cameraColorTarget);
-                } else {
-                    cmd.Blit(null, _destination.Identifier(), _effectMaterial);
-                }
-            }
-
-            context.ExecuteCommandBuffer(cmd);
-            CommandBufferPool.Release(cmd);
-        }
-
-#if UNITY_2020_3_OR_NEWER
-        public override void OnCameraCleanup(CommandBuffer cmd) {
-#else
-        public override void FrameCleanup(CommandBuffer cmd) {
-#endif
-            cmd.ReleaseTemporaryRT(_temporaryColorTexture.id);
-        }
-    }
-
-    [Header("Create > FlatKit > Fog Settings")]
+    [Tooltip("To create new settings use 'Create > FlatKit > Fog Settings'.")]
     public FogSettings settings;
 
-    private Material _material = null;
-    private EffectPass _effectPass;
+    [SerializeField, HideInInspector]
+    private Material _effectMaterial;
+
+    [SerializeField, HideInInspector]
+    private Material _copyMaterial;
+
+    private BlitTexturePass _blitTexturePass;
+
+    private RenderTargetHandle _fogTexture;
 
     private Texture2D _lutDepth;
     private Texture2D _lutHeight;
 
-    private static readonly string ShaderName = "Hidden/FlatKit/FogFilter";
+    private static readonly string FogShaderName = "Hidden/FlatKit/FogFilter";
     private static readonly int DistanceLut = Shader.PropertyToID("_DistanceLUT");
     private static readonly int Near = Shader.PropertyToID("_Near");
     private static readonly int Far = Shader.PropertyToID("_Far");
@@ -94,11 +45,14 @@ public class FlatKitFog : ScriptableRendererFeature {
             return;
         }
 
-        InitMaterial();
+        if (!CreateMaterials()) return;
+        SetMaterialProperties();
 
-        _effectPass = new EffectPass(_material) {
+        _blitTexturePass = new BlitTexturePass(_effectMaterial, _copyMaterial) {
             renderPassEvent = settings.renderEvent
         };
+
+        _fogTexture.Init("_EffectTexture");
     }
 
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData) {
@@ -113,61 +67,58 @@ public class FlatKitFog : ScriptableRendererFeature {
             return;
         }
 
-        InitMaterial();
+        if (!CreateMaterials()) return;
+        SetMaterialProperties();
 
-        _effectPass.Setup(renderer, RenderTargetHandle.CameraTarget);
-        renderer.EnqueuePass(_effectPass);
+        _blitTexturePass.Setup(useDepth: true, useNormals: false, useColor: false);
+        renderer.EnqueuePass(_blitTexturePass);
     }
 
 #if UNITY_2020_3_OR_NEWER
     protected override void Dispose(bool disposing) {
-        CoreUtils.Destroy(_material);
+        CoreUtils.Destroy(_effectMaterial);
+        CoreUtils.Destroy(_copyMaterial);
     }
 #endif
 
-    private void InitMaterial() {
-#if UNITY_EDITOR
-        ShaderIncludeUtilities.AddAlwaysIncludedShader(ShaderName);
-#endif
-
-        if (_material == null) {
-            var shader = Shader.Find(ShaderName);
-            if (shader == null) {
-                return;
-            }
-
-            _material = new Material(shader);
+    private bool CreateMaterials() {
+        if (_effectMaterial == null || _copyMaterial == null) {
+            var effectShader = Shader.Find(FogShaderName);
+            var blitShader = Shader.Find(BlitTexturePass.CopyEffectShaderName);
+            // Prevents Unity error on first import.
+            if (effectShader == null || blitShader == null) return false;
+            _effectMaterial = CoreUtils.CreateEngineMaterial(effectShader);
+            _copyMaterial = CoreUtils.CreateEngineMaterial(blitShader);
         }
 
-        if (_material == null) {
-            Debug.LogWarning("[FlatKit] Missing Fog Material");
-        }
+        Debug.Assert(_effectMaterial != null, $"[Flat Kit] Missing Material {FogShaderName}");
+        Debug.Assert(_copyMaterial != null, $"[Flat Kit] Missing Material {BlitTexturePass.CopyEffectShaderName}");
 
-        UpdateShader();
+        return true;
     }
 
-    private void UpdateShader() {
-        if (_material == null) {
+    private void SetMaterialProperties() {
+        if (_effectMaterial == null) {
             return;
         }
 
         UpdateDistanceLut();
-        _material.SetTexture(DistanceLut, _lutDepth);
-        _material.SetFloat(Near, settings.near);
-        _material.SetFloat(Far, settings.far);
-        _material.SetFloat(UseDistanceFog, settings.useDistance ? 1f : 0f);
-        _material.SetFloat(UseDistanceFogOnSky, settings.useDistanceFogOnSky ? 1f : 0f);
-        _material.SetFloat(DistanceFogIntensity, settings.distanceFogIntensity);
+        _effectMaterial.SetTexture(DistanceLut, _lutDepth);
+        _effectMaterial.SetFloat(Near, settings.near);
+        _effectMaterial.SetFloat(Far, settings.far);
+        _effectMaterial.SetFloat(UseDistanceFog, settings.useDistance ? 1f : 0f);
+        _effectMaterial.SetFloat(UseDistanceFogOnSky, settings.useDistanceFogOnSky ? 1f : 0f);
+        _effectMaterial.SetFloat(DistanceFogIntensity, settings.distanceFogIntensity);
 
         UpdateHeightLut();
-        _material.SetTexture(HeightLut, _lutHeight);
-        _material.SetFloat(LowWorldY, settings.low);
-        _material.SetFloat(HighWorldY, settings.high);
-        _material.SetFloat(UseHeightFog, settings.useHeight ? 1f : 0f);
-        _material.SetFloat(UseHeightFogOnSky, settings.useHeightFogOnSky ? 1f : 0f);
-        _material.SetFloat(HeightFogIntensity, settings.heightFogIntensity);
+        _effectMaterial.SetTexture(HeightLut, _lutHeight);
+        _effectMaterial.SetFloat(LowWorldY, settings.low);
+        _effectMaterial.SetFloat(HighWorldY, settings.high);
+        _effectMaterial.SetFloat(UseHeightFog, settings.useHeight ? 1f : 0f);
+        _effectMaterial.SetFloat(UseHeightFogOnSky, settings.useHeightFogOnSky ? 1f : 0f);
+        _effectMaterial.SetFloat(HeightFogIntensity, settings.heightFogIntensity);
 
-        _material.SetFloat(DistanceHeightBlend, settings.distanceHeightBlend);
+        _effectMaterial.SetFloat(DistanceHeightBlend, settings.distanceHeightBlend);
     }
 
     private void UpdateDistanceLut() {

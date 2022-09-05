@@ -14,7 +14,10 @@ namespace Trash
         private Deformator _deformator;
         private SizeReducer _sizeReducer;
         private LookAtRotator _lookAtRotator;
+        private Transform _lastTarget;
         
+        [SerializeField] private float _speed = 10f;
+
         private void Awake()
         {
             _deformator = GetComponent<Deformator>();
@@ -22,16 +25,18 @@ namespace Trash
             _lookAtRotator = GetComponent<LookAtRotator>();
         }
 
-        private void Update()
+        private IEnumerator LookAtCoroutine()
         {
-            if (Target == null)
-                return;
-
-            _lookAtRotator.Apply(Target);
+            while (true)
+            {
+                _lookAtRotator.Apply(Target);
+                yield return null;
+            }
         }
         
         private IEnumerator SuckCoroutine()
         {
+            StartCoroutine(LookAtCoroutine());
             var deformationCoroutine = _deformator.Apply();
             yield return deformationCoroutine;
             _sizeReducer.Apply();
@@ -42,10 +47,18 @@ namespace Trash
             }
         }
 
+        private void MoveToTarget()
+        {
+            var deltaSpeed = _speed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(
+                transform.position, _lastTarget.position, deltaSpeed);
+        }
+        
         protected override void SuckHandler()
         {
             if (_suckCoroutine == null)
             {
+                _lastTarget = Target;
                 _suckCoroutine = StartCoroutine(SuckCoroutine());
             }
         }

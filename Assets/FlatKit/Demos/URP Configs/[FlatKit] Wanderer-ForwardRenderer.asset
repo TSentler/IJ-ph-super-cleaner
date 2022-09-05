@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   settings: {fileID: 11400000, guid: 6a9ce4523839c4a44a17d8d1334b16d2, type: 2}
+  _effectMaterial: {fileID: 0}
+  _copyMaterial: {fileID: 0}
 --- !u!114 &-1344586528338988631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,6 +30,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   settings: {fileID: 11400000, guid: d18dac82fe9b0473289115b2531228d9, type: 2}
+  _effectMaterial: {fileID: 0}
+  _copyMaterial: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
