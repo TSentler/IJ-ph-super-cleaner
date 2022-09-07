@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Skin
   m_Shader: {fileID: 4800000, guid: bee44b4a58655ee4cbff107302a3e131, type: 3}
-  m_ShaderKeywords: DR_OUTLINE_ON _TEXTUREBLENDINGMODE_MULTIPLY
+  m_ShaderKeywords: _TEXTUREBLENDINGMODE_MULTIPLY
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -154,8 +154,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 0.64654547, b: 0.604, a: 1}
-    - _Color: {r: 0.8428571, g: 0.3801824, b: 0.45649984, a: 1}
-    - _ColorDim: {r: 1, g: 0.79194367, b: 0, a: 1}
+    - _Color: {r: 0.886, g: 0.699422, b: 0.67690396, a: 1}
+    - _ColorDim: {r: 0.83, g: 0.6537168, b: 0.635354, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimExtra: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimSteps: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}

@@ -154,7 +154,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.9, g: 0.71495324, b: 0, a: 1}
-    - _Color: {r: 1, g: 0.79194367, b: 0, a: 1}
+    - _Color: {r: 0.922, g: 0.7303687, b: 0, a: 1}
     - _ColorDim: {r: 0.83699995, g: 0.6603467, b: 0, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimExtra: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
