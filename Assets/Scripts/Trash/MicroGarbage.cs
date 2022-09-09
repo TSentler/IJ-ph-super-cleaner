@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -6,7 +7,8 @@ namespace Trash
     public class MicroGarbage : Garbage
     {
         private readonly float _minRotationRatio = 0.01f,
-            _maxRotationRatio = 1, _minVelocity = 0.01f;
+            _maxRotationRatio = 1, _minVelocity = 0.01f,
+            _maxVelocity = 5f;
             
         private Coroutine _suckCoroutine;
         private Vector3 _direction;
@@ -14,10 +16,20 @@ namespace Trash
         
         [SerializeField] private float _axeleration = 1f,
             _damp = 5f;
+        
+        private bool IsSuck => Target != null || _velocity > _minVelocity;
 
-        private IEnumerator SuckCoroutine()
+        private void Start()
         {
-            while (Target != null || _velocity > _minVelocity)
+            if (IsSuck == false)
+            {
+                gameObject.SetActive(false);
+            } 
+        }
+
+        private void FixedUpdate()
+        {
+            if (IsSuck)
             {
                 if (Target != null)
                 {
@@ -27,12 +39,10 @@ namespace Trash
                 {
                     _velocity -= _damp * Time.deltaTime;
                 }
+                _velocity = Mathf.Clamp(_velocity, 0f, _maxVelocity);
 
                 MoveToTarget();
-                yield return null;
             }
-
-            _suckCoroutine = null;
         }
 
         private void MoveToTarget()
@@ -50,22 +60,21 @@ namespace Trash
             var direction = targetPosition - transform.position;
             var distance = direction.magnitude;
             direction.Normalize();
-            var distanceRatio = distance / _startDistance;
-            var rotationRatio = Mathf.Lerp(_maxRotationRatio,
-                _minRotationRatio, distanceRatio);
+            var distanceRatio = 1f - distance / _startDistance;
+            var rotationRatio = Mathf.Lerp(_minRotationRatio,
+                _maxRotationRatio, distanceRatio) * 2f;
             return Vector3.Lerp(currentDirection, direction, rotationRatio);
         }
 
         protected override void SuckHandler()
         {
-            if (_suckCoroutine != null)
+            if (_velocity > _minVelocity)
                 return;
             
             _direction = Target.position - transform.position;
             _startDistance = _direction.magnitude;
             _direction.Normalize();
             _velocity = 0f;
-            _suckCoroutine = StartCoroutine(SuckCoroutine());
         }
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4297a29db931f074bb88e062b7e37f6a
+guid: 8dabd0fff6ffd4f43983406b6e6111ec
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
@@ -19,6 +19,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: ConnectionUp
     second: {fileID: 2100000, guid: a267109a5fd55b5489cdceb28ff00952, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic1
+    second: {fileID: 2100000, guid: a267109a5fd55b5489cdceb28ff00952, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic2
+    second: {fileID: 2100000, guid: 92d9efc6a2e92024f8a23324a41b7678, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -42,7 +52,7 @@ ModelImporter:
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -70,7 +80,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.07
+    globalScale: 0.064
     meshCompression: 3
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -91,7 +101,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
-    optimizeBones: 1
+    optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -111,7 +121,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
@@ -123,7 +133,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.07
+    globalScale: 0.064
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

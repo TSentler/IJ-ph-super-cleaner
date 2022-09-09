@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
@@ -25,17 +26,7 @@ namespace Trash
                 Debug.LogWarning("GarbageRoot was not found!", this);
         }
         
-        private void OnEnable()
-        {
-            _garbageDisposal.OnSucked += SuckedHandler;
-        }
-
-        private void OnDisable()
-        {
-            _garbageDisposal.OnSucked -= SuckedHandler;
-        }
-        
-        private void Start()
+        private void Awake()
         {
             var childTrash = 
                 _garbageRoot.GetComponentsInChildren<Garbage>();
@@ -46,10 +37,24 @@ namespace Trash
                 {
                     _count += garbage.Count;
                 }
-                OnCountChange?.Invoke(Count);
             }
         }
         
+        private void OnEnable()
+        {
+            _garbageDisposal.OnSucked += SuckedHandler;
+        }
+
+        private void OnDisable()
+        {
+            _garbageDisposal.OnSucked -= SuckedHandler;
+        }
+
+        private void Start()
+        {
+            OnCountChange?.Invoke(Count);
+        }
+
         private void SuckedHandler(Garbage garbage)
         {
             _collected += garbage.Count;

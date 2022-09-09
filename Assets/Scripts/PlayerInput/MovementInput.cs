@@ -43,6 +43,10 @@ namespace PlayerInput
                 Input.GetAxisRaw("Vertical"));
             if (_stick.IsTouch == false)
             {
+                if (inputDirection.magnitude > 1f)
+                {
+                    inputDirection.Normalize();
+                }
                 Move(inputDirection);
             }
         }

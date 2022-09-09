@@ -18,17 +18,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Signaling.001
-    second: {fileID: 2100000, guid: 14d76c7c4f6847977bc9ba810d35a08e, type: 2}
+    second: {fileID: 2100000, guid: de08d40acc50dd144a6a08761f26b5c8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Signaling.002
-    second: {fileID: 2100000, guid: be0d425f8899245d38115d70c476f159, type: 2}
+    second: {fileID: 2100000, guid: 7738a4222af025947853fee04cc39498, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SignalingLight
-    second: {fileID: 2100000, guid: 6df2e4cc67010f68d8df72b3eff2fe22, type: 2}
+    second: {fileID: 2100000, guid: a15a71f2231690943949b6b8cdca4598, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

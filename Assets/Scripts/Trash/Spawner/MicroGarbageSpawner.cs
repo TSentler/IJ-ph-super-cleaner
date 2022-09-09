@@ -13,9 +13,10 @@ namespace Trash
 
         private void OnValidate()
         {
-            if (_garbage.TryGetComponent(out MicroGarbage garbage) == false)
+            if (_garbage.TryGetComponent(
+                    out MicroGarbageStaticTrigger garbageTriger) == false)
             {
-                Debug.LogError("MicroGarbage prefab not to found", this);
+                Debug.LogError("MicroGarbageStaticTrigger prefab not to found", this);
             }
             if (_boxColliders.Count == 0)
             {
@@ -23,10 +24,10 @@ namespace Trash
             }
         }
 
-        private List<MicroGarbage> SpawnAsGrid(Vector3 startPosition, 
+        private List<MicroGarbageStaticTrigger> SpawnAsGrid(Vector3 startPosition, 
             float rows, float columns, Transform parent)
         {
-            List<MicroGarbage> trash = new();
+            List<MicroGarbageStaticTrigger> trash = new();
             var rowPosition = startPosition;
             for (int i = 0; i < rows; i++)
             {
@@ -43,7 +44,7 @@ namespace Trash
             return trash;
         }
 
-        private MicroGarbage Spawn(Vector3 position, Transform parent)
+        private MicroGarbageStaticTrigger Spawn(Vector3 position, Transform parent)
         {
             var garbage = Instantiate(_garbage).transform;
             garbage.parent = parent;
@@ -51,12 +52,12 @@ namespace Trash
                 position
                 + Vector3.right * Random.Range(-_offset, _offset)
                 + Vector3.forward * Random.Range(-_offset, _offset);
-            return garbage.GetComponent<MicroGarbage>();
+            return garbage.GetComponent<MicroGarbageStaticTrigger>();
         }
 
-        public List<MicroGarbage> SpawnInsideAllColliders()
+        public List<MicroGarbageStaticTrigger> SpawnInsideAllColliders()
         {
-            List<MicroGarbage> trash = new();
+            List<MicroGarbageStaticTrigger> trash = new();
             foreach (var box in _boxColliders)
             {
                 var startPosition = new Vector3(

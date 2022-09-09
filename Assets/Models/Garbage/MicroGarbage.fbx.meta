@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Color
-    second: {fileID: 2100000, guid: 6e43d5218213202a284aee5963c19fde, type: 2}
+    second: {fileID: 2100000, guid: 4355bba865958814d8ffd211548c34ff, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -74,11 +74,11 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
-    tangentImportMode: 3
+    normalImportMode: 2
+    tangentImportMode: 2
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
+    blendShapeNormalImportMode: 2
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 0
