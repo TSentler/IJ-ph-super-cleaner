@@ -23,9 +23,14 @@ namespace Robber
         {
             if (other.TryGetComponent(out RobberAI robber))
             {
-                _fragments.SetActive(true);
-                gameObject.SetActive(false);
+                Break();
             }
+        }
+
+        private void Break()
+        {
+            _fragments.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
 }
