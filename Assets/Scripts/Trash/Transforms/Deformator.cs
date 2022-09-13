@@ -14,7 +14,10 @@ namespace Trash
         private void OnValidate()
         {
             if (_scaleCenter == null)
+            {
+                _scaleCenter = transform;
                 Debug.LogWarning("ScaleCenter was not found!", this);
+            }
         }
         
         private IEnumerator DeformationCoroutine()

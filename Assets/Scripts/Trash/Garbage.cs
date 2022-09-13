@@ -13,7 +13,7 @@ namespace Trash
 
         public event UnityAction OnSuck;
         
-        protected Transform Target => _target;
+        public Transform Target => _target;
         
         public float Count => _count;
 

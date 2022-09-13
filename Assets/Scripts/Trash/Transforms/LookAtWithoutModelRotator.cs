@@ -14,18 +14,18 @@ namespace Trash.Transforms
             root.parent = child;
         }
         
-        public override void Apply(Transform target)
+        protected override void LookAtHandler(Transform target)
         {
             if (_isFirstTime)
             {
                 SetChildRoot(transform, _model);
-                base.Apply(target);
+                base.LookAtHandler(target);
                 SetChildRoot(_model, transform);
                 _isFirstTime = false;
             }
             else
             {
-                base.Apply(target);
+                base.LookAtHandler(target);
             }
         }
     }

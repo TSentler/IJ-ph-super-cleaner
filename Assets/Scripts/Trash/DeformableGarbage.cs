@@ -6,14 +6,12 @@ using UnityEngine;
 namespace Trash
 {
     [RequireComponent(typeof(Deformator),
-        typeof(SizeReducer), 
-        typeof(LookAtRotator))]
+        typeof(SizeReducer))]
     public class DeformableGarbage : Garbage
     {
         private Coroutine _suckCoroutine;
         private Deformator _deformator;
         private SizeReducer _sizeReducer;
-        private LookAtRotator _lookAtRotator;
         private Transform _lastTarget;
         
         [SerializeField] private float _speed = 10f;
@@ -22,21 +20,10 @@ namespace Trash
         {
             _deformator = GetComponent<Deformator>();
             _sizeReducer = GetComponent<SizeReducer>();
-            _lookAtRotator = GetComponent<LookAtRotator>();
-        }
-
-        private IEnumerator LookAtCoroutine()
-        {
-            while (true)
-            {
-                _lookAtRotator.Apply(Target);
-                yield return null;
-            }
         }
         
         private IEnumerator SuckCoroutine()
         {
-            StartCoroutine(LookAtCoroutine());
             var deformationCoroutine = _deformator.Apply();
             yield return deformationCoroutine;
             _sizeReducer.Apply();
