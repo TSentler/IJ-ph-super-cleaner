@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8455960880344188003}
   - component: {fileID: 8455960880344187932}
   - component: {fileID: 1721981287401976616}
+  - component: {fileID: 2720143593763280996}
   m_Layer: 0
   m_Name: BigLamp
   m_TagString: Untagged
@@ -130,3 +131,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 150
+--- !u!114 &2720143593763280996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8762019500085977781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1c4044148fec44daf663acac5e146a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

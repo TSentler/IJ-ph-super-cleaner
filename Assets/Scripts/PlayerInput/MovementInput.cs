@@ -9,15 +9,12 @@ namespace PlayerInput
         private bool _isPause;
         
         [SerializeField] private StickPointer _stick;
-        [SerializeField] private MovementPresenter _presenter;
         [SerializeField] private Movement _movement;
         
         private void OnValidate()
         {
             if (_stick == null)
                 Debug.LogWarning("StickPointer was not found!", this);
-            if (_presenter == null)
-                Debug.LogWarning("MovementPresenter was not found!", this);
             if (_movement == null)
                 Debug.LogWarning("Movement was not found!", this);
         }
@@ -66,7 +63,6 @@ namespace PlayerInput
             if (_isPause)
                 return;
             
-            _presenter.SetDirection(direction);
             _movement.Move(direction);
         }
 

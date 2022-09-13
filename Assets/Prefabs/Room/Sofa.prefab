@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 153921708447778592}
   - component: {fileID: 153921708447778621}
   - component: {fileID: 2354851581724528952}
+  - component: {fileID: 8937584246899762657}
   m_Layer: 0
   m_Name: Sofa
   m_TagString: Untagged
@@ -143,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7662d31f8cb47a359b4df74ddfd244f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 250
+  _speed: 150
 --- !u!114 &2354851581724528952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,3 +158,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 150
+--- !u!114 &8937584246899762657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072911331711878583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1c4044148fec44daf663acac5e146a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

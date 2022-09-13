@@ -3,10 +3,11 @@ using UnityEngine;
 namespace Trash
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class PhysicalEnvironment : MonoBehaviour, ISuckable
+    public class PhysicalEnvironment : MonoBehaviour, ISuckable 
     {
         private Transform _target;
         private Rigidbody _rb;
+        private bool _isTied;
         
         [SerializeField] private float _speed = 10f;
 

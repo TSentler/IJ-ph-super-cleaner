@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 930846124908411325}
   - component: {fileID: 5589328198069876069}
   - component: {fileID: 202620354928158496}
+  - component: {fileID: -2039762392146815268}
   m_Layer: 11
   m_Name: Armchair
   m_TagString: Untagged
@@ -72,7 +73,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 910991c095c33844788d69411ed3e3a2, type: 2}
   - {fileID: 2100000, guid: 37555ddc380ff2141857e3c2168a0b3f, type: 2}
   - {fileID: 2100000, guid: 92d9efc6a2e92024f8a23324a41b7678, type: 2}
-  - {fileID: 2100000, guid: dae792a1992dc514bbf42c2578845b8e, type: 2}
+  - {fileID: 2100000, guid: a267109a5fd55b5489cdceb28ff00952, type: 2}
   - {fileID: 2100000, guid: ced0bc15c30cc754c9f4e7fda2d7251b, type: 2}
   - {fileID: 2100000, guid: a267109a5fd55b5489cdceb28ff00952, type: 2}
   - {fileID: 2100000, guid: ad1f727bfaf74c244aecc7ed0e45d277, type: 2}
@@ -190,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7662d31f8cb47a359b4df74ddfd244f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 200
+  _speed: 150
 --- !u!114 &202620354928158496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,3 +205,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 135
+--- !u!114 &-2039762392146815268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674886379997296000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1c4044148fec44daf663acac5e146a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
