@@ -38,7 +38,6 @@ namespace PlayerAbilities.Throw
         
         private void OnJointBreak(float breakForce)
         {
-            Debug.Log("JointBreak");
             Throw();
         }
 
@@ -52,7 +51,10 @@ namespace PlayerAbilities.Throw
                 _joint.connectedBody = null;
                 Destroy(_joint);
             }
-            var force = _speed * transform.forward;
+
+            var forward = transform.forward;
+            forward = new Vector3(forward.x, 0f, forward.z);
+            var force = _speed * forward;
             _throwObject.Break(force);
             _throwObject = null;
             OnBreak?.Invoke();
