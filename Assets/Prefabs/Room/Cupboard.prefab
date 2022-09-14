@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &1237330950805243721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4645869206544173730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4645869206718163433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,7 +621,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.14662044, y: 0.08427015, z: 0.058783587}
+  m_Size: {x: 0.25, y: 0.15, z: 0.1}
   m_Center: {x: -0.0028129593, y: -0.009893656, z: 0.013515709}
 --- !u!54 &189808758283928126
 Rigidbody:
@@ -684,7 +681,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!1 &189808758527469874
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +811,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4645869207534999876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +970,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4943837640768624739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,7 +1129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4392606453729857864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1295,7 +1288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &1565109565245602796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,7 +1333,7 @@ GameObject:
   - component: {fileID: 3120409562563078736}
   - component: {fileID: 1813801072682155628}
   - component: {fileID: 6457555196911493734}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cupboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1612,7 +1604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &7684279526325441078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1772,7 +1763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &3440456249280381532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,7 +1922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &9189464588517786783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2092,7 +2081,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &1800466953077664669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2252,7 +2240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &1574737699157402977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2412,7 +2399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5119111133402680161
 MonoBehaviour:
   m_ObjectHideFlags: 0

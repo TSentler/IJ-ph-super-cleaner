@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &8692436798971650254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &3220130176303315795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5608759624715165844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,7 +607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &7258790618558594729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,7 +807,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &1547078082072210776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,7 +966,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &1547078082756246325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,7 +1125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &1547078082764822985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,7 +1253,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.14662044, y: 0.08427015, z: 0.058783587}
+  m_Size: {x: 0.25, y: 0.15, z: 0.1}
   m_Center: {x: -0.0028129593, y: -0.009893656, z: 0.013515709}
 --- !u!54 &6315018866520212225
 Rigidbody:
@@ -1320,7 +1313,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!1 &7074682596876406113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,7 +1443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &8213907284123496412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1611,7 +1602,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &332395125462149089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1657,7 +1647,7 @@ GameObject:
   - component: {fileID: 1721981287401976616}
   - component: {fileID: 2720143593763280996}
   - component: {fileID: 9018726212056610150}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BigLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

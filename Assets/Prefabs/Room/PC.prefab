@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &1197958678486587884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &7161011691073925530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,7 +484,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &7161011691869095477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,7 +643,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &904255414690682650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,7 +802,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &517695734708612232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,7 +848,7 @@ GameObject:
   - component: {fileID: 3423140797862634677}
   - component: {fileID: 6165816178457830187}
   - component: {fileID: 3221213476983459743}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PC
   m_TagString: Untagged
   m_Icon: {fileID: 0}

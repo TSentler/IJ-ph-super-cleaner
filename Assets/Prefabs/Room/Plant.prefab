@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5531702405279201083}
   - component: {fileID: 5531702405279201085}
   - component: {fileID: 5531702405279201086}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702405279201085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +175,7 @@ GameObject:
   - component: {fileID: 5531702405243827024}
   - component: {fileID: 5531702405243827026}
   - component: {fileID: 5531702405243827027}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702405243827026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,7 +334,7 @@ GameObject:
   - component: {fileID: 6366273305231919762}
   - component: {fileID: 2703387276338213750}
   - component: {fileID: 3846972232110327170}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +417,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.14662044, y: 0.08427015, z: 0.058783587}
+  m_Size: {x: 0.25, y: 0.15, z: 0.1}
   m_Center: {x: -0.0028129593, y: -0.009893656, z: 0.013515709}
 --- !u!54 &1017718292206620582
 Rigidbody:
@@ -479,7 +477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!1 &1017718292206883456
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +493,7 @@ GameObject:
   - component: {fileID: 5531702405435859684}
   - component: {fileID: 5531702405435859686}
   - component: {fileID: 5531702405435859687}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702405435859686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,7 +652,7 @@ GameObject:
   - component: {fileID: 5531702405482923668}
   - component: {fileID: 5531702405482923670}
   - component: {fileID: 5531702405482923671}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -770,7 +766,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702405482923670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -816,7 +811,7 @@ GameObject:
   - component: {fileID: 5531702405756491116}
   - component: {fileID: 5531702405756491118}
   - component: {fileID: 5531702405756491119}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,7 +925,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702405756491118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +970,7 @@ GameObject:
   - component: {fileID: 5531702405765085072}
   - component: {fileID: 5531702405765085074}
   - component: {fileID: 5531702405765085075}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1084,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702405765085074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,7 +1129,7 @@ GameObject:
   - component: {fileID: 5531702406376742523}
   - component: {fileID: 5531702406376742525}
   - component: {fileID: 5531702406376742526}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1250,7 +1243,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702406376742525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1296,7 +1288,7 @@ GameObject:
   - component: {fileID: 5531702406406185469}
   - component: {fileID: 5531702406406185471}
   - component: {fileID: 5531702406406185456}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1410,7 +1402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702406406185471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1456,7 +1447,7 @@ GameObject:
   - component: {fileID: 5531702406865012536}
   - component: {fileID: 5531702406865012538}
   - component: {fileID: 5531702406865012539}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1570,7 +1561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702406865012538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,7 +1606,7 @@ GameObject:
   - component: {fileID: 5531702407319839840}
   - component: {fileID: 5531702407319839842}
   - component: {fileID: 5531702407319839843}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fragment.001_cell.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1730,7 +1720,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &5531702407319839842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1818,7 +1807,7 @@ GameObject:
   - component: {fileID: 4817621172411259300}
   - component: {fileID: 5240110088287930214}
   - component: {fileID: 5627982168341760497}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}

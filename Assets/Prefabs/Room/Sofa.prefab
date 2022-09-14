@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2354851581724528952}
   - component: {fileID: 8937584246899762657}
   - component: {fileID: 1267191811073585697}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf374d607992e04f9b572f1ccf4b726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 150
+  _speed: 125
 --- !u!114 &8937584246899762657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fragments: {fileID: 9146570852765962410}
-  _maxVelocity: 80
+  _maxVelocity: 100
 --- !u!1 &9146570851198226430
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +316,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095467898994664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,7 +475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095467831720639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,7 +634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468024139214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,7 +793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468010711283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -956,7 +952,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095467975961457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,7 +1111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095467947926167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,7 +1270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468108369027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1436,7 +1429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468316859703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1596,7 +1588,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468273305849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,7 +1747,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468266265713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1916,7 +1906,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468225068800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2076,7 +2065,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468214901080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2236,7 +2224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468435536569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2396,7 +2383,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468729163215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2556,7 +2542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468861160203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2716,7 +2701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468869605879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2876,7 +2860,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468809797058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,7 +3019,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095468924074796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3196,7 +3178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095469218156442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3356,7 +3337,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095469314650136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3573,7 +3553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095469422432100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3733,7 +3712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095469589426769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3893,7 +3871,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095469445089799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4053,7 +4030,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095469722126868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4213,7 +4189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095469434718401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4373,7 +4348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4338095469833333087
 MonoBehaviour:
   m_ObjectHideFlags: 0

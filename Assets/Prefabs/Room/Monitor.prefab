@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &3006576874412298097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &7234659518210472050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &7679743310314825636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,7 +607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &2175062858562819925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,7 +653,7 @@ GameObject:
   - component: {fileID: 1548872752346580443}
   - component: {fileID: 3297996125394269607}
   - component: {fileID: 1979328233499476812}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Monitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -941,7 +937,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &4652300093787212408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,7 +1096,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &9045039297935682527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,7 +1255,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &3601833027150059460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1421,7 +1414,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &3601833027376591026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,7 +1573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  _speed: 10
 --- !u!114 &3601833027980669108
 MonoBehaviour:
   m_ObjectHideFlags: 0

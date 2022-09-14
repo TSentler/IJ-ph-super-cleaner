@@ -14,7 +14,7 @@ namespace Trash
         private SizeReducer _sizeReducer;
         private GarbageDisposal _lastTarget;
         
-        [SerializeField] private float _speed = 10f;
+        [SerializeField] private float _speed = 15f;
 
         private void Awake()
         {
