@@ -5,28 +5,30 @@ namespace PlayerAbilities.Throw
     [RequireComponent(typeof(VacuumThrower))]
     public class ThrowPresenter : MonoBehaviour
     {
-        private readonly int _isThrowPrepareHash = Animator.StringToHash("IsThrowPrepare");
+        private readonly int 
+            _isThrowPrepareHash = Animator.StringToHash("IsThrowPrepare"),
+            _throwPrepareHash = Animator.StringToHash("ThrowPrepare"),
+            _throwHash = Animator.StringToHash("Throw");
         
         private VacuumThrower _vacuumThrower;
-        private Vector3 _oldPosition, _oldRotation;
         
         [SerializeField] private Vector3 _throwPosition, _throwRotation;
         [SerializeField] private Transform _vacuumStickTransform;
-        [SerializeField] private Animator _cleanerAnimator, _vacuumBoxAnimator;
+        [SerializeField] private Animator _cleanerAnimator, _vacuumBoxAnimator,
+            _vacuumStickAnimator;
     
         private void OnValidate()
         {
             if (_vacuumStickTransform == null)
                 Debug.LogWarning("Transform was not found!", this);
-            if (_cleanerAnimator == null || _vacuumBoxAnimator == null)
+            if (_cleanerAnimator == null || _vacuumBoxAnimator == null 
+                                         || _vacuumStickAnimator == null)
                 Debug.LogWarning("Animator was not found!", this);
         }
         
         private void Awake()
         {
             _vacuumThrower = GetComponent<VacuumThrower>();
-            _oldPosition = _vacuumStickTransform.localPosition;
-            _oldRotation = _vacuumStickTransform.localRotation.eulerAngles;
         }
         
         private void OnEnable()
@@ -43,22 +45,18 @@ namespace PlayerAbilities.Throw
         
         private void TieHandler()
         {
-            SetTransform(_throwPosition, _throwRotation);
-            _cleanerAnimator.SetBool(_isThrowPrepareHash, true);
+            _cleanerAnimator.ResetTrigger(_throwHash);
+            _cleanerAnimator.SetTrigger(_throwPrepareHash);
             _vacuumBoxAnimator.SetBool(_isThrowPrepareHash, true);
+            _vacuumStickAnimator.SetBool(_isThrowPrepareHash, true);
         }
 
         private void BreakHandler()
         {
-            SetTransform(_oldPosition, _oldRotation);
-            _cleanerAnimator.SetBool(_isThrowPrepareHash, false);
+            _cleanerAnimator.ResetTrigger(_throwPrepareHash);
+            _cleanerAnimator.SetTrigger(_throwHash);
             _vacuumBoxAnimator.SetBool(_isThrowPrepareHash, false);
-        }
-
-        private void SetTransform(Vector3 position, Vector3 rotation)
-        {
-            _vacuumStickTransform.localPosition = position;
-            _vacuumStickTransform.localEulerAngles = rotation;
+            _vacuumStickAnimator.SetBool(_isThrowPrepareHash, false);
         }
     }
 }
