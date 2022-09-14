@@ -12,6 +12,7 @@ namespace Trash
         
         [SerializeField] private GameObject _fragments;
         [SerializeField] private float _maxVelocity = 50f;
+        
         private void OnValidate()
         {
             if (_fragments == null)
@@ -22,6 +23,10 @@ namespace Trash
         {
             _rb = GetComponent<Rigidbody>();
             _childRigidbodies = GetComponentsInChildren<Rigidbody>(); 
+        }
+
+        private void Start()
+        {
             _fragments.SetActive(false);
         }
 

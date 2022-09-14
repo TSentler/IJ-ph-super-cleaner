@@ -14,7 +14,7 @@ namespace Robber
                 Debug.LogWarning("Fragments was not found!", this);
         }
 
-        private void Awake()
+        private void Start()
         {
             _fragments.SetActive(false);
         }

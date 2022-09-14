@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,7 +11,7 @@ namespace Trash
         private float _collected = 0f, _count = 0f;
 
         [SerializeField] private GarbageDisposal _garbageDisposal;
-        [SerializeField] private GameObject _garbageRoot;
+        [SerializeField] private List<GameObject> _garbageRoots;
 
         public event UnityAction<int> OnCountChange, OnCollect;
         
@@ -22,20 +23,23 @@ namespace Trash
         {
             if (_garbageDisposal == null)
                 Debug.LogWarning("GarbageDisposal was not found!", this);
-            if (_garbageRoot == null)
-                Debug.LogWarning("GarbageRoot was not found!", this);
+            if (_garbageRoots.Count == 0)
+                Debug.LogWarning("GarbageRoots was not found!", this);
         }
         
         private void Awake()
         {
-            var childTrash = 
-                _garbageRoot.GetComponentsInChildren<Garbage>();
-            if (childTrash.Length != 0)
+            foreach (var root in _garbageRoots)
             {
-                var trash = childTrash.ToList();
-                foreach (var garbage in trash)
+                var childTrash = 
+                    root.GetComponentsInChildren<Garbage>();
+                if (childTrash.Length != 0)
                 {
-                    _count += garbage.Count;
+                    var trash = childTrash.ToList();
+                    foreach (var garbage in trash)
+                    {
+                        _count += garbage.Count;
+                    }
                 }
             }
         }
