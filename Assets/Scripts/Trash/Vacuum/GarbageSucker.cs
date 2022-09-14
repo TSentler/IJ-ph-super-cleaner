@@ -6,7 +6,7 @@ namespace Trash
     [RequireComponent(typeof(SphereCollider))]
     public class GarbageSucker : MonoBehaviour
     {
-        [SerializeField] private Transform _garbageDisposalCenter;
+        [SerializeField] private GarbageDisposal _garbageDisposalCenter;
 
         private void OnTriggerEnter(Collider other)
         {

@@ -5,7 +5,7 @@ namespace Trash
     [RequireComponent(typeof(Rigidbody))]
     public class PhysicalEnvironment : MonoBehaviour, ISuckable 
     {
-        private Transform _target;
+        private GarbageDisposal _target;
         private Rigidbody _rb;
         private bool _isTied;
         
@@ -21,14 +21,15 @@ namespace Trash
             if (_target == null)
                 return;
 
-            var deltaSpeed = _speed * Time.deltaTime;
+            var deltaSpeed = _speed * _target.ExtraSpeedMyltiply 
+                                    * Time.deltaTime;
             var direction = 
-                (_target.position - transform.position).normalized;
+                (_target.transform.position - transform.position).normalized;
             var force = direction * deltaSpeed;
             _rb.AddForce(force, ForceMode.Force);
         }
 
-        public void Suck(Transform target)
+        public void Suck(GarbageDisposal target)
         {
             _target = target;
         }

@@ -12,7 +12,7 @@ namespace Trash
         private Coroutine _suckCoroutine;
         private Deformator _deformator;
         private SizeReducer _sizeReducer;
-        private Transform _lastTarget;
+        private GarbageDisposal _lastTarget;
         
         [SerializeField] private float _speed = 10f;
 
@@ -37,8 +37,8 @@ namespace Trash
         private void MoveToTarget()
         {
             var deltaSpeed = _speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(
-                transform.position, _lastTarget.position, deltaSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, 
+                _lastTarget.transform.position, deltaSpeed);
         }
         
         protected override void SuckHandler()

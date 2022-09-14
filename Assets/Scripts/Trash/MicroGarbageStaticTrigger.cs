@@ -15,7 +15,7 @@ namespace Trash
             }
         }
 
-        public void Suck(Transform target)
+        public void Suck(GarbageDisposal target)
         {
             _garbage.transform.parent = transform.parent;
             _garbage.gameObject.SetActive(true);

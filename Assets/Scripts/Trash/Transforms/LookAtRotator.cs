@@ -29,7 +29,7 @@ namespace Trash.Transforms
         {
             while (_garbage.Target != null)
             {
-                LookAtHandler(_garbage.Target);
+                LookAtHandler(_garbage.Target.transform);
                 yield return null;
             }
 

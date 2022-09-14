@@ -7,13 +7,13 @@ namespace Trash
     [RequireComponent(typeof(Collider))]
     public abstract class Garbage : MonoBehaviour, ISuckable
     {
-        private Transform _target;
+        private GarbageDisposal _target;
         
         [Min(0), SerializeField] private float _count = 0f;
 
         public event UnityAction OnSuck;
         
-        public Transform Target => _target;
+        public GarbageDisposal Target => _target;
         
         public float Count => _count;
 
@@ -37,7 +37,7 @@ namespace Trash
             }
         }
         
-        public void Suck(Transform target)
+        public void Suck(GarbageDisposal target)
         {
             _target = target;
             if (Target == null)

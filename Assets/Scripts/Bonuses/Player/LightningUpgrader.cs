@@ -45,12 +45,14 @@ namespace Bonuses.Player
         {
             _movement.BoostSpeed();
             _sucker.IncreaseSize();
+            _garbageDisposal.BoostSpeed();
         }
 
         private void TimerEndHandler()
         {
             _movement.ResetSpeed();
             _sucker.ResetSize();
+            _garbageDisposal.ResetSpeed();
         }
         
         private void SuckedHandler(Garbage garbage)

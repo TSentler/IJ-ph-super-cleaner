@@ -49,7 +49,8 @@ namespace Trash
         {
             if (Target != null)
             {
-                _direction = CalculateDirection(Target.position, _direction);
+                _direction = CalculateDirection(
+                    Target.transform.position, _direction);
             }
             transform.position += _direction * _velocity;
         }
@@ -71,7 +72,7 @@ namespace Trash
             if (_velocity > _minVelocity)
                 return;
             
-            _direction = Target.position - transform.position;
+            _direction = Target.transform.position - transform.position;
             _startDistance = _direction.magnitude;
             _direction.Normalize();
             _velocity = 0f;
