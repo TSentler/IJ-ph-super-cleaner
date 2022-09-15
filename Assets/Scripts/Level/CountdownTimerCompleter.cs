@@ -22,6 +22,11 @@ namespace Level
             _completer = GetComponent<Completer>();
         }
 
+        private void Start()
+        {
+            Run();
+        }
+
         private void Update()
         {
             if (_isRun == false)
@@ -42,7 +47,7 @@ namespace Level
             _completer.Complete();
         }
 
-        public void Run()
+        private void Run()
         {
             _time = _seconds;
             _isRun = true;

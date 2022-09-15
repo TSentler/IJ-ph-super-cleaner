@@ -1,6 +1,5 @@
 using Money;
 using PlayerInput;
-using Trash;
 using UnityEngine;
 
 namespace Level
