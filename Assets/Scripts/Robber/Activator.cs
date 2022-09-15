@@ -7,6 +7,8 @@ namespace Robber
 {
     public class Activator : MonoBehaviour
     {
+        private static int _activateCount;
+        
         private float _seconds;
 
         [SerializeField] private RobberAI _robberAI;
@@ -39,8 +41,15 @@ namespace Robber
         private void ActivateSignaling()
         {
             _signalings.SetActive(true);
-            _robberAI.OnDeactivate += () => 
-                _signalings.SetActive(false);
+            _activateCount++;
+            _robberAI.OnDeactivate += () =>
+            {
+                _activateCount--;
+                if (_activateCount == 0)
+                {
+                    _signalings.SetActive(false);
+                }
+            };
         }
     }
 }
