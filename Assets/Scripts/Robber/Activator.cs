@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -23,10 +24,11 @@ namespace Robber
         
         private void Awake()
         {
+            _signalings.SetActive(false);
             _seconds = Random.Range(_minSeconds, _maxSeconds);
             StartCoroutine(WaitCoroutine());
         }
-
+        
         private IEnumerator WaitCoroutine()
         {
             yield return new WaitForSeconds(_seconds);
