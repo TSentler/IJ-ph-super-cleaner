@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6214404418312347267}
   - component: {fileID: 3809413138429604536}
   - component: {fileID: 1238287194148027036}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TriangleFloor4x4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
