@@ -10,9 +10,9 @@ namespace PlayerCamera
     {
         private Follow _follow;
         private Zoom _zoom;
+        private float _maxSqrRemoteness = 200f;
         
         [SerializeField] private List<Transform> _targets = new();
-        
         
         private void OnValidate()
         {
@@ -40,10 +40,13 @@ namespace PlayerCamera
 
         private Bounds GetBounds()
         {
-            var bounds = new Bounds(_targets[0].position, Vector3.zero);
+            var firstPosition = _targets[0].position;
+            var bounds = new Bounds(firstPosition, Vector3.zero);
             for (int i = 1; i < _targets.Count; i++)
             {
-                if (_targets[i].gameObject.activeSelf)
+                if (_targets[i].gameObject.activeSelf
+                    && (firstPosition - _targets[i].position).sqrMagnitude < 
+                    _maxSqrRemoteness)
                 {
                     bounds.Encapsulate(_targets[i].position);
                 }
