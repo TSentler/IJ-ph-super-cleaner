@@ -1,7 +1,7 @@
 using Trash;
 using UnityEngine;
 
-namespace Level
+namespace LevelCompleter
 {
     [RequireComponent(typeof(Completer))]
     public class GarbageCountCompleter : MonoBehaviour

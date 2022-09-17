@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Level.UI
+namespace LevelCompleter.UI
 {
     [RequireComponent(typeof(TMP_Text))]
     public class CountdownTimerText : MonoBehaviour

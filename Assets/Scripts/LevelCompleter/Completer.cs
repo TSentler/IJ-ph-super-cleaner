@@ -2,7 +2,7 @@ using Money;
 using PlayerInput;
 using UnityEngine;
 
-namespace Level
+namespace LevelCompleter
 {
     public class Completer : MonoBehaviour
     {

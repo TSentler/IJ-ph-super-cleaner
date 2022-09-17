@@ -1,9 +1,7 @@
-using System;
-using Trash;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Level
+namespace LevelCompleter
 {
     [RequireComponent(typeof(Completer))]
     public class CountdownTimerCompleter : MonoBehaviour

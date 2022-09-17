@@ -1,8 +1,8 @@
 using System;
-using Level.UI;
+using LevelCompleter.UI;
 using UnityEngine;
 
-namespace Level
+namespace LevelCompleter
 {
     [RequireComponent(typeof(CountdownTimerCompleter))]
     public class CountdownTimerPresenter : MonoBehaviour
