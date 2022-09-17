@@ -154,7 +154,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.IJphsupercleaner_
-    Standalone: com.DefaultCompany.IJ-ph-super-cleaner-
+    Standalone: com.DefaultCompany.IJ-ph-super-cleaner
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -707,7 +707,8 @@ PlayerSettings:
     WebGL: YANDEX_GAMES
   additionalCompilerArguments: {}
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Standalone: 1
   il2cppCompilerConfiguration:
     WebGL: 2
   managedStrippingLevel:
@@ -722,7 +723,9 @@ PlayerSettings:
   gcIncremental: 1
   assemblyVersionValidation: 1
   gcWBarrierValidation: 0
-  apiCompatibilityLevelPerPlatform: {}
+  apiCompatibilityLevelPerPlatform:
+    Standalone: 6
+    WebGL: 3
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Template_3D
