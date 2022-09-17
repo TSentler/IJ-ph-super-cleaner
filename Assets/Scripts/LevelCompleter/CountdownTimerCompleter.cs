@@ -10,8 +10,7 @@ namespace LevelCompleter
         private float _time;
         private int _oldTime = -1;
         private bool _isRun;
-
-        [Min(0f), SerializeField] private float _seconds;
+        private float _seconds = 34f;
 
         public event UnityAction<int> OnChange;
         
