@@ -36,7 +36,11 @@ namespace PlayerInput
 
         private void Update()
         {
-            if (_stick.IsTouch == false)
+            if (_isPause)
+            {
+                _lastDirection = Vector2.zero;
+            }
+            else if (_stick.IsTouch == false)
             {
                 _lastDirection = new Vector2(
                     Input.GetAxisRaw("Horizontal"),
@@ -61,9 +65,6 @@ namespace PlayerInput
         
         private void Move(Vector2 direction)
         {
-            if (_isPause)
-                return;
-
             _lastDirection = direction;
         }
 
