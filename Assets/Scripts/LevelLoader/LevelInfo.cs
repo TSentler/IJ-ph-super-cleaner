@@ -16,7 +16,7 @@ namespace LevelLoader
             "Level5"
         };
         
-        private int _currentLevel;
+        private int _currentLevel = -1;
 
         public int LevelNumber => _currentLevel;
         

@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702405279201085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702405243827026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,6 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!1 &1017718292206883456
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702405435859686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,6 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702405482923670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,6 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702405756491118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1084,6 +1090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702405765085074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,6 +1250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702406376742525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,6 +1410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702406406185471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,6 +1570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702406865012538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1720,6 +1730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
+  _speed: 15
 --- !u!114 &5531702407319839842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1948,4 +1959,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fragments: {fileID: 1017718294170828495}
-  _maxVelocity: 50
+  _maxVelocity: 25
