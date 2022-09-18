@@ -1,6 +1,9 @@
-using System;
+using System.Collections;
+using Agava.VKGames;
+using Agava.YandexGames;
 using PlayerAbilities.Move;
 using UnityEngine;
+using DeviceType = Agava.YandexGames.DeviceType;
 
 namespace Tutorial
 {
@@ -24,10 +27,43 @@ namespace Tutorial
 
         private void Awake()
         {
-            _keyboardPanel.SetActive(true);
-            _stickPanel.SetActive(true);
+            _keyboardPanel.SetActive(false);
+            _stickPanel.SetActive(false);
+#if YANDEX_GAMES
+            YandexGamesSdk.CallbackLogging = true;
+#endif
         }
 
+        private IEnumerator Start()
+        {
+#if !UNITY_WEBGL || UNITY_EDITOR
+            _keyboardPanel.SetActive(true);
+            _stickPanel.SetActive(true);
+            yield break;
+#endif
+            
+#if VK_GAMES
+            yield return VKGamesSdk.Initialize(onSuccessCallback: ActivateTutorialPanel);
+#endif
+            
+#if YANDEX_GAMES
+            yield return YandexGamesSdk.Initialize();
+            ActivateTutorialPanel();
+#endif
+        }
+
+        private void ActivateTutorialPanel()
+        {
+            if (Device.Type == DeviceType.Desktop)
+            {
+                _keyboardPanel.SetActive(true);
+            }
+            else
+            {
+                _stickPanel.SetActive(true);
+            }
+        }
+        
         private void OnEnable()
         {
             _movement.OnMove += MoveTrigger;
