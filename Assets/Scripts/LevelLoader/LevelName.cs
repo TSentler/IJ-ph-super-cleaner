@@ -31,7 +31,7 @@ namespace LevelLoader
 
         private void SetAllLevelNumber()
         {
-            var number = (_levelInfo.LevelNumber + 1).ToString();
+            var number = _levelInfo.LevelNumber + 1;
             foreach (var numberText in _numberTexts)
             {
                 numberText.SetNumber(number);

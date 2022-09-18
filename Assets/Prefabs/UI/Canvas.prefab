@@ -359,6 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293451fa62d4a1e4a8a0d07fcad65f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _templateType: 1
 --- !u!114 &1466610084858736769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,7 +380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 2
+  m_text: "--- \u2116 02 ---"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 602ccc347a6cc6944a0098b0a56e1b63, type: 2}
   m_sharedMaterial: {fileID: 7374927986402738804, guid: 602ccc347a6cc6944a0098b0a56e1b63, type: 2}
@@ -406,13 +407,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 95
+  m_fontSize: 106.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 95
-  m_fontStyle: 16
+  m_fontSizeMax: 120
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
@@ -966,6 +967,7 @@ GameObject:
   - component: {fileID: 1466610085032647529}
   - component: {fileID: 1466610085032647535}
   - component: {fileID: 1466610085032647534}
+  - component: {fileID: 1318509156730112861}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -1031,6 +1033,35 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1318509156730112861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466610085032647528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1466610084933277210}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_MethodName: OnSubmit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1466610085094690256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3257,6 +3288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293451fa62d4a1e4a8a0d07fcad65f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _templateType: 0
 --- !u!114 &1466610086529975180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3277,7 +3309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEVEL 1
+  m_text: "-  \u2116 01  -"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1482dbce654844b9ba1c753cbea5d80, type: 2}
   m_sharedMaterial: {fileID: 7374927986402738804, guid: c1482dbce654844b9ba1c753cbea5d80, type: 2}
@@ -3299,12 +3331,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.35
+  m_fontSize: 45.05
   m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 1
