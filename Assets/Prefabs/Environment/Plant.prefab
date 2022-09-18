@@ -1959,4 +1959,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fragments: {fileID: 1017718294170828495}
-  _maxVelocity: 25
+  _maxVelocity: 15

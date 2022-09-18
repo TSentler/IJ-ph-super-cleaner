@@ -12,7 +12,6 @@ namespace Robber
         
         private RunToExitBehaviour _runToExitBehaviour;
         private Movement _movement;
-        private Rigidbody _rb;
         private Animator _animator;
         private Vector2 _runDirection;
         
@@ -30,7 +29,6 @@ namespace Robber
             _animator = GetComponent<Animator>(); 
             _runToExitBehaviour = _animator.GetBehaviour<RunToExitBehaviour>();
             _movement = GetComponent<Movement>();
-            _rb = GetComponent<Rigidbody>();
         }
 
         private void OnEnable()

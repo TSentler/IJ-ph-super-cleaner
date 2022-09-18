@@ -4,8 +4,13 @@ using UnityEngine.Events;
 
 namespace Robber
 {
+    [RequireComponent(typeof(Animator))]
     public class RobberAI : MonoBehaviour
     {
+        private readonly int _isTargetName = Animator.StringToHash("IsTarget");
+        
+        private Animator _animator;
+        
         [SerializeField] private TheftTarget _theftTarget;
         [SerializeField] private Transform _exit, _carryPosition;
 
@@ -19,6 +24,16 @@ namespace Robber
                 Debug.LogWarning("Exit was not found!", this);
             if (_carryPosition == null)
                 Debug.LogWarning("CarryPosition was not found!", this);
+        }
+
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
+        private void Start()
+        {
+            _animator.SetBool(_isTargetName, _theftTarget != null);
         }
 
         private void OnDisable()
@@ -49,7 +64,7 @@ namespace Robber
         
         public void DropTarget()
         {
-            _theftTarget.Drop();
+            _theftTarget?.Drop();
         }
     }
 }
