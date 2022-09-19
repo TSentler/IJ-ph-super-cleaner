@@ -1,0 +1,19 @@
+{
+    "name": "Tutorial.PlayerAbilities",
+    "rootNamespace": "",
+    "references": [
+        "GUID:2f8cd2d3dad810b438f6edd49ffeb16f",
+        "GUID:fc6d263af0107e336b9a109bc8bb395b",
+        "GUID:14a6068dfcbb64cdab9347b37d081ff1",
+        "GUID:ef7e0e3eb213f324c87b70a782844fb6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
