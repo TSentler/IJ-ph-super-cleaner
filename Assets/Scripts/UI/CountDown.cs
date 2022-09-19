@@ -12,7 +12,7 @@ namespace UI
         
         [Min(0f), SerializeField] private float _time = 0.3f;
 
-        public UnityEvent OnCountDown;
+        public UnityEvent OnCountDown, OnEnd;
         
         private void Awake()
         {
@@ -32,6 +32,8 @@ namespace UI
                 _text.SetText(i.ToString());
                 yield return null;
             }
+            
+            OnEnd?.Invoke();
         }
 
         public void Apply()
@@ -41,6 +43,10 @@ namespace UI
             {
                 OnCountDown?.Invoke();
                 StartCoroutine(CountDownCoroutine(number));
+            }
+            else
+            {
+                OnEnd?.Invoke();
             }
         }
     }

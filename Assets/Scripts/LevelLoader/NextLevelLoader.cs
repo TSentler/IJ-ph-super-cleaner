@@ -9,10 +9,8 @@ namespace LevelLoader
     public class NextLevelLoader : MonoBehaviour
     {
         private LevelInfo _levelInfo;
-        private Coroutine _loadCoroutine;
-        private float _delay = 2f;
 
-        [SerializeField] private List<NextLevelButton> 
+        [SerializeField] private List<NextLevelAction> 
             _nextLevelButtons = new();
         
         private void OnValidate()
@@ -26,21 +24,12 @@ namespace LevelLoader
             _levelInfo = GetComponent<LevelInfo>();
             foreach (var button in _nextLevelButtons)
             {
-                button.SetNextLevelAction(Apply);
+                button.SetNextLevelAction(Load);
             }
         }
 
-        private void Apply()
+        private void Load()
         {
-            if (_loadCoroutine != null)
-                return;
-
-            _loadCoroutine = StartCoroutine(Load());
-        }
-
-        private IEnumerator Load()
-        {
-            yield return new WaitForSeconds(_delay);
             SceneManager.LoadScene(_levelInfo.GetNextLevel());
         }
 

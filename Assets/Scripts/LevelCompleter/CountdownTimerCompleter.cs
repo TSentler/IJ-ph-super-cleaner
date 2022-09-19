@@ -10,7 +10,7 @@ namespace LevelCompleter
         private float _time;
         private int _oldTime = -1;
         private bool _isRun;
-        private float _seconds = 13f;
+        private float _seconds = 33f;
 
         public event UnityAction<int> OnChange;
         

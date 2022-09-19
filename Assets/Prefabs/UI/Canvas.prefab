@@ -608,7 +608,6 @@ GameObject:
   - component: {fileID: 1466610084933277206}
   - component: {fileID: 1466610084933277204}
   - component: {fileID: 1466610084933277207}
-  - component: {fileID: 6160581770757265648}
   - component: {fileID: 1466610084933277210}
   - component: {fileID: 1466610084933277205}
   - component: {fileID: 1466610084933277211}
@@ -679,18 +678,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6160581770757265648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466610084933277201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7cbc55f74498694795b3d9d90199a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1466610084933277210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3536,6 +3523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466610086565562815}
   - component: {fileID: 1466610086565562813}
+  - component: {fileID: 5236505775539091024}
   - component: {fileID: 1466610086565562818}
   - component: {fileID: 1466610086565562812}
   m_Layer: 5
@@ -3573,6 +3561,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466610086565562814}
   m_CullTransparentMesh: 1
+--- !u!114 &5236505775539091024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466610086565562814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cbc55f74498694795b3d9d90199a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _delay: 0.5
 --- !u!114 &1466610086565562818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3600,6 +3601,21 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+  OnEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5236505775539091024}
+        m_TargetAssemblyTypeName: LevelLoader.NextLevelAction, Assembly-CSharp
+        m_MethodName: Apply
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1466610086565562812
 MonoBehaviour:
