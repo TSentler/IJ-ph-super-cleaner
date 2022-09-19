@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fragments: {fileID: 8051581126374542160}
-  _maxVelocity: 70
+  _maxVelocity: 90
 --- !u!1 &8051581126009168264
 GameObject:
   m_ObjectHideFlags: 0
