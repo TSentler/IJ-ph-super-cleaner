@@ -54,6 +54,7 @@ namespace Tutorial
 
         private void ActivateTutorialPanel()
         {
+            // TODO: check on VK else use Application.isMobilePlatform
             if (Device.Type == DeviceType.Desktop)
             {
                 _keyboardPanel.SetActive(true);
