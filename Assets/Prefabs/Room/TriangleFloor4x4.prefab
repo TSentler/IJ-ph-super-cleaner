@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5077477867516847596}
   - component: {fileID: 8203597736666262089}
   - component: {fileID: 6214404418312347267}
-  - component: {fileID: 3809413138429604536}
+  - component: {fileID: 8051306612727268062}
   - component: {fileID: 1238287194148027036}
   m_Layer: 10
   m_Name: TriangleFloor4x4
@@ -85,8 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3809413138429604536
-BoxCollider:
+--- !u!64 &8051306612727268062
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,9 +95,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.019532, y: 2.220446e-16, z: 10.019532}
-  m_Center: {x: 5.0000005, y: 0, z: 5.0000005}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4238851177484708453, guid: 23bff792bb122dc45856294cbac44dcc, type: 3}
 --- !u!54 &1238287194148027036
 Rigidbody:
   m_ObjectHideFlags: 0

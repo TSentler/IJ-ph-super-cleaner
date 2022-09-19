@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
 using PlayerAbilities.Move;
+using PlayerAbilities.Throw;
 using Trash;
 using Trash.Boosters;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Bonuses.Player
 {
@@ -14,6 +12,7 @@ namespace Bonuses.Player
         [SerializeField] private GarbageDisposal _garbageDisposal;
         [SerializeField] private Movement _movement;
         [SerializeField] private SuckerBooster _sucker;
+        [SerializeField] private ThrowTimer _throwTimer;
 
         private void OnValidate()
         {
@@ -46,6 +45,7 @@ namespace Bonuses.Player
             _movement.BoostSpeed();
             _sucker.IncreaseSize();
             _garbageDisposal.BoostSpeed();
+            _throwTimer.BoostDelay();
         }
 
         private void TimerEndHandler()
@@ -53,6 +53,7 @@ namespace Bonuses.Player
             _movement.ResetSpeed();
             _sucker.ResetSize();
             _garbageDisposal.ResetSpeed();
+            _throwTimer.ResetDelay();
         }
         
         private void SuckedHandler(Garbage garbage)

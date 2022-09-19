@@ -9,6 +9,7 @@ namespace PlayerAbilities.Throw
     {
         private FixedJoint _joint, _jointConfig;
         private ThrowObject _throwObject;
+        private bool _isThrow;
 
         [Min(0), SerializeField] private float _speed = 10f;
 
@@ -27,6 +28,7 @@ namespace PlayerAbilities.Throw
             if (other.TryGetComponent(out ThrowObject throwObject))
             {
                 _throwObject = throwObject;
+                _isThrow = true;
                 var rb = _throwObject.Tie(); 
                 _joint = gameObject.AddComponent<FixedJoint>();
                 _joint.connectedBody = rb;
@@ -43,7 +45,7 @@ namespace PlayerAbilities.Throw
 
         public void Throw()
         {
-            if (_throwObject == null)
+            if (_isThrow == false)
                 return;
 
             if (_joint != null)
@@ -55,7 +57,7 @@ namespace PlayerAbilities.Throw
             var forward = transform.forward;
             forward = new Vector3(forward.x, 0f, forward.z);
             var force = _speed * forward;
-            _throwObject.Break(force);
+            _throwObject?.Break(force);
             _throwObject = null;
             OnBreak?.Invoke();
         }

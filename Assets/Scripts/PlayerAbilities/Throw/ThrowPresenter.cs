@@ -12,7 +12,6 @@ namespace PlayerAbilities.Throw
         
         private VacuumThrower _vacuumThrower;
         
-        [SerializeField] private Vector3 _throwPosition, _throwRotation;
         [SerializeField] private Transform _vacuumStickTransform;
         [SerializeField] private Animator _cleanerAnimator, _vacuumBoxAnimator,
             _vacuumStickAnimator;

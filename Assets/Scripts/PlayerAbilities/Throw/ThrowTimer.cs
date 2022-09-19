@@ -8,15 +8,17 @@ namespace PlayerAbilities.Throw
     {
         private VacuumThrower _vacuumThrower;
         private Coroutine _timerCoroutine;
-        private float _timePassed = float.MaxValue;
+        private float _timePassed = float.MaxValue, 
+            _oldDelay;
         
-        [SerializeField] private float _delay = 1f;
+        [SerializeField] private float _delay = 1f, _boostDelay = 0.25f;
         
         private bool IsRun => _timePassed < _delay;
         
         private void Awake()
         {
             _vacuumThrower = GetComponent<VacuumThrower>();
+            _oldDelay = _delay;
         }
         
         private void OnEnable()
@@ -55,6 +57,17 @@ namespace PlayerAbilities.Throw
             {
                 StopCoroutine(_timerCoroutine);
             }
+        }
+
+        public void BoostDelay()
+        {
+            _delay = _boostDelay;
+            
+        }
+
+        public void ResetDelay()
+        {
+            _delay = _oldDelay;
         }
     }
 }
