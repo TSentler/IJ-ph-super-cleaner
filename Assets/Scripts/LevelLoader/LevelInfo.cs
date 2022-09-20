@@ -15,10 +15,12 @@ namespace LevelLoader
             "Level4",
             "Level5"
         };
+        private readonly string _tutorialName = "Tutorial";
         
         private int _currentLevel = -1;
 
         public int LevelNumber => _currentLevel;
+        public string TutorialName => _tutorialName;
         
         private void Awake()
         {
@@ -39,6 +41,7 @@ namespace LevelLoader
             {
                 number = 0;
             }
+
             return _names[number];
         }
     }
