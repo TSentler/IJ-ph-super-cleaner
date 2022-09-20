@@ -7,20 +7,7 @@ namespace YaVk
     [DisallowMultipleComponent]
     public class BackgroundAudioMuteTracker : MonoBehaviour
     {
-        private static BackgroundAudioMuteTracker _instance;
-
-        private void Awake()
-        {
-            if (_instance == null) 
-            {
-                _instance = this;
-                DontDestroyOnLoad(this);
-            } 
-            else 
-            {
-                Destroy(this);
-            } 
-        }
+        
 
         private void OnEnable()
         {

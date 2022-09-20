@@ -1,11 +1,10 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace LevelLoader
 {
     [RequireComponent(typeof(LevelInfo))]
-    public class LoadFirstLevel : MonoBehaviour
+    public class FirstLevelLoader : MonoBehaviour
     {
         private LevelInfo _levelInfo;
 

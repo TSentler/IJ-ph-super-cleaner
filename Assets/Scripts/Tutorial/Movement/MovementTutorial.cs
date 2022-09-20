@@ -1,15 +1,15 @@
-using System.Collections;
-using Agava.VKGames;
-using Agava.YandexGames;
 using PlayerAbilities.Move;
 using UnityEngine;
-using DeviceType = Agava.YandexGames.DeviceType;
+using YaVk;
 
 namespace Tutorial
 {
     public class MovementTutorial : MonoBehaviour
     {
-        float minSqrMoveStep = 0.1f;
+        private readonly SocialNetwork _socialNetwork = SocialNetwork.Instance;
+
+        private Coroutine _checkMobileDeviceCoroutine;
+        private float _minSqrMoveStep = 0.1f;
         
         [SerializeField] private GameObject _keyboardPanel,
             _stickPanel;
@@ -29,47 +29,8 @@ namespace Tutorial
         {
             _keyboardPanel.SetActive(false);
             _stickPanel.SetActive(false);
-#if YANDEX_GAMES
-            YandexGamesSdk.CallbackLogging = true;
-#endif
         }
 
-        private IEnumerator Start()
-        {
-#if !UNITY_WEBGL || UNITY_EDITOR
-            _keyboardPanel.SetActive(true);
-            _stickPanel.SetActive(true);
-            yield break;
-#endif
-            
-#if VK_GAMES
-            ActivateTutorialPanel();
-            yield break;
-#endif
-
-#if YANDEX_GAMES
-            yield return YandexGamesSdk.Initialize();
-            ActivateTutorialPanel();
-#endif
-        }
-
-        private void ActivateTutorialPanel()
-        {
-#if YANDEX_GAMES
-            if (Device.Type == DeviceType.Desktop)
-#endif
-#if VK_GAMES
-            if (Application.isMobilePlatform == false)
-#endif
-            {
-                _keyboardPanel.SetActive(true);
-            }
-            else
-            {
-                _stickPanel.SetActive(true);
-            }
-        }
-        
         private void OnEnable()
         {
             _movement.OnMove += MoveTrigger;
@@ -78,11 +39,36 @@ namespace Tutorial
         private void OnDisable()
         {
             _movement.OnMove -= MoveTrigger;
+            StopCoroutine(_checkMobileDeviceCoroutine);
+        }
+        
+        private void Start()
+        {
+#if !UNITY_WEBGL || UNITY_EDITOR
+            _keyboardPanel.SetActive(true);
+            _stickPanel.SetActive(true);
+            return;
+#endif
+            _checkMobileDeviceCoroutine = StartCoroutine(
+                _socialNetwork.CheckMobileDeviceCoroutine(
+                    ActivateTutorialPanel));
         }
 
+        private void ActivateTutorialPanel(bool isMobile)
+        {
+            if(isMobile)
+            {
+                _stickPanel.SetActive(true);
+            }
+            else
+            {
+                _keyboardPanel.SetActive(true);
+            }
+        }
+        
         private void MoveTrigger(Vector2 direction)
         {
-            if (direction.sqrMagnitude < minSqrMoveStep)
+            if (direction.sqrMagnitude < _minSqrMoveStep)
                 return;
 
             _keyboardPanel.SetActive(false);

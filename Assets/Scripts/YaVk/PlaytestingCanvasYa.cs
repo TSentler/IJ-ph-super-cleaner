@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 namespace Agava.YandexGames.Samples
 {
-    public class PlaytestingCanvas : MonoBehaviour
+    public class PlaytestingCanvasYa : MonoBehaviour
     {
         [SerializeField]
         private Text _authorizationStatusText;
@@ -119,10 +119,6 @@ namespace Agava.YandexGames.Samples
             PlayerAccount.GetPlayerData((data) => _playerDataTextField.text = data);
         }
 
-        public void OnGetDeviceTypeButtonClick()
-        {
-            Debug.Log($"DeviceType = {Device.Type}");
-        }
 
         public void OnGetEnvironmentButtonClick()
         {
