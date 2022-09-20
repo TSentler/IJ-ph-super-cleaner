@@ -46578,6 +46578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 897091104}
+  - component: {fileID: 897091105}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -46612,6 +46613,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &897091105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897091103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2a7b8b71852744a5f4af23454b0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wallMaterial: {fileID: 2100000, guid: 2e028fd622a36ac2d995792859e1f827, type: 2}
+  _color: {r: 0.6901961, g: 0.3137255, b: 0.3764706, a: 1}
+  _colorShaded: {r: 0.34117648, g: 0.15686275, b: 0.1882353, a: 1}
 --- !u!1 &898010785
 GameObject:
   m_ObjectHideFlags: 0
@@ -96040,6 +96056,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227301, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e028fd622a36ac2d995792859e1f827, type: 2}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -111885,6 +111905,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.00000011920929
       objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227301, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e028fd622a36ac2d995792859e1f827, type: 2}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_RootOrder
       value: 8

@@ -43,9 +43,10 @@ namespace Tutorial
 #endif
             
 #if VK_GAMES
-            yield return VKGamesSdk.Initialize(onSuccessCallback: ActivateTutorialPanel);
+            ActivateTutorialPanel();
+            yield break;
 #endif
-            
+
 #if YANDEX_GAMES
             yield return YandexGamesSdk.Initialize();
             ActivateTutorialPanel();
@@ -54,8 +55,12 @@ namespace Tutorial
 
         private void ActivateTutorialPanel()
         {
-            // TODO: check on VK else use Application.isMobilePlatform
+#if YANDEX_GAMES
             if (Device.Type == DeviceType.Desktop)
+#endif
+#if VK_GAMES
+            if (Application.isMobilePlatform == false)
+#endif
             {
                 _keyboardPanel.SetActive(true);
             }
