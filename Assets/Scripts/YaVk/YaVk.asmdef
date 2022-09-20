@@ -1,0 +1,18 @@
+{
+    "name": "YaVk",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ef7e0e3eb213f324c87b70a782844fb6",
+        "GUID:14a6068dfcbb64cdab9347b37d081ff1",
+        "GUID:8f22d867f50f3884892cfde18442bbf9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
