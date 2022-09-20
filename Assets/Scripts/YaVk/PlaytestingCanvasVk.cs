@@ -11,15 +11,7 @@ namespace Agava.VKGames.Samples
 
         private int _coinsAmount = 0;
 
-        public void ShowInterstitialButton()
-        {
-            Interstitial.Show();
-        }
-
-        public void ShowRewardedAdsButton()
-        {
-            VideoAd.Show(onRewardedCallback: OnRewardedCallback);
-        }
+        
 
         public void InviteFriendsButton()
         {

@@ -4,19 +4,36 @@ using UnityEngine;
 
 namespace YaVk
 {
-    [DisallowMultipleComponent]
+    [DisallowMultipleComponent, RequireComponent(typeof(SocialNetwork))]
     public class BackgroundAudioMuteTracker : MonoBehaviour
     {
-        
+        private SocialNetwork _socialNetwork;
+
+        private void Awake()
+        {
+            _socialNetwork = GetComponent<SocialNetwork>();
+        }
 
         private void OnEnable()
         {
+            _socialNetwork.OnAdsStart += AdsStartHandler;
             WebApplication.InBackgroundChangeEvent += OnInBackgroundChange;
         }
 
         private void OnDisable()
         {
+            _socialNetwork.OnAdsEnd += AdsEndHandler;
             WebApplication.InBackgroundChangeEvent -= OnInBackgroundChange;
+        }
+
+        private void AdsStartHandler()
+        {
+            OnInBackgroundChange(true);
+        }
+
+        private void AdsEndHandler()
+        {
+            OnInBackgroundChange(false);
         }
 
         private void OnInBackgroundChange(bool inBackground)

@@ -39,7 +39,10 @@ namespace Tutorial
         private void OnDisable()
         {
             _movement.OnMove -= MoveTrigger;
-            StopCoroutine(_checkMobileDeviceCoroutine);
+            if (_checkMobileDeviceCoroutine !=null)
+            {
+                StopCoroutine(_checkMobileDeviceCoroutine);
+            }
         }
         
         private void Start()

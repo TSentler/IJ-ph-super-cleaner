@@ -47,15 +47,7 @@ namespace Agava.YandexGames.Samples
             }
         }
 
-        public void OnShowInterstitialButtonClick()
-        {
-            InterstitialAd.Show();
-        }
-
-        public void OnShowVideoButtonClick()
-        {
-            VideoAd.Show();
-        }
+        
 
         public void OnAuthorizeButtonClick()
         {
