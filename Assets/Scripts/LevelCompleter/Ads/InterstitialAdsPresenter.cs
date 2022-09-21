@@ -7,12 +7,12 @@ namespace LevelCompleter.Ads
     [RequireComponent(typeof(CompletePresenter))]
     public class InterstitialAdsPresenter : MonoBehaviour
     {
-        private readonly SocialNetwork _socialNetwork = SocialNetwork.Instance;
-        
+        private SocialNetwork _socialNetwork;
         private CompletePresenter _completePresenter;
 
         private void Awake()
         {
+            _socialNetwork = FindObjectOfType<SocialNetwork>();
             _completePresenter = GetComponent<CompletePresenter>();
         }
 

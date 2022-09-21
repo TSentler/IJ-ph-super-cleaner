@@ -8,14 +8,14 @@ namespace YaVk
     [RequireComponent(typeof(Button))]
     public class RewardAdsButton : MonoBehaviour
     {
-        private readonly SocialNetwork _socialNetwork = SocialNetwork.Instance;
-
+        private SocialNetwork _socialNetwork;
         private Button _button;
         
         public event UnityAction OnReward;
 
         private void Awake()
         {
+            _socialNetwork = FindObjectOfType<SocialNetwork>();
             _button = GetComponent<Button>();
         }
 

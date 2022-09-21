@@ -14,15 +14,11 @@ namespace YaVk
         typeof(Ads))]
     public class SocialNetwork : MonoBehaviour
     {
-        private static SocialNetwork _instance;
-
         private Initializer _init;
         private Ads _ads;
         
         public event UnityAction OnAdsStart, OnAdsEnd;
 
-        public static SocialNetwork Instance => _instance;
-        
         private void OnValidate()
         {
             if (_init == null)
@@ -33,16 +29,6 @@ namespace YaVk
 
         private void Awake()
         {
-            if (_instance == null) 
-            {
-                _instance = this;
-            } 
-            else 
-            {
-                DestroyImmediate(this);
-                return;
-            }
-
             _init = GetComponent<Initializer>();
             _ads = GetComponent<Ads>();
 #if YANDEX_GAMES

@@ -6,8 +6,7 @@ namespace Tutorial
 {
     public class MovementTutorial : MonoBehaviour
     {
-        private readonly SocialNetwork _socialNetwork = SocialNetwork.Instance;
-
+        private SocialNetwork _socialNetwork;
         private Coroutine _checkMobileDeviceCoroutine;
         private float _minSqrMoveStep = 0.1f;
         
@@ -27,6 +26,7 @@ namespace Tutorial
 
         private void Awake()
         {
+            _socialNetwork = FindObjectOfType<SocialNetwork>();
             _keyboardPanel.SetActive(false);
             _stickPanel.SetActive(false);
         }
