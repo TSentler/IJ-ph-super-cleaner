@@ -41,7 +41,7 @@ namespace YaVk
                 yield break;
             }
             
-            yield return StartCoroutine(_init.TryInitializeSdkCoroutine());
+            yield return _init.TryInitializeSdkCoroutine();
             ResetTimer();
 #if !UNITY_WEBGL || UNITY_EDITOR
             onCloseCallback?.Invoke(true);
@@ -68,14 +68,6 @@ namespace YaVk
             UnityAction<string> onErrorCallback = null,
             UnityAction onYaOpenCallback = null) 
         {
-            if (IsAdsReady == false)
-            {
-                var left = _cooldown - _time;
-                onErrorCallback?.Invoke("Ads cooldown " + left + "sec");
-                onCloseCallback?.Invoke();
-                yield break;
-            }
-            
             yield return StartCoroutine(_init.TryInitializeSdkCoroutine());
             ResetTimer();
 #if !UNITY_WEBGL || UNITY_EDITOR

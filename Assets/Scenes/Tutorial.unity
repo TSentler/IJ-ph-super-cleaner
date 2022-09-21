@@ -17867,6 +17867,7 @@ GameObject:
   - component: {fileID: 331511532}
   - component: {fileID: 331511535}
   - component: {fileID: 331511529}
+  - component: {fileID: 331511536}
   - component: {fileID: 331511531}
   - component: {fileID: 331511530}
   m_Layer: 0
@@ -17946,7 +17947,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72a8648848b03b4d8b6a1ce2c59dca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moneyText: {fileID: 1383799742}
   _hide:
   - {fileID: 1917155043}
   - {fileID: 33143440}
@@ -17992,6 +17992,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1f9ea3fc754ba439efa761308947e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &331511536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331511527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79eb1a0d7d87061498a90dd55b470ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rewardAdsButton: {fileID: 1783641934}
 --- !u!1 &333598897
 GameObject:
   m_ObjectHideFlags: 0
@@ -70324,17 +70337,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1383799742 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1466610086565562812, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
-  m_PrefabInstance: {fileID: 749981465947161898}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1385404376
 GameObject:
   m_ObjectHideFlags: 0
@@ -71143,7 +71145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1402868963
 RectTransform:
   m_ObjectHideFlags: 0
@@ -92029,6 +92031,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1783641934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5831569057000600829, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+  m_PrefabInstance: {fileID: 749981465947161898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704b2d2c7275779489ec73625dad42f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1783785643
 GameObject:
   m_ObjectHideFlags: 0
@@ -110354,6 +110367,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 352271080259908016, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+      propertyPath: _moneyCounter
+      value: 
+      objectReference: {fileID: 331511529}
+    - target: {fileID: 1466610084858736771, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1466610085553139589, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_IsActive
       value: 0

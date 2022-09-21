@@ -11,8 +11,8 @@ namespace LevelLoader.UI
         private string _template;
         private string[] _templates = new []
         {
-            $"-  № {{0}}  -",
-            $"--- № {{0}} ---"
+            $"-  №{{0}}  -",
+            $"--- *{{0}}* ---"
         };
         private int _number;
 

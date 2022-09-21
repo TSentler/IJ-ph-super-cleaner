@@ -58,7 +58,7 @@ namespace YaVk
         public IEnumerator CheckMobileDeviceCoroutine(
             UnityAction<bool> callback)
         {
-            yield return StartCoroutine(_init.TryInitializeSdkCoroutine());
+            yield return _init.TryInitializeSdkCoroutine();
             
 #if YANDEX_GAMES
             callback.Invoke(Device.Type != DeviceType.Desktop);

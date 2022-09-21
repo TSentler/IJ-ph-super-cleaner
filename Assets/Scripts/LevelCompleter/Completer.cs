@@ -29,7 +29,7 @@ namespace LevelCompleter
             
             _isCompleted = true;
             _movementInput.Pause();
-            _completePresenter.SetMoney(_moneyCounter.Total.ToString());
+            _moneyCounter.Pause();
             _completePresenter.Apply();
         }
     }

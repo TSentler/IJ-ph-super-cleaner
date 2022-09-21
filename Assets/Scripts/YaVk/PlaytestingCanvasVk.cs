@@ -11,8 +11,6 @@ namespace Agava.VKGames.Samples
 
         private int _coinsAmount = 0;
 
-        
-
         public void InviteFriendsButton()
         {
             SocialInteraction.InviteFriends(OnRewardedCallback);

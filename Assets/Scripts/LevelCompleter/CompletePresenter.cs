@@ -8,7 +8,6 @@ namespace LevelCompleter
 {
     public class CompletePresenter : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI _moneyText;
         [SerializeField] private List<GameObject> _hide = new(); 
         [SerializeField] private GameObject _lvlCompletionPanel, _moneyButton;
 
@@ -35,11 +34,6 @@ namespace LevelCompleter
             OnInterstitialAds?.Invoke();
             yield return new WaitForSeconds(1f);
             _moneyButton.SetActive(true);
-        }
-
-        public void SetMoney(string money)
-        {
-            _moneyText.SetText(money);
         }
 
         public void Apply()
