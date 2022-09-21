@@ -10,22 +10,17 @@ namespace YaVk
         
         public void ShowInterstitialAds()
         {
-            _socialNetwork.ShowInterstitialAds(
+            _socialNetwork.ShowInterstitialAds(wasShown => Debug.Log("Ya ads close " + wasShown),
                 error => Debug.Log("Show ads Error" + error),
-                wasShown => Debug.Log("Ya ads close " + wasShown),
-                () => Debug.Log("Ads open"),
-                () => Debug.Log("Ya ads offline")
-            );
+                () => Debug.Log("Ads open"), () => Debug.Log("Ya ads offline"));
         }
         
         public void ShowRewardedAds()
         {
             _socialNetwork.ShowRewardedAds(
                 () => Debug.Log("Ads reward"),
-                error => Debug.Log("Show rewarded ads Error" + error),
                 () => Debug.Log("Ya rewaeded close"),
-                () => Debug.Log("Ya rewarded open")
-            );
+                error => Debug.Log("Show rewarded ads Error" + error), () => Debug.Log("Ya rewarded open"));
         }
     }
 }

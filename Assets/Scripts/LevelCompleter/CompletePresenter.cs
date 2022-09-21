@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace LevelCompleter
 {
@@ -11,6 +12,8 @@ namespace LevelCompleter
         [SerializeField] private List<GameObject> _hide = new(); 
         [SerializeField] private GameObject _lvlCompletionPanel, _moneyButton;
 
+        public event UnityAction OnInterstitialAds;
+        
         private void OnValidate()
         {
             if (_hide.Count == 0)
@@ -29,6 +32,7 @@ namespace LevelCompleter
         {
             _hide.ForEach(item => item.SetActive(false));
             _lvlCompletionPanel.SetActive(true);
+            OnInterstitialAds?.Invoke();
             yield return new WaitForSeconds(1f);
             _moneyButton.SetActive(true);
         }

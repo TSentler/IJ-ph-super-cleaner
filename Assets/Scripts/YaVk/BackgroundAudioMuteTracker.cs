@@ -4,16 +4,10 @@ using UnityEngine;
 
 namespace YaVk
 {
-    [DisallowMultipleComponent, RequireComponent(typeof(SocialNetwork))]
     public class BackgroundAudioMuteTracker : MonoBehaviour
     {
-        private SocialNetwork _socialNetwork;
-
-        private void Awake()
-        {
-            _socialNetwork = GetComponent<SocialNetwork>();
-        }
-
+        [SerializeField] private SocialNetwork _socialNetwork;
+        
         private void OnEnable()
         {
             _socialNetwork.OnAdsStart += AdsStartHandler;

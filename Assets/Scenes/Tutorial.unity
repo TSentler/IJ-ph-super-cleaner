@@ -17860,6 +17860,7 @@ GameObject:
   - component: {fileID: 331511534}
   - component: {fileID: 331511533}
   - component: {fileID: 331511532}
+  - component: {fileID: 331511535}
   - component: {fileID: 331511529}
   - component: {fileID: 331511531}
   - component: {fileID: 331511530}
@@ -17974,6 +17975,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _robber: {fileID: 1582735732}
+--- !u!114 &331511535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331511527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1f9ea3fc754ba439efa761308947e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &333598897
 GameObject:
   m_ObjectHideFlags: 0
@@ -110579,7 +110592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1466610086532139290, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.5002174
+      value: -2.5002213
       objectReference: {fileID: 0}
     - target: {fileID: 1466610086565562815, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_AnchorMax.y
