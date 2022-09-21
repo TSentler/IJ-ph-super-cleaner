@@ -4,11 +4,11 @@ namespace Money
 {
     public class MoneyCounter : MonoBehaviour
     {
-        private int _total;
+        private float _total;
 
-        public int Total => _total;
+        public int Total => (int)_total;
 
-        public void Collect(int count)
+        public void Collect(float count)
         {
             _total += count;
         }
