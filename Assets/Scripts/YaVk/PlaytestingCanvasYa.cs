@@ -47,8 +47,6 @@ namespace Agava.YandexGames.Samples
             }
         }
 
-        
-
         public void OnAuthorizeButtonClick()
         {
             PlayerAccount.Authorize();
@@ -101,16 +99,7 @@ namespace Agava.YandexGames.Samples
             });
         }
 
-        public void OnSetPlayerDataButtonClick()
-        {
-            PlayerAccount.SetPlayerData(_playerDataTextField.text);
-        }
-
-        public void OnGetPlayerDataButtonClick()
-        {
-            PlayerAccount.GetPlayerData((data) => _playerDataTextField.text = data);
-        }
-
+        
 
         public void OnGetEnvironmentButtonClick()
         {

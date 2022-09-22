@@ -1,7 +1,7 @@
 {
     "name": "Trash",
     "rootNamespace": "",
-    "references": [],
+    "references": ["GUID:eceb20a37dcc276469b4102259776749"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

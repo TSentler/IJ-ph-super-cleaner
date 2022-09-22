@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -24,23 +23,18 @@ namespace Money.UI
 
         private void OnEnable()
         {
-            SetMoneyText();
-            _moneyCounter.OnChange += MoneyChangeHandler;
+            SetMoneyText(_moneyCounter.LevelTotal);
+            _moneyCounter.OnCollect += SetMoneyText;
         }
 
         private void OnDisable()
         {
-            _moneyCounter.OnChange -= MoneyChangeHandler;
+            _moneyCounter.OnCollect -= SetMoneyText;
         }
 
-        private void MoneyChangeHandler()
+        private void SetMoneyText(int money)
         {
-            SetMoneyText();
-        }
-
-        private void SetMoneyText()
-        {
-            _text.SetText(_moneyCounter.Total.ToString());
+            _text.SetText(_moneyCounter.LevelTotal.ToString());
         }
     }
 }

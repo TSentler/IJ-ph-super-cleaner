@@ -5,23 +5,19 @@ using UnityEngine;
 
 namespace Tutorial
 {
-    [RequireComponent(typeof(Completer))]
     public class TutorialCompleter : MonoBehaviour
     {
-        private Completer _completer;
         private Coroutine _coroutine;
         
         [SerializeField] private Garbage _robber;
-        
+        [SerializeField] private Completer _completer;
+
         private void OnValidate()
         {
             if (_robber == null)
                 Debug.LogWarning("Robber was not found!", this);
-        }
-        
-        private void Awake()
-        {
-            _completer = GetComponent<Completer>();
+            if (_completer == null)
+                Debug.LogWarning("Completer was not found!", this);
         }
         
         private void OnEnable()

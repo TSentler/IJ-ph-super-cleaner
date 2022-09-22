@@ -9,13 +9,14 @@ namespace Trash
     public class GarbageCounter : MonoBehaviour
     {
         private float _collected = 0f, _count = 0f;
+        private bool _isPause;
 
         [SerializeField] private GarbageDisposal _garbageDisposal;
         [SerializeField] private List<GameObject> _garbageRoots;
 
         public event UnityAction<int> OnCountChange, OnCollect;
         
-        private int Collected => Mathf.RoundToInt(_collected);
+        public int Collected => Mathf.RoundToInt(_collected);
         
         public int Count => Mathf.RoundToInt(_count);
 
@@ -58,11 +59,19 @@ namespace Trash
         {
             OnCountChange?.Invoke(Count);
         }
-
+        
         private void SuckedHandler(Garbage garbage)
         {
+            if (_isPause)
+                return;
+            
             _collected += garbage.Count;
             OnCollect?.Invoke(Collected);
+        }
+
+        public void Pause()
+        {
+            _isPause = true;
         }
     }
 }

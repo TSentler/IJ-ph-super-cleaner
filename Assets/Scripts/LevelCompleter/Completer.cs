@@ -1,6 +1,7 @@
 using Money;
 using PlayerInput;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace LevelCompleter
 {
@@ -12,6 +13,10 @@ namespace LevelCompleter
         [SerializeField] private MoneyCounter _moneyCounter;
         [SerializeField] private CompletePresenter _completePresenter;
 
+        public event UnityAction OnComplete;
+
+        public bool IsCompleted => _isCompleted;
+        
         private void OnValidate()
         {
             if (_movementInput == null)
@@ -31,6 +36,7 @@ namespace LevelCompleter
             _movementInput.Pause();
             _moneyCounter.Pause();
             _completePresenter.Apply();
+            OnComplete?.Invoke();
         }
     }
 }

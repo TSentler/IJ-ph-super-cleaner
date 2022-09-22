@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 namespace LevelLoader
@@ -21,7 +22,13 @@ namespace LevelLoader
 
         public int LevelNumber => _currentLevel;
         public string TutorialName => _tutorialName;
-        
+
+        private void OnValidate()
+        {
+            if(_names.Length == 0)
+                Debug.LogWarning("level names was not found!", this);
+        }
+
         private void Awake()
         {
             var name = SceneManager.GetActiveScene().name;
@@ -30,6 +37,7 @@ namespace LevelLoader
                 if (_names[i] == name)
                 {
                     _currentLevel = i;
+                    break;
                 }
             }
         }
@@ -40,6 +48,16 @@ namespace LevelLoader
             if (number == _names.Length)
             {
                 number = 0;
+            }
+
+            return _names[number];
+        }
+
+        public string GetName(int number)
+        {
+            if (number >= _names.Length)
+            {
+                return _names[0];
             }
 
             return _names[number];

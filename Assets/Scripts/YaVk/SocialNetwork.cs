@@ -10,7 +10,8 @@ using DeviceType = Agava.YandexGames.DeviceType;
 
 namespace YaVk
 {
-    [RequireComponent(typeof(Initializer),
+    [DisallowMultipleComponent,
+     RequireComponent(typeof(Initializer),
         typeof(Ads))]
     public class SocialNetwork : MonoBehaviour
     {
@@ -45,12 +46,16 @@ namespace YaVk
             UnityAction<bool> callback)
         {
             yield return _init.TryInitializeSdkCoroutine();
-            
+
+            bool isMobile = false;
 #if YANDEX_GAMES
-            callback.Invoke(Device.Type != DeviceType.Desktop);
+            isMobile = Device.Type != DeviceType.Desktop;
+#elif VK_GAMES_MOBILE
+            isMobile = true;
 #else
-            callback.Invoke(Application.isMobilePlatform);
+            isMobile = Application.isMobilePlatform;
 #endif
+            callback.Invoke(isMobile);
         }
 
         public void ShowInterstitialAds(

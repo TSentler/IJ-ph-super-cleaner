@@ -9,9 +9,9 @@ namespace Money
         private int _oldTotal;
         private bool _isPause;
 
-        public event UnityAction OnChange;
+        public event UnityAction<int> OnCollect;
         
-        public int Total => (int)_total;
+        public int LevelTotal => (int)_total;
 
         public void Pause()
         {
@@ -24,18 +24,18 @@ namespace Money
                 return;
             
             _total += count;
-            OnChange?.Invoke();
+            OnCollect?.Invoke(LevelTotal);
         }
 
         public void Reward()
         {
             if (_oldTotal == 0)
             {
-                _oldTotal = Total;
+                _oldTotal = LevelTotal;
             }
 
             _total += _oldTotal;
-            OnChange?.Invoke();
+            OnCollect?.Invoke(_oldTotal);
         }
     }
 }

@@ -24,11 +24,13 @@ namespace LevelCompleter
         private void OnEnable()
         {
             _garbageCounter.OnCollect += CollectHandler;
+            _completer.OnComplete += CompleteHandler;
         }
 
         private void OnDisable()
         {
             _garbageCounter.OnCollect -= CollectHandler;
+            _completer.OnComplete -= CompleteHandler;
         }
         
         private void CollectHandler(int collected)
@@ -37,6 +39,11 @@ namespace LevelCompleter
             {
                 _completer.Complete();
             }
+        }
+
+        private void CompleteHandler()
+        {
+            _garbageCounter.Pause();
         }
     }
 }
