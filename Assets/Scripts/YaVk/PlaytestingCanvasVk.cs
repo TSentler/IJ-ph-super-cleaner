@@ -1,7 +1,6 @@
 using UnityEngine;
 using Agava.VKGames;
 using UnityEngine.UI;
-using System.Collections;
 
 namespace Agava.VKGames.Samples
 {
@@ -29,7 +28,6 @@ namespace Agava.VKGames.Samples
 
         public void ShowLeaderboardButton()
         {
-            Leaderboard.ShowLeaderboard(100);
         }
     }
 }

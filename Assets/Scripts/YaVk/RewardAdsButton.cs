@@ -28,7 +28,7 @@ namespace YaVk
             _button.onClick.RemoveListener(ShowRewardedAds);
         }
 
-        public void ShowRewardedAds()
+        private void ShowRewardedAds()
         {
             _socialNetwork.ShowRewardedAds(OnReward);
         }
