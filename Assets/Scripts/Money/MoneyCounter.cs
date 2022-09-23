@@ -6,7 +6,7 @@ namespace Money
     public class MoneyCounter : MonoBehaviour
     {
         private float _total;
-        private int _oldTotal;
+        private int _reward;
         private bool _isPause;
 
         public event UnityAction<int> OnCollect;
@@ -22,20 +22,25 @@ namespace Money
         {
             if (_isPause)
                 return;
-            
+
+            var old = LevelTotal;
             _total += count;
-            OnCollect?.Invoke(LevelTotal);
+            if (old != LevelTotal)
+            {
+                int money = LevelTotal - old;
+                OnCollect?.Invoke(money);
+            }
         }
 
         public void Reward()
         {
-            if (_oldTotal == 0)
+            if (_reward == 0)
             {
-                _oldTotal = LevelTotal;
+                _reward = LevelTotal;
             }
 
-            _total += _oldTotal;
-            OnCollect?.Invoke(_oldTotal);
+            _total += _reward;
+            OnCollect?.Invoke(_reward);
         }
     }
 }
