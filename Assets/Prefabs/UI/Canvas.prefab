@@ -675,6 +675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3167806559958654293}
   - component: {fileID: 1178808795377536321}
+  - component: {fileID: 2277788596330665190}
   - component: {fileID: 792664682562579988}
   - component: {fileID: 8211566949716733016}
   - component: {fileID: 2276618419416237243}
@@ -715,6 +716,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115084747703415739}
   m_CullTransparentMesh: 0
+--- !u!114 &2277788596330665190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115084747703415739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43775f860d1e2424aa05a2938edb709c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coastText: {fileID: 1093909906296755752}
 --- !u!114 &792664682562579988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5079,7 +5093,7 @@ GameObject:
   - component: {fileID: 5664094763776681342}
   - component: {fileID: 8446624087842667346}
   m_Layer: 5
-  m_Name: MoneyCountText
+  m_Name: CoastText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5529,6 +5543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6213333105799709132}
   - component: {fileID: 4183369721704105154}
+  - component: {fileID: 3958214510746015084}
   - component: {fileID: 1723872981232070057}
   - component: {fileID: 7415403361043369012}
   - component: {fileID: 8997423057706062990}
@@ -5569,6 +5584,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806058938834189971}
   m_CullTransparentMesh: 0
+--- !u!114 &3958214510746015084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806058938834189971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43775f860d1e2424aa05a2938edb709c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coastText: {fileID: 3209679029791157663}
 --- !u!114 &1723872981232070057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7678,7 +7706,7 @@ GameObject:
   - component: {fileID: 434307019159384198}
   - component: {fileID: 1093909906296755752}
   m_Layer: 5
-  m_Name: MoneyCountText
+  m_Name: CoastText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7887,6 +7915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8611105227411654054}
   - component: {fileID: 2644232991460238811}
+  - component: {fileID: 8816896455465492134}
   - component: {fileID: 3350274387408682002}
   - component: {fileID: 4363227033975571561}
   - component: {fileID: 9138294797879449646}
@@ -7927,6 +7956,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4046202035469013176}
   m_CullTransparentMesh: 0
+--- !u!114 &8816896455465492134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4046202035469013176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43775f860d1e2424aa05a2938edb709c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coastText: {fileID: 8446624087842667346}
 --- !u!114 &3350274387408682002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9654,7 +9696,7 @@ GameObject:
   - component: {fileID: 7050860721193214769}
   - component: {fileID: 3209679029791157663}
   m_Layer: 5
-  m_Name: MoneyCountText
+  m_Name: CoastText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
