@@ -5,6 +5,7 @@ namespace PlayerAbilities.Upgrade
 {
     public abstract class Upgrader : MonoBehaviour
     {
+        private string _upgradeName = "";
         private int _upLevel;
         
         [Min(0), SerializeField] private int _coast;

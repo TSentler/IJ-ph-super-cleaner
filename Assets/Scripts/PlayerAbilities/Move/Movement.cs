@@ -70,7 +70,7 @@ namespace PlayerAbilities.Move
 
         public void Upgrade(float speed)
         {
-            _runSpeed = speed;
+            _currentSpeed = _runSpeed = speed;
         }
 
         public void Stop()

@@ -550,9 +550,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9be07f5d8be4e6499be3051de919b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coast: 0
+  _coast: 200
   _view: {fileID: 0}
   _upFactor: 0.1
   _store: {fileID: 4227544883786060713}
   _movement: {fileID: 0}
-  _runSpeed: 0
+  _runSpeed: 150

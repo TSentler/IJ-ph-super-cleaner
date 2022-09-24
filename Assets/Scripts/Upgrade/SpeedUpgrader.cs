@@ -1,4 +1,3 @@
-using System;
 using PlayerAbilities.Move;
 using UnityEngine;
 
@@ -6,6 +5,8 @@ namespace PlayerAbilities.Upgrade
 {
     public class SpeedUpgrader : Upgrader
     {
+        private readonly string _upgradeName = "SpeedUpgrade";
+        
         [SerializeField] private Movement _movement;
         [Min(0f), SerializeField] private float _runSpeed;
         
