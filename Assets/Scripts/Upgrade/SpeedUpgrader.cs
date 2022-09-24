@@ -12,13 +12,14 @@ namespace PlayerAbilities.Upgrade
         
         private float RunSpeed => _runSpeed + _runSpeed * UpFactor;
         
-        private void OnValidate()
+        protected override void OnValidate()
         {
+            base.OnValidate();
             if (_movement == null)
                 Debug.LogWarning("Movement was not found!", this);
         }
 
-        private void Awake()
+        protected override void Initialize()
         {
             Upgrade();
         }
@@ -26,6 +27,11 @@ namespace PlayerAbilities.Upgrade
         protected override void Upgrade()
         {
             _movement.Upgrade(RunSpeed);
+        }
+
+        protected override string GetUpgradeName()
+        {
+            return _upgradeName;
         }
     }
 }

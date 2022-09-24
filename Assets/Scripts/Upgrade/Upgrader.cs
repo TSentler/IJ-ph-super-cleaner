@@ -1,11 +1,12 @@
 using Money;
+using Saves;
 using UnityEngine;
 
 namespace PlayerAbilities.Upgrade
 {
     public abstract class Upgrader : MonoBehaviour
     {
-        private string _upgradeName = "";
+        private GameSaver _saver;
         private int _upLevel;
         
         [Min(0), SerializeField] private int _coast;
@@ -14,10 +15,12 @@ namespace PlayerAbilities.Upgrade
         [SerializeField] private Store _store;
 
         protected float UpFactor => _upLevel * _upFactor;
-        
+
+        protected abstract string GetUpgradeName();
+        protected abstract void Initialize();
         protected abstract void Upgrade();
         
-        private void OnValidate()
+        protected virtual void OnValidate()
         {
             if (_view == null)
                 Debug.LogWarning("UpgradeView was not found!", this);
@@ -25,9 +28,16 @@ namespace PlayerAbilities.Upgrade
                 Debug.LogWarning("Store was not found!", this);
         }
 
+        protected virtual void Awake()
+        {
+            _saver = FindObjectOfType<GameSaver>();
+            _upLevel = _saver?.Load(GetUpgradeName()) ?? 0;
+        }
+
         private void Start()
         {
             _view.SetCoast(_coast);
+            Initialize();
         }
 
         private void OnEnable()
@@ -45,6 +55,7 @@ namespace PlayerAbilities.Upgrade
             _store.Buy(_coast, () =>
             {
                 _upLevel++;
+                _saver.Save(GetUpgradeName(), _upLevel);
                 Upgrade();
             });
         }
