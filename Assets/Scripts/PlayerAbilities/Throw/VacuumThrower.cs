@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 namespace PlayerAbilities.Throw
 {
@@ -60,6 +59,11 @@ namespace PlayerAbilities.Throw
             _throwObject?.Break(force);
             _throwObject = null;
             OnBreak?.Invoke();
+        }
+
+        public void Upgrade(float speed)
+        {
+            _speed = speed;
         }
     }
 }

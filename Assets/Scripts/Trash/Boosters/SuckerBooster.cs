@@ -25,5 +25,10 @@ namespace Trash.Boosters
         {
             _sphereCollider.radius = _radius;
         }
+
+        public void Upgrade(float radius)
+        {
+            _sphereCollider.radius = _radius = radius;
+        }
     }
 }

@@ -516,6 +516,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9072554351269184631}
   - component: {fileID: 8555956034503155398}
+  - component: {fileID: 8235921007716051571}
+  - component: {fileID: 2329670808917733364}
   m_Layer: 0
   m_Name: Upgrade
   m_TagString: Untagged
@@ -555,4 +557,40 @@ MonoBehaviour:
   _upFactor: 0.1
   _store: {fileID: 4227544883786060713}
   _movement: {fileID: 0}
-  _runSpeed: 150
+  _runSpeed: 125
+--- !u!114 &8235921007716051571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752335166933386765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddff1877b5a79740829008ca1514648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coast: 200
+  _view: {fileID: 0}
+  _upFactor: 0.1
+  _store: {fileID: 4227544883786060713}
+  _thrower: {fileID: 0}
+  _throwSpeed: 10
+--- !u!114 &2329670808917733364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752335166933386765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5c6bb25e36bbe145ac194b59772a436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coast: 200
+  _view: {fileID: 0}
+  _upFactor: 0.12
+  _store: {fileID: 4227544883786060713}
+  _suckerBooster: {fileID: 0}
+  _radius: 1.5

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace PlayerAbilities.Upgrade
+namespace Upgrade
 {
     [RequireComponent(typeof(Button))]
     public class UpgradeView : MonoBehaviour

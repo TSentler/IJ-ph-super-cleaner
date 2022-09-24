@@ -2,7 +2,7 @@ using Money;
 using Saves;
 using UnityEngine;
 
-namespace PlayerAbilities.Upgrade
+namespace Upgrade
 {
     public abstract class Upgrader : MonoBehaviour
     {
@@ -17,8 +17,7 @@ namespace PlayerAbilities.Upgrade
         protected float UpFactor => _upLevel * _upFactor;
 
         protected abstract string GetUpgradeName();
-        protected abstract void Initialize();
-        protected abstract void Upgrade();
+        protected abstract void SetUpgrade();
         
         protected virtual void OnValidate()
         {
@@ -37,7 +36,7 @@ namespace PlayerAbilities.Upgrade
         private void Start()
         {
             _view.SetCoast(_coast);
-            Initialize();
+            SetUpgrade();
         }
 
         private void OnEnable()
@@ -56,7 +55,7 @@ namespace PlayerAbilities.Upgrade
             {
                 _upLevel++;
                 _saver.Save(GetUpgradeName(), _upLevel);
-                Upgrade();
+                SetUpgrade();
             });
         }
     }
