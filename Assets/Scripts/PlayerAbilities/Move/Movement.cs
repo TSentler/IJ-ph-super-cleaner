@@ -16,7 +16,7 @@ namespace PlayerAbilities.Move
             _rotationSpeed = 15f;
 
         public event UnityAction<Vector2> OnMove;
-            
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody>();
@@ -66,6 +66,11 @@ namespace PlayerAbilities.Move
         public void ResetSpeed()
         {
             _currentSpeed = _runSpeed;
+        }
+
+        public void Upgrade(float speed)
+        {
+            _runSpeed = speed;
         }
 
         public void Stop()

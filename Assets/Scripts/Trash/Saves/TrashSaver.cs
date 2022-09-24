@@ -6,10 +6,14 @@ namespace Trash.Saves
 {
     public class TrashSaver : MonoBehaviour
     {
+        private readonly string _trashName = "Trash";
+        
         private GameSaver _saver;
         
         [SerializeField] private GarbageCounter _garbageCounter;
         [SerializeField] private Completer _completer;
+
+        public int LastTrash { get; private set; }
 
         private void OnValidate()
         {
@@ -22,6 +26,7 @@ namespace Trash.Saves
         private void Awake()
         {
             _saver = FindObjectOfType<GameSaver>();
+            LastTrash = _saver?.Load(_trashName) ?? 0;
         }
         
         private void OnEnable()
@@ -36,8 +41,9 @@ namespace Trash.Saves
 
         private void Save()
         {
-            var trash = _garbageCounter.Collected + _saver.LastTrash;
-            _saver.SaveTrash(trash);            
+            var trash = _garbageCounter.Collected + LastTrash;
+            LastTrash = trash;
+            _saver.Save(_trashName, trash);
         }
     }
 }

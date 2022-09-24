@@ -1,0 +1,17 @@
+{
+    "name": "Money.YaVk",
+    "rootNamespace": "",
+    "references": [
+        "GUID:09333de930c0ebd46a74e6fe4335da92",
+        "GUID:e6f074628495cd447a86a80aef8898f9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

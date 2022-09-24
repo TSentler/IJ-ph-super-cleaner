@@ -1,5 +1,5 @@
 using LevelCompleter;
-using Saves;
+using Trash.Saves;
 using UnityEngine;
 using YaVk;
 
@@ -8,22 +8,27 @@ namespace Leaderboard
     public class LeaderboardPresenter : MonoBehaviour
     {
         private SocialNetwork _socialNetwork;
-        private GameSaver _saver;
 
         [SerializeField] private LeaderboardShowButton _button;
         [SerializeField] private LeaderboardView _view;
         [SerializeField] private Completer _completer;
+        [SerializeField] private TrashSaver _trashSaver;
         
         private void OnValidate()
         {
-            if (_saver == null)
-                Debug.LogWarning("Saver was not found!", this);
+            if (_button == null)
+                Debug.LogWarning("Leaderboard Button was not found!", this);
+            if (_view == null)
+                Debug.LogWarning("Leaderboard View was not found!", this);
+            if (_completer == null)
+                Debug.LogWarning("Completer was not found!", this);
+            if (_trashSaver == null)
+                Debug.LogWarning("TrashSaver was not found!", this);
         }
         
         private void Awake()
         {
             _socialNetwork = FindObjectOfType<SocialNetwork>();
-            _saver = FindObjectOfType<GameSaver>();
         }
         
         private void OnEnable()
@@ -67,7 +72,7 @@ namespace Leaderboard
         
         private void Apply()
         {
-            _socialNetwork.GetLeaderboard(_saver.LastTrash,
+            _socialNetwork.GetLeaderboard(_trashSaver.LastTrash,
                 leaderList =>
                 {
                     if (_socialNetwork.IsAutoLeaderboard() || _view == null)
