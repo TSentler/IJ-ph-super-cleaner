@@ -314,7 +314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &468132
 SphereCollider:
@@ -708,7 +707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &5540878
 SphereCollider:
@@ -1346,7 +1344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &15187335
 SphereCollider:
@@ -2395,7 +2392,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &29126692
 SphereCollider:
@@ -2479,7 +2475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &29799755
 SphereCollider:
@@ -2602,7 +2597,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &30528580
 SphereCollider:
@@ -2747,7 +2741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &31165482
 SphereCollider:
@@ -3262,7 +3255,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &50932649
 SphereCollider:
@@ -4010,7 +4002,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &61563564
 SphereCollider:
@@ -4399,7 +4390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &66176227
 SphereCollider:
@@ -4767,7 +4757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &72660608
 SphereCollider:
@@ -5056,7 +5045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &77567595
 SphereCollider:
@@ -5118,7 +5106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &78725843
 SphereCollider:
@@ -5263,7 +5250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &80366792
 SphereCollider:
@@ -5325,7 +5311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &81387301
 SphereCollider:
@@ -5902,7 +5887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &92134848
 SphereCollider:
@@ -6252,7 +6236,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &100862392
 SphereCollider:
@@ -6314,7 +6297,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &101467296
 SphereCollider:
@@ -6376,7 +6358,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &103753932
 SphereCollider:
@@ -6438,7 +6419,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &105112495
 SphereCollider:
@@ -6683,7 +6663,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &109771200
 SphereCollider:
@@ -6821,7 +6800,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &116748404
 SphereCollider:
@@ -6966,7 +6944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &119319439
 SphereCollider:
@@ -7552,7 +7529,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &131039571
 SphereCollider:
@@ -7614,7 +7590,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &131122759
 SphereCollider:
@@ -7737,7 +7712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &132531226
 SphereCollider:
@@ -7882,7 +7856,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &135987788
 SphereCollider:
@@ -8210,7 +8183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &142945796
 SphereCollider:
@@ -8870,7 +8842,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &155382594
 SphereCollider:
@@ -9046,7 +9017,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &156228080
 SphereCollider:
@@ -9108,7 +9078,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &156864533
 SphereCollider:
@@ -9253,7 +9222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &158495042
 SphereCollider:
@@ -9376,7 +9344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &162308423
 SphereCollider:
@@ -9438,7 +9405,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &166127117
 SphereCollider:
@@ -9843,7 +9809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &172071592
 SphereCollider:
@@ -10752,7 +10717,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &185020787
 SphereCollider:
@@ -11124,7 +11088,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &191252486
 SphereCollider:
@@ -11269,7 +11232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &196698450
 SphereCollider:
@@ -11331,7 +11293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &196916873
 SphereCollider:
@@ -11476,7 +11437,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &198071639
 SphereCollider:
@@ -11841,7 +11801,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &202924391
 SphereCollider:
@@ -12318,7 +12277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &211687096
 SphereCollider:
@@ -12463,7 +12421,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &213606203
 SphereCollider:
@@ -12586,7 +12543,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &214481199
 SphereCollider:
@@ -12648,7 +12604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &227152737
 SphereCollider:
@@ -12710,7 +12665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &227968293
 SphereCollider:
@@ -12772,7 +12726,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &232230438
 SphereCollider:
@@ -13277,7 +13230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &238258753
 SphereCollider:
@@ -13754,7 +13706,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &251454722
 SphereCollider:
@@ -14075,7 +14026,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &255710226
 SphereCollider:
@@ -14220,7 +14170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &255867473
 SphereCollider:
@@ -14758,7 +14707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &264873673
 SphereCollider:
@@ -14942,7 +14890,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &269036370
 SphereCollider:
@@ -15004,7 +14951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &272313538
 SphereCollider:
@@ -15066,7 +15012,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &273852011
 SphereCollider:
@@ -15128,7 +15073,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &274189705
 SphereCollider:
@@ -15674,7 +15618,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &291682790
 SphereCollider:
@@ -15963,7 +15906,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &300770047
 SphereCollider:
@@ -16025,7 +15967,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &301548088
 SphereCollider:
@@ -16663,7 +16604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &311548256
 SphereCollider:
@@ -16808,7 +16748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &312197499
 SphereCollider:
@@ -16870,7 +16809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &313006979
 SphereCollider:
@@ -17137,7 +17075,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &319302302
 SphereCollider:
@@ -17260,7 +17197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &322204058
 SphereCollider:
@@ -17527,7 +17463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &326348196
 SphereCollider:
@@ -17755,7 +17690,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &328867569
 SphereCollider:
@@ -18116,7 +18050,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &337045255
 SphereCollider:
@@ -18344,7 +18277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &341155382
 SphereCollider:
@@ -19001,7 +18933,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &356174809
 SphereCollider:
@@ -19063,7 +18994,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &356736292
 SphereCollider:
@@ -19125,7 +19055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &356951653
 SphereCollider:
@@ -19718,7 +19647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &366547021
 SphereCollider:
@@ -20068,7 +19996,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &370219325
 SphereCollider:
@@ -20130,7 +20057,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &373229520
 SphereCollider:
@@ -20412,7 +20338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &379640307
 SphereCollider:
@@ -20474,7 +20399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &379670186
 SphereCollider:
@@ -20536,7 +20460,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &379943437
 SphereCollider:
@@ -20747,7 +20670,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &391568966
 SphereCollider:
@@ -20809,7 +20731,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &392150181
 SphereCollider:
@@ -21567,7 +21488,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &406778655
 SphereCollider:
@@ -21629,7 +21549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &407774011
 SphereCollider:
@@ -21691,7 +21610,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &408344398
 SphereCollider:
@@ -21957,7 +21875,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &415925375
 SphereCollider:
@@ -22307,7 +22224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &421900837
 SphereCollider:
@@ -22452,7 +22368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &422385703
 SphereCollider:
@@ -22802,7 +22717,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &433243276
 SphereCollider:
@@ -22947,7 +22861,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &434533277
 SphereCollider:
@@ -23009,7 +22922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &434887043
 SphereCollider:
@@ -23071,7 +22983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &437205327
 SphereCollider:
@@ -23946,7 +23857,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &449600746
 SphereCollider:
@@ -24870,7 +24780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &471930169
 SphereCollider:
@@ -25130,7 +25039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &478547148
 SphereCollider:
@@ -25524,7 +25432,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &488776206
 SphereCollider:
@@ -25586,7 +25493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &489111470
 SphereCollider:
@@ -25648,7 +25554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &490617690
 SphereCollider:
@@ -26142,7 +26047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &506792507
 SphereCollider:
@@ -26575,7 +26479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &516461574
 SphereCollider:
@@ -26637,7 +26540,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &518337563
 SphereCollider:
@@ -26782,7 +26684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &519484403
 SphereCollider:
@@ -26905,7 +26806,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &520982743
 SphereCollider:
@@ -27238,7 +27138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &529055217
 SphereCollider:
@@ -27300,7 +27199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &531405615
 SphereCollider:
@@ -27672,7 +27570,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &540711086
 SphereCollider:
@@ -27795,7 +27692,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &542361738
 SphereCollider:
@@ -28477,7 +28373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &552733504
 SphereCollider:
@@ -29254,7 +29149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &566133540
 SphereCollider:
@@ -29849,7 +29743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &574945506
 SphereCollider:
@@ -30165,7 +30058,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &579230196
 SphereCollider:
@@ -30349,7 +30241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &582453195
 SphereCollider:
@@ -30494,7 +30385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &582918303
 SphereCollider:
@@ -30556,7 +30446,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &582982548
 SphereCollider:
@@ -30618,7 +30507,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &583207749
 SphereCollider:
@@ -30680,7 +30568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &583633427
 SphereCollider:
@@ -30742,7 +30629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &583730502
 SphereCollider:
@@ -30804,7 +30690,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &584509546
 SphereCollider:
@@ -31154,7 +31039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &588959978
 SphereCollider:
@@ -32041,7 +31925,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &597586816
 SphereCollider:
@@ -32701,7 +32584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &615275624
 SphereCollider:
@@ -33366,7 +33248,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &630971427
 SphereCollider:
@@ -33716,7 +33597,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &638694611
 SphereCollider:
@@ -33861,7 +33741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &639957923
 SphereCollider:
@@ -34500,7 +34379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &652411172
 SphereCollider:
@@ -34562,7 +34440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &656704214
 SphereCollider:
@@ -34707,7 +34584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &659048675
 SphereCollider:
@@ -34852,7 +34728,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &660539122
 SphereCollider:
@@ -34914,7 +34789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &661457216
 SphereCollider:
@@ -35059,7 +34933,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &665679841
 SphereCollider:
@@ -35182,7 +35055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &669877634
 SphereCollider:
@@ -35305,7 +35177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &673205233
 SphereCollider:
@@ -35965,7 +35836,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &695077542
 SphereCollider:
@@ -36110,7 +35980,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &696752939
 SphereCollider:
@@ -36377,7 +36246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &698581175
 SphereCollider:
@@ -36522,7 +36390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &700138861
 SphereCollider:
@@ -36977,7 +36844,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &705356413
 SphereCollider:
@@ -37039,7 +36905,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &706834114
 SphereCollider:
@@ -37184,7 +37049,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &708033580
 SphereCollider:
@@ -37329,7 +37193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &708971041
 SphereCollider:
@@ -37557,7 +37420,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &711308704
 SphereCollider:
@@ -37619,7 +37481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &713041648
 SphereCollider:
@@ -37825,7 +37686,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &714772597
 SphereCollider:
@@ -38529,7 +38389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &729177848
 SphereCollider:
@@ -39627,7 +39486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &764517293
 SphereCollider:
@@ -39767,7 +39625,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &767262751
 SphereCollider:
@@ -40516,7 +40373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &779638152
 SphereCollider:
@@ -40578,7 +40434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &781088529
 SphereCollider:
@@ -40867,7 +40722,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &787860420
 SphereCollider:
@@ -41012,7 +40866,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &789943173
 SphereCollider:
@@ -41240,7 +41093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &791160722
 SphereCollider:
@@ -41634,7 +41486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &798107582
 SphereCollider:
@@ -41923,7 +41774,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &802891498
 SphereCollider:
@@ -42295,7 +42145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &808859559
 SphereCollider:
@@ -42689,7 +42538,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &813003264
 SphereCollider:
@@ -43045,7 +42893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &819842793
 SphereCollider:
@@ -43273,7 +43120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &826155036
 SphereCollider:
@@ -43335,7 +43181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &826860177
 SphereCollider:
@@ -43397,7 +43242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &830406816
 SphereCollider:
@@ -43697,7 +43541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &837350741
 SphereCollider:
@@ -44008,7 +43851,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &845490523
 SphereCollider:
@@ -44070,7 +43912,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &847894731
 SphereCollider:
@@ -44774,7 +44615,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &863297852
 SphereCollider:
@@ -45068,7 +44908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &868089566
 SphereCollider:
@@ -45191,7 +45030,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &868913986
 SphereCollider:
@@ -45790,7 +45628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &879624784
 SphereCollider:
@@ -46079,7 +45916,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &887664243
 SphereCollider:
@@ -46715,7 +46551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &901976045
 SphereCollider:
@@ -47419,7 +47254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &914125034
 SphereCollider:
@@ -47708,7 +47542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &919932660
 SphereCollider:
@@ -47831,7 +47664,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &921145941
 SphereCollider:
@@ -47893,7 +47725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &924395336
 SphereCollider:
@@ -48116,7 +47947,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &929932171
 SphereCollider:
@@ -48947,7 +48777,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &940547581
 SphereCollider:
@@ -49009,7 +48838,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &940706014
 SphereCollider:
@@ -49298,7 +49126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &947122443
 SphereCollider:
@@ -49421,7 +49248,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &949972292
 SphereCollider:
@@ -49566,7 +49392,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &950851764
 SphereCollider:
@@ -49999,7 +49824,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &964935236
 SphereCollider:
@@ -50315,7 +50139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &974631586
 SphereCollider:
@@ -50438,7 +50261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &976717826
 SphereCollider:
@@ -50583,7 +50405,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &981686789
 SphereCollider:
@@ -51121,7 +50942,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &996511261
 SphereCollider:
@@ -51449,7 +51269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1008771250
 SphereCollider:
@@ -51594,7 +51413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1010654000
 SphereCollider:
@@ -51822,7 +51640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1016594029
 SphereCollider:
@@ -52648,7 +52465,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1029839891
 SphereCollider:
@@ -52976,7 +52792,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1033850730
 SphereCollider:
@@ -53099,7 +52914,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1035487388
 SphereCollider:
@@ -54396,7 +54210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1053997989
 SphereCollider:
@@ -54519,7 +54332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1057492128
 SphereCollider:
@@ -54747,7 +54559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1061677158
 SphereCollider:
@@ -54809,7 +54620,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1063111699
 SphereCollider:
@@ -55098,7 +54908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1068947021
 SphereCollider:
@@ -55531,7 +55340,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1079258564
 SphereCollider:
@@ -55593,7 +55401,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1080736909
 SphereCollider:
@@ -56026,7 +55833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1087032642
 SphereCollider:
@@ -56315,7 +56121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1099248961
 SphereCollider:
@@ -56536,7 +56341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1103253121
 SphereCollider:
@@ -57174,7 +56978,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1120697979
 SphereCollider:
@@ -58153,7 +57956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1144873411
 SphereCollider:
@@ -58608,7 +58410,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1159233973
 SphereCollider:
@@ -58753,7 +58554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1161662715
 SphereCollider:
@@ -58815,7 +58615,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1165094835
 SphereCollider:
@@ -58877,7 +58676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1167163491
 SphereCollider:
@@ -59105,7 +58903,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1173820335
 SphereCollider:
@@ -59333,7 +59130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1179800336
 SphereCollider:
@@ -59622,7 +59418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1187435107
 SphereCollider:
@@ -60243,7 +60038,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1206933889
 SphereCollider:
@@ -60715,7 +60509,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1216769931
 SphereCollider:
@@ -61290,7 +61083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1228740956
 SphereCollider:
@@ -61352,7 +61144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1230799166
 SphereCollider:
@@ -61558,7 +61349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1233281351
 SphereCollider:
@@ -61847,7 +61637,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1238490706
 SphereCollider:
@@ -62522,7 +62311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1247438703
 SphereCollider:
@@ -62955,7 +62743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1254396701
 SphereCollider:
@@ -63100,7 +62887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1257650852
 SphereCollider:
@@ -63477,7 +63263,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1270388334
 SphereCollider:
@@ -63707,7 +63492,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1270995715
 SphereCollider:
@@ -63769,7 +63553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1271212851
 SphereCollider:
@@ -63831,7 +63614,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1271307839
 SphereCollider:
@@ -64059,7 +63841,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1275808245
 SphereCollider:
@@ -64370,7 +64151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1279916487
 SphereCollider:
@@ -64598,7 +64378,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1284076041
 SphereCollider:
@@ -65175,7 +64954,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1287023337
 SphereCollider:
@@ -65237,7 +65015,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1287528957
 SphereCollider:
@@ -65631,7 +65408,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1292933980
 SphereCollider:
@@ -66042,7 +65818,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1303411555
 SphereCollider:
@@ -66104,7 +65879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1304867467
 SphereCollider:
@@ -66538,7 +66312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1315850776
 SphereCollider:
@@ -66661,7 +66434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1322633432
 SphereCollider:
@@ -67011,7 +66783,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1329226827
 SphereCollider:
@@ -67156,7 +66927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1330491323
 SphereCollider:
@@ -68115,7 +67885,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1340824428
 SphereCollider:
@@ -68177,7 +67946,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1341603459
 SphereCollider:
@@ -68776,7 +68544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1352141325
 SphereCollider:
@@ -69751,7 +69518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1371958782
 SphereCollider:
@@ -69979,7 +69745,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1377693548
 SphereCollider:
@@ -70207,7 +69972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1378518989
 SphereCollider:
@@ -70269,7 +70033,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1385404379
 SphereCollider:
@@ -70331,7 +70094,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1388849096
 SphereCollider:
@@ -70559,7 +70321,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1392890983
 SphereCollider:
@@ -70621,7 +70382,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1394275449
 SphereCollider:
@@ -70766,7 +70526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1394847149
 SphereCollider:
@@ -71130,7 +70889,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1406942253
 SphereCollider:
@@ -71598,7 +71356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1416681498
 SphereCollider:
@@ -71660,7 +71417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1416838221
 SphereCollider:
@@ -73032,7 +72788,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1444474186
 SphereCollider:
@@ -73094,7 +72849,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1445249070
 SphereCollider:
@@ -73505,7 +73259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1451577465
 SphereCollider:
@@ -73567,7 +73320,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1451925328
 SphereCollider:
@@ -73629,7 +73381,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1452490121
 SphereCollider:
@@ -73752,7 +73503,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1454889662
 SphereCollider:
@@ -73897,7 +73647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1456187841
 SphereCollider:
@@ -74435,7 +74184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1468698565
 SphereCollider:
@@ -74641,7 +74389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1470567268
 SphereCollider:
@@ -75345,7 +75092,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1490426893
 SphereCollider:
@@ -75732,7 +75478,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1494557107
 SphereCollider:
@@ -75938,7 +75683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1499177478
 SphereCollider:
@@ -76000,7 +75744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1500760688
 SphereCollider:
@@ -76123,7 +75866,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1503065862
 SphereCollider:
@@ -76351,7 +76093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1505814296
 SphereCollider:
@@ -76557,7 +76298,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1509973701
 SphereCollider:
@@ -76619,7 +76359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1510756171
 SphereCollider:
@@ -76764,7 +76503,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1513478049
 SphereCollider:
@@ -76826,7 +76564,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1514280219
 SphereCollider:
@@ -77054,7 +76791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1519013869
 SphereCollider:
@@ -77653,7 +77389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1530016881
 SphereCollider:
@@ -78191,7 +77926,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1540367835
 SphereCollider:
@@ -79198,7 +78932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1554827031
 SphereCollider:
@@ -79321,7 +79054,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1555533036
 SphereCollider:
@@ -79549,7 +79281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1558333533
 SphereCollider:
@@ -79694,7 +79425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1559209314
 SphereCollider:
@@ -80149,7 +79879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1565791996
 SphereCollider:
@@ -80211,7 +79940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1566031017
 SphereCollider:
@@ -80417,7 +80145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1568856221
 SphereCollider:
@@ -80540,7 +80267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1570655518
 SphereCollider:
@@ -81618,7 +81344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1582791836
 SphereCollider:
@@ -81907,7 +81632,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1587134187
 SphereCollider:
@@ -81969,7 +81693,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1588024039
 SphereCollider:
@@ -82114,7 +81837,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1590386770
 SphereCollider:
@@ -82343,7 +82065,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1595313070
 SphereCollider:
@@ -82405,7 +82126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1595591691
 SphereCollider:
@@ -82694,7 +82414,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1599464244
 SphereCollider:
@@ -83232,7 +82951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1605225986
 SphereCollider:
@@ -83499,7 +83217,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1608139626
 SphereCollider:
@@ -83561,7 +83278,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1608216784
 SphereCollider:
@@ -83933,7 +83649,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1612613419
 SphereCollider:
@@ -84266,7 +83981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1616909483
 SphereCollider:
@@ -84328,7 +84042,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1621701678
 SphereCollider:
@@ -84866,7 +84579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1638460334
 SphereCollider:
@@ -84989,7 +84701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1639849518
 SphereCollider:
@@ -85134,7 +84845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1642722473
 SphereCollider:
@@ -85506,7 +85216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1651839330
 SphereCollider:
@@ -85568,7 +85277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1652760666
 SphereCollider:
@@ -85796,7 +85504,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1663967242
 SphereCollider:
@@ -86002,7 +85709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1675371364
 SphereCollider:
@@ -86601,7 +86307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1688897772
 SphereCollider:
@@ -87767,7 +87472,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1705297370
 SphereCollider:
@@ -88287,7 +87991,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1711473760
 SphereCollider:
@@ -88349,7 +88052,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1711590093
 SphereCollider:
@@ -88577,7 +88279,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1718460616
 SphereCollider:
@@ -88700,7 +88401,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1720299715
 SphereCollider:
@@ -89050,7 +88750,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1728615631
 SphereCollider:
@@ -89339,7 +89038,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1735101941
 SphereCollider:
@@ -89567,7 +89265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1744031565
 SphereCollider:
@@ -90946,7 +90643,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1765632589
 SphereCollider:
@@ -91296,7 +90992,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1772050889
 SphereCollider:
@@ -91358,7 +91053,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1773599934
 SphereCollider:
@@ -91796,7 +91490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1782002002
 SphereCollider:
@@ -91988,6 +91681,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783795914}
   m_Mesh: {fileID: 7605840746057786063, guid: 43d6662b2ee3a9b468ddc9fba423af4a, type: 3}
+--- !u!114 &1783855253 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5344840037622329798, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+  m_PrefabInstance: {fileID: 749981465947161898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cbc55f74498694795b3d9d90199a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1793096018
 GameObject:
   m_ObjectHideFlags: 0
@@ -92262,7 +91966,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1795111533
 SphereCollider:
@@ -92673,7 +92376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1802949582
 SphereCollider:
@@ -93128,7 +92830,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1814655856
 SphereCollider:
@@ -93705,7 +93406,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1821179276
 SphereCollider:
@@ -93767,7 +93467,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1821888178
 SphereCollider:
@@ -94852,7 +94551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1847904544
 SphereCollider:
@@ -95202,7 +94900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1852823320
 SphereCollider:
@@ -95325,7 +95022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1855030332
 SphereCollider:
@@ -95531,7 +95227,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1860192341
 SphereCollider:
@@ -95820,7 +95515,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1865816593
 SphereCollider:
@@ -96595,7 +96289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1878040972
 SphereCollider:
@@ -97107,7 +96800,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1891215099
 SphereCollider:
@@ -97230,7 +96922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1894348100
 SphereCollider:
@@ -97458,7 +97149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1897199852
 SphereCollider:
@@ -97520,7 +97210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1897230158
 SphereCollider:
@@ -98036,7 +97725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1908474432
 SphereCollider:
@@ -98098,7 +97786,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1909193006
 SphereCollider:
@@ -98553,7 +98240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1914905509
 SphereCollider:
@@ -99558,7 +99244,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1941167661
 SphereCollider:
@@ -99703,7 +99388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1944312066
 SphereCollider:
@@ -99848,7 +99532,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1950645062
 SphereCollider:
@@ -99971,7 +99654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1956409980
 SphereCollider:
@@ -100487,7 +100169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1964022561
 SphereCollider:
@@ -100549,7 +100230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1965393539
 SphereCollider:
@@ -100672,7 +100352,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1966330735
 SphereCollider:
@@ -100795,7 +100474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1968049682
 SphereCollider:
@@ -101084,7 +100762,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1972145852
 SphereCollider:
@@ -101229,7 +100906,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1974183534
 SphereCollider:
@@ -101496,7 +101172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1978509406
 SphereCollider:
@@ -101619,7 +101294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1981470515
 SphereCollider:
@@ -101681,7 +101355,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1981551772
 SphereCollider:
@@ -101743,7 +101416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1982093785
 SphereCollider:
@@ -101949,7 +101621,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1983575283
 SphereCollider:
@@ -102177,7 +101848,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1987061430
 SphereCollider:
@@ -102653,7 +102323,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &1994874692
 SphereCollider:
@@ -102920,7 +102589,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2005050564
 SphereCollider:
@@ -102982,7 +102650,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2005561500
 SphereCollider:
@@ -103044,7 +102711,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2006294831
 SphereCollider:
@@ -103167,7 +102833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2007239086
 SphereCollider:
@@ -104884,7 +104549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2038291696
 SphereCollider:
@@ -105029,7 +104693,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2043722294
 SphereCollider:
@@ -105262,7 +104925,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2049114335
 SphereCollider:
@@ -105922,7 +105584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2056492014
 SphereCollider:
@@ -106946,7 +106607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2071581032
 SphereCollider:
@@ -107296,7 +106956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2078005598
 SphereCollider:
@@ -107358,7 +107017,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2078848797
 SphereCollider:
@@ -107730,7 +107388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2088719984
 SphereCollider:
@@ -107792,7 +107449,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2092633737
 SphereCollider:
@@ -107854,7 +107510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2094296825
 SphereCollider:
@@ -108121,7 +107776,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2105659950
 SphereCollider:
@@ -108581,7 +108235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2115487036
 SphereCollider:
@@ -108787,7 +108440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2122044352
 SphereCollider:
@@ -109015,7 +108667,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2126738092
 SphereCollider:
@@ -109409,7 +109060,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 0.02770083
-  _axeleration: 1
   _damp: 12
 --- !u!135 &2137429110
 SphereCollider:
@@ -110175,9 +109825,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 358114962}
     - target: {fileID: 362696537810880744, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
+      propertyPath: _nextLevelButtons
+      value: 
+      objectReference: {fileID: 1783855253}
+    - target: {fileID: 362696537810880744, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
       propertyPath: _nextLevelButtons.Array.data[0]
       value: 
-      objectReference: {fileID: 6697341207364510802}
+      objectReference: {fileID: 0}
     - target: {fileID: 2329670808917733364, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
       propertyPath: _view
       value: 
@@ -112598,17 +112252,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &6697341207364510802 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5236505775539091024, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
-  m_PrefabInstance: {fileID: 749981465947161898}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7cbc55f74498694795b3d9d90199a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6717151413916527863
 GameObject:
   m_ObjectHideFlags: 0

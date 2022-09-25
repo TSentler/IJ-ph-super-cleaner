@@ -9,22 +9,18 @@ namespace LevelLoader
     {
         private LevelInfo _levelInfo;
 
-        [SerializeField] private List<NextLevelAction> 
-            _nextLevelButtons = new();
+        [SerializeField] private NextLevelButton _nextLevelButtons;
         
         private void OnValidate()
         {
-            if (_nextLevelButtons.Count == 0)
+            if (_nextLevelButtons == null)
                 Debug.LogWarning("NextLevelButton was not found!", this);
         }
         
         private void Awake()
         {
             _levelInfo = GetComponent<LevelInfo>();
-            foreach (var button in _nextLevelButtons)
-            {
-                button.SetNextLevelAction(Load);
-            }
+            _nextLevelButtons.SetNextLevelAction(Load);
         }
 
         private void Load()
