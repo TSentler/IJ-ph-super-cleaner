@@ -21,12 +21,6 @@ namespace LevelCompleter
                 Debug.LogWarning("LvlCompletionPanel was not found!", this);
         }
 
-        private void Awake()
-        {
-            _lvlCompletionPanel.SetActive(false);
-            _moneyButton.SetActive(false);
-        }
-        
         private IEnumerator ShowCoroutine()
         {
             _hide.ForEach(item => item.SetActive(false));

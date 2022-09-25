@@ -1,7 +1,6 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace UI
 {
@@ -9,11 +8,12 @@ namespace UI
     public class CountDown : MonoBehaviour
     {
         private TextMeshProUGUI _text;
+        private Coroutine _coroutine;
+        private float _elapsed;
+        private int _startNumber, _target;
         
         [Min(0f), SerializeField] private float _time = 0.3f;
 
-        public UnityEvent OnCountDown, OnEnd;
-        
         private void Awake()
         {
             _text = GetComponent<TextMeshProUGUI>();
@@ -21,32 +21,30 @@ namespace UI
                 Debug.LogWarning("Text is not integer!", this);
         }
 
-        private IEnumerator CountDownCoroutine(int number)
+        private IEnumerator CountDownCoroutine()
         {
-            var elapsed = 0f;
-            while (elapsed < _time)
+            while (_elapsed < _time)
             {
-                elapsed += Time.deltaTime;
-                var rate = elapsed / _time;
-                var i = (int)Mathf.Lerp(number, 0f, rate);
+                _elapsed += Time.deltaTime;
+                var rate = _elapsed / _time;
+                var i = (int)Mathf.Lerp(_startNumber, _target, rate);
                 _text.SetText(i.ToString());
                 yield return null;
             }
-            
-            OnEnd?.Invoke();
+
+            _coroutine = null;
         }
 
-        public void Apply()
+        public void Apply(int target)
         {
-            if (int.TryParse(_text.text, out var number)
-                && number > 0)
+            _target = target;
+            if (int.TryParse(_text.text, out _startNumber))
             {
-                OnCountDown?.Invoke();
-                StartCoroutine(CountDownCoroutine(number));
-            }
-            else
-            {
-                OnEnd?.Invoke();
+                _elapsed = 0f;
+                if (_coroutine == null && _target != _startNumber)
+                {
+                    _coroutine = StartCoroutine(CountDownCoroutine());
+                }
             }
         }
     }
