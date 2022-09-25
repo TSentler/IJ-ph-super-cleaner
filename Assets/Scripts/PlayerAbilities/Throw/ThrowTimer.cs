@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PlayerAbilities.Throw
 {
@@ -10,8 +11,11 @@ namespace PlayerAbilities.Throw
         private Coroutine _timerCoroutine;
         private float _timePassed = float.MaxValue, 
             _oldDelay;
+        private bool _wasFx;
         
-        [SerializeField] private float _delay = 1f, _boostDelay = 0.25f;
+        [SerializeField] private float _delayBeforeFx, _delay = 1f, _boostDelay = 0.25f;
+
+        public event UnityAction OnFx;
         
         private bool IsRun => _timePassed < _delay;
         
@@ -36,10 +40,16 @@ namespace PlayerAbilities.Throw
         private IEnumerator TimerCoroutine()
         {
             _timePassed = 0f;
+            _wasFx = false;
+            var fxDelay = _delay - _delayBeforeFx;
             while (IsRun)
             {
                 yield return null;
                 _timePassed += Time.deltaTime;
+                if (fxDelay < _timePassed && _wasFx == false)
+                {
+                    OnFx?.Invoke();
+                }
             }
 
             _timerCoroutine = null;
