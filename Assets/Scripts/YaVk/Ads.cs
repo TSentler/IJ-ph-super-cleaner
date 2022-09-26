@@ -72,6 +72,7 @@ namespace YaVk
             ResetTimer();
 #if !UNITY_WEBGL || UNITY_EDITOR
             onRewardedCallback?.Invoke();
+            onCloseCallback?.Invoke();
 #elif YANDEX_GAMES
             YaVideoAd.Show(() => onYaOpenCallback?.Invoke(),
                 () => onRewardedCallback?.Invoke(),
