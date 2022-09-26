@@ -48,6 +48,7 @@ namespace PlayerAbilities.Throw
                 _timePassed += Time.deltaTime;
                 if (fxDelay < _timePassed && _wasFx == false)
                 {
+                    _wasFx = true;
                     OnFx?.Invoke();
                 }
             }

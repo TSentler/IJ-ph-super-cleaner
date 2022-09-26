@@ -9,6 +9,7 @@ namespace Upgrade
         private GameSaver _saver;
         private int _upLevel;
         
+        [Min(-1), SerializeField] private int _upLevelOverride = -1;
         [Min(0), SerializeField] private int _coast;
         [SerializeField] private UpgradeView _view;
         [Min(0), SerializeField] private float _upFactor = 0.1f;
@@ -31,6 +32,12 @@ namespace Upgrade
         {
             _saver = FindObjectOfType<GameSaver>();
             _upLevel = _saver?.Load(GetUpgradeName()) ?? 0;
+#if UNITY_EDITOR
+            if (_upLevelOverride != -1)
+            {
+                _upLevel = _upLevelOverride;
+            } 
+#endif
         }
 
         private void Start()

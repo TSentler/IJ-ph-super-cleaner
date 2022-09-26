@@ -9,7 +9,7 @@ namespace Trash
         private Rigidbody _rb;
         private bool _isTied;
         
-        [SerializeField] private float _speed = 10f;
+        [SerializeField] private float _speed = 135f;
 
         private void Awake()
         {

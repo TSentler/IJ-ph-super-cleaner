@@ -15,7 +15,7 @@ namespace LevelLoader
             "Level3",
             "Level4",
             "Level5",
-            "LevelArt"
+            "LevelArt",
         };
         private readonly string _tutorialName = "Tutorial";
         
