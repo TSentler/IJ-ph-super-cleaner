@@ -94,7 +94,7 @@ Material:
     - _FlatSpecularEnabled: 1
     - _FlatSpecularSize: 0.1
     - _FlatSpecularSmoothness: 0.5
-    - _Flatness: 1
+    - _Flatness: 0.8
     - _FlatnessExtra: 1
     - _FlatnessSecondary: 1
     - _GlossMapScale: 1

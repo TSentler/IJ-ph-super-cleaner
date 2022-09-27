@@ -8,8 +8,8 @@ namespace LevelLoader
         private readonly string[] _names = new[]
         {
             "Level1",
-            "Level2",
             "LevelLibrary",
+            "Level2",
             "Level3",
             "LevelOffice",
             "Level4",
