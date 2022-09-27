@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 namespace LevelLoader
@@ -13,6 +10,7 @@ namespace LevelLoader
             "Level1",
             "Level2",
             "Level3",
+            "LevelOffice",
             "Level4",
             "LevelGym",
             "Level5",

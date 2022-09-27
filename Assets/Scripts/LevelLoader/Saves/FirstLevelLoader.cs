@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Saves;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,7 +24,7 @@ namespace LevelLoader
             _levelInfo = GetComponent<LevelInfo>();
         }
 
-        private void Start()
+        private IEnumerator Start()
         {
             var lastLevel = _saver.GetLevel();
             var levelName = _levelInfo.TutorialName;
