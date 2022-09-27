@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fragments: {fileID: 8069445942347950126}
-  _maxVelocity: 80
+  _maxVelocity: 170
 --- !u!65 &8447625428418789219
 BoxCollider:
   m_ObjectHideFlags: 0

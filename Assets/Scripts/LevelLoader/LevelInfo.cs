@@ -14,6 +14,7 @@ namespace LevelLoader
             "Level2",
             "Level3",
             "Level4",
+            "LevelGym",
             "Level5",
             "LevelArt",
         };

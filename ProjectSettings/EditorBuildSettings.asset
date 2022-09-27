@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelArt.unity
     guid: 559f0fbfafc65bb4f893341aca808b3a
+  - enabled: 1
+    path: Assets/Scenes/LevelGym.unity
+    guid: 7489f7f5450fbaf479f8fa8b9b59e64a
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e31818dc37bbcf0a99bdef12201c98d9, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 8f0148ebfbfb7e5fa81cb3f97099d00d, type: 2}
