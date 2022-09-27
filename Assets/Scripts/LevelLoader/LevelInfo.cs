@@ -9,6 +9,7 @@ namespace LevelLoader
         {
             "Level1",
             "Level2",
+            "LevelLibrary",
             "Level3",
             "LevelOffice",
             "Level4",
