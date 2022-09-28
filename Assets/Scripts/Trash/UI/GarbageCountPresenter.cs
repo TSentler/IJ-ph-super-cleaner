@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using UI;
 using UnityEngine;
 
@@ -39,10 +36,11 @@ namespace Trash
             _collectedText.SetCount(count);
         }
         
-        private void CollectHandler(int collected)
+        private void CollectHandler(float collected)
         {
-            _collectedText.SetCollected(collected);
-            float sliderValue = (float)collected / _garbageCounter.Count;
+            var collectedRound = _garbageCounter.CollectedAtLevel;
+            _collectedText.SetCollected(collectedRound);
+            float sliderValue = (float)collectedRound / _garbageCounter.Count;
             _collectedSlider.SetValue(sliderValue);
         }
     }

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,15 +7,16 @@ namespace Trash
 {
     public class GarbageCounter : MonoBehaviour
     {
-        private float _collected = 0f, _count = 0f;
+        private float _collectedAtLevel = 0f, _count = 0f;
         private bool _isPause;
 
         [SerializeField] private GarbageDisposal _garbageDisposal;
         [SerializeField] private List<GameObject> _garbageRoots;
 
-        public event UnityAction<int> OnCountChange, OnCollect;
+        public event UnityAction<int> OnCountChange;
+        public event UnityAction<float> OnCollect;
         
-        public int Collected => Mathf.RoundToInt(_collected);
+        public int CollectedAtLevel => Mathf.RoundToInt(_collectedAtLevel);
         
         public int Count => Mathf.RoundToInt(_count);
 
@@ -65,8 +65,8 @@ namespace Trash
             if (_isPause)
                 return;
             
-            _collected += garbage.Count;
-            OnCollect?.Invoke(Collected);
+            _collectedAtLevel += garbage.Count;
+            OnCollect?.Invoke(garbage.Count);
         }
 
         public void Pause()

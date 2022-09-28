@@ -10,40 +10,33 @@ namespace Trash.Saves
         
         private GameSaver _saver;
         
-        [SerializeField] private GarbageCounter _garbageCounter;
-        [SerializeField] private Completer _completer;
-
-        public int LastTrash { get; private set; }
+        [SerializeField] private AllGarbageCollector _allGarbageCollector;
 
         private void OnValidate()
         {
-            if (_garbageCounter == null)
-                Debug.LogWarning("GarbageCounter was not found!", this);
-            if (_completer == null)
-                Debug.LogWarning("Completer was not found!", this);
+            if (_allGarbageCollector == null)
+                Debug.LogWarning("AllGarbageCollector was not found!", this);
         }
         
         private void Awake()
         {
             _saver = FindObjectOfType<GameSaver>();
-            LastTrash = _saver?.Load(_trashName) ?? 0;
+            _allGarbageCollector.Initialize(_saver?.Load(_trashName) ?? 0);
         }
         
         private void OnEnable()
         {
-            _completer.OnComplete += Save;
+            _allGarbageCollector.OnChange += Save;
         }
 
         private void OnDisable()
         {
-            _completer.OnComplete -= Save;
+            _allGarbageCollector.OnChange -= Save;
         }
 
         private void Save()
         {
-            var trash = _garbageCounter.Collected + LastTrash;
-            LastTrash = trash;
-            _saver.Save(_trashName, trash);
+            _saver?.Save(_trashName, _allGarbageCollector.AllTrashRounded);
         }
     }
 }

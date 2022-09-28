@@ -1,14 +1,11 @@
-using System;
 using Trash;
 using UnityEngine;
 
 namespace Money.Trash
 {
-    [RequireComponent(typeof(GarbageDisposal))]
     public class TrashMoneyCollector : MonoBehaviour
     {
-        private GarbageDisposal _garbageDisposal;
-
+        [SerializeField] private GarbageCounter _garbageCounter;
         [SerializeField] private MoneyCounter _moneyCounter;
         [Min(0f), SerializeField] private float _factor = 0.25f;
         
@@ -16,26 +13,23 @@ namespace Money.Trash
         {
             if (_moneyCounter == null)
                 Debug.LogWarning("MoneyCounter was not found!", this);
+            if (_garbageCounter == null)
+                Debug.LogWarning("GarbageCounter was not found!", this);
         }
         
-        private void Awake()
-        {
-            _garbageDisposal = GetComponent<GarbageDisposal>();
-        }
-
         private void OnEnable()
         {
-            _garbageDisposal.OnSucked += SuckHandler;
+            _garbageCounter.OnCollect += CollectHandler;
         }
 
         private void OnDisable()
         {
-            _garbageDisposal.OnSucked -= SuckHandler;
+            _garbageCounter.OnCollect -= CollectHandler;
         }
 
-        private void SuckHandler(Garbage garbage)
+        private void CollectHandler(float collected)
         {
-            var money = garbage.Count * _factor;
+            var money = collected * _factor;
             _moneyCounter.Collect(money);
         }
     }

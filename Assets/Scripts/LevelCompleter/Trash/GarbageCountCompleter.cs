@@ -9,11 +9,14 @@ namespace LevelCompleter
         private Completer _completer;
 
         [SerializeField] private GarbageCounter _garbageCounter;
+        [SerializeField] private AllGarbageCollector _allGarbageCollector;
         
         private void OnValidate()
         {
             if (_garbageCounter == null)
                 Debug.LogWarning("GarbageCounter was not found!", this);
+            if (_allGarbageCollector == null)
+                Debug.LogWarning("AllGarbageCollector was not found!", this);
         }
         
         private void Awake()
@@ -33,9 +36,9 @@ namespace LevelCompleter
             _completer.OnComplete -= CompleteHandler;
         }
         
-        private void CollectHandler(int collected)
+        private void CollectHandler(float collected)
         {
-            if (_garbageCounter.Count == collected)
+            if (_garbageCounter.Count == _garbageCounter.CollectedAtLevel)
             {
                 _completer.Complete();
             }
@@ -44,6 +47,7 @@ namespace LevelCompleter
         private void CompleteHandler()
         {
             _garbageCounter.Pause();
+            _allGarbageCollector.AddLevelGarbage();
         }
     }
 }

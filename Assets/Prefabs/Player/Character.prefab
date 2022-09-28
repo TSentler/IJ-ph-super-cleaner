@@ -5728,7 +5728,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1956850128046058370}
   - component: {fileID: 1956850128046058371}
-  - component: {fileID: 7914417887681417909}
   - component: {fileID: 1956850128046058368}
   - component: {fileID: 2963921961195850537}
   - component: {fileID: 3626074674170277813}
@@ -5768,20 +5767,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _environmentExtraSuckSpeed: 1
   _bonusMultiply: 5
---- !u!114 &7914417887681417909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1956850128046058373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c0f18e6ca21aea48974ea17da73d8a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moneyCounter: {fileID: 0}
-  _factor: 0.25
 --- !u!65 &1956850128046058368
 BoxCollider:
   m_ObjectHideFlags: 0
