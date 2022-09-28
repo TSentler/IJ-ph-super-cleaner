@@ -39,25 +39,14 @@ namespace UI.Joystick
             return stickVector;
         }
 
-        private bool IsPrimaryFinger(int pointerId)
-        {
-            return pointerId == 0 || pointerId == -1;
-        }
-    
         public void OnPointerUp(PointerEventData eventData)
         {
-            if (IsPrimaryFinger(eventData.pointerId) == false)
-                return;
-
             _isTouch = false;
             FingerOut?.Invoke();
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            if (IsPrimaryFinger(eventData.pointerId) == false)
-                return;
-
             _startTouch = eventData.position;
         
             _isTouch = true;
@@ -66,15 +55,10 @@ namespace UI.Joystick
 
         public void OnDrag(PointerEventData eventData)
         {
-            if (_isTouch == false || IsPrimaryFinger(eventData.pointerId) == false)
+            if (_isTouch == false)
                 return;
 
-            Vector2 targetTouch;
-            if (Input.touchCount == 0)
-                targetTouch = Input.mousePosition;
-            else
-                targetTouch = Input.GetTouch(0).position;
-
+            Vector2 targetTouch = eventData.position;
             _stickVector = CalculateStickVector(_startTouch,
                 targetTouch);
 
