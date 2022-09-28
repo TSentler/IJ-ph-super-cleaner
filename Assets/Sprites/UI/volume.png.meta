@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a06b464b21e571b4db47848003751330
+guid: db25c97e091919c4eae9958119b48861
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -66,10 +66,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arrow_to_be_continued_0
+      name: volume_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 148
-        width: 400
-        height: 100
+        x: 37
+        y: 45
+        width: 225
+        height: 422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 910570f1ef5a3ce4a80d38991097c8b3
-      internalID: -1414107920
+      spriteID: 3dc60b09ead74c74a9753ae6487d05c7
+      internalID: 1504811607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 45
+        width: 435
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d75339ab4c095e4ab6eff758c6d20a8
+      internalID: -2047036671
       vertices: []
       indices: 
       edges: []
@@ -151,7 +172,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: e57b3f76bbcbc3745be9b42b6e3a03e9
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +180,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Arrow_to_be_continued_0: -1414107920
+      volume_1: -2047036671
+      volume_0: 1504811607
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
