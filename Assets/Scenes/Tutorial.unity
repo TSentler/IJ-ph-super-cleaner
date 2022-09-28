@@ -29106,6 +29106,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563530375}
   m_Mesh: {fileID: 7605840746057786063, guid: 43d6662b2ee3a9b468ddc9fba423af4a, type: 3}
+--- !u!114 &565767538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7129338341938662975, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+  m_PrefabInstance: {fileID: 749981465947161898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a887c1d5ced0200408635d7208dfad4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &566133537
 GameObject:
   m_ObjectHideFlags: 0
@@ -109888,6 +109899,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3642442334519756798, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 565767538}
     - target: {fileID: 7125857923561025329, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
       propertyPath: _view
       value: 
@@ -110263,6 +110278,10 @@ PrefabInstance:
     - target: {fileID: 3911359467806121544, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024970093309082107, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4590448847705940591, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_AnchorMax.y
