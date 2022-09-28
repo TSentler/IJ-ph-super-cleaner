@@ -13,19 +13,6 @@ namespace YaVk
         private float _time;
             
         [SerializeField] private Initializer _init;
-        [SerializeField] private float _cooldown = 90f;
-
-        private bool IsAdsReady => _time > _cooldown;
-        
-        private void Update()
-        {
-            _time += Time.deltaTime;
-        }
-
-        private void ResetTimer()
-        {
-            _time = 0f;
-        }
         
         public IEnumerator ShowInterstitialAdsCoroutine(
             UnityAction<bool> onCloseCallback = null,
@@ -33,16 +20,7 @@ namespace YaVk
             UnityAction onYaOpenCallback = null,
             UnityAction onYaOfflineCallback = null)
         {
-            if (IsAdsReady == false)
-            {
-                var left = _cooldown - _time;
-                onErrorCallback?.Invoke("Ads cooldown " + left + "sec");
-                onCloseCallback?.Invoke(false);
-                yield break;
-            }
-            
             yield return _init.TryInitializeSdkCoroutine();
-            ResetTimer();
 #if !UNITY_WEBGL || UNITY_EDITOR
             onCloseCallback?.Invoke(true);
 #elif YANDEX_GAMES
@@ -69,7 +47,6 @@ namespace YaVk
             UnityAction onYaOpenCallback = null) 
         {
             yield return StartCoroutine(_init.TryInitializeSdkCoroutine());
-            ResetTimer();
 #if !UNITY_WEBGL || UNITY_EDITOR
             onRewardedCallback?.Invoke();
             onCloseCallback?.Invoke();
