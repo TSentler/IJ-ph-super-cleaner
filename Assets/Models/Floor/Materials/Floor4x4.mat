@@ -9,13 +9,12 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Floor4x4
   m_Shader: {fileID: 4800000, guid: bee44b4a58655ee4cbff107302a3e131, type: 3}
-  m_ShaderKeywords: _TEXTUREBLENDINGMODE_ADD _UNITYSHADOWMODE_MULTIPLY _UNITYSHADOW_OCCLUSION
+  m_ShaderKeywords: _TEXTUREBLENDINGMODE_MULTIPLY
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses:
   - SRPDEFAULTUNLIT
   m_SavedProperties:
@@ -79,6 +78,7 @@ Material:
     - _CelNumSteps: 3
     - _CelPrimaryEnabled: 0
     - _CelPrimaryMode: 0
+    - _ColorMask: 15
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -107,7 +107,7 @@ Material:
     - _GradientEnd: 0.55
     - _GradientSize: 9.51
     - _GradientStart: 1.17
-    - _LightContribution: 0.5
+    - _LightContribution: 0
     - _LightFalloffSize: 0.0001
     - _LightmapDirectionPitch: 0
     - _LightmapDirectionYaw: 0
@@ -136,19 +136,26 @@ Material:
     - _SpecularEnabled: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
     - _Surface: 0
-    - _TextureBlendingMode: 1
-    - _TextureImpact: 0.5
+    - _TextureBlendingMode: 0
+    - _TextureImpact: 1
     - _UVSec: 0
-    - _UnityShadowMode: 1
+    - _UnityShadowMode: 0
     - _UnityShadowOcclusion: 1
     - _UnityShadowPower: 0.4
     - _UnityShadowSharpness: 1
+    - _UseUIAlphaClip: 0
     - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.23004878, g: 0.21726829, b: 0.262, a: 1}
-    - _Color: {r: 0.1853243, g: 0.14990196, b: 0.21568628, a: 1}
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 0.9666667, g: 0.93333334, b: 1, a: 1}
     - _ColorCelShadow: {r: 0.49056602, g: 0.34478462, b: 0.4476891, a: 1}
     - _ColorDim: {r: 0.5660378, g: 0.53950477, b: 0.42452833, a: 0.85}
     - _ColorDimCurve: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
