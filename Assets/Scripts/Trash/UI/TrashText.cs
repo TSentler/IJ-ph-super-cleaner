@@ -16,7 +16,7 @@ namespace Trash.UI
 
         public void SetText(int count) 
         {
-            _text.SetText(count.ToString());
+            _text?.SetText(count.ToString());
         }
     }
 }
