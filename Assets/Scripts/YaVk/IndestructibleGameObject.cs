@@ -1,21 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class IndestructibleGameObject : MonoBehaviour
+namespace YaVk
 {
-    private static IndestructibleGameObject _instance;
-
-    private void Awake()
+    [DisallowMultipleComponent]
+    public class IndestructibleGameObject : MonoBehaviour
     {
-        if (_instance == null) 
+        private void Awake()
         {
-            _instance = this;
             DontDestroyOnLoad(this);
-        } 
-        else 
-        {
-            DestroyImmediate(gameObject);
-        } 
+        }
     }
 }
