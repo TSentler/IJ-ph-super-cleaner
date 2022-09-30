@@ -1,6 +1,6 @@
-using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Trash.UI
 {
@@ -9,6 +9,8 @@ namespace Trash.UI
     {
         private TextMeshProUGUI _text;
 
+        public event UnityAction<string> OnChange;
+        
         private void Awake()
         {
             _text = GetComponent<TextMeshProUGUI>();
@@ -16,7 +18,11 @@ namespace Trash.UI
 
         public void SetText(int count) 
         {
-            _text?.SetText(count.ToString());
+            if (_text == null)
+                return;
+            
+            _text.SetText(count.ToString());
+            OnChange?.Invoke(_text.text);
         }
     }
 }
