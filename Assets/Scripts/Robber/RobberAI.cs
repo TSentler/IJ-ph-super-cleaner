@@ -7,7 +7,8 @@ namespace Robber
     [RequireComponent(typeof(Animator))]
     public class RobberAI : MonoBehaviour
     {
-        private readonly int _isTargetName = Animator.StringToHash("IsTarget");
+        private readonly int _isTargetName = Animator.StringToHash("IsTarget"),
+            _isCarryName = Animator.StringToHash("IsCarry");
         
         private Animator _animator;
         
@@ -60,11 +61,13 @@ namespace Robber
         public void PickUpTarget()
         {
             _theftTarget.PickUp(_carryPosition);
+            _animator.SetBool(_isCarryName, true);
         }
         
         public void DropTarget()
         {
             _theftTarget?.Drop();
+            _animator.SetBool(_isCarryName, false);
         }
     }
 }

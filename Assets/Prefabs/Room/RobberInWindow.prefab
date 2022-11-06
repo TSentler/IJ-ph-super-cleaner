@@ -1317,6 +1317,7 @@ GameObject:
   - component: {fileID: 2118475100559417019}
   - component: {fileID: 5967141230711301237}
   - component: {fileID: 2074620993889320127}
+  - component: {fileID: 8033695117367305590}
   m_Layer: 13
   m_Name: Robber
   m_TagString: Untagged
@@ -1570,6 +1571,19 @@ MonoBehaviour:
   _money: {fileID: 6332346762576841582}
   _moneyCounter: {fileID: 0}
   _count: 90
+--- !u!114 &8033695117367305590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267810266732585004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fea22fb3f32f4b74a8c839df1c0a1ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _robberAI: {fileID: 4140935158432129263}
 --- !u!1 &7428717972373996407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,14 +2014,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfd9fe8f18247fd3983362226a09c17, type: 3}
---- !u!4 &6555039349551708458 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5058287042791325057, guid: fbfd9fe8f18247fd3983362226a09c17, type: 3}
-  m_PrefabInstance: {fileID: 2074620992863667371}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5134959184771051062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6595947033136032413, guid: fbfd9fe8f18247fd3983362226a09c17, type: 3}
+  m_PrefabInstance: {fileID: 2074620992863667371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6555039349551708458 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5058287042791325057, guid: fbfd9fe8f18247fd3983362226a09c17, type: 3}
   m_PrefabInstance: {fileID: 2074620992863667371}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2074620993662373991

@@ -59,7 +59,6 @@ namespace Robber
                     new Vector3(direction.x, 0f, direction.y));
                  
                 _animator.SetTrigger(_flipToExitName);
-                _robberAI.PickUpTarget();
             }
         }
     }

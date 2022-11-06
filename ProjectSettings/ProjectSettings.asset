@@ -707,7 +707,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 1
   scriptingDefineSymbols:
-    WebGL: VK_GAMES;VK_GAMES_MOBILE
+    WebGL: YANDEX_GAMES
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

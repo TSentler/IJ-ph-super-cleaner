@@ -8,8 +8,6 @@ namespace Robber
         typeof(Animator))]
     public class RunToTargetState : MonoBehaviour
     {
-        private readonly int _carryName = Animator.StringToHash("Carry");
-        
         private RunToTargetBehaviour _runToTargetBehaviour;
         private Movement _movement;
         private Rigidbody _rb;
@@ -60,7 +58,6 @@ namespace Robber
             if (direction.magnitude < _minDistance)
             {
                 _movement.Move(Vector2.zero);
-                _animator.SetTrigger(_carryName);
                 _robberAI.PickUpTarget();
             }
         }
