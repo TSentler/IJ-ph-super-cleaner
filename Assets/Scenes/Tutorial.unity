@@ -109897,6 +109897,10 @@ PrefabInstance:
       propertyPath: _view
       value: 
       objectReference: {fileID: 565767538}
+    - target: {fileID: 3642442334519756798, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
+      propertyPath: _muteButton
+      value: 
+      objectReference: {fileID: 565767538}
     - target: {fileID: 7125857923561025329, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
       propertyPath: _view
       value: 

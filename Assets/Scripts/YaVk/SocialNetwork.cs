@@ -21,7 +21,7 @@ namespace YaVk
         private Ads _ads;
         private YandexLeaderboard _yaLeaderboard;
         
-        public event UnityAction OnAdsStart, OnAdsEnd;
+        public event UnityAction AdsStartEvent, AdsEndEvent;
 
         private void Awake()
         {
@@ -60,8 +60,8 @@ namespace YaVk
             UnityAction onYaOpenCallback = null,
             UnityAction onYaOfflineCallback = null)
         {
-            OnAdsStart?.Invoke();
-            onCloseCallback += wasShown => OnAdsEnd?.Invoke();
+            AdsStartEvent?.Invoke();
+            onCloseCallback += wasShown => AdsEndEvent?.Invoke();
             StartCoroutine(
                 _ads.ShowInterstitialAdsCoroutine(onCloseCallback, 
                     onErrorCallback, onYaOpenCallback, onYaOfflineCallback));
@@ -72,8 +72,8 @@ namespace YaVk
             UnityAction<string> onErrorCallback = null,
             UnityAction onYaOpenCallback = null)
         {
-            OnAdsStart?.Invoke();
-            onCloseCallback += () => OnAdsEnd?.Invoke();
+            AdsStartEvent?.Invoke();
+            onCloseCallback += () => AdsEndEvent?.Invoke();
             StartCoroutine(
                 _ads.ShowRewardedAdsCoroutine(onRewardedCallback, 
                     onCloseCallback, onErrorCallback, onYaOpenCallback));

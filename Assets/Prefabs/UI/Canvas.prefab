@@ -11967,7 +11967,7 @@ GameObject:
   - component: {fileID: 1957802505902550828}
   - component: {fileID: 1240999030280851452}
   m_Layer: 5
-  m_Name: AudioSwitcherButton
+  m_Name: AudioMuteButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
