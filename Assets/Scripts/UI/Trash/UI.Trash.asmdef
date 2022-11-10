@@ -1,5 +1,5 @@
 {
-    "name": "Trash.UI",
+    "name": "UI.Trash",
     "rootNamespace": "",
     "references": [
         "GUID:34bc99d99493a6c0d8ffbe0f5967fd13",
