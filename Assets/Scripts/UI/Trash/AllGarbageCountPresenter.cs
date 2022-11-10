@@ -1,6 +1,5 @@
-using System;
-using UI;
 using UnityEngine;
+using Vacuum;
 
 namespace Trash.UI
 {

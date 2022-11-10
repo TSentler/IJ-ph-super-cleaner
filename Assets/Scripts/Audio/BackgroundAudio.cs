@@ -17,27 +17,27 @@ namespace Audio
         {
             _socialNetwork.AdsStarted += OnAdsStarted;
             _socialNetwork.AdsEnded += OnAdsEnded;
-            WebApplication.InBackgroundChangeEvent += MuteAudio;
+            WebApplication.InBackgroundChangeEvent += SetAudioState;
         }
 
         private void OnDisable()
         {
             _socialNetwork.AdsStarted -= OnAdsStarted;
             _socialNetwork.AdsEnded -= OnAdsEnded;
-            WebApplication.InBackgroundChangeEvent -= MuteAudio;
+            WebApplication.InBackgroundChangeEvent -= SetAudioState;
         }
 
         private void OnAdsStarted()
         {
-            MuteAudio(true);
+            SetAudioState(true);
         }
 
         private void OnAdsEnded()
         {
-            MuteAudio(_isPlayerMuteAudio);
+            SetAudioState(_isPlayerMuteAudio);
         }
 
-        private void MuteAudio(bool isMute)
+        private void SetAudioState(bool isMute)
         {
             // Use both pause and volume muting methods at the same time.
             // They're both broken in Web, but work perfect together. Trust me on this.
@@ -47,7 +47,7 @@ namespace Audio
         
         public void SwitchGameAudio()
         {
-            MuteAudio(IsGameAudioOn);
+            SetAudioState(IsGameAudioOn);
             _isPlayerMuteAudio = IsGameAudioOn == false;
         }
     }

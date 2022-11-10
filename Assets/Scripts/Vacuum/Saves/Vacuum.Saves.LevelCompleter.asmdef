@@ -1,9 +1,10 @@
 {
-    "name": "LevelCounter.Trash",
+    "name": "Trash.Saves.LevelCompleter",
     "rootNamespace": "",
     "references": [
-        "GUID:eceb20a37dcc276469b4102259776749",
-        "GUID:34bc99d99493a6c0d8ffbe0f5967fd13"
+        "GUID:22eef73b61f1c0741be1c394ac23041b",
+        "GUID:812a9f1b9b2e571459d8ced6e09b2f18",
+        "GUID:eceb20a37dcc276469b4102259776749"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

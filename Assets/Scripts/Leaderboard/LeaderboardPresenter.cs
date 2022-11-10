@@ -1,6 +1,6 @@
 using LevelCompleter;
-using Trash;
 using UnityEngine;
+using Vacuum;
 using YaVk;
 
 namespace Leaderboard

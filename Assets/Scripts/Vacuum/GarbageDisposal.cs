@@ -1,8 +1,9 @@
 using System;
+using Trash;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Trash
+namespace Vacuum
 {
     public class GarbageDisposal : MonoBehaviour
     {

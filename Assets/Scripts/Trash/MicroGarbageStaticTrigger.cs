@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Trash
@@ -15,7 +14,7 @@ namespace Trash
             }
         }
 
-        public void Suck(GarbageDisposal target)
+        public void Suck()
         {
             _garbage.transform.parent = transform.parent;
             _garbage.gameObject.SetActive(true);

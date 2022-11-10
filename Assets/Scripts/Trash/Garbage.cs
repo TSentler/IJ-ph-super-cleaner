@@ -1,21 +1,23 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace Trash
 {
     [RequireComponent(typeof(Collider))]
-    public abstract class Garbage : MonoBehaviour, ISuckable
+    public abstract class Garbage : MonoBehaviour
     {
-        private GarbageDisposal _target;
+        private Transform _target;
         
-        [Min(0), SerializeField] private float _count = 0f;
+        [FormerlySerializedAs("_count")] 
+        [Min(0), SerializeField] private float _trashPoints = 0f;
 
         public event UnityAction OnSuck;
         
-        public GarbageDisposal Target => _target;
+        public Transform Target => _target;
         
-        public float Count => _count;
+        public float TrashPoints => _trashPoints;
 
         private bool CheckPositive(float value)
         {
@@ -31,13 +33,13 @@ namespace Trash
 
         public void SetCount(float value)
         {
-            if (_count == 0f && CheckPositive(value))
+            if (_trashPoints == 0f && CheckPositive(value))
             {
-                _count = value;
+                _trashPoints = value;
             }
         }
         
-        public void Suck(GarbageDisposal target)
+        public void Suck(Transform target)
         {
             _target = target;
             if (Target == null)

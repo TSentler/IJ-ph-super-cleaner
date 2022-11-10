@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace Trash
+namespace Vacuum
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class PhysicalEnvironment : MonoBehaviour, ISuckable 
+    public class PhysicalEnvironment : MonoBehaviour
     {
         private GarbageDisposal _target;
         private Rigidbody _rb;

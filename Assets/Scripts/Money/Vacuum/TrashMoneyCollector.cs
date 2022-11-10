@@ -1,7 +1,7 @@
-using Trash;
 using UnityEngine;
+using Vacuum;
 
-namespace Money.Trash
+namespace Money.Vacuum
 {
     public class TrashMoneyCollector : MonoBehaviour
     {

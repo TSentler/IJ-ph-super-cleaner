@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
+using Trash;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Trash
+namespace Vacuum
 {
     public class GarbageCounter : MonoBehaviour
     {
@@ -39,7 +40,7 @@ namespace Trash
                     var trash = childTrash.ToList();
                     foreach (var garbage in trash)
                     {
-                        _count += garbage.Count;
+                        _count += garbage.TrashPoints;
                     }
                 }
             }
@@ -65,8 +66,8 @@ namespace Trash
             if (_isPause)
                 return;
             
-            _collectedAtLevel += garbage.Count;
-            OnCollect?.Invoke(garbage.Count);
+            _collectedAtLevel += garbage.TrashPoints;
+            OnCollect?.Invoke(garbage.TrashPoints);
         }
 
         public void Pause()

@@ -4,6 +4,6 @@ namespace Trash
 {
     public interface ISuckable
     {
-        void Suck(GarbageDisposal target);
+        void Suck();
     }
 }

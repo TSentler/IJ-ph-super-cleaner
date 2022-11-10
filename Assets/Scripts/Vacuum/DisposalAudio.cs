@@ -1,6 +1,7 @@
+using Trash;
 using UnityEngine;
 
-namespace Trash.Vacuum
+namespace Vacuum
 {
     [RequireComponent(typeof(AudioSource), 
         typeof(GarbageDisposal))]

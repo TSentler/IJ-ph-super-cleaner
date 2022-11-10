@@ -1,9 +1,9 @@
 {
-    "name": "Money.Trash",
+    "name": "Vacuum",
     "rootNamespace": "",
     "references": [
-        "GUID:09333de930c0ebd46a74e6fe4335da92",
-        "GUID:34bc99d99493a6c0d8ffbe0f5967fd13"
+        "GUID:34bc99d99493a6c0d8ffbe0f5967fd13",
+        "GUID:7b8a7244ad2245e4e84b8a64ec9f7b6c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

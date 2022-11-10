@@ -10,7 +10,7 @@ namespace Trash
         private Coroutine _suckCoroutine;
         private Deformator _deformator;
         private SizeReducer _sizeReducer;
-        private GarbageDisposal _lastTarget;
+        private Transform _lastTarget;
         
         [SerializeField] private float _speed = 15f;
 

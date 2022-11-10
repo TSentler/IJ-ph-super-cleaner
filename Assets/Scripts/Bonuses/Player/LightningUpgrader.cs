@@ -3,6 +3,7 @@ using PlayerAbilities.Throw;
 using Trash;
 using Trash.Boosters;
 using UnityEngine;
+using Vacuum;
 
 namespace Bonuses.Player
 {

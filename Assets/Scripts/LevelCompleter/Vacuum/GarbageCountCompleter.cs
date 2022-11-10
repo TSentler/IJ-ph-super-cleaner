@@ -1,5 +1,5 @@
-using Trash;
 using UnityEngine;
+using Vacuum;
 
 namespace LevelCompleter
 {

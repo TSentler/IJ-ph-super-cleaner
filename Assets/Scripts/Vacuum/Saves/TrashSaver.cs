@@ -1,8 +1,7 @@
-using LevelCompleter;
 using Saves;
 using UnityEngine;
 
-namespace Trash.Saves
+namespace Vacuum.Saves
 {
     public class TrashSaver : MonoBehaviour
     {
