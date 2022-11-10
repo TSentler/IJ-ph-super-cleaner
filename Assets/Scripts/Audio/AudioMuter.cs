@@ -15,12 +15,12 @@ namespace Audio
 
         private void OnEnable()
         {
-            _muteButton.ClickEvent += AudioMuteButtonClicked;
+            _muteButton.Clicked += OnAudioMuteButtonClicked;
         }
 
         private void OnDisable()
         {
-            _muteButton.ClickEvent -= AudioMuteButtonClicked;
+            _muteButton.Clicked -= OnAudioMuteButtonClicked;
         }
         
         private void Start()
@@ -28,7 +28,7 @@ namespace Audio
             _muteButton.ChangeIcon(_backgroundAudio?.IsGameAudioOn ?? true);
         }
 
-        private void AudioMuteButtonClicked()
+        private void OnAudioMuteButtonClicked()
         {
             _backgroundAudio.SwitchGameAudio();
             _muteButton.ChangeIcon(_backgroundAudio.IsGameAudioOn);

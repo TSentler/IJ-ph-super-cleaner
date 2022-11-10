@@ -15,24 +15,24 @@ namespace Audio
         
         private void OnEnable()
         {
-            _socialNetwork.AdsStartEvent += AdsStarted;
-            _socialNetwork.AdsEndEvent += AdsEnded;
+            _socialNetwork.AdsStarted += OnAdsStarted;
+            _socialNetwork.AdsEnded += OnAdsEnded;
             WebApplication.InBackgroundChangeEvent += MuteAudio;
         }
 
         private void OnDisable()
         {
-            _socialNetwork.AdsStartEvent -= AdsStarted;
-            _socialNetwork.AdsEndEvent -= AdsEnded;
+            _socialNetwork.AdsStarted -= OnAdsStarted;
+            _socialNetwork.AdsEnded -= OnAdsEnded;
             WebApplication.InBackgroundChangeEvent -= MuteAudio;
         }
 
-        private void AdsStarted()
+        private void OnAdsStarted()
         {
             MuteAudio(true);
         }
 
-        private void AdsEnded()
+        private void OnAdsEnded()
         {
             MuteAudio(_isPlayerMuteAudio);
         }

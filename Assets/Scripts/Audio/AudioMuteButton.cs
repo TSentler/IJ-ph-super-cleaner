@@ -12,7 +12,7 @@ namespace Audio
         [SerializeField] private Sprite _switchOn, _switchOff;
         [SerializeField] private Image _image;
         
-        public event UnityAction ClickEvent;
+        public event UnityAction Clicked;
 
         private void Awake()
         {
@@ -21,17 +21,17 @@ namespace Audio
 
         private void OnEnable()
         {
-            _button.onClick.AddListener(Clicked);
+            _button.onClick.AddListener(OnClicked);
         }
 
         private void OnDisable()
         {
-            _button.onClick.RemoveListener(Clicked);
+            _button.onClick.RemoveListener(OnClicked);
         }
 
-        private void Clicked()
+        private void OnClicked()
         {
-            ClickEvent?.Invoke();
+            Clicked?.Invoke();
         }
 
         public void ChangeIcon(bool isOn)
