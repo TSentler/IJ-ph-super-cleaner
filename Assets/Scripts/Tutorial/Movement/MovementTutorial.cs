@@ -8,8 +8,8 @@ namespace Tutorial
     {
         [SerializeField] private GameObject _keyboardPanel,
             _stickPanel;
-        [SerializeField] private Movement _movement;
         
+        private Movement _movement;
         private SocialNetwork _socialNetwork;
         private Coroutine _checkMobileDeviceCoroutine;
         private float _minSqrMoveStep = 0.1f;
@@ -27,6 +27,7 @@ namespace Tutorial
         private void Awake()
         {
             _socialNetwork = FindObjectOfType<SocialNetwork>();
+            _movement = FindObjectOfType<Movement>();
             _keyboardPanel.SetActive(false);
             _stickPanel.SetActive(false);
         }
