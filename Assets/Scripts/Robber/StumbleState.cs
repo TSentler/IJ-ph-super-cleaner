@@ -5,6 +5,8 @@ namespace Robber
     [RequireComponent(typeof(Animator))]
     public class StumbleState : MonoBehaviour
     {
+        private readonly int _stumbleName = Animator.StringToHash("Stumble");
+        
         [SerializeField] private RobberAI _robberAI;
         
         private StumbleBehaviour _stumbleBehaviour;
@@ -26,16 +28,23 @@ namespace Robber
         private void OnEnable()
         {
             _stumbleBehaviour.Started += OnStumbleStarted;
+            _stumbleBehaviour.Ended += OnStumbleEnded;
         }
 
         private void OnDisable()
         {
             _stumbleBehaviour.Started -= OnStumbleStarted;
+            _stumbleBehaviour.Ended -= OnStumbleEnded;
         }
 
         private void OnStumbleStarted()
         {
             _robberAI.DropTarget();
+        }
+        
+        private void OnStumbleEnded()
+        {
+            _animator.ResetTrigger(_stumbleName);
         }
     }
 }

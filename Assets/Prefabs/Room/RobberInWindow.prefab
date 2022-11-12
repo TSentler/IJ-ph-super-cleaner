@@ -1318,6 +1318,7 @@ GameObject:
   - component: {fileID: 5967141230711301237}
   - component: {fileID: 2074620993889320127}
   - component: {fileID: 8033695117367305590}
+  - component: {fileID: 4478578111824286931}
   m_Layer: 13
   m_Name: Robber
   m_TagString: Untagged
@@ -1488,7 +1489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f483e3fbdcf633c6a8a95909ba1c7d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0
+  _trashPoints: 0
   _speed: 20
 --- !u!114 &2118475100559417020
 MonoBehaviour:
@@ -1584,6 +1585,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _robberAI: {fileID: 4140935158432129263}
+--- !u!114 &4478578111824286931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267810266732585004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a343daaa3bd5c42459d03cc3b9fca498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxVelocity: 15
 --- !u!1 &7428717972373996407
 GameObject:
   m_ObjectHideFlags: 0
