@@ -4227,7 +4227,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _keyboardPanel: {fileID: 7721287286909342165}
   _stickPanel: {fileID: 5001918931503336325}
-  _movement: {fileID: 0}
 --- !u!114 &8398060488143168042
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ namespace UI
 
         public void OnClick()
         {
-            if (_firstButton.interactable)
+            if (false && _firstButton.interactable)
             {
                 _firstButton.onClick.Invoke();
             }
