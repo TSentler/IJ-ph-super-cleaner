@@ -3,19 +3,19 @@ using UnityEngine;
 namespace Robber
 {
     [RequireComponent(typeof(Animator),
-        typeof(Rigidbody))]
+        typeof(RobberAI))]
     public class FlipToExitState : MonoBehaviour
     {
         private FlipToExitBehaviour _flipToExitBehaviour;
         private Animator _animator;
-        private Rigidbody _rigidbody;
+        private RobberAI _robberAI;
         
         private void Awake()
         {
             _animator = GetComponent<Animator>(); 
             _flipToExitBehaviour = 
                 _animator.GetBehaviour<FlipToExitBehaviour>();
-            _rigidbody = GetComponent<Rigidbody>(); 
+            _robberAI = GetComponent<RobberAI>(); 
         }
 
         private void OnEnable()
@@ -30,8 +30,7 @@ namespace Robber
 
         private void OnFlipToExitStarted()
         {
-            _rigidbody.isKinematic = true;
-            _rigidbody.useGravity = false;
+            _robberAI.UseKinematic();
         }
     }
 }

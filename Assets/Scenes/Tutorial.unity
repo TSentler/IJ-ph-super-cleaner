@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1220150
 SphereCollider:
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &7871823
 SphereCollider:
@@ -496,7 +496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 12.61
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.y
@@ -504,11 +504,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.8
+      value: 5.93
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.21926862
+      value: 0.29793876
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.x
@@ -516,7 +516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.97566456
+      value: -0.9545851
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.z
@@ -528,7 +528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -205.332
+      value: -145.332
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &16240213
 SphereCollider:
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &27314941
 SphereCollider:
@@ -1511,7 +1511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &32322702
 SphereCollider:
@@ -2086,7 +2086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &44429000
 SphereCollider:
@@ -2973,7 +2973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &68746167
 SphereCollider:
@@ -3117,7 +3117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &71617290
 SphereCollider:
@@ -3383,7 +3383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &76014736
 SphereCollider:
@@ -3505,7 +3505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &80978474
 SphereCollider:
@@ -3732,7 +3732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &83383724
 SphereCollider:
@@ -3876,7 +3876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &87073356
 SphereCollider:
@@ -4020,7 +4020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &90758982
 SphereCollider:
@@ -4164,7 +4164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &97108881
 SphereCollider:
@@ -4474,7 +4474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &105969578
 SphereCollider:
@@ -4694,6 +4694,85 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &112483785
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1572004072}
+    m_Modifications:
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8900001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.29793876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9545851
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -145.332
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290996902217313749, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_Name
+      value: Plant (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+--- !u!4 &112483786 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+  m_PrefabInstance: {fileID: 112483785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &112483787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5290996902217313749, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+  m_PrefabInstance: {fileID: 112483785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &112483788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112483787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2c1b054c4fe625f8ce7ef2aafff120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &112532583
 GameObject:
   m_ObjectHideFlags: 0
@@ -4740,7 +4819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &112532586
 SphereCollider:
@@ -4801,7 +4880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &114976887
 SphereCollider:
@@ -4938,7 +5017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &119049173
 SphereCollider:
@@ -5641,7 +5720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &128766305
 SphereCollider:
@@ -6204,7 +6283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &141038562
 SphereCollider:
@@ -6728,11 +6807,10 @@ Transform:
   - {fileID: 1761120041}
   - {fileID: 130536242}
   - {fileID: 1552072304}
-  - {fileID: 2067006097}
-  - {fileID: 1126309272}
   - {fileID: 1710089061}
+  - {fileID: 337276938}
   m_Father: {fileID: 897091104}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &154130590
 GameObject:
@@ -6846,7 +6924,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 897091104}
-  m_RootOrder: 10
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: -0.002}
 --- !u!1 &159635822
 GameObject:
@@ -6894,7 +6972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &159635825
 SphereCollider:
@@ -7221,7 +7299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &165607756
 SphereCollider:
@@ -7282,7 +7360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &165758492
 SphereCollider:
@@ -8046,7 +8124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &188756686
 SphereCollider:
@@ -8395,7 +8473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &196312275
 SphereCollider:
@@ -8456,7 +8534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &198502780
 SphereCollider:
@@ -8661,7 +8739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &199898029
 SphereCollider:
@@ -8798,7 +8876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &202220314
 SphereCollider:
@@ -8920,7 +8998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &205829245
 SphereCollider:
@@ -9308,7 +9386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &216964623
 SphereCollider:
@@ -9823,7 +9901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &221402797
 SphereCollider:
@@ -10255,7 +10333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &227518970
 SphereCollider:
@@ -10521,7 +10599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &231835890
 SphereCollider:
@@ -10582,7 +10660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &234494412
 SphereCollider:
@@ -10643,7 +10721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &235066851
 SphereCollider:
@@ -10820,7 +10898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &240875489
 SphereCollider:
@@ -10881,7 +10959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &241767555
 SphereCollider:
@@ -11374,7 +11452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &252473957
 SphereCollider:
@@ -11389,99 +11467,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &252858140
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3030413066010049636}
-    m_Modifications:
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Size.x
-      value: 1.0029297
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Size.y
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Size.z
-      value: 1.0029299
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Center.x
-      value: -0.0000009536743
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Center.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Center.z
-      value: -0.000000059604645
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.34883732
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.501
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 13.64794
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.0516
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.0503
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.38268343
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227305, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Name
-      value: WallRed (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
 --- !u!1 &253030552
 GameObject:
   m_ObjectHideFlags: 0
@@ -11611,7 +11596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &253314644
 SphereCollider:
@@ -11672,7 +11657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &253396806
 SphereCollider:
@@ -11794,7 +11779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &256122357
 SphereCollider:
@@ -11855,7 +11840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &259718717
 SphereCollider:
@@ -12475,7 +12460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &272095875
 SphereCollider:
@@ -13117,7 +13102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &280038780
 SphereCollider:
@@ -13178,7 +13163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &280048799
 SphereCollider:
@@ -13374,7 +13359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &284242183
 SphereCollider:
@@ -13601,7 +13586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &287876816
 SphereCollider:
@@ -13662,7 +13647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &288522179
 SphereCollider:
@@ -13889,7 +13874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &290349335
 SphereCollider:
@@ -14841,7 +14826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &310581930
 SphereCollider:
@@ -15771,7 +15756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &325925742
 SphereCollider:
@@ -15893,7 +15878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &329400161
 SphereCollider:
@@ -16207,6 +16192,76 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &337276937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 153635470}
+    m_Modifications:
+    - target: {fileID: 6023113410703222263, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_Name
+      value: TriangleFloor2x2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+--- !u!4 &337276938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6403473328407527245, guid: 5010b46da52cbe745a1508d8783bd151, type: 3}
+  m_PrefabInstance: {fileID: 337276937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &338659047
 GameObject:
   m_ObjectHideFlags: 0
@@ -16314,7 +16369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &341931510
 SphereCollider:
@@ -17036,7 +17091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &349926644
 SphereCollider:
@@ -17318,7 +17373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &362350320
 SphereCollider:
@@ -17379,7 +17434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &364445511
 SphereCollider:
@@ -17440,7 +17495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &364744339
 SphereCollider:
@@ -17584,7 +17639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &366799583
 SphereCollider:
@@ -17599,6 +17654,71 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &366991266
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 337276938}
+    m_Modifications:
+    - target: {fileID: 2680378069734786510, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_Name
+      value: TriangleFloorBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
 --- !u!1 &368456154
 GameObject:
   m_ObjectHideFlags: 0
@@ -17872,7 +17992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &375607285
 SphereCollider:
@@ -17968,15 +18088,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 897091104}
     m_Modifications:
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.46186733
+      value: 13.29
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17984,11 +18104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.340467
+      value: 5.49
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.93147486
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -17996,7 +18116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.36380586
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalRotation.z
@@ -18008,7 +18128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 42.668
       objectReference: {fileID: 0}
     - target: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -18020,6 +18140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
+--- !u!4 &379069729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 29173688073787786, guid: 2ec62c8238d76a545b1bcd21d838f3bc, type: 3}
+  m_PrefabInstance: {fileID: 379069728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &380405121
 GameObject:
   m_ObjectHideFlags: 0
@@ -18381,7 +18506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &388694960
 SphereCollider:
@@ -18442,7 +18567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &388974152
 SphereCollider:
@@ -19343,7 +19468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &401326726
 SphereCollider:
@@ -19731,7 +19856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &409567259
 SphereCollider:
@@ -19974,7 +20099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &413645064
 SphereCollider:
@@ -20096,7 +20221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &415715028
 SphereCollider:
@@ -20157,7 +20282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &416209413
 SphereCollider:
@@ -20218,7 +20343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &417170286
 SphereCollider:
@@ -20362,7 +20487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &418415040
 SphereCollider:
@@ -20855,7 +20980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &424094983
 SphereCollider:
@@ -21248,7 +21373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &428980811
 SphereCollider:
@@ -22109,7 +22234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &447650997
 SphereCollider:
@@ -22170,7 +22295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &447701071
 SphereCollider:
@@ -22314,7 +22439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &453912655
 SphereCollider:
@@ -22707,7 +22832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &457794572
 SphereCollider:
@@ -22851,7 +22976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &462620553
 SphereCollider:
@@ -22973,7 +23098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &466528344
 SphereCollider:
@@ -23548,7 +23673,7 @@ Transform:
   m_Children:
   - {fileID: 1572004072}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &478407459
 GameObject:
@@ -24216,7 +24341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &492402610
 SphereCollider:
@@ -24360,7 +24485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &495837260
 SphereCollider:
@@ -24670,7 +24795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &500166787
 SphereCollider:
@@ -24731,7 +24856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &507061665
 SphereCollider:
@@ -24792,7 +24917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &508078678
 SphereCollider:
@@ -25102,7 +25227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &514949116
 SphereCollider:
@@ -25307,7 +25432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &519131553
 SphereCollider:
@@ -25595,7 +25720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &524382310
 SphereCollider:
@@ -25656,7 +25781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &527361078
 SphereCollider:
@@ -25949,7 +26074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &530122359
 SphereCollider:
@@ -26630,7 +26755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &542400732
 SphereCollider:
@@ -27145,7 +27270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &553580036
 SphereCollider:
@@ -27433,7 +27558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &555125471
 SphereCollider:
@@ -27494,7 +27619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &557254733
 SphereCollider:
@@ -27555,7 +27680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &558313900
 SphereCollider:
@@ -28143,7 +28268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.52
+      value: 11.559999
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28151,11 +28276,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.39
+      value: 9.32
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.21926862
+      value: 0.29793876
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.x
@@ -28163,7 +28288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.97566456
+      value: -0.9545851
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.z
@@ -28175,7 +28300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -205.332
+      value: -145.332
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -28631,7 +28756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &577865258
 SphereCollider:
@@ -28814,7 +28939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &584808561
 SphereCollider:
@@ -29207,7 +29332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &591387516
 SphereCollider:
@@ -29783,7 +29908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &604398031
 SphereCollider:
@@ -29966,7 +30091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &610132823
 SphereCollider:
@@ -30171,7 +30296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &613422581
 SphereCollider:
@@ -30354,7 +30479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &615373579
 SphereCollider:
@@ -30559,7 +30684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &618785556
 SphereCollider:
@@ -30703,7 +30828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &620084191
 SphereCollider:
@@ -31179,7 +31304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &634183059
 SphereCollider:
@@ -31240,7 +31365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &635598888
 SphereCollider:
@@ -31384,7 +31509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &638787714
 SphereCollider:
@@ -31506,7 +31631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &639823166
 SphereCollider:
@@ -32061,7 +32186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &648190048
 SphereCollider:
@@ -32371,7 +32496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &651413145
 SphereCollider:
@@ -32515,7 +32640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &653600532
 SphereCollider:
@@ -32576,7 +32701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &654885884
 SphereCollider:
@@ -33357,7 +33482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &672679886
 SphereCollider:
@@ -33933,7 +34058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &680944192
 SphereCollider:
@@ -33948,6 +34073,95 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &681501960
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 337276938}
+    m_Modifications:
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0029308
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Size.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Size.z
+      value: 1.0029298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Center.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Center.z
+      value: 0.000000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6976749
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13.421094
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.006702
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.197101
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238796
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227305, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Name
+      value: WallRed (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
 --- !u!1 &684129996
 GameObject:
   m_ObjectHideFlags: 0
@@ -33994,7 +34208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &684129999
 SphereCollider:
@@ -34138,7 +34352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &685473781
 SphereCollider:
@@ -34282,7 +34496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &687084585
 SphereCollider:
@@ -34426,7 +34640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &691235658
 SphereCollider:
@@ -34570,7 +34784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &695511809
 SphereCollider:
@@ -34631,7 +34845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &695554512
 SphereCollider:
@@ -34941,7 +35155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &699614962
 SphereCollider:
@@ -35229,7 +35443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &705287319
 SphereCollider:
@@ -35705,7 +35919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &710345401
 SphereCollider:
@@ -36552,7 +36766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &723075738
 SphereCollider:
@@ -37128,7 +37342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &732089440
 SphereCollider:
@@ -37704,7 +37918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &746328867
 SphereCollider:
@@ -37888,7 +38102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &749597255
 SphereCollider:
@@ -37949,7 +38163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &751159704
 SphereCollider:
@@ -38486,7 +38700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &759644315
 SphereCollider:
@@ -38547,7 +38761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &759801233
 SphereCollider:
@@ -38608,7 +38822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &763053236
 SphereCollider:
@@ -38769,7 +38983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &765302249
 SphereCollider:
@@ -40176,7 +40390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &790190990
 SphereCollider:
@@ -40320,7 +40534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &791210648
 SphereCollider:
@@ -40608,7 +40822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &794173525
 SphereCollider:
@@ -40669,7 +40883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &795190589
 SphereCollider:
@@ -40896,7 +41110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &803546964
 SphereCollider:
@@ -41372,7 +41586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &806518066
 SphereCollider:
@@ -41824,7 +42038,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &817772903
 GameObject:
@@ -41955,7 +42169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &818703211
 SphereCollider:
@@ -42099,7 +42313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &824629924
 SphereCollider:
@@ -42304,7 +42518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &826415817
 SphereCollider:
@@ -43079,7 +43293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &837091451
 SphereCollider:
@@ -43223,7 +43437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &838945973
 SphereCollider:
@@ -43865,7 +44079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &851714913
 SphereCollider:
@@ -44048,7 +44262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &855933916
 SphereCollider:
@@ -44275,7 +44489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &859341434
 SphereCollider:
@@ -44729,7 +44943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &866034660
 SphereCollider:
@@ -44878,7 +45092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &871068727
 SphereCollider:
@@ -45144,7 +45358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &873311981
 SphereCollider:
@@ -45515,7 +45729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &884699750
 SphereCollider:
@@ -45576,7 +45790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &884904293
 SphereCollider:
@@ -45925,7 +46139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &893101524
 SphereCollider:
@@ -46108,7 +46322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &894368855
 SphereCollider:
@@ -46153,19 +46367,17 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 412745009}
-  - {fileID: 1270937013}
   - {fileID: 153635470}
-  - {fileID: 3030413066010049636}
   - {fileID: 1035601059}
+  - {fileID: 156137917}
   - {fileID: 1582735730}
   - {fileID: 527364680}
   - {fileID: 1270983786}
   - {fileID: 5160631337027283469}
   - {fileID: 1101991730}
-  - {fileID: 156137917}
-  - {fileID: 1227037222}
+  - {fileID: 379069729}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &897091105
 MonoBehaviour:
@@ -46289,7 +46501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &900587585
 SphereCollider:
@@ -46516,7 +46728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &902349045
 SphereCollider:
@@ -46865,7 +47077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &920935520
 SphereCollider:
@@ -46987,7 +47199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &924313603
 SphereCollider:
@@ -47027,14 +47239,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926143402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.03, y: 1.57, z: 8.32}
+  m_LocalRotation: {x: -0, y: -0.27717084, z: -0, w: 0.9608207}
+  m_LocalPosition: {x: 6.35, y: 1.57, z: 2.55}
   m_LocalScale: {x: 2.91, y: 3.5, z: 10.71}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1040235492}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -32.183, z: 0}
 --- !u!65 &926143404
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47353,7 +47565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &933689150
 SphereCollider:
@@ -47707,7 +47919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &943005050
 SphereCollider:
@@ -48410,7 +48622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &962147262
 SphereCollider:
@@ -48886,7 +49098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &975287414
 SphereCollider:
@@ -49362,7 +49574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &980705975
 SphereCollider:
@@ -49899,7 +50111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &986453731
 SphereCollider:
@@ -49960,7 +50172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &987796669
 SphereCollider:
@@ -50021,7 +50233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &990623460
 SphereCollider:
@@ -50143,7 +50355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &990716415
 SphereCollider:
@@ -50431,7 +50643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &995557328
 SphereCollider:
@@ -50492,7 +50704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1000921338
 SphereCollider:
@@ -50719,7 +50931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1006468697
 SphereCollider:
@@ -51090,7 +51302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1013107600
 SphereCollider:
@@ -51151,7 +51363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1013687561
 SphereCollider:
@@ -51439,7 +51651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1018311818
 SphereCollider:
@@ -51683,7 +51895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1026358752
 SphereCollider:
@@ -51744,7 +51956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1028713723
 SphereCollider:
@@ -52220,7 +52432,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 897091104}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1037039312
 GameObject:
@@ -52426,7 +52638,7 @@ Transform:
   - {fileID: 1593074817}
   - {fileID: 938810668}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1040235493
 MonoBehaviour:
@@ -52830,7 +53042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1049737740
 SphereCollider:
@@ -53179,7 +53391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1055950085
 SphereCollider:
@@ -53384,7 +53596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1062541540
 SphereCollider:
@@ -53755,7 +53967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1066258928
 SphereCollider:
@@ -53816,7 +54028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1068834135
 SphereCollider:
@@ -53960,7 +54172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1070249374
 SphereCollider:
@@ -54331,7 +54543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1080390075
 SphereCollider:
@@ -54999,7 +55211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.x
@@ -55015,15 +55227,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.313055
+      value: 15.937499
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.89
+      value: -0.8899243
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.7492
+      value: 5.3616056
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalRotation.w
@@ -55110,7 +55322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1102224826
 SphereCollider:
@@ -55625,7 +55837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1112213152
 SphereCollider:
@@ -55913,7 +56125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1117132372
 SphereCollider:
@@ -56321,76 +56533,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124643659}
   m_Mesh: {fileID: 7605840746057786063, guid: 43d6662b2ee3a9b468ddc9fba423af4a, type: 3}
---- !u!1001 &1126309271
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 153635470}
-    m_Modifications:
-    - target: {fileID: 6636086004727176140, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_Name
-      value: Floor2x2 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 12.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.00000058114523
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
---- !u!4 &1126309272 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-  m_PrefabInstance: {fileID: 1126309271}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1127636040
 GameObject:
   m_ObjectHideFlags: 0
@@ -56437,7 +56579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1127636043
 SphereCollider:
@@ -56559,7 +56701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1129333073
 SphereCollider:
@@ -57677,7 +57819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1148170428
 SphereCollider:
@@ -57738,7 +57880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1150910875
 SphereCollider:
@@ -57799,7 +57941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1151351986
 SphereCollider:
@@ -57921,7 +58063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1153212339
 SphereCollider:
@@ -58497,7 +58639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1174314128
 SphereCollider:
@@ -58868,7 +59010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1180661025
 SphereCollider:
@@ -58929,7 +59071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1183599363
 SphereCollider:
@@ -59361,7 +59503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1188475117
 SphereCollider:
@@ -59566,7 +59708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1191057226
 SphereCollider:
@@ -59771,7 +59913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1193061116
 SphereCollider:
@@ -60801,7 +60943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1218646398
 SphereCollider:
@@ -60862,7 +61004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1219045478
 SphereCollider:
@@ -61017,7 +61159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1221313824
 SphereCollider:
@@ -61222,7 +61364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1222536258
 SphereCollider:
@@ -61366,7 +61508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1223609330
 SphereCollider:
@@ -61464,76 +61606,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225828574}
   m_Mesh: {fileID: 7605840746057786063, guid: 43d6662b2ee3a9b468ddc9fba423af4a, type: 3}
---- !u!1001 &1227037221
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 897091104}
-    m_Modifications:
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 170
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 9.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.98574454
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.16824898
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 19.372
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7611633332277377582, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-      propertyPath: m_Name
-      value: CarpetPurple
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
---- !u!4 &1227037222 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7127549615256772756, guid: 28a1866a618b12d41a029b959cce1a97, type: 3}
-  m_PrefabInstance: {fileID: 1227037221}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1230955098
 GameObject:
   m_ObjectHideFlags: 0
@@ -63040,7 +63112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1256991298
 SphereCollider:
@@ -63245,7 +63317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1260132817
 SphereCollider:
@@ -63907,76 +63979,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &1270937012
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 897091104}
-    m_Modifications:
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.0005507
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2886083649996715552, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-      propertyPath: m_Name
-      value: TriangleWallRed
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
---- !u!4 &1270937013 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2541927282338802842, guid: e7bd497491c1ba248bde611e86442d21, type: 3}
-  m_PrefabInstance: {fileID: 1270937012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1270983785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64010,7 +64012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.x
@@ -64022,11 +64024,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10.579521
+      value: 6.0820494
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.2884
+      value: 8.0332
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.y
@@ -64034,7 +64036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.937502
+      value: 10.550002
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64121,7 +64123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1271199347
 SphereCollider:
@@ -64553,7 +64555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1276057090
 SphereCollider:
@@ -65129,7 +65131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1286017893
 SphereCollider:
@@ -65705,7 +65707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1306540531
 SphereCollider:
@@ -65911,7 +65913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1310548445
 SphereCollider:
@@ -66382,7 +66384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1322169174
 SphereCollider:
@@ -66443,7 +66445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1322203945
 SphereCollider:
@@ -66873,6 +66875,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329026072}
   m_Mesh: {fileID: 7605840746057786063, guid: 43d6662b2ee3a9b468ddc9fba423af4a, type: 3}
+--- !u!1001 &1330427548
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1572004072}
+    m_Modifications:
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8900001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.29793876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9545851
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -145.332
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290996902217313749, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+      propertyPath: m_Name
+      value: Plant (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+--- !u!4 &1330427549 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+  m_PrefabInstance: {fileID: 1330427548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1330427550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5290996902217313749, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
+  m_PrefabInstance: {fileID: 1330427548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1330427551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330427550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2c1b054c4fe625f8ce7ef2aafff120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1332001934
 GameObject:
   m_ObjectHideFlags: 0
@@ -67052,7 +67133,7 @@ Transform:
   - {fileID: 8097059152102330666}
   - {fileID: 358114959}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337343576
 GameObject:
@@ -67494,7 +67575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1343500660
 SphereCollider:
@@ -67843,7 +67924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1353403335
 SphereCollider:
@@ -67904,7 +67985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1354684861
 SphereCollider:
@@ -68109,7 +68190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1358995829
 SphereCollider:
@@ -68519,7 +68600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1363772972
 SphereCollider:
@@ -68663,7 +68744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1371672834
 SphereCollider:
@@ -68807,7 +68888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1377454708
 SphereCollider:
@@ -68990,7 +69071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1381633863
 SphereCollider:
@@ -69444,7 +69525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1383629431
 SphereCollider:
@@ -70108,7 +70189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1399034279
 SphereCollider:
@@ -70252,7 +70333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1400219711
 SphereCollider:
@@ -71780,7 +71861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1423540541
 SphereCollider:
@@ -72365,7 +72446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1436233965
 SphereCollider:
@@ -72509,7 +72590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1439191993
 SphereCollider:
@@ -72736,7 +72817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1445618813
 SphereCollider:
@@ -72858,7 +72939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1446954660
 SphereCollider:
@@ -73124,7 +73205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1452773943
 SphereCollider:
@@ -73185,7 +73266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1453008457
 SphereCollider:
@@ -73512,7 +73593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1465306067
 SphereCollider:
@@ -73634,7 +73715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1467161487
 SphereCollider:
@@ -74271,7 +74352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1476658079
 SphereCollider:
@@ -74332,7 +74413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1477533919
 SphereCollider:
@@ -74559,7 +74640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1481230077
 SphereCollider:
@@ -74620,7 +74701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1486979685
 SphereCollider:
@@ -74681,7 +74762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1487174307
 SphereCollider:
@@ -74742,7 +74823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1487992097
 SphereCollider:
@@ -75211,7 +75292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1494282849
 SphereCollider:
@@ -75748,7 +75829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1512044307
 SphereCollider:
@@ -75809,7 +75890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1512520856
 SphereCollider:
@@ -75870,7 +75951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1512561609
 SphereCollider:
@@ -76097,7 +76178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1520866366
 SphereCollider:
@@ -76158,7 +76239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1524833563
 SphereCollider:
@@ -76302,7 +76383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1526609471
 SphereCollider:
@@ -76363,7 +76444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1527410783
 SphereCollider:
@@ -76795,7 +76876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1538257497
 SphereCollider:
@@ -76856,7 +76937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1539511608
 SphereCollider:
@@ -76978,7 +77059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1541863121
 SphereCollider:
@@ -77358,7 +77439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1543776158
 SphereCollider:
@@ -77646,7 +77727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1547129413
 SphereCollider:
@@ -77707,7 +77788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1548308012
 SphereCollider:
@@ -77901,7 +77982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5169934024559280440, guid: 1e860fe58dcb99949ba1af4cb85c0658, type: 3}
       propertyPath: m_LocalScale.x
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5169934024559280440, guid: 1e860fe58dcb99949ba1af4cb85c0658, type: 3}
       propertyPath: m_LocalScale.y
@@ -77913,11 +77994,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5169934024559280440, guid: 1e860fe58dcb99949ba1af4cb85c0658, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5169934024559280440, guid: 1e860fe58dcb99949ba1af4cb85c0658, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 4.9883723
       objectReference: {fileID: 0}
     - target: {fileID: 5169934024559280440, guid: 1e860fe58dcb99949ba1af4cb85c0658, type: 3}
       propertyPath: m_LocalRotation.w
@@ -78194,7 +78275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1558227152
 SphereCollider:
@@ -78421,7 +78502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1560835617
 SphereCollider:
@@ -78482,7 +78563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1562356148
 SphereCollider:
@@ -78543,7 +78624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1563866793
 SphereCollider:
@@ -78687,7 +78768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1564162997
 SphereCollider:
@@ -78914,7 +78995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1570092360
 SphereCollider:
@@ -79044,6 +79125,8 @@ Transform:
   - {fileID: 7674623275039220361}
   - {fileID: 29253310}
   - {fileID: 620172661}
+  - {fileID: 112483786}
+  - {fileID: 1330427549}
   m_Father: {fileID: 477951389}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79093,7 +79176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1573563604
 SphereCollider:
@@ -79154,7 +79237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1573960350
 SphereCollider:
@@ -79597,7 +79680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502182514868082255, guid: d2cfdc065c0406cff91562a56bdf06fb, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7502182514868082255, guid: d2cfdc065c0406cff91562a56bdf06fb, type: 3}
       propertyPath: m_LocalScale.x
@@ -79613,7 +79696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502182514868082255, guid: d2cfdc065c0406cff91562a56bdf06fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.34
+      value: 12.87
       objectReference: {fileID: 0}
     - target: {fileID: 7502182514868082255, guid: d2cfdc065c0406cff91562a56bdf06fb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -79621,7 +79704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502182514868082255, guid: d2cfdc065c0406cff91562a56bdf06fb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.94
+      value: 10.55
       objectReference: {fileID: 0}
     - target: {fileID: 7502182514868082255, guid: d2cfdc065c0406cff91562a56bdf06fb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -79720,7 +79803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1583017425
 SphereCollider:
@@ -80280,7 +80363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1598620694
 SphereCollider:
@@ -80607,7 +80690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1602061160
 SphereCollider:
@@ -80751,7 +80834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1607993721
 SphereCollider:
@@ -80812,7 +80895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1612390953
 SphereCollider:
@@ -80878,7 +80961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1616867245
 SphereCollider:
@@ -81864,7 +81947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1634331983
 SphereCollider:
@@ -82152,7 +82235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1640007419
 SphereCollider:
@@ -83204,7 +83287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1656207018
 SphereCollider:
@@ -83348,7 +83431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1661021246
 SphereCollider:
@@ -83409,7 +83492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1661731040
 SphereCollider:
@@ -83614,7 +83697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1665873940
 SphereCollider:
@@ -83675,7 +83758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1666787692
 SphereCollider:
@@ -84002,7 +84085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1674806812
 SphereCollider:
@@ -84063,7 +84146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1675492184
 SphereCollider:
@@ -84124,7 +84207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1679509386
 SphereCollider:
@@ -84185,7 +84268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1679614938
 SphereCollider:
@@ -84617,7 +84700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1692212100
 SphereCollider:
@@ -84678,7 +84761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1692257322
 SphereCollider:
@@ -84905,7 +84988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1694469688
 SphereCollider:
@@ -85765,7 +85848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1701445534
 SphereCollider:
@@ -86031,7 +86114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1705944377
 SphereCollider:
@@ -86303,11 +86386,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.z
-      value: 14.716148
+      value: 9.66746
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2971
+      value: -0.1684
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.y
@@ -86563,7 +86646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1709036214
 SphereCollider:
@@ -86587,7 +86670,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3208036180479952754, guid: 67c822868f5872a4aba17efe8a1641a9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3208036180479952754, guid: 67c822868f5872a4aba17efe8a1641a9, type: 3}
       propertyPath: m_LocalScale.x
@@ -86607,7 +86690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208036180479952754, guid: 67c822868f5872a4aba17efe8a1641a9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 4.9883723
       objectReference: {fileID: 0}
     - target: {fileID: 3208036180479952754, guid: 67c822868f5872a4aba17efe8a1641a9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -87170,7 +87253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1721627844
 SphereCollider:
@@ -87314,7 +87397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1721822731
 SphereCollider:
@@ -87624,7 +87707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1727952180
 SphereCollider:
@@ -88366,7 +88449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1741673613
 SphereCollider:
@@ -88427,7 +88510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1743303226
 SphereCollider:
@@ -88715,7 +88798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1745033944
 SphereCollider:
@@ -88776,7 +88859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1746174643
 SphereCollider:
@@ -89269,7 +89352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1749066941
 SphereCollider:
@@ -90564,7 +90647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1767821930
 SphereCollider:
@@ -90791,7 +90874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1769190536
 SphereCollider:
@@ -90852,7 +90935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1769244238
 SphereCollider:
@@ -90913,7 +90996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1771874446
 SphereCollider:
@@ -91140,7 +91223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1774429309
 SphereCollider:
@@ -91206,7 +91289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1776650286
 SphereCollider:
@@ -92158,7 +92241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1790568600
 SphereCollider:
@@ -92363,7 +92446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1793917401
 SphereCollider:
@@ -93020,6 +93103,99 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803707746}
   m_Mesh: {fileID: 7605840746057786063, guid: 43d6662b2ee3a9b468ddc9fba423af4a, type: 3}
+--- !u!1001 &1804199017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 337276938}
+    m_Modifications:
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0029298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Size.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Size.z
+      value: 1.0029298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Center.x
+      value: 0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Center.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Center.z
+      value: 0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6976748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.286267
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3478
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.8515
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887779785795227305, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
+      propertyPath: m_Name
+      value: WallRed (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
 --- !u!1 &1807010043
 GameObject:
   m_ObjectHideFlags: 0
@@ -93271,7 +93447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1808217179
 SphereCollider:
@@ -93332,7 +93508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1808315850
 SphereCollider:
@@ -93476,7 +93652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1811496840
 SphereCollider:
@@ -93620,7 +93796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1813950234
 SphereCollider:
@@ -93681,7 +93857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1814351535
 SphereCollider:
@@ -93986,7 +94162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1826824794
 SphereCollider:
@@ -94117,7 +94293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.x
@@ -94129,11 +94305,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.0909412
+      value: 1.1673198
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.0835
+      value: 15.1958
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.y
@@ -94141,7 +94317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.937502
+      value: 10.55
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalRotation.w
@@ -94284,7 +94460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1829449896
 SphereCollider:
@@ -94345,7 +94521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1830131652
 SphereCollider:
@@ -94489,7 +94665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1833183020
 SphereCollider:
@@ -94799,7 +94975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1834870326
 SphereCollider:
@@ -95231,7 +95407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1838465895
 SphereCollider:
@@ -95353,7 +95529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1839462335
 SphereCollider:
@@ -95414,7 +95590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1840647165
 SphereCollider:
@@ -95785,7 +95961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1844454680
 SphereCollider:
@@ -95846,7 +96022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1845906135
 SphereCollider:
@@ -96710,7 +96886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1862837703
 SphereCollider:
@@ -96771,7 +96947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1863057614
 SphereCollider:
@@ -97058,7 +97234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10.679999
+      value: 10.013568
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.x
@@ -97070,7 +97246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.3412
+      value: 0.0069
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalRotation.w
@@ -97357,7 +97533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1871944647
 SphereCollider:
@@ -97695,7 +97871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.65
+      value: 13.44
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -97703,7 +97879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.18
+      value: 2.74
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalRotation.w
@@ -97951,7 +98127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1884600239
 SphereCollider:
@@ -98156,7 +98332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1887967910
 SphereCollider:
@@ -98300,7 +98476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1891185647
 SphereCollider:
@@ -98361,7 +98537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1891794840
 SphereCollider:
@@ -98483,7 +98659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1895363881
 SphereCollider:
@@ -98627,7 +98803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1900187110
 SphereCollider:
@@ -98749,7 +98925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1902607937
 SphereCollider:
@@ -98893,7 +99069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1905084364
 SphereCollider:
@@ -98954,7 +99130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1906985702
 SphereCollider:
@@ -99020,7 +99196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1918668967
 SphereCollider:
@@ -99965,7 +100141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1933113155
 SphereCollider:
@@ -100412,7 +100588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1935105710
 SphereCollider:
@@ -100473,7 +100649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1935327576
 SphereCollider:
@@ -100534,7 +100710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1935744260
 SphereCollider:
@@ -100761,7 +100937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1939019170
 SphereCollider:
@@ -100822,7 +100998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1939479983
 SphereCollider:
@@ -100883,7 +101059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1940765508
 SphereCollider:
@@ -101088,7 +101264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1948611492
 SphereCollider:
@@ -101852,7 +102028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1963744485
 SphereCollider:
@@ -101913,7 +102089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1964227496
 SphereCollider:
@@ -102345,7 +102521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1974728359
 SphereCollider:
@@ -102406,7 +102582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1976514667
 SphereCollider:
@@ -102633,7 +102809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1982496573
 SphereCollider:
@@ -102694,7 +102870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1984642037
 SphereCollider:
@@ -103086,7 +103262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1989456205
 SphereCollider:
@@ -103457,7 +103633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &1997372721
 SphereCollider:
@@ -103723,7 +103899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2008357618
 SphereCollider:
@@ -103784,7 +103960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2011953781
 SphereCollider:
@@ -104282,7 +104458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2032267317
 SphereCollider:
@@ -104343,7 +104519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2032605488
 SphereCollider:
@@ -104664,7 +104840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2039474539
 SphereCollider:
@@ -104869,7 +105045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2044872171
 SphereCollider:
@@ -105057,7 +105233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2056103301
 SphereCollider:
@@ -105201,7 +105377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2056835791
 SphereCollider:
@@ -105323,7 +105499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2059375933
 SphereCollider:
@@ -105445,7 +105621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2060260908
 SphereCollider:
@@ -105650,7 +105826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2062150736
 SphereCollider:
@@ -105809,165 +105985,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &2066142614
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1543525252}
-    m_Modifications:
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Size.x
-      value: 1.0029298
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Size.y
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Size.z
-      value: 1.0029298
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Center.x
-      value: 0.00000017881393
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227300, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Center.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6976745
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10.695206
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.6521864
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887779785795227305, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
-      propertyPath: m_Name
-      value: WallRed (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
---- !u!1001 &2067006096
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 153635470}
-    m_Modifications:
-    - target: {fileID: 6636086004727176140, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_Name
-      value: Floor2x2 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.00000058114523
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
---- !u!4 &2067006097 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6636086004727176141, guid: 4c1740c596eaab843b9184c9b0cf2cb3, type: 3}
-  m_PrefabInstance: {fileID: 2067006096}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2067614745
 GameObject:
   m_ObjectHideFlags: 0
@@ -106014,7 +106031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2067614748
 SphereCollider:
@@ -106634,7 +106651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2082965827
 SphereCollider:
@@ -106756,7 +106773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2084268623
 SphereCollider:
@@ -107725,7 +107742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2103815579
 SphereCollider:
@@ -107869,7 +107886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2106846688
 SphereCollider:
@@ -108079,7 +108096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2112348217
 SphereCollider:
@@ -108472,7 +108489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2115230942
 SphereCollider:
@@ -108533,7 +108550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2118939902
 SphereCollider:
@@ -108760,7 +108777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2122184504
 SphereCollider:
@@ -109087,7 +109104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2129459508
 SphereCollider:
@@ -109148,7 +109165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2135630302
 SphereCollider:
@@ -109436,7 +109453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2137449682
 SphereCollider:
@@ -109557,7 +109574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10.018
+      value: 10.325685
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.x
@@ -109569,7 +109586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0089
+      value: 0.1632
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalRotation.w
@@ -109712,7 +109729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5348f4203840e999ca72548b4f986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 0.02770083
+  _trashPoints: 0.02770083
   _damp: 12
 --- !u!135 &2141586163
 SphereCollider:
@@ -110079,7 +110096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1466610086134323833, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1466610086134323833, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -110854,7 +110871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.17
+      value: 5.41
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -110862,23 +110879,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.1
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7043827
+      value: 0.6301181
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7043827
+      value: 0.630118
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.06200842
+      value: 0.32086033
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.06200839
+      value: -0.3208602
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -110890,7 +110907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -10.062
+      value: -53.971
       objectReference: {fileID: 0}
     - target: {fileID: 4713391070775048957, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_Name
@@ -111129,11 +111146,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3030413066010049636 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-  m_PrefabInstance: {fileID: 7816247398396909960}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3209430420708680408
 Transform:
   m_ObjectHideFlags: 0
@@ -111953,7 +111965,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2e028fd622a36ac2d995792859e1f827, type: 2}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8887779785795227302, guid: 49091a088c92a2945bf6fb04d82a4c06, type: 3}
       propertyPath: m_LocalScale.x
@@ -112171,7 +112183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.26
+      value: 9.4
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -112179,7 +112191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.94
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 3837705043369642689, guid: a449f06f953e198479a55aa87b5a54ba, type: 3}
       propertyPath: m_LocalRotation.w
@@ -113029,71 +113041,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!1001 &7314540306152876765
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3030413066010049636}
-    m_Modifications:
-    - target: {fileID: 2680378069734786510, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_Name
-      value: TriangleFloorBlock
-      objectReference: {fileID: 0}
-    - target: {fileID: 2680378069734786510, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3348792510468743028, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e8ab4a1e721cdff4d98f4d0c0d91a6e1, type: 3}
 --- !u!23 &7345203865960355622
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -113149,7 +113096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.8700008
+      value: 11.549999
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.y
@@ -113157,11 +113104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.580001
+      value: 7.3500004
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.21926862
+      value: 0.29793876
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.x
@@ -113169,7 +113116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.97566456
+      value: -0.9545851
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalRotation.z
@@ -113181,7 +113128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -205.332
+      value: -145.332
       objectReference: {fileID: 0}
     - target: {fileID: 4766696313576929135, guid: c596f28b8def6434488c2d1993fcce53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -113350,71 +113297,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!1001 &7816247398396909960
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 897091104}
-    m_Modifications:
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0750003
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.0750003
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.375002
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.375001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077477867516847596, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5565608651148738390, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
-      propertyPath: m_Name
-      value: TriangleFloor4x4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c45ef3b828cf95944bf2535dcbb64f7a, type: 3}
 --- !u!1 &8001827585964175003
 GameObject:
   m_ObjectHideFlags: 0

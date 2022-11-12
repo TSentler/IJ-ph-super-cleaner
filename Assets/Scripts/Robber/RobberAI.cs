@@ -4,7 +4,8 @@ using UnityEngine.Events;
 
 namespace Robber
 {
-    [RequireComponent(typeof(Animator))]
+    [RequireComponent(typeof(Animator),
+        typeof(Rigidbody))]
     public class RobberAI : MonoBehaviour
     {
         private readonly int _isTargetName = Animator.StringToHash("IsTarget"),
@@ -14,6 +15,7 @@ namespace Robber
         [SerializeField] private Transform _exit, _carryPosition;
 
         private Animator _animator;
+        private Rigidbody _rigidbody;
         
         public event UnityAction Deactivated;
         
@@ -30,6 +32,7 @@ namespace Robber
         private void Awake()
         {
             _animator = GetComponent<Animator>();
+            _rigidbody = GetComponent <Rigidbody>();
         }
 
         private void Start()
@@ -68,6 +71,18 @@ namespace Robber
         {
             _theftTarget?.Drop();
             _animator.SetBool(_isCarryName, false);
+        }
+
+        public void UseGravity()
+        {
+            _rigidbody.isKinematic = false;
+            _rigidbody.useGravity = true;
+        }
+
+        public void UseKinematic()
+        {
+            _rigidbody.isKinematic = true;
+            _rigidbody.useGravity = false;
         }
     }
 }

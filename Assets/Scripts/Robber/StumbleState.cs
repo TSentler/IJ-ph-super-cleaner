@@ -39,6 +39,7 @@ namespace Robber
 
         private void OnStumbleStarted()
         {
+            _robberAI.UseGravity();
             _robberAI.DropTarget();
         }
         

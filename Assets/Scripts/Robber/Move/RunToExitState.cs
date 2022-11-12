@@ -4,7 +4,6 @@ using UnityEngine;
 namespace Robber
 {
     [RequireComponent(typeof(Movement),
-        typeof(Rigidbody), 
         typeof(Animator))]
     public class RunToExitState : MonoBehaviour
     {

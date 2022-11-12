@@ -4,7 +4,6 @@ using UnityEngine;
 namespace Robber
 {
     [RequireComponent(typeof(Animator),
-        typeof(Rigidbody),
         typeof(Garbage))]
     public class SuckState : MonoBehaviour
     {
@@ -14,7 +13,6 @@ namespace Robber
         
         private Animator _animator;
         private SuckBehaviour _suckBehaviour;
-        private Rigidbody _rigidbody;
         private Garbage _garbage;
 
         private void OnValidate()
@@ -27,7 +25,6 @@ namespace Robber
         {
             _animator = GetComponent<Animator>(); 
             _suckBehaviour = _animator.GetBehaviour<SuckBehaviour>();
-            _rigidbody = GetComponent<Rigidbody>();
             _garbage = GetComponent<Garbage>();
         }
 
@@ -52,8 +49,7 @@ namespace Robber
         private void OnAnimationSuckStarted()
         {
             gameObject.SetActive(true);
-            _rigidbody.isKinematic = true;
-            _rigidbody.useGravity = false;
+            _robberAI.UseKinematic();
         }
     }
 }

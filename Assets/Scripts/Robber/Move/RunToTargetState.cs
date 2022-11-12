@@ -4,7 +4,6 @@ using UnityEngine;
 namespace Robber
 {
     [RequireComponent(typeof(Movement),
-        typeof(Rigidbody), 
         typeof(Animator))]
     public class RunToTargetState : MonoBehaviour
     {
@@ -13,7 +12,6 @@ namespace Robber
         
         private RunToTargetBehaviour _runToTargetBehaviour;
         private Movement _movement;
-        private Rigidbody _rigidbody;
         private Animator _animator;
         private Vector2 _runDirection;
         
@@ -28,7 +26,6 @@ namespace Robber
             _animator = GetComponent<Animator>();
             _runToTargetBehaviour = _animator.GetBehaviour<RunToTargetBehaviour>();
             _movement = GetComponent<Movement>();
-            _rigidbody = GetComponent<Rigidbody>();
         }
 
         private void OnEnable()
@@ -47,8 +44,7 @@ namespace Robber
 
         private void OnRunToTargetStarted()
         {
-            _rigidbody.isKinematic = false;
-            _rigidbody.useGravity = true;
+            _robberAI.UseGravity();
         }
         
         private void OnRunToTargetUpdated()
