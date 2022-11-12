@@ -8,17 +8,16 @@ namespace Trash
     [RequireComponent(typeof(Collider))]
     public abstract class Garbage : MonoBehaviour
     {
-        private Transform _target;
-        
         [FormerlySerializedAs("_count")] 
         [Min(0), SerializeField] private float _trashPoints = 0f;
 
-        public event UnityAction OnSuck;
+        private Transform _target;
         
         public Transform Target => _target;
-        
         public float TrashPoints => _trashPoints;
 
+        public event UnityAction SuckStarted;
+        
         private bool CheckPositive(float value)
         {
             if (value < 0f)
@@ -46,7 +45,7 @@ namespace Trash
                 return;
             
             SuckHandler();
-            OnSuck?.Invoke();
+            SuckStarted?.Invoke();
         }
         
         public void Sucked()

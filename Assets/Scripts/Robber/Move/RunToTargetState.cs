@@ -8,14 +8,14 @@ namespace Robber
         typeof(Animator))]
     public class RunToTargetState : MonoBehaviour
     {
-        private RunToTargetBehaviour _runToTargetBehaviour;
-        private Movement _movement;
-        private Rigidbody _rb;
-        private Animator _animator;
-        private Vector2 _runDirection;
-        
         [SerializeField] private RobberAI _robberAI;
         [Min(0.1f), SerializeField] private float _minDistance = 1f;
+        
+        private RunToTargetBehaviour _runToTargetBehaviour;
+        private Movement _movement;
+        private Rigidbody _rigidbody;
+        private Animator _animator;
+        private Vector2 _runDirection;
         
         private void OnValidate()
         {
@@ -28,30 +28,30 @@ namespace Robber
             _animator = GetComponent<Animator>();
             _runToTargetBehaviour = _animator.GetBehaviour<RunToTargetBehaviour>();
             _movement = GetComponent<Movement>();
-            _rb = GetComponent<Rigidbody>();
+            _rigidbody = GetComponent<Rigidbody>();
         }
 
         private void OnEnable()
         {
-            _runToTargetBehaviour.OnRunStart += RunToTargetStartHandler;
-            _runToTargetBehaviour.OnRunUpdate += RunToTargetUpdateHandler;
-            _runToTargetBehaviour.OnRunEnd += RunToTargetEndHandler;
+            _runToTargetBehaviour.Started += OnRunToTargetStarted;
+            _runToTargetBehaviour.Updated += OnRunToTargetUpdated;
+            _runToTargetBehaviour.Ended += OnRunToTargetEnded;
         }
 
         private void OnDisable()
         {
-            _runToTargetBehaviour.OnRunStart -= RunToTargetStartHandler;
-            _runToTargetBehaviour.OnRunUpdate -= RunToTargetUpdateHandler;
-            _runToTargetBehaviour.OnRunEnd -= RunToTargetEndHandler;
+            _runToTargetBehaviour.Started -= OnRunToTargetStarted;
+            _runToTargetBehaviour.Updated -= OnRunToTargetUpdated;
+            _runToTargetBehaviour.Ended -= OnRunToTargetEnded;
         }
 
-        private void RunToTargetStartHandler()
+        private void OnRunToTargetStarted()
         {
-            _rb.isKinematic = false;
-            _rb.useGravity = true;
+            _rigidbody.isKinematic = false;
+            _rigidbody.useGravity = true;
         }
         
-        private void RunToTargetUpdateHandler()
+        private void OnRunToTargetUpdated()
         {
             var direction = _robberAI.GetDirectionToTarget();
             _movement.Move(direction.normalized);
@@ -62,7 +62,7 @@ namespace Robber
             }
         }
 
-        private void RunToTargetEndHandler()
+        private void OnRunToTargetEnded()
         {
             _movement.Move(Vector2.zero);
         }

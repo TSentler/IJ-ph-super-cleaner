@@ -1,20 +1,19 @@
-using System;
 using System.Collections;
 using Saves;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace LevelLoader
+namespace LevelLoader.Saves
 {
     [RequireComponent(typeof(LevelInfo))]
     public class FirstLevelLoader : MonoBehaviour
     {
-        private LevelInfo _levelInfo;
-
         [SerializeField] private GameSaver _saver;
         [SerializeField] private Slider _slider;
         [Min(0f), SerializeField] private float _delay = 10f;
+
+        private LevelInfo _levelInfo;
 
         private void OnValidate()
         {

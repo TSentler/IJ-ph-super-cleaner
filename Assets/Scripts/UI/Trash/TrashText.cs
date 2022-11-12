@@ -9,7 +9,7 @@ namespace Trash.UI
     {
         private TextMeshProUGUI _text;
 
-        public event UnityAction<string> OnChange;
+        public event UnityAction<string> Changed;
         
         private void Awake()
         {
@@ -22,7 +22,7 @@ namespace Trash.UI
                 return;
             
             _text.SetText(count.ToString());
-            OnChange?.Invoke(_text.text);
+            Changed?.Invoke(_text.text);
         }
     }
 }

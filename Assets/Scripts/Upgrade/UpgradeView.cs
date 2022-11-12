@@ -8,11 +8,11 @@ namespace Upgrade
     [RequireComponent(typeof(Button))]
     public class UpgradeView : MonoBehaviour
     {
-        private Button _button;
-        
         [SerializeField] private TMP_Text _coastText;
 
-        public event UnityAction OnUpgrade;
+        private Button _button;
+        
+        public event UnityAction Upgraded;
         
         private void OnValidate()
         {
@@ -27,17 +27,17 @@ namespace Upgrade
 
         private void OnEnable()
         {
-            _button.onClick.AddListener(UpgradeHandler);
+            _button.onClick.AddListener(OnUpgraded);
         }
 
         private void OnDisable()
         {
-            _button.onClick.RemoveListener(UpgradeHandler);
+            _button.onClick.RemoveListener(OnUpgraded);
         }
 
-        private void UpgradeHandler()
+        private void OnUpgraded()
         {
-            OnUpgrade?.Invoke();
+            Upgraded?.Invoke();
         }
 
         public void SetCoast(int money)

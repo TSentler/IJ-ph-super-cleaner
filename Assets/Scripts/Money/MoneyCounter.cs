@@ -9,7 +9,7 @@ namespace Money
         private int _reward;
         private bool _isPause;
 
-        public event UnityAction<int> OnCollect;
+        public event UnityAction<int> Collected;
         
         public int LevelTotal => (int)_total;
 
@@ -28,7 +28,7 @@ namespace Money
             if (old != LevelTotal)
             {
                 int money = LevelTotal - old;
-                OnCollect?.Invoke(money);
+                Collected?.Invoke(money);
             }
         }
 
@@ -40,7 +40,7 @@ namespace Money
             }
 
             _total += _reward;
-            OnCollect?.Invoke(_reward);
+            Collected?.Invoke(_reward);
         }
     }
 }

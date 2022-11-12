@@ -6,13 +6,13 @@ namespace Tutorial
 {
     public class MovementTutorial : MonoBehaviour
     {
-        private SocialNetwork _socialNetwork;
-        private Coroutine _checkMobileDeviceCoroutine;
-        private float _minSqrMoveStep = 0.1f;
-        
         [SerializeField] private GameObject _keyboardPanel,
             _stickPanel;
         [SerializeField] private Movement _movement;
+        
+        private SocialNetwork _socialNetwork;
+        private Coroutine _checkMobileDeviceCoroutine;
+        private float _minSqrMoveStep = 0.1f;
         
         private void OnValidate()
         {
@@ -33,12 +33,12 @@ namespace Tutorial
 
         private void OnEnable()
         {
-            _movement.OnMove += MoveTrigger;
+            _movement.Moved += MovedTrigger;
         }
 
         private void OnDisable()
         {
-            _movement.OnMove -= MoveTrigger;
+            _movement.Moved -= MovedTrigger;
             if (_checkMobileDeviceCoroutine !=null)
             {
                 StopCoroutine(_checkMobileDeviceCoroutine);
@@ -69,7 +69,7 @@ namespace Tutorial
             }
         }
         
-        private void MoveTrigger(Vector2 direction)
+        private void MovedTrigger(Vector2 direction)
         {
             if (direction.sqrMagnitude < _minSqrMoveStep)
                 return;

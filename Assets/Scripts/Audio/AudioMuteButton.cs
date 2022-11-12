@@ -7,11 +7,11 @@ namespace Audio
     [RequireComponent(typeof(Button))]
     public class AudioMuteButton : MonoBehaviour
     {
-        private Button _button;
-            
         [SerializeField] private Sprite _switchOn, _switchOff;
         [SerializeField] private Image _image;
         
+        private Button _button;
+            
         public event UnityAction Clicked;
 
         private void Awake()

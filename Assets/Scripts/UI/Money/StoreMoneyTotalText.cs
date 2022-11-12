@@ -1,16 +1,16 @@
+using Money;
 using TMPro;
-using UI;
 using UnityEngine;
 
-namespace Money.UI
+namespace UI.Money
 {
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class StoreMoneyTotalText : MonoBehaviour
     {
+        [SerializeField] private Store _store;
+
         private TextMeshProUGUI _text;
         private CountDown _countDown;
-
-        [SerializeField] private Store _store;
 
         private void OnValidate()
         {
@@ -27,12 +27,12 @@ namespace Money.UI
         private void OnEnable()
         {
             SetMoneyText();
-            _store.OnChange += SetMoneyText;
+            _store.Changed += SetMoneyText;
         }
 
         private void OnDisable()
         {
-            _store.OnChange -= SetMoneyText;
+            _store.Changed -= SetMoneyText;
         }
 
         private void SetMoneyText()

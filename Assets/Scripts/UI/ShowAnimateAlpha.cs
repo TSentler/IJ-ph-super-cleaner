@@ -6,11 +6,11 @@ namespace UI
     [RequireComponent(typeof(CanvasGroup))]
     public class ShowAnimateAlpha : MonoBehaviour
     {
+        [Min(0f), SerializeField] private float _showTime = 0.3f;
+
         private CanvasGroup _group;
         private Coroutine _coroutine;
         
-        [Min(0f), SerializeField] private float _showTime = 0.3f;
-
         private void Awake()
         {
             _group = GetComponent<CanvasGroup>();

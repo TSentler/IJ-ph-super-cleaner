@@ -18,15 +18,15 @@ namespace PlayerAbilities.Throw
 
         private void OnEnable()
         {
-            _throwTimer.OnFx += FxHandler;
+            _throwTimer.FxStarted += OnFxStarted;
         }
 
         private void OnDisable()
         {
-            _throwTimer.OnFx -= FxHandler;
+            _throwTimer.FxStarted -= OnFxStarted;
         }
 
-        private void FxHandler()
+        private void OnFxStarted()
         {
             _audio.Play();
         }

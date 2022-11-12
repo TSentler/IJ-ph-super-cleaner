@@ -1,4 +1,3 @@
-using System;
 using Trash;
 using UnityEngine;
 
@@ -11,13 +10,13 @@ namespace Robber
     {
         private readonly int _suckName = Animator.StringToHash("Suck");
         
-        private Animator _animator;
-        private SuckBehaviour _suckBehaviour;
-        private Rigidbody _rb;
-        private Garbage _garbage;
-
         [SerializeField] private RobberAI _robberAI;
         
+        private Animator _animator;
+        private SuckBehaviour _suckBehaviour;
+        private Rigidbody _rigidbody;
+        private Garbage _garbage;
+
         private void OnValidate()
         {
             if (_robberAI == null)
@@ -28,33 +27,33 @@ namespace Robber
         {
             _animator = GetComponent<Animator>(); 
             _suckBehaviour = _animator.GetBehaviour<SuckBehaviour>();
-            _rb = GetComponent<Rigidbody>();
+            _rigidbody = GetComponent<Rigidbody>();
             _garbage = GetComponent<Garbage>();
         }
 
         private void OnEnable()
         {
-            _garbage.OnSuck += SuckHandler;
-            _suckBehaviour.OnSuckStart += SuckAnimationStartHandler;
+            _garbage.SuckStarted += OnSuckStarted;
+            _suckBehaviour.Started += OnAnimationSuckStarted;
         }
 
         private void OnDisable()
         {
-            _garbage.OnSuck -= SuckHandler;
-            _suckBehaviour.OnSuckStart -= SuckAnimationStartHandler;
+            _garbage.SuckStarted -= OnSuckStarted;
+            _suckBehaviour.Started -= OnAnimationSuckStarted;
         }
 
-        private void SuckHandler()
+        private void OnSuckStarted()
         {
             _robberAI.DropTarget();
             _animator.SetTrigger(_suckName);
         }
 
-        private void SuckAnimationStartHandler()
+        private void OnAnimationSuckStarted()
         {
             gameObject.SetActive(true);
-            _rb.isKinematic = true;
-            _rb.useGravity = false;
+            _rigidbody.isKinematic = true;
+            _rigidbody.useGravity = false;
         }
     }
 }

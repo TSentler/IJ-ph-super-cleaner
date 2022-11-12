@@ -7,10 +7,10 @@ namespace Trash.UI
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class DoubleTrashText : MonoBehaviour
     {
-        private TextMeshProUGUI _text;
-        
         [SerializeField] private TrashText _trashText;
 
+        private TextMeshProUGUI _text;
+        
         private void OnValidate()
         {
             if (_trashText == null)
@@ -24,15 +24,15 @@ namespace Trash.UI
 
         private void OnEnable()
         {
-            _trashText.OnChange += ChangeHndler;
+            _trashText.Changed += OnChanged;
         }
 
         private void OnDisable()
         {
-            _trashText.OnChange -= ChangeHndler;
+            _trashText.Changed -= OnChanged;
         }
 
-        private void ChangeHndler(string text)
+        private void OnChanged(string text)
         {
             _text.SetText(text);
         }

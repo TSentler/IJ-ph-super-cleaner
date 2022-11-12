@@ -1,18 +1,16 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using LevelLoader.UI;
+using LevelLoader;
 using UnityEngine;
 
-namespace LevelLoader
+namespace UI.LevelLoader
 {
     [RequireComponent(typeof(LevelInfo))]
     public class LevelName : MonoBehaviour
     {
-        private LevelInfo _levelInfo;
-        
         [SerializeField] private List<LevelNumberText> _numberTexts = new ();
 
+        private LevelInfo _levelInfo;
+        
         private void OnValidate()
         {
             if (_numberTexts.Count == 0)

@@ -7,19 +7,17 @@ namespace Money
     [RequireComponent(typeof(TrailRenderer))]
     public class Mover : MonoBehaviour
     {
+        [SerializeField] private Transform _target;
+        [SerializeField] private float _speed = 10f,
+            _g = 1f;
+
         private TrailRenderer _trail;
         private Vector3 _direction;
-
         private float _floorPoint,
             _minAngleX = 10f,
             _maxAngleX = 25f,
             _minDistance = 0.9f,
             _bounceSpeedDivide = 4f;
-
-
-        [SerializeField] private Transform _target;
-        [SerializeField] private float _speed = 10f,
-            _g = 1f;
 
         private void Awake()
         {

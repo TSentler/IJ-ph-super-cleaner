@@ -7,11 +7,11 @@ namespace Trash
     [RequireComponent(typeof(Rigidbody))]
     public class EnvironmentBreaker : MonoBehaviour
     {
-        private Rigidbody _rb;
-        private Rigidbody[] _childRigidbodies;
-        
         [SerializeField] private GameObject _fragments;
         [SerializeField] private float _maxVelocity = 50f;
+        
+        private Rigidbody _rigidbody;
+        private Rigidbody[] _childRigidbodies;
         
         private void OnValidate()
         {
@@ -21,7 +21,7 @@ namespace Trash
         
         private void Awake()
         {
-            _rb = GetComponent<Rigidbody>();
+            _rigidbody = GetComponent<Rigidbody>();
             _childRigidbodies = GetComponentsInChildren<Rigidbody>(); 
         }
 
@@ -32,7 +32,7 @@ namespace Trash
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (_rb.velocity.sqrMagnitude > _maxVelocity)
+            if (_rigidbody.velocity.sqrMagnitude > _maxVelocity)
             {
                 Break();
             }
@@ -44,7 +44,7 @@ namespace Trash
             _fragments.SetActive(true);
             foreach (var rb in _childRigidbodies)
             {
-                rb.velocity = _rb.velocity;
+                rb.velocity = _rigidbody.velocity;
             }
             gameObject.SetActive(false);
         }

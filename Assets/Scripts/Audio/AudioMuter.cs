@@ -4,10 +4,10 @@ namespace Audio
 {
     public class AudioMuter : MonoBehaviour
     {
-        private BackgroundAudio _backgroundAudio;
-            
         [SerializeField] private AudioMuteButton _muteButton;
 
+        private BackgroundAudio _backgroundAudio;
+            
         private void Awake()
         {
             _backgroundAudio = FindObjectOfType<BackgroundAudio>();

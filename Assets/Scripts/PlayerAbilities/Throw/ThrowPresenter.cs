@@ -10,12 +10,12 @@ namespace PlayerAbilities.Throw
             _throwPrepareHash = Animator.StringToHash("ThrowPrepare"),
             _throwHash = Animator.StringToHash("Throw");
         
-        private VacuumThrower _vacuumThrower;
-        
         [SerializeField] private Transform _vacuumStickTransform;
         [SerializeField] private Animator _cleanerAnimator, _vacuumBoxAnimator,
             _vacuumStickAnimator;
     
+        private VacuumThrower _vacuumThrower;
+        
         private void OnValidate()
         {
             if (_vacuumStickTransform == null)
@@ -32,17 +32,17 @@ namespace PlayerAbilities.Throw
         
         private void OnEnable()
         {
-            _vacuumThrower.OnTie += TieHandler;
-            _vacuumThrower.OnBreak += BreakHandler;
+            _vacuumThrower.Tied += TiedHandler;
+            _vacuumThrower.Throwed += ThrowedHandler;
         }
 
         private void OnDisable()
         {
-            _vacuumThrower.OnTie -= TieHandler;
-            _vacuumThrower.OnBreak -= BreakHandler;
+            _vacuumThrower.Tied -= TiedHandler;
+            _vacuumThrower.Throwed -= ThrowedHandler;
         }
         
-        private void TieHandler()
+        private void TiedHandler()
         {
             _cleanerAnimator.ResetTrigger(_throwHash);
             _cleanerAnimator.SetTrigger(_throwPrepareHash);
@@ -50,7 +50,7 @@ namespace PlayerAbilities.Throw
             _vacuumStickAnimator.SetBool(_isThrowPrepareHash, true);
         }
 
-        private void BreakHandler()
+        private void ThrowedHandler()
         {
             _cleanerAnimator.ResetTrigger(_throwPrepareHash);
             _cleanerAnimator.SetTrigger(_throwHash);

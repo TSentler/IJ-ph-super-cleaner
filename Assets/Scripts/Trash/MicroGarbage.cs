@@ -8,11 +8,11 @@ namespace Trash
             _maxRotationRatio = 1, _minVelocity = 0.01f,
             _maxVelocity = 0.3f;
             
+        [SerializeField] private float _damp = 5f;
+        
         private Coroutine _suckCoroutine;
         private Vector3 _direction;
         private float _startDistance, _velocity, _axeleration = 0.5f;
-        
-        [SerializeField] private float _damp = 5f;
         
         private bool IsSuck => Target != null || _velocity > _minVelocity;
 

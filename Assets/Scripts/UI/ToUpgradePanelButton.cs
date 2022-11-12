@@ -7,11 +7,11 @@ namespace UI
     [RequireComponent(typeof(Button))]
     public class ToUpgradePanelButton : MonoBehaviour
     {
-        private Button _button;
-        private Coroutine _coroutine;
-
         [SerializeField] private GameObject _upgradePanel, _moneyWads;
         [Min(0), SerializeField] private float _delay;
+
+        private Button _button;
+        private Coroutine _coroutine;
 
         private void OnValidate()
         {

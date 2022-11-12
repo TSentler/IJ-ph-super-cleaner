@@ -8,23 +8,23 @@ namespace PlayerAbilities
     [RequireComponent(typeof(Rigidbody))]
     public class ThrowObject : MonoBehaviour
     {
-        private Rigidbody _rb;
+        private Rigidbody _rigidbody;
 
         private void Awake()
         {
-            _rb = GetComponent<Rigidbody>();
+            _rigidbody = GetComponent<Rigidbody>();
         }
 
         public Rigidbody Tie()
         {
-            _rb.useGravity = false;
-            return _rb;
+            _rigidbody.useGravity = false;
+            return _rigidbody;
         }
         
-        public void Break(Vector3 force)
+        public void Throw(Vector3 force)
         {
-            _rb.AddForce(force, ForceMode.Impulse);
-            _rb.useGravity = true;
+            _rigidbody.AddForce(force, ForceMode.Impulse);
+            _rigidbody.useGravity = true;
         }
     }
 }

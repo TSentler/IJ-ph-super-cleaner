@@ -8,11 +8,11 @@ namespace PlayerAbilities.Move
     {
         private readonly int _speedHash = Animator.StringToHash("Speed");
     
+        [SerializeField] private Movement _movement;
+        
         private Animator _animator;
         private Vector2 _direction;
     
-        [SerializeField] private Movement _movement;
-        
         private void OnValidate()
         {
             if (_movement == null)
@@ -26,12 +26,12 @@ namespace PlayerAbilities.Move
 
         private void OnEnable()
         {
-            _movement.OnMove += SetDirection;
+            _movement.Moved += SetDirection;
         }
 
         private void OnDisable()
         {
-            _movement.OnMove -= SetDirection;
+            _movement.Moved -= SetDirection;
         }
         
         private void SetDirection(Vector2 _direction)

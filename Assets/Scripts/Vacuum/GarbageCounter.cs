@@ -8,19 +8,18 @@ namespace Vacuum
 {
     public class GarbageCounter : MonoBehaviour
     {
-        private float _collectedAtLevel = 0f, _count = 0f;
-        private bool _isPause;
-
         [SerializeField] private GarbageDisposal _garbageDisposal;
         [SerializeField] private List<GameObject> _garbageRoots;
 
-        public event UnityAction<int> OnCountChange;
-        public event UnityAction<float> OnCollect;
-        
+        private float _collectedAtLevel = 0f, _count = 0f;
+        private bool _isPause;
+
         public int CollectedAtLevel => Mathf.RoundToInt(_collectedAtLevel);
-        
         public int Count => Mathf.RoundToInt(_count);
 
+        public event UnityAction<int> CountChanged;
+        public event UnityAction<float> Collected;
+        
         private void OnValidate()
         {
             if (_garbageDisposal == null)
@@ -48,26 +47,26 @@ namespace Vacuum
         
         private void OnEnable()
         {
-            _garbageDisposal.OnSucked += SuckedHandler;
+            _garbageDisposal.Sucked += OnSucked;
         }
 
         private void OnDisable()
         {
-            _garbageDisposal.OnSucked -= SuckedHandler;
+            _garbageDisposal.Sucked -= OnSucked;
         }
 
         private void Start()
         {
-            OnCountChange?.Invoke(Count);
+            CountChanged?.Invoke(Count);
         }
         
-        private void SuckedHandler(Garbage garbage)
+        private void OnSucked(Garbage garbage)
         {
             if (_isPause)
                 return;
             
             _collectedAtLevel += garbage.TrashPoints;
-            OnCollect?.Invoke(garbage.TrashPoints);
+            Collected?.Invoke(garbage.TrashPoints);
         }
 
         public void Pause()

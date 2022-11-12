@@ -13,7 +13,7 @@ namespace LevelCompleter
         [SerializeField] private MoneyCounter _moneyCounter;
         [SerializeField] private CompletePresenter _completePresenter;
 
-        public event UnityAction OnComplete;
+        public event UnityAction Completed;
 
         public bool IsCompleted => _isCompleted;
         
@@ -36,7 +36,7 @@ namespace LevelCompleter
             _movementInput.Pause();
             _moneyCounter.Pause();
             _completePresenter.Apply();
-            OnComplete?.Invoke();
+            Completed?.Invoke();
         }
     }
 }

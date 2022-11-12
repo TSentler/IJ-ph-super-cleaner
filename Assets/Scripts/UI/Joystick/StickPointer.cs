@@ -9,16 +9,16 @@ namespace UI.Joystick
     {
         private readonly float _deadZone = 0.05f;
 
+        [SerializeField] private RectTransform _stickRect;
+
         private Vector2 _startTouch, _currentTouch, _stickVector;
         private bool _isTouch;
     
-        [SerializeField] private RectTransform _stickRect;
-
+        public bool IsTouch => _isTouch;
+    
         public event UnityAction FingerOut;
         public event UnityAction<Vector2> FingerDown, FingerMove;
 
-        public bool IsTouch => _isTouch;
-    
         private void OnValidate()
         {
             if (_stickRect == null)

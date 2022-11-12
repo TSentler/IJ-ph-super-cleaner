@@ -5,10 +5,10 @@ namespace InverseKinematic
     [RequireComponent(typeof(Animator))]
     public class IKHandsLookAt : MonoBehaviour
     {
-        private Animator _animator;
-
         [SerializeField] private bool _ikActive = false;
         [SerializeField] private Transform _handTarget = null;
+
+        private Animator _animator;
 
         private void Awake()
         {

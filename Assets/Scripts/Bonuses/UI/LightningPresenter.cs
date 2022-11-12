@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,30 +26,30 @@ namespace Bonuses.UI
 
         private void OnEnable()
         {
-            _temporaryBonus.OnTimerStart += TimerStartHandler;
-            _temporaryBonus.OnTimerChange += TimerChangeHandler;
-            _temporaryBonus.OnTimerEnd += TimerEndHandler;
+            _temporaryBonus.TimerStarted += OnTimerStarted;
+            _temporaryBonus.TimerChanged += OnTimerChanged;
+            _temporaryBonus.TimerEnded += OnTimerEnded;
         }
     
         private void OnDisable()
         {
-            _temporaryBonus.OnTimerStart -= TimerStartHandler;
-            _temporaryBonus.OnTimerChange -= TimerChangeHandler;
-            _temporaryBonus.OnTimerEnd -= TimerEndHandler;
+            _temporaryBonus.TimerStarted -= OnTimerStarted;
+            _temporaryBonus.TimerChanged -= OnTimerChanged;
+            _temporaryBonus.TimerEnded -= OnTimerEnded;
         }
 
-        private void TimerStartHandler()
+        private void OnTimerStarted()
         {
             _slider.value = _slider.maxValue;
             _sliderRoot.SetActive(true);
         }
         
-        private void TimerChangeHandler(float ratio)
+        private void OnTimerChanged(float ratio)
         {
             _slider.value = 1f - ratio;
         }
 
-        private void TimerEndHandler()
+        private void OnTimerEnded()
         {
             _sliderRoot.SetActive(false);
         }

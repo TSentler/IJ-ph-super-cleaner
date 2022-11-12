@@ -5,13 +5,13 @@ namespace Robber
 {
     public class SuckBehaviour : StateMachineBehaviour
     {
-        public event UnityAction OnSuckStart;
+        public event UnityAction Started;
     
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
             base.OnStateEnter(animator, stateInfo, layerIndex);
-            OnSuckStart?.Invoke();
+            Started?.Invoke();
         }
     }
 }

@@ -10,8 +10,6 @@ namespace YaVk
 {
     public class Ads : MonoBehaviour
     {
-        private float _time;
-            
         [SerializeField] private Initializer _init;
         
         public IEnumerator ShowInterstitialAdsCoroutine(

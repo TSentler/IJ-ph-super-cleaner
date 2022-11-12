@@ -1,15 +1,16 @@
+using Money;
 using UnityEngine;
 using YaVk;
 
-namespace Money.Ads
+namespace Ads
 {
     [RequireComponent(typeof(MoneyCounter))]
     public class MoneyRewardMultiplier : MonoBehaviour
     {
-        private MoneyCounter _moneyCounter;
-
         [SerializeField] private RewardAdsButton _rewardAdsButton;
         
+        private MoneyCounter _moneyCounter;
+
         private void OnValidate()
         {
             if (_rewardAdsButton == null)
@@ -23,15 +24,15 @@ namespace Money.Ads
 
         private void OnEnable()
         {
-            _rewardAdsButton.OnReward += RewardHandler;
+            _rewardAdsButton.Rewarded += OnRewarded;
         }
 
         private void OnDisable()
         {
-            _rewardAdsButton.OnReward -= RewardHandler;
+            _rewardAdsButton.Rewarded -= OnRewarded;
         }
 
-        private void RewardHandler()
+        private void OnRewarded()
         {
             _moneyCounter.Reward();
         }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using Vacuum;
 
-namespace LevelCompleter
+namespace LevelCompleter.Vacuum
 {
     [RequireComponent(typeof(Completer))]
     public class GarbageCountCompleter : MonoBehaviour
@@ -26,17 +26,17 @@ namespace LevelCompleter
         
         private void OnEnable()
         {
-            _garbageCounter.OnCollect += CollectHandler;
-            _completer.OnComplete += CompleteHandler;
+            _garbageCounter.Collected += OnCollected;
+            _completer.Completed += OnCompleted;
         }
 
         private void OnDisable()
         {
-            _garbageCounter.OnCollect -= CollectHandler;
-            _completer.OnComplete -= CompleteHandler;
+            _garbageCounter.Collected -= OnCollected;
+            _completer.Completed -= OnCompleted;
         }
         
-        private void CollectHandler(float collected)
+        private void OnCollected(float collected)
         {
             if (_garbageCounter.Count == _garbageCounter.CollectedAtLevel)
             {
@@ -44,7 +44,7 @@ namespace LevelCompleter
             }
         }
 
-        private void CompleteHandler()
+        private void OnCompleted()
         {
             _garbageCounter.Pause();
             _allGarbageCollector.AddLevelGarbage();

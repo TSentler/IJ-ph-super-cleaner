@@ -5,11 +5,11 @@ namespace UI
     [RequireComponent(typeof(RectTransform))]
     public class SafeArea : MonoBehaviour
     {
+        [SerializeField] private Canvas _canvas;
+
         private Rect _safeArea = new Rect();
         private ScreenOrientation _orientation = ScreenOrientation.AutoRotation;
         private RectTransform _panel;
-
-        [SerializeField] private Canvas _canvas;
 
         private void OnValidate()
         {

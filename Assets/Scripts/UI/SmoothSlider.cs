@@ -7,11 +7,11 @@ namespace UI
     [RequireComponent(typeof(Slider))]
     public class SmoothSlider : MonoBehaviour
     {
+        [SerializeField] private float _duration = 1f;
+
         private Slider _slider;
         private Coroutine _slideCoroutine;
         private float _previous, _target, _elapsed;
-
-        [SerializeField] private float _duration = 1f;
 
         private bool InProgress => _elapsed < _duration;
         

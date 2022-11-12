@@ -10,12 +10,12 @@ namespace Robber
         private readonly int _isTargetName = Animator.StringToHash("IsTarget"),
             _isCarryName = Animator.StringToHash("IsCarry");
         
-        private Animator _animator;
-        
         [SerializeField] private TheftTarget _theftTarget;
         [SerializeField] private Transform _exit, _carryPosition;
 
-        public event UnityAction OnDeactivate;
+        private Animator _animator;
+        
+        public event UnityAction Deactivated;
         
         private void OnValidate()
         {
@@ -39,7 +39,7 @@ namespace Robber
 
         private void OnDisable()
         {
-            OnDeactivate?.Invoke();
+            Deactivated?.Invoke();
         }
 
         private Vector2 GetDirectionTo(Vector3 position)

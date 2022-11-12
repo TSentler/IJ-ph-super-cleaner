@@ -5,11 +5,11 @@ namespace Trash.Boosters
     [RequireComponent(typeof(SphereCollider))]
     public class SuckerBooster : MonoBehaviour
     {
+        [SerializeField] private float _radiusMultiplier = 1.5f;
+        
         private SphereCollider _sphereCollider;
         private float _radius;
 
-        [SerializeField] private float _radiusMultiplier = 1.5f;
-        
         private void Awake()
         {
             _sphereCollider = GetComponent<SphereCollider>();

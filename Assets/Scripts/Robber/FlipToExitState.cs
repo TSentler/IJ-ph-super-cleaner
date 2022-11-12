@@ -8,30 +8,30 @@ namespace Robber
     {
         private FlipToExitBehaviour _flipToExitBehaviour;
         private Animator _animator;
-        private Rigidbody _rb;
+        private Rigidbody _rigidbody;
         
         private void Awake()
         {
             _animator = GetComponent<Animator>(); 
             _flipToExitBehaviour = 
                 _animator.GetBehaviour<FlipToExitBehaviour>();
-            _rb = GetComponent<Rigidbody>(); 
+            _rigidbody = GetComponent<Rigidbody>(); 
         }
 
         private void OnEnable()
         {
-            _flipToExitBehaviour.OnFLipStart += FLipToExitStartHandler;
+            _flipToExitBehaviour.Started += OnFlipToExitStarted;
         }
 
         private void OnDisable()
         {
-            _flipToExitBehaviour.OnFLipStart -= FLipToExitStartHandler;
+            _flipToExitBehaviour.Started -= OnFlipToExitStarted;
         }
 
-        private void FLipToExitStartHandler()
+        private void OnFlipToExitStarted()
         {
-            _rb.isKinematic = true;
-            _rb.useGravity = false;
+            _rigidbody.isKinematic = true;
+            _rigidbody.useGravity = false;
         }
     }
 }

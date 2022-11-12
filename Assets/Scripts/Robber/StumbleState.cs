@@ -25,15 +25,15 @@ namespace Robber
 
         private void OnEnable()
         {
-            _stumbleBehaviour.OnStart += StumbleStartHandler;
+            _stumbleBehaviour.Started += OnStumbleStarted;
         }
 
         private void OnDisable()
         {
-            _stumbleBehaviour.OnStart -= StumbleStartHandler;
+            _stumbleBehaviour.Started -= OnStumbleStarted;
         }
 
-        private void StumbleStartHandler()
+        private void OnStumbleStarted()
         {
             _robberAI.DropTarget();
         }

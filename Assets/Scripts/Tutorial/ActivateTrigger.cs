@@ -5,9 +5,9 @@ namespace Tutorial
 {
     public class ActivateTrigger : MonoBehaviour
     {
-        private bool _isActivated;
-        
         [SerializeField] private UnityEvent OnTrigger;
+        
+        private bool _isActivated;
         
         private void OnTriggerEnter(Collider other)
         {

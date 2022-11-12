@@ -5,12 +5,12 @@ namespace Vacuum
     [RequireComponent(typeof(Rigidbody))]
     public class PhysicalEnvironment : MonoBehaviour
     {
+        [SerializeField] private float _speed = 135f;
+
         private GarbageDisposal _target;
         private Rigidbody _rb;
         private bool _isTied;
         
-        [SerializeField] private float _speed = 135f;
-
         private void Awake()
         {
             _rb = GetComponent<Rigidbody>();

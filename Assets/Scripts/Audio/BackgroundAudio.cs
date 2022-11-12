@@ -6,10 +6,10 @@ namespace Audio
 {
     public class BackgroundAudio : MonoBehaviour
     {
-        private bool _isPlayerMuteAudio;
-        
         [SerializeField] private SocialNetwork _socialNetwork;
 
+        private bool _isPlayerMuteAudio;
+        
         public bool IsGameAudioOn => AudioListener.pause == false 
                                      && AudioListener.volume > 0f;
         

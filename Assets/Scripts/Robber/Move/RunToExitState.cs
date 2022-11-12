@@ -10,13 +10,13 @@ namespace Robber
     {
         private readonly int _flipToExitName = Animator.StringToHash("FlipToExit");
         
+        [SerializeField] private RobberAI _robberAI;
+        [Min(0.1f), SerializeField] private float _minDistance = 1f;
+        
         private RunToExitBehaviour _runToExitBehaviour;
         private Movement _movement;
         private Animator _animator;
         private Vector2 _runDirection;
-        
-        [SerializeField] private RobberAI _robberAI;
-        [Min(0.1f), SerializeField] private float _minDistance = 1f;
         
         private void OnValidate()
         {
@@ -33,22 +33,22 @@ namespace Robber
 
         private void OnEnable()
         {
-            _runToExitBehaviour.OnRunEnd += RunToExitEndHandler;
-            _runToExitBehaviour.OnRunUpdate += RunToExitUpdateHandler;
+            _runToExitBehaviour.Ended += OnRunToExitEnded;
+            _runToExitBehaviour.Updated += OnRunToExitUpdated;
         }
 
         private void OnDisable()
         {
-            _runToExitBehaviour.OnRunEnd -= RunToExitEndHandler;
-            _runToExitBehaviour.OnRunUpdate -= RunToExitUpdateHandler;
+            _runToExitBehaviour.Ended -= OnRunToExitEnded;
+            _runToExitBehaviour.Updated -= OnRunToExitUpdated;
         }
 
-        private void RunToExitEndHandler()
+        private void OnRunToExitEnded()
         {
             _movement.Move(Vector2.zero);
         }
         
-        private void RunToExitUpdateHandler()
+        private void OnRunToExitUpdated()
         {
             var direction = _robberAI.GetDirectionToExit();
             _movement.Move(direction.normalized);

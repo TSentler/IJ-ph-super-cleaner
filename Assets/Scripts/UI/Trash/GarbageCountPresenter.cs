@@ -22,22 +22,22 @@ namespace Trash
 
         private void OnEnable()
         {
-            _garbageCounter.OnCollect += CollectHandler;
-            _garbageCounter.OnCountChange += CountChangeHandler;
+            _garbageCounter.Collected += OnCollected;
+            _garbageCounter.CountChanged += OnCountChanged;
         }
 
         private void OnDisable()
         {
-            _garbageCounter.OnCollect -= CollectHandler;
-            _garbageCounter.OnCountChange -= CountChangeHandler;
+            _garbageCounter.Collected -= OnCollected;
+            _garbageCounter.CountChanged -= OnCountChanged;
         }
         
-        private void CountChangeHandler(int count)
+        private void OnCountChanged(int count)
         {
             _collectedText.SetCount(count);
         }
         
-        private void CollectHandler(float collected)
+        private void OnCollected(float collected)
         {
             var collectedRound = _garbageCounter.CollectedAtLevel;
             _collectedText.SetCollected(collectedRound);

@@ -5,14 +5,14 @@ namespace PlayerCamera
     [RequireComponent(typeof(Camera))]
     public class Zoom : MonoBehaviour
     {
-        private Camera _camera;
-        private float _extraZoom;
-
         [Min(0.0001f),SerializeField] private float _minZoom = 70f,
             _maxZoom = 40f,
             _horizontalLimiter = 7f,
             _verticalLimiter = 20f;
         [Min(0f), SerializeField] private float _maxExtraZoomByAspect = 40f;
+
+        private Camera _camera;
+        private float _extraZoom;
 
         private void Awake()
         {

@@ -8,11 +8,11 @@ namespace PlayerCamera
         typeof(Zoom))]
     public class MultiplyTarget : MonoBehaviour
     {
+        [SerializeField] private List<Transform> _targets = new();
+        
         private Follow _follow;
         private Zoom _zoom;
         private float _maxSqrRemoteness = 200f;
-        
-        [SerializeField] private List<Transform> _targets = new();
         
         private void OnValidate()
         {

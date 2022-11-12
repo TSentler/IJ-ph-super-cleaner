@@ -1,16 +1,15 @@
-using System;
-using LevelCompleter.UI;
+using LevelCompleter;
 using UnityEngine;
 
-namespace LevelCompleter
+namespace UI.LevelCompleter
 {
     [RequireComponent(typeof(CountdownTimerCompleter))]
     public class CountdownTimerPresenter : MonoBehaviour
     {
-        private CountdownTimerCompleter _timer;
-
         [SerializeField] private CountdownTimerText _timerText;
         
+        private CountdownTimerCompleter _timer;
+
         private void OnValidate()
         {
             if (_timerText == null)
@@ -24,15 +23,15 @@ namespace LevelCompleter
 
         private void OnEnable()
         {
-            _timer.OnChange += TimerChangeHandler;
+            _timer.TimerChanged += OnTimerTimerChanged;
         }
 
         private void OnDisable()
         {
-            _timer.OnChange -= TimerChangeHandler;
+            _timer.TimerChanged -= OnTimerTimerChanged;
         }
 
-        private void TimerChangeHandler(int time)
+        private void OnTimerTimerChanged(int time)
         {
             _timerText.SetTime(time);
         }

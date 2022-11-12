@@ -7,13 +7,13 @@ namespace Robber
 {
     public class HudActivator : MonoBehaviour
     {
+        [SerializeField] private Animator _animator;
+        [SerializeField] private GameObject _hud;
+        
         private FlipToExitBehaviour _flipToExitBehaviour;
         private RunToTargetBehaviour _runToTargetBehaviour;
         private SuckBehaviour _suckBehaviour;
 
-        [SerializeField] private Animator _animator;
-        [SerializeField] private GameObject _hud;
-        
         private void OnValidate()
         {
             if (_animator == null)
@@ -34,16 +34,16 @@ namespace Robber
 
         private void OnEnable()
         {
-            _runToTargetBehaviour.OnRunStart += Activate;
-            _flipToExitBehaviour.OnFLipStart += Deactivate;
-            _suckBehaviour.OnSuckStart += Deactivate;
+            _runToTargetBehaviour.Started += Activate;
+            _flipToExitBehaviour.Started += Deactivate;
+            _suckBehaviour.Started += Deactivate;
         }
 
         private void OnDisable()
         {
-            _runToTargetBehaviour.OnRunStart -= Activate;
-            _flipToExitBehaviour.OnFLipStart -= Deactivate;
-            _suckBehaviour.OnSuckStart -= Deactivate;
+            _runToTargetBehaviour.Started -= Activate;
+            _flipToExitBehaviour.Started -= Deactivate;
+            _suckBehaviour.Started -= Deactivate;
         }
 
         private void Activate()

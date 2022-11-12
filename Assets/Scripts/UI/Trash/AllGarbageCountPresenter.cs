@@ -6,11 +6,11 @@ namespace Trash.UI
     [RequireComponent(typeof(AllGarbageCollector))]
     public class AllGarbageCountPresenter : MonoBehaviour
     {
-        private AllGarbageCollector _allGarbageCollector;
-
         [SerializeField] private GarbageCounter _garbageCounter;
         [SerializeField] private TrashText _allInGamePanel,
             _allInCompletitionPanel;
+
+        private AllGarbageCollector _allGarbageCollector;
 
         private void OnValidate()
         {
@@ -27,23 +27,23 @@ namespace Trash.UI
 
         private void OnEnable()
         {
-            _allGarbageCollector.OnChange += ChangeHandler;
-            _garbageCounter.OnCollect += CollectHandler;
+            _allGarbageCollector.Changed += OnChanged;
+            _garbageCounter.Collected += OnCollected;
         }
 
         private void OnDisable()
         {
-            _allGarbageCollector.OnChange -= ChangeHandler;
-            _garbageCounter.OnCollect -= CollectHandler;
+            _allGarbageCollector.Changed -= OnChanged;
+            _garbageCounter.Collected -= OnCollected;
         }
 
-        private void CollectHandler(float collected)
+        private void OnCollected(float collected)
         {
             SetText(_garbageCounter.CollectedAtLevel +
                     _allGarbageCollector.AllTrashRounded);
         }
 
-        private void ChangeHandler()
+        private void OnChanged()
         {
             SetText(_allGarbageCollector.AllTrashRounded);
         }

@@ -4,9 +4,9 @@ namespace Trash.Transforms
 {
     public class LookAtWithoutModelRotator : LookAtRotator
     {
-        private bool _isFirstTime = true;
-        
         [SerializeField] private Transform _model;
+        
+        private bool _isFirstTime = true;
         
         private void SetChildRoot(Transform root, Transform child)
         {

@@ -4,12 +4,12 @@ namespace PlayerCamera
 {
     public class Follow : MonoBehaviour
     {
-        private Vector3 _velocity;
-        
         [SerializeField] private Vector3 _offset;
         [Min(0f), SerializeField] private float _smoothTime = 0.3f;
         [SerializeField] private Vector3 _maxOffset;
         [Min(0.0001f), SerializeField] private float _verticalLimiter = 20f;
+        
+        private Vector3 _velocity;
         
         public void Apply(Vector3 centerPoint, float verticalDistance)
         {

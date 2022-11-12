@@ -18,15 +18,15 @@ namespace Robber
 
         private void OnEnable()
         {
-            _successfulTheftBehaviour.OnStart += SuccessfulTheftHandler;
+            _successfulTheftBehaviour.Started += OnSuccessfulTheftStarted;
         }
 
         private void OnDisable()
         {
-            _successfulTheftBehaviour.OnStart -= SuccessfulTheftHandler;
+            _successfulTheftBehaviour.Started -= OnSuccessfulTheftStarted;
         }
 
-        private void SuccessfulTheftHandler()
+        private void OnSuccessfulTheftStarted()
         {
             gameObject.SetActive(false);
         }

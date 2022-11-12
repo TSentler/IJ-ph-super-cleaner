@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,7 +10,7 @@ namespace LevelCompleter
         [SerializeField] private List<GameObject> _hide = new(); 
         [SerializeField] private GameObject _lvlCompletionPanel, _moneyButton;
 
-        public event UnityAction OnInterstitialAds;
+        public event UnityAction InterstitialAdsStarted;
         
         private void OnValidate()
         {
@@ -21,18 +20,18 @@ namespace LevelCompleter
                 Debug.LogWarning("LvlCompletionPanel was not found!", this);
         }
 
-        private IEnumerator ShowCoroutine()
+        private IEnumerator CompleteCoroutine()
         {
             _hide.ForEach(item => item.SetActive(false));
             _lvlCompletionPanel.SetActive(true);
-            OnInterstitialAds?.Invoke();
+            InterstitialAdsStarted?.Invoke();
             yield return new WaitForSeconds(1f);
             _moneyButton.SetActive(true);
         }
 
         public void Apply()
         {
-            StartCoroutine(ShowCoroutine());
+            StartCoroutine(CompleteCoroutine());
         }
     }
 }

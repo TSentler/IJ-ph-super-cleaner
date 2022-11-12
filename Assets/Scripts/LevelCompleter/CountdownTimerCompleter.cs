@@ -12,7 +12,7 @@ namespace LevelCompleter
         private bool _isRun;
         private float _seconds = 33f;
 
-        public event UnityAction<int> OnChange;
+        public event UnityAction<int> TimerChanged;
         
         private void Awake()
         {
@@ -34,7 +34,7 @@ namespace LevelCompleter
             if (wholeTime != _oldTime)
             {
                 _oldTime = wholeTime;
-                OnChange?.Invoke(_oldTime);
+                TimerChanged?.Invoke(_oldTime);
             }
             
             if (_time > 0f)

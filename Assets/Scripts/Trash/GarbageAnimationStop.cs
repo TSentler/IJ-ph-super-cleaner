@@ -16,15 +16,15 @@ namespace Trash
 
         private void OnEnable()
         {
-            _garbage.OnSuck += SuckHandler;
+            _garbage.SuckStarted += OnSuckStarted;
         }
 
         private void OnDisable()
         {
-            _garbage.OnSuck -= SuckHandler;
+            _garbage.SuckStarted -= OnSuckStarted;
         }
 
-        private void SuckHandler()
+        private void OnSuckStarted()
         {
             _animator.enabled = false;
         }

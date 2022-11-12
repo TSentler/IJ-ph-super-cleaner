@@ -7,13 +7,13 @@ namespace Leaderboard
 {
     public class LeaderboardPresenter : MonoBehaviour
     {
-        private SocialNetwork _socialNetwork;
-
         [SerializeField] private LeaderboardShowButton _button;
         [SerializeField] private LeaderboardView _view;
         [SerializeField] private Completer _completer;
         [SerializeField] private AllGarbageCollector _trash;
         
+        private SocialNetwork _socialNetwork;
+
         private void OnValidate()
         {
             if (_button == null)
@@ -33,14 +33,14 @@ namespace Leaderboard
         
         private void OnEnable()
         {
-            _completer.OnComplete += LevelCompleteHandler;
-            _button.OnShowBoard += ShowBoardHandler;
+            _completer.Completed += LevelCompleted;
+            _button.BoardShowed += BoardShowed;
         }
 
         private void OnDisable()
         {
-            _completer.OnComplete -= LevelCompleteHandler;
-            _button.OnShowBoard -= ShowBoardHandler;
+            _completer.Completed -= LevelCompleted;
+            _button.BoardShowed -= BoardShowed;
         }
 
         private void Start()
@@ -50,7 +50,7 @@ namespace Leaderboard
             _button.gameObject.SetActive(hasLeaderboard);
         }
 
-        private void ShowBoardHandler()
+        private void BoardShowed()
         {
             if (_socialNetwork.IsAutoLeaderboard())
             {
@@ -62,7 +62,7 @@ namespace Leaderboard
             }
         }
 
-        private void LevelCompleteHandler()
+        private void LevelCompleted()
         {
             if (_socialNetwork.IsAutoLeaderboard())
                 return; 

@@ -6,11 +6,11 @@ namespace PlayerInput
 {
     public class MovementInput : MonoBehaviour
     {
-        private Vector2 _lastDirection;
-        private bool _isPause;
-        
         [SerializeField] private StickPointer _stick;
         [SerializeField] private Movement _movement;
+        
+        private Vector2 _lastDirection;
+        private bool _isPause;
         
         private void OnValidate()
         {

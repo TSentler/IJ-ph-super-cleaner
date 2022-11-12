@@ -10,7 +10,7 @@ namespace YaVk
         private SocialNetwork _socialNetwork;
         private Button _button;
         
-        public event UnityAction OnReward;
+        public event UnityAction Rewarded;
 
         private void Awake()
         {
@@ -30,7 +30,7 @@ namespace YaVk
 
         private void ShowRewardedAds()
         {
-            _socialNetwork.ShowRewardedAds(OnReward);
+            _socialNetwork.ShowRewardedAds(Rewarded);
         }
     }
 }

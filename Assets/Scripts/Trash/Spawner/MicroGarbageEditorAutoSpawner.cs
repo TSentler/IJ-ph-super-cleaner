@@ -7,12 +7,12 @@ namespace Trash
         typeof(RotationRandomizer))]
     public class MicroGarbageEditorAutoSpawner : MonoBehaviour
     {
-        private ScaleRandomizer _scaleRandomizer;
-        private RotationRandomizer _rotationRandomizer;
-
         [SerializeField] private GameObject _microGarbageRoot;
         [SerializeField] private MicroGarbageSpawner _spawner;
         [Min(1), SerializeField] private int _countMicroGarbage = 1;
+
+        private ScaleRandomizer _scaleRandomizer;
+        private RotationRandomizer _rotationRandomizer;
 
         private void OnValidate()
         {

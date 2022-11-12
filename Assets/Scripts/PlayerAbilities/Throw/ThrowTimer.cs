@@ -15,7 +15,7 @@ namespace PlayerAbilities.Throw
         
         [SerializeField] private float _delayBeforeFx, _delay = 1f, _boostDelay = 0.25f;
 
-        public event UnityAction OnFx;
+        public event UnityAction FxStarted;
         
         private bool IsRun => _timePassed < _delay;
         
@@ -27,14 +27,14 @@ namespace PlayerAbilities.Throw
         
         private void OnEnable()
         {
-            _vacuumThrower.OnTie += TieHandler;
-            _vacuumThrower.OnBreak += BreakHandler;
+            _vacuumThrower.Tied += OnTied;
+            _vacuumThrower.Throwed += OnThrowed;
         }
 
         private void OnDisable()
         {
-            _vacuumThrower.OnTie -= TieHandler;
-            _vacuumThrower.OnBreak -= BreakHandler;
+            _vacuumThrower.Tied -= OnTied;
+            _vacuumThrower.Throwed -= OnThrowed;
         }
         
         private IEnumerator TimerCoroutine()
@@ -49,7 +49,7 @@ namespace PlayerAbilities.Throw
                 if (fxDelay < _timePassed && _wasFx == false)
                 {
                     _wasFx = true;
-                    OnFx?.Invoke();
+                    FxStarted?.Invoke();
                 }
             }
 
@@ -57,12 +57,12 @@ namespace PlayerAbilities.Throw
             _vacuumThrower.Throw();
         }
         
-        private void TieHandler()
+        private void OnTied()
         {
             _timerCoroutine = StartCoroutine(TimerCoroutine());
         }
         
-        private void BreakHandler()
+        private void OnThrowed()
         {
             if (_timerCoroutine != null)
             {

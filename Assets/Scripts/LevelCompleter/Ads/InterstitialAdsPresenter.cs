@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using YaVk;
 
@@ -18,15 +17,15 @@ namespace LevelCompleter.Ads
 
         private void OnEnable()
         {
-            _completePresenter.OnInterstitialAds += InterstitialAdsHandler;
+            _completePresenter.InterstitialAdsStarted += InterstitialAdsStarted;
         }
 
         private void OnDisable()
         {
-            _completePresenter.OnInterstitialAds -= InterstitialAdsHandler;
+            _completePresenter.InterstitialAdsStarted -= InterstitialAdsStarted;
         }
 
-        private void InterstitialAdsHandler()
+        private void InterstitialAdsStarted()
         {
             _socialNetwork.ShowInterstitialAds(); 
         }

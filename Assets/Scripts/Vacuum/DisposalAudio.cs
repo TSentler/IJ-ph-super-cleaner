@@ -18,15 +18,15 @@ namespace Vacuum
 
         private void OnEnable()
         {
-            _disposal.OnSucked += SuckedHandler;
+            _disposal.Sucked += OnSucked;
         }
 
         private void OnDisable()
         {
-            _disposal.OnSucked -= SuckedHandler;
+            _disposal.Sucked -= OnSucked;
         }
 
-        private void SuckedHandler(Garbage garbage)
+        private void OnSucked(Garbage garbage)
         {
             if (garbage is MicroGarbage || _audio.isPlaying)
                 return;

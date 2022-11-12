@@ -10,7 +10,7 @@ namespace Leaderboard
     {
         private Button _button;
         
-        public event UnityAction OnShowBoard;
+        public event UnityAction BoardShowed;
 
         private void Awake()
         {
@@ -19,17 +19,17 @@ namespace Leaderboard
 
         private void OnEnable()
         {
-            _button.onClick.AddListener(ShowLeaderboard);
+            _button.onClick.AddListener(OnLeaderboardShowed);
         }
 
         private void OnDisable()
         {
-            _button.onClick.RemoveListener(ShowLeaderboard);
+            _button.onClick.RemoveListener(OnLeaderboardShowed);
         }
 
-        private void ShowLeaderboard()
+        private void OnLeaderboardShowed()
         {
-            OnShowBoard?.Invoke();
+            BoardShowed?.Invoke();
         }
     }
 }

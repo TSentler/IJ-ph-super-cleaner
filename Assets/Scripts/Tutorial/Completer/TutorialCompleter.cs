@@ -7,11 +7,11 @@ namespace Tutorial
 {
     public class TutorialCompleter : MonoBehaviour
     {
-        private Coroutine _coroutine;
-        
         [SerializeField] private Garbage _robber;
         [SerializeField] private Completer _completer;
 
+        private Coroutine _coroutine;
+        
         private void OnValidate()
         {
             if (_robber == null)
@@ -22,12 +22,12 @@ namespace Tutorial
         
         private void OnEnable()
         {
-            _robber.OnSuck += SuckHandler;
+            _robber.SuckStarted += SuckStartedHandler;
         }
 
         private void OnDisable()
         {
-            _robber.OnSuck -= SuckHandler;
+            _robber.SuckStarted -= SuckStartedHandler;
         }
 
         private IEnumerator CompleteCoroutine()
@@ -36,7 +36,7 @@ namespace Tutorial
             _completer.Complete();
         }
         
-        private void SuckHandler()
+        private void SuckStartedHandler()
         {
             if (_coroutine != null)
                 return;

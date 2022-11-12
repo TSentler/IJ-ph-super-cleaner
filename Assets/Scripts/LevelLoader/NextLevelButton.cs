@@ -8,11 +8,11 @@ namespace LevelLoader
     [RequireComponent(typeof(Button))]
     public class NextLevelButton : MonoBehaviour
     {
+        [Min(0), SerializeField] private float _delay;
+        
         private Button _button;
         private UnityAction _nextLevelAction;
         private Coroutine _coroutine; 
-        
-        [Min(0), SerializeField] private float _delay;
 
         private void Awake()
         {

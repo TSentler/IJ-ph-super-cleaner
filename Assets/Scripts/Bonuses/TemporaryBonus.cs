@@ -6,27 +6,27 @@ namespace Bonuses
 {
     public class TemporaryBonus : MonoBehaviour
     {
-        private float _timePassed = float.MaxValue;
-
         [SerializeField] private float _duration = 1f;
 
-        public event UnityAction OnTimerStart, OnTimerEnd;
-        public event UnityAction<float> OnTimerChange;
+        private float _timePassed = float.MaxValue;
+
+        public event UnityAction TimerStarted, TimerEnded;
+        public event UnityAction<float> TimerChanged;
 
         private bool IsRun => _timePassed < _duration;
         
         private IEnumerator BonusCoroutine()
         {
-            OnTimerStart?.Invoke();
+            TimerStarted?.Invoke();
             _timePassed = 0f;
             while (IsRun)
             {
                 yield return null;
                 _timePassed += Time.deltaTime;
                 var ratio = _timePassed / _duration;
-                OnTimerChange?.Invoke(ratio);
+                TimerChanged?.Invoke(ratio);
             }
-            OnTimerEnd?.Invoke();
+            TimerEnded?.Invoke();
         }
         
         public void Apply()

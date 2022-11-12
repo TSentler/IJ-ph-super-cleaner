@@ -23,14 +23,14 @@ namespace PlayerAbilities.Throw
 
         private void OnEnable()
         {
-            _vacuumThrower.OnTie += _movement.Stop;
-            _vacuumThrower.OnBreak += _movement.Go;
+            _vacuumThrower.Tied += _movement.Stop;
+            _vacuumThrower.Throwed += _movement.Go;
         }
 
         private void OnDisable()
         {
-            _vacuumThrower.OnTie -= _movement.Stop;
-            _vacuumThrower.OnBreak -= _movement.Go;
+            _vacuumThrower.Tied -= _movement.Stop;
+            _vacuumThrower.Throwed -= _movement.Go;
 
         }
     }

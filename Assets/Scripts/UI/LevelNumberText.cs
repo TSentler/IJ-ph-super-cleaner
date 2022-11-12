@@ -1,12 +1,13 @@
-using System;
 using TMPro;
 using UnityEngine;
 
-namespace LevelLoader.UI
+namespace UI
 {
     [RequireComponent(typeof(TMP_Text))]
     public class LevelNumberText : MonoBehaviour
     {
+        [Range(0,1), SerializeField] private int _templateType;
+
         private TMP_Text _text;
         private string _template;
         private string[] _templates = new []
@@ -15,8 +16,6 @@ namespace LevelLoader.UI
             $"--- *{{0}}* ---"
         };
         private int _number;
-
-        [Range(0,1), SerializeField] private int _templateType;
         
         private void Awake()
         {

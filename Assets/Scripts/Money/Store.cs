@@ -8,20 +8,20 @@ namespace Money
     {
         private int _money;
         
-        public event UnityAction OnChange;
+        public event UnityAction Changed;
 
         public int Money => _money;
 
         public void Initialize(int money)
         {
             _money = money;
-            OnChange?.Invoke();
+            Changed?.Invoke();
         }
 
         public void Earn(int money)
         {
             _money += money;
-            OnChange?.Invoke();
+            Changed?.Invoke();
         }
 
         public void Buy(int coast, Action successCallback)
@@ -29,7 +29,7 @@ namespace Money
             if (coast <= _money)
             {
                 _money -= coast;
-                OnChange?.Invoke();
+                Changed?.Invoke();
                 successCallback?.Invoke();
             } 
         }

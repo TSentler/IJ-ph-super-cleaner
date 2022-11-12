@@ -6,13 +6,13 @@ namespace PlayerAbilities.Throw
     [RequireComponent(typeof(FixedJoint))]
     public class VacuumThrower : MonoBehaviour
     {
+        [Min(0), SerializeField] private float _speed = 10f;
+
         private FixedJoint _joint, _jointConfig;
         private ThrowObject _throwObject;
         private bool _isThrow;
 
-        [Min(0), SerializeField] private float _speed = 10f;
-
-        public event UnityAction OnTie, OnBreak;
+        public event UnityAction Tied, Throwed;
             
         private void Awake()
         {
@@ -33,7 +33,7 @@ namespace PlayerAbilities.Throw
                 _joint.connectedBody = rb;
                 //_joint.spring = _jointConfig.spring;
                 _joint.breakForce = _jointConfig.breakForce;
-                OnTie?.Invoke();
+                Tied?.Invoke();
             }
         }
         
@@ -56,9 +56,9 @@ namespace PlayerAbilities.Throw
             var forward = transform.forward;
             forward = new Vector3(forward.x, 0f, forward.z);
             var force = _speed * forward;
-            _throwObject?.Break(force);
+            _throwObject?.Throw(force);
             _throwObject = null;
-            OnBreak?.Invoke();
+            Throwed?.Invoke();
         }
 
         public void Upgrade(float speed)

@@ -7,13 +7,13 @@ namespace UI
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class CountDown : MonoBehaviour
     {
+        [Min(0f), SerializeField] private float _time = 0.3f;
+
         private TextMeshProUGUI _text;
         private Coroutine _coroutine;
         private float _elapsed;
         private int _startNumber, _target;
         
-        [Min(0f), SerializeField] private float _time = 0.3f;
-
         private void Awake()
         {
             _text = GetComponent<TextMeshProUGUI>();

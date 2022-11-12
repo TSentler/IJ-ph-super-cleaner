@@ -7,14 +7,14 @@ namespace Vacuum
 {
     public class GarbageDisposal : MonoBehaviour
     {
-        private float _oldSpeed;
-        
         [Min(0f), SerializeField] private float _environmentExtraSuckSpeed = 1f,
             _bonusMultiply = 1.2f;
         
-        public event UnityAction<Garbage> OnSucked;
+        private float _oldSpeed;
 
         public float ExtraSpeedMyltiply => _environmentExtraSuckSpeed;
+        
+        public event UnityAction<Garbage> Sucked;
 
         private void Awake()
         {
@@ -26,7 +26,7 @@ namespace Vacuum
             if (other.TryGetComponent(out Garbage garbage))
             {
                 garbage.Sucked();
-                OnSucked(garbage);
+                Sucked(garbage);
             }
         }
 

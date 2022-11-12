@@ -17,12 +17,12 @@ namespace Trash.Transforms
 
         private void OnEnable()
         {
-            _garbage.OnSuck += SuckHandler;
+            _garbage.SuckStarted += OnSuckStarted;
         }
 
         private void OnDisable()
         {
-            _garbage.OnSuck -= SuckHandler;
+            _garbage.SuckStarted -= OnSuckStarted;
         }
         
         private IEnumerator LookAtCoroutine()
@@ -41,7 +41,7 @@ namespace Trash.Transforms
             transform.LookAt(target);
         }
 
-        private void SuckHandler()
+        private void OnSuckStarted()
         {
             if (_lookAtCoroutine == null)
             {

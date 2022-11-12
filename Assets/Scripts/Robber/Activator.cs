@@ -9,13 +9,13 @@ namespace Robber
     {
         private static int _activateCount;
         
-        private float _seconds;
-
         [SerializeField] private RobberAI _robberAI;
         [SerializeField] private GameObject _signalings;
         [Min(0f), SerializeField] private float _minSeconds = 3f, 
             _maxSeconds = 6f;
         
+        private float _seconds;
+
         private void OnValidate()
         {
             if (_robberAI == null)
@@ -42,7 +42,7 @@ namespace Robber
         {
             _signalings.SetActive(true);
             _activateCount++;
-            _robberAI.OnDeactivate += () =>
+            _robberAI.Deactivated += () =>
             {
                 _activateCount--;
                 if (_activateCount == 0)

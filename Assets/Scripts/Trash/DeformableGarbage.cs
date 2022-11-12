@@ -7,13 +7,13 @@ namespace Trash
         typeof(SizeReducer))]
     public class DeformableGarbage : Garbage
     {
+        [SerializeField] private float _speed = 15f;
+
         private Coroutine _suckCoroutine;
         private Deformator _deformator;
         private SizeReducer _sizeReducer;
         private Transform _lastTarget;
         
-        [SerializeField] private float _speed = 15f;
-
         private void Awake()
         {
             _deformator = GetComponent<Deformator>();

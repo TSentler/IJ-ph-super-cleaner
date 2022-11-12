@@ -6,16 +6,16 @@ namespace PlayerAbilities.Move
     [RequireComponent(typeof(Rigidbody))]
     public class Movement : MonoBehaviour
     {
+        [SerializeField] private float _runSpeed = 150f,
+            _speedMultiply = 1.5f,
+            _rotationSpeed = 15f;
+
         private Rigidbody _rb;
         private Vector2 _moveDirection, _rotateDirection;
         private float _currentSpeed;
         private bool _canMove = true;
 
-        [SerializeField] private float _runSpeed = 150f,
-            _speedMultiply = 1.5f,
-            _rotationSpeed = 15f;
-
-        public event UnityAction<Vector2> OnMove;
+        public event UnityAction<Vector2> Moved;
 
         private void Awake()
         {
@@ -55,7 +55,7 @@ namespace PlayerAbilities.Move
                 direction = Vector2.zero;
             }
             _moveDirection = direction;
-            OnMove?.Invoke(_moveDirection);
+            Moved?.Invoke(_moveDirection);
         }
 
         public void BoostSpeed()

@@ -6,15 +6,15 @@ namespace Upgrade
 {
     public abstract class Upgrader : MonoBehaviour
     {
-        private GameSaver _saver;
-        private int _upLevel;
-        
         [Min(-1), SerializeField] private int _upLevelOverride = -1;
         [Min(0), SerializeField] private int _coast;
         [SerializeField] private UpgradeView _view;
         [Min(0), SerializeField] private float _upFactor = 0.1f;
         [SerializeField] private Store _store;
 
+        private GameSaver _saver;
+        private int _upLevel;
+        
         protected float UpFactor => _upLevel * _upFactor;
 
         protected abstract string GetUpgradeName();
@@ -48,15 +48,15 @@ namespace Upgrade
 
         private void OnEnable()
         {
-            _view.OnUpgrade += UpgradeHandler;
+            _view.Upgraded += OnUpgraded;
         }
 
         private void OnDisable()
         {
-            _view.OnUpgrade -= UpgradeHandler;
+            _view.Upgraded -= OnUpgraded;
         }
 
-        private void UpgradeHandler()
+        private void OnUpgraded()
         {
             _store.Buy(_coast, () =>
             {

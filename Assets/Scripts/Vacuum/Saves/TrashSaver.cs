@@ -7,10 +7,10 @@ namespace Vacuum.Saves
     {
         private readonly string _trashName = "Trash";
         
-        private GameSaver _saver;
-        
         [SerializeField] private AllGarbageCollector _allGarbageCollector;
 
+        private GameSaver _saver;
+        
         private void OnValidate()
         {
             if (_allGarbageCollector == null)
@@ -25,12 +25,12 @@ namespace Vacuum.Saves
         
         private void OnEnable()
         {
-            _allGarbageCollector.OnChange += Save;
+            _allGarbageCollector.Changed += Save;
         }
 
         private void OnDisable()
         {
-            _allGarbageCollector.OnChange -= Save;
+            _allGarbageCollector.Changed -= Save;
         }
 
         private void Save()

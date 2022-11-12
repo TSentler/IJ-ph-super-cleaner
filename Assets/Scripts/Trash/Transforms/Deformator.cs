@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,7 +8,6 @@ namespace Trash
         [SerializeField] private Transform _scaleCenter;
         [Min(0.001f), SerializeField] private float _time = 0.2f, 
             _multiplier = 2f;
-
         
         private void OnValidate()
         {

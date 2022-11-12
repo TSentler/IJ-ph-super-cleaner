@@ -8,12 +8,12 @@ namespace Money.Saves
     {
         private readonly string _moneyName = "Money";
             
-        private GameSaver _saver;
-        
         [SerializeField] private Store _store;
         [SerializeField] private MoneyCounter _moneyCounter;
         [SerializeField] private Completer _completer;
 
+        private GameSaver _saver;
+        
         private void OnValidate()
         {
             if (_store == null)
@@ -32,16 +32,16 @@ namespace Money.Saves
         
         private void OnEnable()
         {
-            _completer.OnComplete += EarnLevelMoney;
-            _moneyCounter.OnCollect += EarnMoney;
-            _store.OnChange += Save;
+            _completer.Completed += EarnLevelMoney;
+            _moneyCounter.Collected += EarnMoney;
+            _store.Changed += Save;
         }
 
         private void OnDisable()
         {
-            _completer.OnComplete -= EarnLevelMoney;
-            _moneyCounter.OnCollect -= EarnMoney;
-            _store.OnChange -= Save;
+            _completer.Completed -= EarnLevelMoney;
+            _moneyCounter.Collected -= EarnMoney;
+            _store.Changed -= Save;
         }
         
         private void EarnLevelMoney()

@@ -6,9 +6,9 @@ namespace LevelLoader.Saves
 {
     public class LevelSaver : MonoBehaviour
     {
-        private GameSaver _saver;
-        
         [SerializeField] private LevelInfo _levelInfo;
+        
+        private GameSaver _saver;
         
         private void OnValidate()
         {
@@ -23,15 +23,15 @@ namespace LevelLoader.Saves
 
         private void OnEnable()
         {
-            SceneManager.sceneLoaded += SceneLoadedHandler;
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         
         private void OnDisable()
         {
-            SceneManager.sceneLoaded -= SceneLoadedHandler;
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
 
-        private void SceneLoadedHandler(Scene scene, LoadSceneMode mode)
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
 #if UNITY_EDITOR
             _saver ??= FindObjectOfType<GameSaver>();

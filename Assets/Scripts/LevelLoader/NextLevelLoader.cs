@@ -7,10 +7,10 @@ namespace LevelLoader
     [RequireComponent(typeof(LevelInfo))]
     public class NextLevelLoader : MonoBehaviour
     {
-        private LevelInfo _levelInfo;
-
         [SerializeField] private NextLevelButton _nextLevelButtons;
         
+        private LevelInfo _levelInfo;
+
         private void OnValidate()
         {
             if (_nextLevelButtons == null)

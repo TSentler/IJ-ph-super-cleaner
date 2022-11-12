@@ -9,7 +9,7 @@ namespace Vacuum
         
         [SerializeField] private GarbageCounter _garbageCounter;
 
-        public event UnityAction OnChange;
+        public event UnityAction Changed;
 
         public int AllTrashRounded => Mathf.RoundToInt(_allTrash);
 
@@ -22,13 +22,13 @@ namespace Vacuum
         public void Initialize(int trash)
         {
             _allTrash = trash;
-            OnChange?.Invoke();
+            Changed?.Invoke();
         }
         
         public void AddLevelGarbage()
         {
             _allTrash += _garbageCounter.CollectedAtLevel;
-            OnChange?.Invoke();
+            Changed?.Invoke();
         }
     }
 }
