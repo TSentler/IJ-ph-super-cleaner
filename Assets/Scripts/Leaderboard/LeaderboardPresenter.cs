@@ -47,7 +47,14 @@ namespace Leaderboard
         {
             _view.gameObject.SetActive(false);
             var hasLeaderboard = _socialNetwork?.IsLeaderboardAccess() ?? false;
-            _button.gameObject.SetActive(hasLeaderboard);
+            if (hasLeaderboard)
+            {
+                _button.ShowCupIcon();
+            }
+            else
+            {
+                _button.ShowVacuumIcon();
+            }
         }
 
         private void BoardShowed()

@@ -8,8 +8,11 @@ namespace Leaderboard
     [RequireComponent(typeof(Button))]
     public class LeaderboardShowButton : MonoBehaviour
     {
+        [SerializeField] private GameObject _cupIcon, _vacuumIcon;
+        [SerializeField] private Animator _animator;
+
         private Button _button;
-        
+
         public event UnityAction BoardShowed;
 
         private void Awake()
@@ -30,6 +33,24 @@ namespace Leaderboard
         private void OnLeaderboardShowed()
         {
             BoardShowed?.Invoke();
+        }
+
+        public void ShowCupIcon()
+        {
+            ShowLeaderboardIcon(true);
+        }
+
+        public void ShowVacuumIcon()
+        {
+            ShowLeaderboardIcon(false);
+        }
+
+        private void ShowLeaderboardIcon(bool isCupActive)
+        {
+            _vacuumIcon.SetActive(isCupActive == false);
+            _cupIcon.SetActive(isCupActive);
+            _button.enabled = isCupActive;
+            _animator.enabled = isCupActive;
         }
     }
 }
