@@ -93,7 +93,7 @@ namespace YaVk
 
         public bool IsLeaderboardAccess()
         {
-#if VK_GAMES && !VK_GAMES_MOBILE
+#if VK_GAMES && !VK_GAMES_MOBILE || CRAZY_GAMES
             return false;
 #endif
             return true;

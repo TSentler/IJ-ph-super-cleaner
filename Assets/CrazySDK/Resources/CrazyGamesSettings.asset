@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CrazyGamesSettings
   m_EditorClassIdentifier: 
   whitelistedDomains:
-  - developer.crazygames.com
-  - crazygames.com
-  - yandex.ru
-  - ya.ru
-  - vk.com
+  - https://developer.crazygames.com
+  - https://crazygames.com
+  - https://yandex.ru
+  - https://ya.ru
+  - https://vk.com

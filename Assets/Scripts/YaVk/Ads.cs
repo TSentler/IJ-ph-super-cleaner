@@ -1,4 +1,5 @@
 using System.Collections;
+using CrazyGames;
 using UnityEngine;
 using UnityEngine.Events;
 using YaInterstitialAd = Agava.YandexGames.InterstitialAd;
@@ -21,6 +22,14 @@ namespace YaVk
             yield return _init.TryInitializeSdkCoroutine();
 #if !UNITY_WEBGL || UNITY_EDITOR
             onCloseCallback?.Invoke(true);
+#elif CRAZY_GAMES
+            CrazyAds.Instance.beginAdBreak(
+                () => onCloseCallback?.Invoke(true),
+                () =>
+                {
+                    onErrorCallback?.Invoke("crazygame interstitial ads error");
+                    onCloseCallback?.Invoke(false);
+                });
 #elif YANDEX_GAMES
             YaInterstitialAd.Show(
                 () => onYaOpenCallback?.Invoke(),
