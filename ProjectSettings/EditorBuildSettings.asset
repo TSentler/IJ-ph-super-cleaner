@@ -44,6 +44,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelLibrary.unity
     guid: 8ab317e43113cf841bd4664f45d721fa
+  - enabled: 0
+    path: Assets/CrazySDK/Demo/MainDemo.unity
+    guid: 719c97d2bda674bff93b80c2bd0a0f7e
+  - enabled: 0
+    path: Assets/CrazySDK/CrazyAds/CrazyAdsDemo/CrazyAdsDemo.unity
+    guid: 39797e3c07a9e4149b88e4c1b76b586a
+  - enabled: 0
+    path: Assets/CrazySDK/CrazyAds/CrazyBannersDemo/CrazyBannersDemo.unity
+    guid: b3e9d46ebd5a0a140811b729c26bb42f
+  - enabled: 0
+    path: Assets/CrazySDK/CrazyEvents/CrazyEventsDemo/CrazyEventsDemo.unity
+    guid: 2c740c6d1b0553d4ebde1f9c8e2a9989
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e31818dc37bbcf0a99bdef12201c98d9, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 8f0148ebfbfb7e5fa81cb3f97099d00d, type: 2}
