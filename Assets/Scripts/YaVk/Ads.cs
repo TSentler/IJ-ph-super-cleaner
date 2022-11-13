@@ -27,7 +27,7 @@ namespace YaVk
                 () => onCloseCallback?.Invoke(true),
                 () =>
                 {
-                    onErrorCallback?.Invoke("crazygame interstitial ads error");
+                    onErrorCallback?.Invoke("Crazygame interstitial ads error");
                     onCloseCallback?.Invoke(false);
                 });
 #elif YANDEX_GAMES
@@ -57,6 +57,17 @@ namespace YaVk
 #if !UNITY_WEBGL || UNITY_EDITOR
             onRewardedCallback?.Invoke();
             onCloseCallback?.Invoke();
+#elif CRAZY_GAMES
+            CrazyAds.Instance.beginAdBreakRewarded(() =>
+                {
+                    onRewardedCallback?.Invoke();
+                    onCloseCallback?.Invoke();
+                },
+                () =>
+                {
+                    onErrorCallback?.Invoke("Crazygame rewarded ads error");
+                    onCloseCallback?.Invoke();
+                });
 #elif YANDEX_GAMES
             YaVideoAd.Show(() => onYaOpenCallback?.Invoke(),
                 () => onRewardedCallback?.Invoke(),

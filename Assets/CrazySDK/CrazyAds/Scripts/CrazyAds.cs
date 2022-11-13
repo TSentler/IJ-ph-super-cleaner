@@ -82,7 +82,7 @@ namespace CrazyGames
 #if UNITY_EDITOR
             SimulateAdBreak();
 #else
-        CrazySDK.Instance.RequestAd(adType);
+            CrazySDK.Instance.RequestAd(adType);
 #endif
         }
 
