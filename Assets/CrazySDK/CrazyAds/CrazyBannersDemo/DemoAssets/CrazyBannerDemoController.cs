@@ -10,7 +10,8 @@ public class CrazyBannerDemoController : MonoBehaviour
         CrazyAds.Instance.listenToBannerError(BannerError);
         CrazyAds.Instance.listenToBannerRendered(BannerRendered);
         var banners = FindObjectsOfType<CrazyBanner>();
-        foreach (var banner in banners) banner.MarkVisible(true);
+        foreach (var banner in banners) 
+            banner.MarkVisible(true);
     }
 
     public void UpdateBannersDisplay()
@@ -32,7 +33,7 @@ public class CrazyBannerDemoController : MonoBehaviour
     public void AddBanner()
     {
         var banner = Instantiate(bannerPrefab, new Vector3(), new Quaternion(), GameObject.Find("Banners").transform);
-        banner.Size = (CrazyBanner.BannerSize) Random.Range(0, 3);
+        banner.SetBannerSize((CrazyBanner.BannerSize)Random.Range(0, 3));
         banner.Position = new Vector2(Random.Range(-461, 461), Random.Range(-243, 243));
         banner.MarkVisible(true);
     }

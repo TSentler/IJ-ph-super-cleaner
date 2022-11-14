@@ -2,7 +2,7 @@
 
 namespace CrazyGames
 {
-    [CustomEditor(typeof(CrazyBanner))]
+    /*[CustomEditor(typeof(CrazyBanner))]
     public class CrazyBannerEditor : Editor
     {
         public override void OnInspectorGUI()
@@ -12,5 +12,5 @@ namespace CrazyGames
             script.Size = (CrazyBanner.BannerSize)newValue;
             EditorUtility.SetDirty(target);
         }
-    }
+    }*/
 }

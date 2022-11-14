@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace CrazyGames
@@ -15,81 +16,84 @@ namespace CrazyGames
             Large_Mobile_320x100
         }
 
-        public string id;
+        [HideInInspector] public string id;
 
-        [SerializeField] private BannerSize _size;
+        [SerializeField] private BannerSize _bannerSize;
+        [SerializeField] private Image _image;
+        [SerializeField] private RectTransform _banner;
 
-        private bool visible;
+        private bool _visible;
 
-        public BannerSize Size
+        private Vector2[] _sizes = new Vector2[]
         {
-            get { return _size; }
-            set
-            {
-                _size = value;
-                var banner = (RectTransform)transform.Find("Banner");
-                switch (value)
-                {
-                    case BannerSize.Mobile_320x50:
-                        banner.sizeDelta = new Vector2(320, 50);
-                        break;
-                    case BannerSize.Medium_300x250:
-                        banner.sizeDelta = new Vector2(300, 250);
-                        break;
-                    case BannerSize.Leaderboard_728x90:
-                        banner.sizeDelta = new Vector2(728, 90);
-                        break;
-                    case BannerSize.Main_Banner_468x60:
-                        banner.sizeDelta = new Vector2(468, 60);
-                        break;
-                    case BannerSize.Large_Mobile_320x100:
-                        banner.sizeDelta = new Vector2(320, 100);
-                        break;
-                }
-            }
-        }
+            new Vector2(728, 90),
+            new Vector2(300, 250),
+            new Vector2(320, 50),
+            new Vector2(468, 60),
+            new Vector2(320, 100)
+        };
 
         public Vector2 Position
         {
             get
             {
-                var banner = (RectTransform)transform.Find("Banner");
-                return banner.anchoredPosition;
+                return _banner.anchoredPosition;
             }
             set
             {
-                var banner = (RectTransform)transform.Find("Banner");
-                banner.anchoredPosition = value;
+                _banner.anchoredPosition = value;
+            }
+        }
+
+        private void OnValidate()
+        {
+            if (_banner != null && _banner.sizeDelta != GetCurrentSize())
+            {
+                Debug.Log("Banner size updated");
+                SetBannerSize(_bannerSize);
             }
         }
 
         private void Awake()
         {
-            var image = transform.GetComponentInChildren<Image>();
-            image.color = Color.clear;
+            _image.color = Color.clear;
             id = Guid.NewGuid().ToString();
             CrazyAds.Instance.registerBanner(this);
         }
 
         private void OnDestroy()
         {
-            var image = transform.GetComponentInChildren<Image>();
-            image.color = Color.clear;
+            _image.color = Color.clear;
             if (CrazyAds.Instance)
                 CrazyAds.Instance.unregisterBanner(this);
         }
 
+        private void Start()
+        {
+            MarkVisible(true);
+            CrazyAds.Instance.updateBannersDisplay();
+        }
+
+        private Vector2 GetCurrentSize()
+        {
+            return _sizes[(int)_bannerSize];
+        }
+        
+        public void SetBannerSize(BannerSize bannerSize)
+        {
+            _bannerSize = bannerSize;
+            _banner.sizeDelta = _sizes[(int)bannerSize];
+        }
+
         public void SimulateRender()
         {
-            if (visible)
+            if (_visible)
             {
-                var image = transform.GetComponentInChildren<Image>();
-                image.color = new Color32(46, 37, 68, 255);
+                _image.color = new Color32(46, 37, 68, 255);
             }
             else
             {
-                var image = transform.GetComponentInChildren<Image>();
-                image.color = Color.clear;
+                _image.color = Color.clear;
             }
         }
 
@@ -100,12 +104,12 @@ namespace CrazyGames
 
         public void MarkVisible(bool visibility)
         {
-            visible = visibility;
+            _visible = visibility;
         }
 
         public bool isVisible()
         {
-            return visible;
+            return _visible;
         }
     }
 }
