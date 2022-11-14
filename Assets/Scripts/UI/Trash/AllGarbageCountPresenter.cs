@@ -28,18 +28,18 @@ namespace Trash.UI
         private void OnEnable()
         {
             _allGarbageCollector.Changed += OnChanged;
-            _garbageCounter.Collected += OnCollected;
+            _garbageCounter.TrashPointsChanged += OnTrashPointsChanged;
         }
 
         private void OnDisable()
         {
             _allGarbageCollector.Changed -= OnChanged;
-            _garbageCounter.Collected -= OnCollected;
+            _garbageCounter.TrashPointsChanged -= OnTrashPointsChanged;
         }
 
-        private void OnCollected(float collected)
+        private void OnTrashPointsChanged(float collected)
         {
-            SetText(_garbageCounter.CollectedAtLevel +
+            SetText(_garbageCounter.TrashPoints +
                     _allGarbageCollector.AllTrashRounded);
         }
 

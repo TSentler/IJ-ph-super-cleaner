@@ -1,4 +1,3 @@
-using System;
 using Trash;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,7 +13,7 @@ namespace Vacuum
 
         public float ExtraSpeedMyltiply => _environmentExtraSuckSpeed;
         
-        public event UnityAction<Garbage> Sucked;
+        public event UnityAction<Garbage> Collected;
 
         private void Awake()
         {
@@ -26,7 +25,7 @@ namespace Vacuum
             if (other.TryGetComponent(out Garbage garbage))
             {
                 garbage.Sucked();
-                Sucked(garbage);
+                Collected(garbage);
             }
         }
 

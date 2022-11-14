@@ -22,26 +22,26 @@ namespace Trash
 
         private void OnEnable()
         {
-            _garbageCounter.Collected += OnCollected;
-            _garbageCounter.CountChanged += OnCountChanged;
+            _garbageCounter.TrashPointsChanged += OnTrashPointsChanged;
+            _garbageCounter.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
         }
 
         private void OnDisable()
         {
-            _garbageCounter.Collected -= OnCollected;
-            _garbageCounter.CountChanged -= OnCountChanged;
+            _garbageCounter.TrashPointsChanged -= OnTrashPointsChanged;
+            _garbageCounter.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
         }
         
-        private void OnCountChanged(int count)
+        private void OnTargetTrashPointsChanged(int count)
         {
             _collectedText.SetCount(count);
         }
         
-        private void OnCollected(float collected)
+        private void OnTrashPointsChanged(float collected)
         {
-            var collectedRound = _garbageCounter.CollectedAtLevel;
+            var collectedRound = _garbageCounter.TrashPoints;
             _collectedText.SetCollected(collectedRound);
-            float sliderValue = (float)collectedRound / _garbageCounter.Count;
+            float sliderValue = (float)collectedRound / _garbageCounter.TargetTrashPoints;
             _collectedSlider.SetValue(sliderValue);
         }
     }

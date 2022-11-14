@@ -19,15 +19,15 @@ namespace Money.Vacuum
         
         private void OnEnable()
         {
-            _garbageCounter.Collected += OnCollected;
+            _garbageCounter.TrashPointsChanged += OnTrashPointsChanged;
         }
 
         private void OnDisable()
         {
-            _garbageCounter.Collected -= OnCollected;
+            _garbageCounter.TrashPointsChanged -= OnTrashPointsChanged;
         }
 
-        private void OnCollected(float collected)
+        private void OnTrashPointsChanged(float collected)
         {
             var money = collected * _factor;
             _moneyCounter.Collect(money);

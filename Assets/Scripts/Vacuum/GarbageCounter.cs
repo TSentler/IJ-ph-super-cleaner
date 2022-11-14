@@ -11,14 +11,14 @@ namespace Vacuum
         [SerializeField] private GarbageDisposal _garbageDisposal;
         [SerializeField] private List<GameObject> _garbageRoots;
 
-        private float _collectedAtLevel = 0f, _count = 0f;
-        private bool _isPause;
+        private float _trashPoints = 0f, _targetTrashPoints = 0f;
+        private bool _isStop;
 
-        public int CollectedAtLevel => Mathf.RoundToInt(_collectedAtLevel);
-        public int Count => Mathf.RoundToInt(_count);
+        public int TrashPoints => Mathf.RoundToInt(_trashPoints);
+        public int TargetTrashPoints => Mathf.RoundToInt(_targetTrashPoints);
 
-        public event UnityAction<int> CountChanged;
-        public event UnityAction<float> Collected;
+        public event UnityAction<int> TargetTrashPointsChanged;
+        public event UnityAction<float> TrashPointsChanged;
         
         private void OnValidate()
         {
@@ -39,7 +39,7 @@ namespace Vacuum
                     var trash = childTrash.ToList();
                     foreach (var garbage in trash)
                     {
-                        _count += garbage.TrashPoints;
+                        _targetTrashPoints += garbage.TrashPoints;
                     }
                 }
             }
@@ -47,31 +47,31 @@ namespace Vacuum
         
         private void OnEnable()
         {
-            _garbageDisposal.Sucked += OnSucked;
+            _garbageDisposal.Collected += OnCollected;
         }
 
         private void OnDisable()
         {
-            _garbageDisposal.Sucked -= OnSucked;
+            _garbageDisposal.Collected -= OnCollected;
         }
 
         private void Start()
         {
-            CountChanged?.Invoke(Count);
+            TargetTrashPointsChanged?.Invoke(TargetTrashPoints);
         }
         
-        private void OnSucked(Garbage garbage)
+        private void OnCollected(Garbage garbage)
         {
-            if (_isPause)
+            if (_isStop)
                 return;
             
-            _collectedAtLevel += garbage.TrashPoints;
-            Collected?.Invoke(garbage.TrashPoints);
+            _trashPoints += garbage.TrashPoints;
+            TrashPointsChanged?.Invoke(garbage.TrashPoints);
         }
 
-        public void Pause()
+        public void Stop()
         {
-            _isPause = true;
+            _isStop = true;
         }
     }
 }

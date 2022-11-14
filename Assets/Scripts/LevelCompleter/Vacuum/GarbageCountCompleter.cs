@@ -26,19 +26,19 @@ namespace LevelCompleter.Vacuum
         
         private void OnEnable()
         {
-            _garbageCounter.Collected += OnCollected;
+            _garbageCounter.TrashPointsChanged += OnTrashPointsChanged;
             _completer.Completed += OnCompleted;
         }
 
         private void OnDisable()
         {
-            _garbageCounter.Collected -= OnCollected;
+            _garbageCounter.TrashPointsChanged -= OnTrashPointsChanged;
             _completer.Completed -= OnCompleted;
         }
         
-        private void OnCollected(float collected)
+        private void OnTrashPointsChanged(float collected)
         {
-            if (_garbageCounter.Count == _garbageCounter.CollectedAtLevel)
+            if (_garbageCounter.TargetTrashPoints == _garbageCounter.TrashPoints)
             {
                 _completer.Complete();
             }
@@ -46,7 +46,7 @@ namespace LevelCompleter.Vacuum
 
         private void OnCompleted()
         {
-            _garbageCounter.Pause();
+            _garbageCounter.Stop();
             _allGarbageCollector.AddLevelGarbage();
         }
     }

@@ -3,11 +3,10 @@ using UnityEngine.Events;
 
 namespace Vacuum
 {
-    public class AllGarbageCollector : MonoBehaviour
+    public class AllGarbageCollector
     {
         private float _allTrash;
         
-        [SerializeField] private GarbageCounter _garbageCounter;
 
         public event UnityAction Changed;
 
@@ -25,9 +24,9 @@ namespace Vacuum
             Changed?.Invoke();
         }
         
-        public void AddLevelGarbage()
+        public void AddLevelGarbage(int trashPoints)
         {
-            _allTrash += _garbageCounter.CollectedAtLevel;
+            _allTrash += trashPoints;
             Changed?.Invoke();
         }
     }

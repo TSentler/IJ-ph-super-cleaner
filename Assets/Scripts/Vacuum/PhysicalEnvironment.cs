@@ -7,13 +7,13 @@ namespace Vacuum
     {
         [SerializeField] private float _speed = 135f;
 
-        private GarbageDisposal _target;
-        private Rigidbody _rb;
+        private Transform _target;
+        private Rigidbody _rigidbody;
         private bool _isTied;
         
         private void Awake()
         {
-            _rb = GetComponent<Rigidbody>();
+            _rigidbody = GetComponent<Rigidbody>();
         }
     
         private void FixedUpdate()
@@ -21,15 +21,15 @@ namespace Vacuum
             if (_target == null)
                 return;
 
-            var deltaSpeed = _speed * _target.ExtraSpeedMyltiply 
+            var deltaSpeed = _speed //* _target.ExtraSpeedMyltiply 
                                     * Time.deltaTime;
             var direction = 
-                (_target.transform.position - transform.position).normalized;
+                (_target.position - transform.position).normalized;
             var force = direction * deltaSpeed;
-            _rb.AddForce(force, ForceMode.Force);
+            _rigidbody.AddForce(force, ForceMode.Force);
         }
 
-        public void Suck(GarbageDisposal target)
+        public void Suck(Transform target)
         {
             _target = target;
         }

@@ -31,14 +31,14 @@ namespace Bonuses.Player
         {
             _temporaryBonus.TimerStarted += OnTimerStarted;
             _temporaryBonus.TimerEnded += OnTimerEnded;
-            _garbageDisposal.Sucked += OnSucked;
+            _garbageDisposal.Collected += OnCollected;
         }
     
         private void OnDisable()
         {
             _temporaryBonus.TimerStarted -= OnTimerStarted;
             _temporaryBonus.TimerEnded -= OnTimerEnded;
-            _garbageDisposal.Sucked -= OnSucked;
+            _garbageDisposal.Collected -= OnCollected;
         }
 
         private void OnTimerStarted()
@@ -57,7 +57,7 @@ namespace Bonuses.Player
             _throwTimer.ResetDelay();
         }
         
-        private void OnSucked(Garbage garbage)
+        private void OnCollected(Garbage garbage)
         {
             if (garbage.TryGetComponent<Lightning>(
                     out var lightningBonus))
