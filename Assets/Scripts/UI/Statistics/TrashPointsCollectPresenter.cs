@@ -8,7 +8,7 @@ namespace UI.Statistics
         [SerializeField] private TrashText _allInGamePanel,
             _allInCompletitionPanel;
 
-        private PlayerStatistics _playerStatistics;
+        private PlayerBag _playerBag;
 
         private void OnValidate()
         {
@@ -18,30 +18,30 @@ namespace UI.Statistics
 
         private void Awake()
         {
-            _playerStatistics = FindObjectOfType<PlayerStatistics>();
+            _playerBag = FindObjectOfType<PlayerBag>();
         }
 
         private void OnEnable()
         {
-            _playerStatistics.AllTrashPointsChanged += OnAllTrashPointsChanged;
-            _playerStatistics.TrashPointsChanged += OnTrashPointsChanged;
+            _playerBag.AllTrashPointsChanged += OnAllTrashPointsChanged;
+            _playerBag.TrashPointsChanged += OnTrashPointsChanged;
         }
 
         private void OnDisable()
         {
-            _playerStatistics.AllTrashPointsChanged -= OnAllTrashPointsChanged;
-            _playerStatistics.TrashPointsChanged -= OnTrashPointsChanged;
+            _playerBag.AllTrashPointsChanged -= OnAllTrashPointsChanged;
+            _playerBag.TrashPointsChanged -= OnTrashPointsChanged;
         }
 
         private void OnTrashPointsChanged(float collected)
         {
-            SetText(_playerStatistics.TrashPoints +
-                    _playerStatistics.GetAllTrashPoints());
+            SetText(_playerBag.TrashPoints +
+                    _playerBag.AllTrashPointsRounded);
         }
 
         private void OnAllTrashPointsChanged()
         {
-            SetText(_playerStatistics.GetAllTrashPoints());
+            SetText(_playerBag.AllTrashPointsRounded);
         }
 
         private void SetText(int count)

@@ -8,7 +8,7 @@ namespace Money.Statistics
         [SerializeField] private MoneyCounter _moneyCounter;
         [Min(0f), SerializeField] private float _factor = 0.25f;
         
-        private PlayerStatistics _playerStatistics;
+        private PlayerBag _playerBag;
         
         private void OnValidate()
         {
@@ -18,17 +18,17 @@ namespace Money.Statistics
 
         private void Awake()
         {
-            _playerStatistics = FindObjectOfType<PlayerStatistics>();
+            _playerBag = FindObjectOfType<PlayerBag>();
         }
 
         private void OnEnable()
         {
-            _playerStatistics.TrashPointsChanged += OnTrashPointsChanged;
+            _playerBag.TrashPointsChanged += OnTrashPointsChanged;
         }
 
         private void OnDisable()
         {
-            _playerStatistics.TrashPointsChanged -= OnTrashPointsChanged;
+            _playerBag.TrashPointsChanged -= OnTrashPointsChanged;
         }
 
         private void OnTrashPointsChanged(float collected)

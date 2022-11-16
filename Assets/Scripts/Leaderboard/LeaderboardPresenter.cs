@@ -12,7 +12,7 @@ namespace Leaderboard
         [SerializeField] private Completer _completer;
         
         private SocialNetwork _socialNetwork;
-        private PlayerStatistics _playerStatistics;
+        private PlayerBag _playerBag;
 
         private void OnValidate()
         {
@@ -27,7 +27,7 @@ namespace Leaderboard
         private void Awake()
         {
             _socialNetwork = FindObjectOfType<SocialNetwork>();
-            _playerStatistics = FindObjectOfType<PlayerStatistics>();
+            _playerBag = FindObjectOfType<PlayerBag>();
         }
         
         private void OnEnable()
@@ -78,7 +78,7 @@ namespace Leaderboard
         
         private void Apply()
         {
-            _socialNetwork.GetLeaderboard(_playerStatistics.GetAllTrashPoints(),
+            _socialNetwork.GetLeaderboard(_playerBag.AllTrashPointsRounded,
                 leaderList =>
                 {
                     if (_socialNetwork.IsAutoLeaderboard() || _view == null)

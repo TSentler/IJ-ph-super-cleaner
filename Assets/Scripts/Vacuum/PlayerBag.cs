@@ -1,18 +1,20 @@
+using Saves;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Statistics
+namespace Vacuum
 {
-    public class PlayerStatistics : MonoBehaviour
+    public class PlayerBag : MonoBehaviour
     {
         private float _trashPoints = 0f;
         private float _targetTrashPoints = 0f;
-        private AllGarbageCollector _allGarbageCollector;
         private bool _isStopCollectTrashPoints;
+        private float _allTrashPoints;
+        private TrashSaver _trashSaver;
         
         public int TrashPoints => Mathf.RoundToInt(_trashPoints);
         public int TargetTrashPoints => Mathf.RoundToInt(_targetTrashPoints);
-
+        public int AllTrashPointsRounded => Mathf.RoundToInt(_allTrashPoints);
 
         public event UnityAction<float> TrashPointsChanged;
         public event UnityAction AllTrashPointsChanged;
@@ -20,19 +22,16 @@ namespace Statistics
 
         private void Awake()
         {
-            _allGarbageCollector = new AllGarbageCollector();
+            _trashSaver = new TrashSaver();
+            _allTrashPoints = _trashSaver.Load();
             AllTrashPointsChanged?.Invoke();
         }
         
-        public int GetAllTrashPoints()
-        {
-            return _allGarbageCollector.AllTrashPointsRounded;
-        }
-
-        public void AddLevelGarbage(int garbageCounterTrashPoints)
+        public void AddLevelGarbage(int trashPoints)
         {
             _isStopCollectTrashPoints = true;
-            _allGarbageCollector.AddLevelGarbage(garbageCounterTrashPoints);
+            _allTrashPoints += trashPoints;
+            _trashSaver.Save(AllTrashPointsRounded);
             AllTrashPointsChanged?.Invoke();
         }
 

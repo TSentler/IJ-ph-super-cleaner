@@ -9,7 +9,7 @@ namespace Trash.Statistics
     {
         [SerializeField] private List<GameObject> _garbageRoots;
 
-        private PlayerStatistics _playerStatistics;
+        private PlayerBag _playerBag;
 
         private void OnValidate()
         {
@@ -19,7 +19,7 @@ namespace Trash.Statistics
         
         private void Awake()
         {
-            _playerStatistics = FindObjectOfType<PlayerStatistics>();
+            _playerBag = FindObjectOfType<PlayerBag>();
             var targetTrashPoints = 0f;
             foreach (var root in _garbageRoots)
             {
@@ -34,7 +34,7 @@ namespace Trash.Statistics
                     }
                 }
             }
-            _playerStatistics.AddTarrgetTrashPoints(targetTrashPoints);
+            _playerBag.AddTarrgetTrashPoints(targetTrashPoints);
         }
     }
 }

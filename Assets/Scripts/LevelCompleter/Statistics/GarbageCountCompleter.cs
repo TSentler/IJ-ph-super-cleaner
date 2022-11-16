@@ -6,30 +6,30 @@ namespace LevelCompleter.Statistics
     [RequireComponent(typeof(Completer))]
     public class GarbageCountCompleter : MonoBehaviour
     {
-        private PlayerStatistics _playerStatistics;
+        private PlayerBag _playerBag;
         private Completer _completer;
 
         private void Awake()
         {
             _completer = GetComponent<Completer>();
-            _playerStatistics = FindObjectOfType<PlayerStatistics>();
+            _playerBag = FindObjectOfType<PlayerBag>();
         }
         
         private void OnEnable()
         {
-            _playerStatistics.TrashPointsChanged += OnTrashPointsChanged;
+            _playerBag.TrashPointsChanged += OnTrashPointsChanged;
             _completer.Completed += OnCompleted;
         }
 
         private void OnDisable()
         {
-            _playerStatistics.TrashPointsChanged -= OnTrashPointsChanged;
+            _playerBag.TrashPointsChanged -= OnTrashPointsChanged;
             _completer.Completed -= OnCompleted;
         }
 
         private void OnTrashPointsChanged(float collected)
         {
-            if (_playerStatistics.TargetTrashPoints == _playerStatistics.TrashPoints)
+            if (_playerBag.TargetTrashPoints == _playerBag.TrashPoints)
             {
                 _completer.Complete();
             }
@@ -37,7 +37,7 @@ namespace LevelCompleter.Statistics
 
         private void OnCompleted()
         {
-            _playerStatistics.AddLevelGarbage(_playerStatistics.TrashPoints);
+            _playerBag.AddLevelGarbage(_playerBag.TrashPoints);
         }
     }
 }

@@ -8,7 +8,7 @@ namespace UI.Trash
         [SerializeField] private CollectedText _collectedText;
         [SerializeField] private SmoothSlider _collectedSlider;
 
-        private PlayerStatistics _playerStatistics;
+        private PlayerBag _playerBag;
         
         private void OnValidate()
         {
@@ -20,32 +20,32 @@ namespace UI.Trash
 
         private void Awake()
         {
-            _playerStatistics = FindObjectOfType<PlayerStatistics>();
+            _playerBag = FindObjectOfType<PlayerBag>();
         }
 
         private void OnEnable()
         {
             OnTargetTrashPointsChanged();
-            _playerStatistics.TrashPointsChanged += OnTrashPointsChanged;
-            _playerStatistics.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
+            _playerBag.TrashPointsChanged += OnTrashPointsChanged;
+            _playerBag.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
         }
 
         private void OnDisable()
         {
-            _playerStatistics.TrashPointsChanged -= OnTrashPointsChanged;
-            _playerStatistics.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
+            _playerBag.TrashPointsChanged -= OnTrashPointsChanged;
+            _playerBag.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
         }
         
         private void OnTargetTrashPointsChanged()
         {
-            _collectedText.SetCount(_playerStatistics.TargetTrashPoints);
+            _collectedText.SetCount(_playerBag.TargetTrashPoints);
         }
         
         private void OnTrashPointsChanged(float collected)
         {
-            var collectedRound = _playerStatistics.TrashPoints;
+            var collectedRound = _playerBag.TrashPoints;
             _collectedText.SetCollected(collectedRound);
-            float sliderValue = (float)collectedRound / _playerStatistics.TargetTrashPoints;
+            float sliderValue = (float)collectedRound / _playerBag.TargetTrashPoints;
             _collectedSlider.SetValue(sliderValue);
         }
     }

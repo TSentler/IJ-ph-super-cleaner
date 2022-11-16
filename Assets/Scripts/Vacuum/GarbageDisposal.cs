@@ -7,7 +7,7 @@ namespace Vacuum
 {
     public class GarbageDisposal : MonoBehaviour
     {
-        [SerializeField] private PlayerStatistics _statistics;
+        [SerializeField] private PlayerBag _bag;
         [Min(0f), SerializeField] private float _environmentExtraSuckSpeed = 1f,
             _bonusMultiply = 1.2f;
         
@@ -27,7 +27,7 @@ namespace Vacuum
             if (other.TryGetComponent(out Garbage garbage))
             {
                 garbage.Sucked();
-                _statistics.AddTrashPoints(garbage.TrashPoints);
+                _bag.AddTrashPoints(garbage.TrashPoints);
                 Collected(garbage);
             }
         }
