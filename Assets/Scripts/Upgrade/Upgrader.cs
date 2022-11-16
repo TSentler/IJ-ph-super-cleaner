@@ -30,8 +30,8 @@ namespace Upgrade
 
         protected virtual void Awake()
         {
-            _saver = FindObjectOfType<GameSaver>();
-            _upLevel = _saver?.Load(GetUpgradeName()) ?? 0;
+            _saver = new GameSaver();
+            _upLevel = _saver.Load(GetUpgradeName());
 #if UNITY_EDITOR
             if (_upLevelOverride != -1)
             {

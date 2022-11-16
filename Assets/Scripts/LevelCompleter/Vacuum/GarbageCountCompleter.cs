@@ -1,3 +1,4 @@
+using Statistics;
 using UnityEngine;
 using Vacuum;
 
@@ -6,39 +7,32 @@ namespace LevelCompleter.Vacuum
     [RequireComponent(typeof(Completer))]
     public class GarbageCountCompleter : MonoBehaviour
     {
+        [SerializeField] private GarbageCounter _garbageCounter;
+
+        private PlayerStatistics _playerStatistics;
         private Completer _completer;
 
-        [SerializeField] private GarbageCounter _garbageCounter;
-        [SerializeField] private AllGarbageCollector _allGarbageCollector;
-        
-        private void OnValidate()
-        {
-            if (_garbageCounter == null)
-                Debug.LogWarning("GarbageCounter was not found!", this);
-            if (_allGarbageCollector == null)
-                Debug.LogWarning("AllGarbageCollector was not found!", this);
-        }
-        
         private void Awake()
         {
             _completer = GetComponent<Completer>();
+            _playerStatistics = FindObjectOfType<PlayerStatistics>();
         }
         
         private void OnEnable()
         {
-            _garbageCounter.TrashPointsChanged += OnTrashPointsChanged;
+            _playerStatistics.TrashPointsChanged += OnTrashPointsChanged;
             _completer.Completed += OnCompleted;
         }
 
         private void OnDisable()
         {
-            _garbageCounter.TrashPointsChanged -= OnTrashPointsChanged;
+            _playerStatistics.TrashPointsChanged -= OnTrashPointsChanged;
             _completer.Completed -= OnCompleted;
         }
-        
+
         private void OnTrashPointsChanged(float collected)
         {
-            if (_garbageCounter.TargetTrashPoints == _garbageCounter.TrashPoints)
+            if (_garbageCounter.TargetTrashPoints == _playerStatistics.TrashPoints)
             {
                 _completer.Complete();
             }
@@ -46,8 +40,7 @@ namespace LevelCompleter.Vacuum
 
         private void OnCompleted()
         {
-            _garbageCounter.Stop();
-            _allGarbageCollector.AddLevelGarbage();
+            _playerStatistics.AddLevelGarbage(_playerStatistics.TrashPoints);
         }
     }
 }

@@ -1,6 +1,6 @@
 using LevelCompleter;
+using Statistics;
 using UnityEngine;
-using Vacuum;
 using YaVk;
 
 namespace Leaderboard
@@ -10,9 +10,9 @@ namespace Leaderboard
         [SerializeField] private LeaderboardShowButton _button;
         [SerializeField] private LeaderboardView _view;
         [SerializeField] private Completer _completer;
-        [SerializeField] private AllGarbageCollector _trash;
         
         private SocialNetwork _socialNetwork;
+        private PlayerStatistics _playerStatistics;
 
         private void OnValidate()
         {
@@ -22,13 +22,12 @@ namespace Leaderboard
                 Debug.LogWarning("Leaderboard View was not found!", this);
             if (_completer == null)
                 Debug.LogWarning("Completer was not found!", this);
-            if (_trash == null)
-                Debug.LogWarning("AllGarbageCollector was not found!", this);
         }
         
         private void Awake()
         {
             _socialNetwork = FindObjectOfType<SocialNetwork>();
+            _playerStatistics = FindObjectOfType<PlayerStatistics>();
         }
         
         private void OnEnable()
@@ -79,7 +78,7 @@ namespace Leaderboard
         
         private void Apply()
         {
-            _socialNetwork.GetLeaderboard(_trash.AllTrashRounded,
+            _socialNetwork.GetLeaderboard(_playerStatistics.GetAllTrashPoints(),
                 leaderList =>
                 {
                     if (_socialNetwork.IsAutoLeaderboard() || _view == null)

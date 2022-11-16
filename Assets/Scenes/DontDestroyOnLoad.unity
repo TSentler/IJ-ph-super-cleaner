@@ -309,7 +309,6 @@ GameObject:
   - component: {fileID: 320212697}
   - component: {fileID: 320212699}
   - component: {fileID: 320212696}
-  - component: {fileID: 320212700}
   - component: {fileID: 320212698}
   - component: {fileID: 320212694}
   m_Layer: 0
@@ -397,18 +396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27962b9b2fc5cb4688e761c650fcf54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &320212700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320212693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75d4ca917e9576439700b8d8b32e273, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &656852959
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d34a05f55169c48904e4269d8bd181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _saver: {fileID: 320212700}
   _slider: {fileID: 151350670}
   _delay: 10
 --- !u!114 &656852962

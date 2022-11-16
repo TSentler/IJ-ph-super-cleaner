@@ -1,0 +1,17 @@
+{
+    "name": "Money.Statistics",
+    "rootNamespace": "",
+    "references": [
+        "GUID:09333de930c0ebd46a74e6fe4335da92",
+        "GUID:cf44f5d808a02124bbbd1d57d5dd0549"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

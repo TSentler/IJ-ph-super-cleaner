@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _garbageCounter: {fileID: 362696536709327769}
-  _allGarbageCollector: {fileID: 4842201229636587526}
+  _statistics: {fileID: 0}
 --- !u!114 &362696536709327775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +309,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2511265182256392874}
-  - component: {fileID: 4842201229636587526}
   - component: {fileID: 980852652791356361}
   - component: {fileID: 799436871204392351}
   m_Layer: 0
@@ -334,19 +333,6 @@ Transform:
   m_Father: {fileID: 3079867699107798500}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4842201229636587526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2254568229589683482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca1f54a75053654592688eae80e4364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _garbageCounter: {fileID: 362696536709327769}
 --- !u!114 &980852652791356361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88315aafbf740445beef23d40264b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _view: {fileID: 0}
+  _muteButton: {fileID: 0}
 --- !u!1 &5279847342994244699
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +418,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5279847342994244703}
   - component: {fileID: 5279847342994244696}
-  - component: {fileID: 5279847342994244702}
   - component: {fileID: 5279847342994244697}
   m_Layer: 0
   m_Name: Saves
@@ -469,19 +454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelInfo: {fileID: 362696537810880745}
---- !u!114 &5279847342994244702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5279847342994244699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbe7520bb8aa57a40afcadfc11967983, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _allGarbageCollector: {fileID: 4842201229636587526}
 --- !u!114 &5279847342994244697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,7 +560,7 @@ MonoBehaviour:
   _button: {fileID: 0}
   _view: {fileID: 0}
   _completer: {fileID: 362696536709327775}
-  _trash: {fileID: 4842201229636587526}
+  _statistics: {fileID: 0}
 --- !u!1 &7464703450531637381
 GameObject:
   m_ObjectHideFlags: 0

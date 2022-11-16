@@ -9,16 +9,14 @@ namespace LevelLoader.Saves
     [RequireComponent(typeof(LevelInfo))]
     public class FirstLevelLoader : MonoBehaviour
     {
-        [SerializeField] private GameSaver _saver;
         [SerializeField] private Slider _slider;
         [Min(0f), SerializeField] private float _delay = 10f;
 
         private LevelInfo _levelInfo;
+        private LevelSaver _saver;
 
         private void OnValidate()
         {
-            if (_saver == null)
-                Debug.LogWarning("GameSaver was not found!", this);
             if (_slider == null)
                 Debug.LogWarning("Slider was not found!", this);
         }

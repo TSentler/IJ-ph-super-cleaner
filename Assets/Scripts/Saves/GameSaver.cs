@@ -2,13 +2,8 @@ using UnityEngine;
 
 namespace Saves
 {
-    [DisallowMultipleComponent]
-    public class GameSaver : MonoBehaviour
+    public class GameSaver
     {
-        private readonly string _levelName = "Level";
-
-        private int _lastLevel = -1;
-        
         public void Save(string name, int value)
         {
             PlayerPrefs.SetInt(name, value);
@@ -22,23 +17,6 @@ namespace Saves
                 return 0;
             }
             return PlayerPrefs.GetInt(name);
-        }
-
-        public void SaveLevel(int number)
-        {
-            if (number < 0 || _lastLevel == number)
-                return;
-
-            _lastLevel = number;
-            Save(_levelName, number);
-        }
-
-        public int GetLevel()
-        {
-            _lastLevel = PlayerPrefs.HasKey(_levelName)
-                ? Load(_levelName)
-                : -1;
-            return _lastLevel;
         }
     }
 }
