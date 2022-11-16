@@ -1,6 +1,6 @@
 using LevelCompleter;
-using Statistics;
 using UnityEngine;
+using Vacuum;
 using YaVk;
 
 namespace Leaderboard
@@ -12,7 +12,7 @@ namespace Leaderboard
         [SerializeField] private Completer _completer;
         
         private SocialNetwork _socialNetwork;
-        private PlayerBag _playerBag;
+        private VacuumBag _vacuumBag;
 
         private void OnValidate()
         {
@@ -27,7 +27,7 @@ namespace Leaderboard
         private void Awake()
         {
             _socialNetwork = FindObjectOfType<SocialNetwork>();
-            _playerBag = FindObjectOfType<PlayerBag>();
+            _vacuumBag = FindObjectOfType<VacuumBag>();
         }
         
         private void OnEnable()
@@ -78,7 +78,7 @@ namespace Leaderboard
         
         private void Apply()
         {
-            _socialNetwork.GetLeaderboard(_playerBag.AllTrashPointsRounded,
+            _socialNetwork.GetLeaderboard(_vacuumBag.AllTrashPointsRounded,
                 leaderList =>
                 {
                     if (_socialNetwork.IsAutoLeaderboard() || _view == null)

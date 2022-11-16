@@ -1,14 +1,14 @@
-using Statistics;
 using UnityEngine;
+using Vacuum;
 
-namespace UI.Statistics
+namespace UI.Vacuum
 {
     public class TrashPointsCollectPresenter : MonoBehaviour
     {
         [SerializeField] private TrashText _allInGamePanel,
             _allInCompletitionPanel;
 
-        private PlayerBag _playerBag;
+        private VacuumBag _vacuumBag;
 
         private void OnValidate()
         {
@@ -18,30 +18,30 @@ namespace UI.Statistics
 
         private void Awake()
         {
-            _playerBag = FindObjectOfType<PlayerBag>();
+            _vacuumBag = FindObjectOfType<VacuumBag>();
         }
 
         private void OnEnable()
         {
-            _playerBag.AllTrashPointsChanged += OnAllTrashPointsChanged;
-            _playerBag.TrashPointsChanged += OnTrashPointsChanged;
+            _vacuumBag.AllTrashPointsChanged += OnAllTrashPointsChanged;
+            _vacuumBag.TrashPointsChanged += OnTrashPointsChanged;
         }
 
         private void OnDisable()
         {
-            _playerBag.AllTrashPointsChanged -= OnAllTrashPointsChanged;
-            _playerBag.TrashPointsChanged -= OnTrashPointsChanged;
+            _vacuumBag.AllTrashPointsChanged -= OnAllTrashPointsChanged;
+            _vacuumBag.TrashPointsChanged -= OnTrashPointsChanged;
         }
 
         private void OnTrashPointsChanged(float collected)
         {
-            SetText(_playerBag.TrashPoints +
-                    _playerBag.AllTrashPointsRounded);
+            SetText(_vacuumBag.TrashPoints +
+                    _vacuumBag.AllTrashPointsRounded);
         }
 
         private void OnAllTrashPointsChanged()
         {
-            SetText(_playerBag.AllTrashPointsRounded);
+            SetText(_vacuumBag.AllTrashPointsRounded);
         }
 
         private void SetText(int count)

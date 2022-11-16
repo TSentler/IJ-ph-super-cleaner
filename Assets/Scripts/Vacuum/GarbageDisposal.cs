@@ -1,4 +1,3 @@
-using Statistics;
 using Trash;
 using UnityEngine;
 using UnityEngine.Events;
@@ -7,7 +6,7 @@ namespace Vacuum
 {
     public class GarbageDisposal : MonoBehaviour
     {
-        [SerializeField] private PlayerBag _bag;
+        [SerializeField] private VacuumBag _bag;
         [Min(0f), SerializeField] private float _environmentExtraSuckSpeed = 1f,
             _bonusMultiply = 1.2f;
         

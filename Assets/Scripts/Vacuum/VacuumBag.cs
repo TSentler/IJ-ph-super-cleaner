@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace Vacuum
 {
-    public class PlayerBag : MonoBehaviour
+    public class VacuumBag : MonoBehaviour
     {
         private float _trashPoints = 0f;
         private float _targetTrashPoints = 0f;

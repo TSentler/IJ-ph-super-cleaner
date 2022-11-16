@@ -1,14 +1,14 @@
-using Statistics;
 using UnityEngine;
+using Vacuum;
 
-namespace Money.Statistics
+namespace Money.Vacuum
 {
     public class TrashMoneyCollector : MonoBehaviour
     {
         [SerializeField] private MoneyCounter _moneyCounter;
         [Min(0f), SerializeField] private float _factor = 0.25f;
         
-        private PlayerBag _playerBag;
+        private VacuumBag _vacuumBag;
         
         private void OnValidate()
         {
@@ -18,17 +18,17 @@ namespace Money.Statistics
 
         private void Awake()
         {
-            _playerBag = FindObjectOfType<PlayerBag>();
+            _vacuumBag = FindObjectOfType<VacuumBag>();
         }
 
         private void OnEnable()
         {
-            _playerBag.TrashPointsChanged += OnTrashPointsChanged;
+            _vacuumBag.TrashPointsChanged += OnTrashPointsChanged;
         }
 
         private void OnDisable()
         {
-            _playerBag.TrashPointsChanged -= OnTrashPointsChanged;
+            _vacuumBag.TrashPointsChanged -= OnTrashPointsChanged;
         }
 
         private void OnTrashPointsChanged(float collected)

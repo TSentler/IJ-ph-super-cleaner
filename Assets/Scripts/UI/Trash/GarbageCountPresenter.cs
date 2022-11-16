@@ -1,5 +1,5 @@
-using Statistics;
 using UnityEngine;
+using Vacuum;
 
 namespace UI.Trash
 {
@@ -8,7 +8,7 @@ namespace UI.Trash
         [SerializeField] private CollectedText _collectedText;
         [SerializeField] private SmoothSlider _collectedSlider;
 
-        private PlayerBag _playerBag;
+        private VacuumBag _vacuumBag;
         
         private void OnValidate()
         {
@@ -20,32 +20,32 @@ namespace UI.Trash
 
         private void Awake()
         {
-            _playerBag = FindObjectOfType<PlayerBag>();
+            _vacuumBag = FindObjectOfType<VacuumBag>();
         }
 
         private void OnEnable()
         {
             OnTargetTrashPointsChanged();
-            _playerBag.TrashPointsChanged += OnTrashPointsChanged;
-            _playerBag.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
+            _vacuumBag.TrashPointsChanged += OnTrashPointsChanged;
+            _vacuumBag.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
         }
 
         private void OnDisable()
         {
-            _playerBag.TrashPointsChanged -= OnTrashPointsChanged;
-            _playerBag.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
+            _vacuumBag.TrashPointsChanged -= OnTrashPointsChanged;
+            _vacuumBag.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
         }
         
         private void OnTargetTrashPointsChanged()
         {
-            _collectedText.SetCount(_playerBag.TargetTrashPoints);
+            _collectedText.SetCount(_vacuumBag.TargetTrashPoints);
         }
         
         private void OnTrashPointsChanged(float collected)
         {
-            var collectedRound = _playerBag.TrashPoints;
+            var collectedRound = _vacuumBag.TrashPoints;
             _collectedText.SetCollected(collectedRound);
-            float sliderValue = (float)collectedRound / _playerBag.TargetTrashPoints;
+            float sliderValue = (float)collectedRound / _vacuumBag.TargetTrashPoints;
             _collectedSlider.SetValue(sliderValue);
         }
     }

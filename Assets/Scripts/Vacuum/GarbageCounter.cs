@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
-using Statistics;
 using UnityEngine;
+using Vacuum;
 
 namespace Trash.Statistics
 {
@@ -9,7 +9,7 @@ namespace Trash.Statistics
     {
         [SerializeField] private List<GameObject> _garbageRoots;
 
-        private PlayerBag _playerBag;
+        private VacuumBag _vacuumBag;
 
         private void OnValidate()
         {
@@ -19,7 +19,7 @@ namespace Trash.Statistics
         
         private void Awake()
         {
-            _playerBag = FindObjectOfType<PlayerBag>();
+            _vacuumBag = FindObjectOfType<VacuumBag>();
             var targetTrashPoints = 0f;
             foreach (var root in _garbageRoots)
             {
@@ -34,7 +34,7 @@ namespace Trash.Statistics
                     }
                 }
             }
-            _playerBag.AddTarrgetTrashPoints(targetTrashPoints);
+            _vacuumBag.AddTarrgetTrashPoints(targetTrashPoints);
         }
     }
 }
