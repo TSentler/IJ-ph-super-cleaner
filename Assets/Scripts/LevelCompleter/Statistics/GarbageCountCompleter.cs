@@ -1,14 +1,11 @@
 using Statistics;
 using UnityEngine;
-using Vacuum;
 
-namespace LevelCompleter.Vacuum
+namespace LevelCompleter.Statistics
 {
     [RequireComponent(typeof(Completer))]
     public class GarbageCountCompleter : MonoBehaviour
     {
-        [SerializeField] private GarbageCounter _garbageCounter;
-
         private PlayerStatistics _playerStatistics;
         private Completer _completer;
 
@@ -32,7 +29,7 @@ namespace LevelCompleter.Vacuum
 
         private void OnTrashPointsChanged(float collected)
         {
-            if (_garbageCounter.TargetTrashPoints == _playerStatistics.TrashPoints)
+            if (_playerStatistics.TargetTrashPoints == _playerStatistics.TrashPoints)
             {
                 _completer.Complete();
             }

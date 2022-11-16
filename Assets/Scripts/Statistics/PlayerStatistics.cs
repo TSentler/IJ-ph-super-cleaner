@@ -6,13 +6,17 @@ namespace Statistics
     public class PlayerStatistics : MonoBehaviour
     {
         private float _trashPoints = 0f;
+        private float _targetTrashPoints = 0f;
         private AllGarbageCollector _allGarbageCollector;
         private bool _isStopCollectTrashPoints;
         
         public int TrashPoints => Mathf.RoundToInt(_trashPoints);
+        public int TargetTrashPoints => Mathf.RoundToInt(_targetTrashPoints);
+
 
         public event UnityAction<float> TrashPointsChanged;
         public event UnityAction AllTrashPointsChanged;
+        public event UnityAction TargetTrashPointsChanged;
 
         private void Awake()
         {
@@ -39,6 +43,12 @@ namespace Statistics
             
             _trashPoints += trashPoints;
             TrashPointsChanged?.Invoke(trashPoints);
+        }
+
+        public void AddTarrgetTrashPoints(float targetTrashPoints)
+        {
+            _targetTrashPoints += targetTrashPoints;
+            TargetTrashPointsChanged?.Invoke();
         }
     }
 }

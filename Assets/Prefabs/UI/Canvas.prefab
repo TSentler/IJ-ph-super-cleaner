@@ -521,7 +521,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cupIcon: {fileID: 4624152834379242810}
   _vacuumIcon: {fileID: 6090689013650055382}
-  _buttonImage: {fileID: 4624152834379242788}
   _animator: {fileID: 619133346746853770}
 --- !u!114 &4748103880755127668
 MonoBehaviour:
@@ -5500,6 +5499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af12780b3c8a52e1b88bc1bda0cc5a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _text: {fileID: 1494427684930780615}
 --- !u!114 &1494427684930780615
 MonoBehaviour:
   m_ObjectHideFlags: 0

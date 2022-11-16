@@ -8,31 +8,33 @@ namespace UI
     {
         private readonly string _separator = "/";
     
-        private TMP_Text _text;
-    
+        [SerializeField] private TMP_Text _text;
+
+        private int _lastCount, _lastCollected;
+        
         private string Template => $"{{0}}{_separator}{{1}}";
 
+        
         private void Awake()
         {
-            _text = GetComponent<TMP_Text>();
-            SetText("0", "0");
+            SetText();
         }
 
-        private void SetText(string collected, string count)
+        private void SetText()
         {
-            _text.SetText(string.Format(Template, collected, count));
+            _text.SetText(string.Format(Template, _lastCollected, _lastCount));
         }
 
         public void SetCount(int count)
         {
-            var collected = _text.text.Split(_separator)[0];
-            SetText(collected, count.ToString());
+            _lastCount = count;
+            SetText();
         }
     
         public void SetCollected(int collected)
         {
-            var count = _text.text.Split(_separator)[1];
-            SetText(collected.ToString(), count);
+            _lastCollected = collected;
+            SetText();
         }
     }
 }

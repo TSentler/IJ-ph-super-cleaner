@@ -1,8 +1,7 @@
 using Statistics;
 using UnityEngine;
-using Vacuum;
 
-namespace UI
+namespace UI.Trash
 {
     public class GarbageCountPresenter : MonoBehaviour
     {
@@ -10,12 +9,9 @@ namespace UI
         [SerializeField] private SmoothSlider _collectedSlider;
 
         private PlayerStatistics _playerStatistics;
-        private GarbageCounter _garbageCounter;
         
         private void OnValidate()
         {
-            if (_garbageCounter == null)
-                Debug.LogWarning("GarbageCounter was not found!", this);
             if (_collectedText == null)
                 Debug.LogWarning("CollectedText was not found!", this);
             if (_collectedSlider == null)
@@ -25,31 +21,31 @@ namespace UI
         private void Awake()
         {
             _playerStatistics = FindObjectOfType<PlayerStatistics>();
-            _garbageCounter = FindObjectOfType<GarbageCounter>();
         }
 
         private void OnEnable()
         {
+            OnTargetTrashPointsChanged();
             _playerStatistics.TrashPointsChanged += OnTrashPointsChanged;
-            _garbageCounter.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
+            _playerStatistics.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
         }
 
         private void OnDisable()
         {
             _playerStatistics.TrashPointsChanged -= OnTrashPointsChanged;
-            _garbageCounter.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
+            _playerStatistics.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
         }
         
-        private void OnTargetTrashPointsChanged(int count)
+        private void OnTargetTrashPointsChanged()
         {
-            _collectedText.SetCount(count);
+            _collectedText.SetCount(_playerStatistics.TargetTrashPoints);
         }
         
         private void OnTrashPointsChanged(float collected)
         {
             var collectedRound = _playerStatistics.TrashPoints;
             _collectedText.SetCollected(collectedRound);
-            float sliderValue = (float)collectedRound / _garbageCounter.TargetTrashPoints;
+            float sliderValue = (float)collectedRound / _playerStatistics.TargetTrashPoints;
             _collectedSlider.SetValue(sliderValue);
         }
     }

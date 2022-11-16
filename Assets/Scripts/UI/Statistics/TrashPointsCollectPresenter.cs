@@ -1,9 +1,9 @@
 using Statistics;
 using UnityEngine;
 
-namespace UI
+namespace UI.Statistics
 {
-    public class AllGarbageCountPresenter : MonoBehaviour
+    public class TrashPointsCollectPresenter : MonoBehaviour
     {
         [SerializeField] private TrashText _allInGamePanel,
             _allInCompletitionPanel;
