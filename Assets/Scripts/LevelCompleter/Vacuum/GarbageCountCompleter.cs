@@ -1,11 +1,12 @@
 using UnityEngine;
 using Vacuum;
 
-namespace LevelCompleter.Statistics
+namespace LevelCompleter.Vacuum
 {
     [RequireComponent(typeof(Completer))]
     public class GarbageCountCompleter : MonoBehaviour
     {
+        private GarbageCounter _garbageCounter;
         private VacuumBag _vacuumBag;
         private Completer _completer;
 
@@ -13,6 +14,7 @@ namespace LevelCompleter.Statistics
         {
             _completer = GetComponent<Completer>();
             _vacuumBag = FindObjectOfType<VacuumBag>();
+            _garbageCounter = FindObjectOfType<GarbageCounter>();
         }
         
         private void OnEnable()
@@ -29,7 +31,7 @@ namespace LevelCompleter.Statistics
 
         private void OnTrashPointsChanged(float collected)
         {
-            if (_vacuumBag.TargetTrashPoints == _vacuumBag.TrashPoints)
+            if (_garbageCounter.TargetTrashPoints == _vacuumBag.TrashPoints)
             {
                 _completer.Complete();
             }
@@ -37,7 +39,7 @@ namespace LevelCompleter.Statistics
 
         private void OnCompleted()
         {
-            _vacuumBag.AddLevelGarbage(_vacuumBag.TrashPoints);
+            _vacuumBag.AddToTotalPointsCounter(_vacuumBag.TrashPoints);
         }
     }
 }

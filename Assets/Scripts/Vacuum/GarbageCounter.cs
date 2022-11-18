@@ -1,16 +1,21 @@
 using System.Collections.Generic;
 using System.Linq;
+using Trash;
 using UnityEngine;
-using Vacuum;
+using UnityEngine.Events;
 
-namespace Trash.Statistics
+namespace Vacuum
 {
     public class GarbageCounter : MonoBehaviour
     {
         [SerializeField] private List<GameObject> _garbageRoots;
 
-        private VacuumBag _vacuumBag;
-
+        private float _targetTrashPoints = 0f;
+        
+        public int TargetTrashPoints => Mathf.RoundToInt(_targetTrashPoints);
+        
+        public event UnityAction TargetTrashPointsChanged;
+        
         private void OnValidate()
         {
             if (_garbageRoots.Count == 0)
@@ -19,7 +24,6 @@ namespace Trash.Statistics
         
         private void Awake()
         {
-            _vacuumBag = FindObjectOfType<VacuumBag>();
             var targetTrashPoints = 0f;
             foreach (var root in _garbageRoots)
             {
@@ -34,7 +38,8 @@ namespace Trash.Statistics
                     }
                 }
             }
-            _vacuumBag.AddTarrgetTrashPoints(targetTrashPoints);
+            _targetTrashPoints += targetTrashPoints;
+            TargetTrashPointsChanged?.Invoke();
         }
     }
 }

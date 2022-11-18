@@ -81,7 +81,6 @@ GameObject:
   - component: {fileID: 1956850126641935994}
   - component: {fileID: 1956850126641935995}
   - component: {fileID: 1956850126641935992}
-  - component: {fileID: 7202123852216641885}
   m_Layer: 6
   m_Name: Character
   m_TagString: Untagged
@@ -224,18 +223,6 @@ MonoBehaviour:
   _sliderRoot: {fileID: 1956850128671543876}
   _slider: {fileID: 1956850127686140082}
   _temporaryBonus: {fileID: 1956850126641935995}
---- !u!114 &7202123852216641885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1956850126641935971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58f5dae240d44364d8b397b3dfc02d3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1956850126667180833
 GameObject:
   m_ObjectHideFlags: 0
@@ -5739,6 +5726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1956850128046058370}
+  - component: {fileID: 3219758220604427570}
   - component: {fileID: 1956850128046058371}
   - component: {fileID: 1956850128046058368}
   - component: {fileID: 2963921961195850537}
@@ -5765,6 +5753,18 @@ Transform:
   m_Father: {fileID: 1956850127353005563}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3219758220604427570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956850128046058373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f5dae240d44364d8b397b3dfc02d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1956850128046058371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5777,7 +5777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72dbad95af61c51e585d0e91720aec99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _statistics: {fileID: 7202123852216641885}
+  _bag: {fileID: 3219758220604427570}
   _environmentExtraSuckSpeed: 1
   _bonusMultiply: 5
 --- !u!65 &1956850128046058368

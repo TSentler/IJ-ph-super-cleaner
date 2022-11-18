@@ -9,6 +9,7 @@ namespace UI.Trash
         [SerializeField] private SmoothSlider _collectedSlider;
 
         private VacuumBag _vacuumBag;
+        private GarbageCounter _garbageCounter;
         
         private void OnValidate()
         {
@@ -21,31 +22,32 @@ namespace UI.Trash
         private void Awake()
         {
             _vacuumBag = FindObjectOfType<VacuumBag>();
+            _garbageCounter = FindObjectOfType<GarbageCounter>();
         }
 
         private void OnEnable()
         {
             OnTargetTrashPointsChanged();
             _vacuumBag.TrashPointsChanged += OnTrashPointsChanged;
-            _vacuumBag.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
+            _garbageCounter.TargetTrashPointsChanged += OnTargetTrashPointsChanged;
         }
 
         private void OnDisable()
         {
             _vacuumBag.TrashPointsChanged -= OnTrashPointsChanged;
-            _vacuumBag.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
+            _garbageCounter.TargetTrashPointsChanged -= OnTargetTrashPointsChanged;
         }
         
         private void OnTargetTrashPointsChanged()
         {
-            _collectedText.SetCount(_vacuumBag.TargetTrashPoints);
+            _collectedText.SetCount(_garbageCounter.TargetTrashPoints);
         }
         
         private void OnTrashPointsChanged(float collected)
         {
             var collectedRound = _vacuumBag.TrashPoints;
             _collectedText.SetCollected(collectedRound);
-            float sliderValue = (float)collectedRound / _vacuumBag.TargetTrashPoints;
+            float sliderValue = (float)collectedRound / _garbageCounter.TargetTrashPoints;
             _collectedSlider.SetValue(sliderValue);
         }
     }
