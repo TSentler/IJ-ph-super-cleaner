@@ -78,8 +78,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328b95c55cc38cc4c9df12ee1ef67bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _garbageCounter: {fileID: 362696536709327769}
-  _statistics: {fileID: 0}
 --- !u!114 &362696536709327775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +159,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50339895892f6f947ade8b33aa4ea5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _garbageDisposal: {fileID: 0}
   _garbageRoots:
   - {fileID: 0}
   - {fileID: 0}
@@ -177,7 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc7cac9581817d53b18244d571c1a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _garbageCounter: {fileID: 362696536709327769}
   _collectedText: {fileID: 0}
   _collectedSlider: {fileID: 0}
 --- !u!1 &362696537657268276
@@ -345,7 +341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0f18e6ca21aea48974ea17da73d8a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _garbageCounter: {fileID: 362696536709327769}
   _moneyCounter: {fileID: 362696536709327771}
   _factor: 0.25
 --- !u!114 &799436871204392351
@@ -360,7 +355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d729b6145cbdb234fa47b8ad6aa33a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _garbageCounter: {fileID: 362696536709327769}
   _allInGamePanel: {fileID: 0}
   _allInCompletitionPanel: {fileID: 0}
 --- !u!1 &2490791480349500450
@@ -560,7 +554,6 @@ MonoBehaviour:
   _button: {fileID: 0}
   _view: {fileID: 0}
   _completer: {fileID: 362696536709327775}
-  _statistics: {fileID: 0}
 --- !u!1 &7464703450531637381
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +643,7 @@ MonoBehaviour:
   _upLevelOverride: -1
   _coast: 200
   _view: {fileID: 0}
-  _upFactor: 0.1
+  _upFactor: 0.15
   _store: {fileID: 4227544883786060713}
   _movement: {fileID: 0}
   _runSpeed: 125
@@ -688,7 +681,7 @@ MonoBehaviour:
   _upLevelOverride: -1
   _coast: 200
   _view: {fileID: 0}
-  _upFactor: 0.12
+  _upFactor: 0.2
   _store: {fileID: 4227544883786060713}
   _suckerBooster: {fileID: 0}
   _radius: 1.5

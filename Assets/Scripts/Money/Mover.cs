@@ -26,7 +26,7 @@ namespace Money
 
         private IEnumerator Start()
         {
-            CalcDirecion();
+            CalcDirection();
             _floorPoint = transform.position.y;
             transform.Rotate(Vector3.up, Random.Range(0f, 180f));
             yield return StartCoroutine(MoveUpCoroutine());
@@ -39,7 +39,7 @@ namespace Money
 
         }
 
-        private void CalcDirecion()
+        private void CalcDirection()
         {
             var angleX = Random.Range(_minAngleX, _maxAngleX);
             var angleY = Random.Range(0f, 360f);
