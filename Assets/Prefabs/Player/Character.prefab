@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _temporaryBonus: {fileID: 1956850126641935995}
   _garbageDisposal: {fileID: 1956850128046058371}
+  _garbageSucker: {fileID: 1956850127775681508}
   _movement: {fileID: 1956850126641935996}
   _sucker: {fileID: 1956850127775681506}
   _throwTimer: {fileID: 1956850127636440579}
@@ -802,6 +803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144d537304f3826499bd13da05963eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _environmentExtraSuckSpeed: 1
+  _bonusMultiply: 5
 --- !u!135 &1956850127775681509
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5778,8 +5781,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bag: {fileID: 3219758220604427570}
-  _environmentExtraSuckSpeed: 1
-  _bonusMultiply: 5
 --- !u!65 &1956850128046058368
 BoxCollider:
   m_ObjectHideFlags: 0

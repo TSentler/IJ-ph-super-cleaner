@@ -1,3 +1,4 @@
+using Suckables;
 using UnityEngine;
 
 namespace Trash
