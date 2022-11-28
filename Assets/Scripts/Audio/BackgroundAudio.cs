@@ -34,11 +34,12 @@ namespace Audio
 
         private void OnAdsEnded()
         {
-            SetAudioState(_isPlayerMuteAudio);
+            SetAudioState(false);
         }
 
         private void SetAudioState(bool isMute)
         {
+            isMute |= _isPlayerMuteAudio;
             // Use both pause and volume muting methods at the same time.
             // They're both broken in Web, but work perfect together. Trust me on this.
             AudioListener.pause = isMute;
