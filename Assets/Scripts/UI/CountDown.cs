@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace UI
 {
@@ -11,7 +13,7 @@ namespace UI
 
         private TextMeshProUGUI _text;
         private Coroutine _coroutine;
-        private float _elapsed;
+        private float _elapsed = float.MaxValue;
         private int _startNumber, _target;
         
         private void Awake()
@@ -21,18 +23,15 @@ namespace UI
                 Debug.LogWarning("Text is not integer!", this);
         }
 
-        private IEnumerator CountDownCoroutine()
+        private void Update()
         {
-            while (_elapsed < _time)
+            if (_elapsed < _time)
             {
                 _elapsed += Time.deltaTime;
                 var rate = _elapsed / _time;
                 var i = (int)Mathf.Lerp(_startNumber, _target, rate);
                 _text.SetText(i.ToString());
-                yield return null;
             }
-
-            _coroutine = null;
         }
 
         public void Apply(int target)
@@ -41,10 +40,6 @@ namespace UI
             if (int.TryParse(_text.text, out _startNumber))
             {
                 _elapsed = 0f;
-                if (_coroutine == null && _target != _startNumber)
-                {
-                    _coroutine = StartCoroutine(CountDownCoroutine());
-                }
             }
         }
     }

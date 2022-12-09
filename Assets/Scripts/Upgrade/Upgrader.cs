@@ -42,7 +42,7 @@ namespace Upgrade
 
         private void Start()
         {
-            _view.SetCoast(_coast);
+            _view.Setup(_upLevel, _coast);
             SetUpgrade();
         }
 
@@ -63,6 +63,7 @@ namespace Upgrade
                 _upLevel++;
                 _saver.Save(GetUpgradeName(), _upLevel);
                 SetUpgrade();
+                _view.Setup(_upLevel, _coast);
             });
         }
     }

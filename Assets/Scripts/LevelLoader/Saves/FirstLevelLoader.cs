@@ -24,6 +24,7 @@ namespace LevelLoader.Saves
         private void Awake()
         {
             _levelInfo = GetComponent<LevelInfo>();
+            _saver = new LevelSaver();
         }
 
         private IEnumerator Start()

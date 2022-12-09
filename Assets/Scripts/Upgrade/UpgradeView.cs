@@ -1,4 +1,5 @@
 using TMPro;
+using UI;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ namespace Upgrade
     public class UpgradeView : MonoBehaviour
     {
         [SerializeField] private TMP_Text _coastText;
+        [SerializeField] private UpLevelText _upLevelText;
 
         private Button _button;
         
@@ -40,9 +42,10 @@ namespace Upgrade
             Upgraded?.Invoke();
         }
 
-        public void SetCoast(int money)
+        public void Setup(int level, int money)
         {
             _coastText.SetText(money.ToString());
+            _upLevelText.SetLevel(level);
         }
     }
 }
