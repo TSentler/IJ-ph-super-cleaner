@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityTools;
 using Random = UnityEngine.Random;
 
 namespace Robber
@@ -18,6 +19,9 @@ namespace Robber
 
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_robberAI == null)
                 Debug.LogWarning("Robber gameObject was not found!", this);
             if (_signalings == null)

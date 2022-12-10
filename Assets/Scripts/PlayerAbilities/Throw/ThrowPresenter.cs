@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityTools;
 
 namespace PlayerAbilities.Throw
 {
@@ -18,6 +19,9 @@ namespace PlayerAbilities.Throw
         
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_vacuumStickTransform == null)
                 Debug.LogWarning("Transform was not found!", this);
             if (_cleanerAnimator == null || _vacuumBoxAnimator == null 

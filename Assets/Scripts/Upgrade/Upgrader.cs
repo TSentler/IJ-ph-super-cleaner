@@ -1,6 +1,7 @@
 using Money;
 using Saves;
 using UnityEngine;
+using UnityTools;
 
 namespace Upgrade
 {
@@ -8,12 +9,14 @@ namespace Upgrade
     {
         [Min(-1), SerializeField] private int _upLevelOverride = -1;
         [Min(0), SerializeField] private int _coast;
-        [SerializeField] private UpgradeView _view;
         [Min(0), SerializeField] private float _upFactor = 0.1f;
-        [SerializeField] private Store _store;
+        [SerializeField] private Wallet _wallet;
 
         private GameSaver _saver;
         private int _upLevel;
+
+        public int UpLevel => _upLevel;
+        public int Coast => _coast;
         
         protected float UpFactor => _upLevel * _upFactor;
 
@@ -22,10 +25,11 @@ namespace Upgrade
         
         protected virtual void OnValidate()
         {
-            if (_view == null)
-                Debug.LogWarning("UpgradeView was not found!", this);
-            if (_store == null)
-                Debug.LogWarning("Store was not found!", this);
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
+            if (_wallet == null)
+                Debug.LogWarning("Wallet was not found!", this);
         }
 
         protected virtual void Awake()
@@ -42,28 +46,16 @@ namespace Upgrade
 
         private void Start()
         {
-            _view.Setup(_upLevel, _coast);
             SetUpgrade();
         }
 
-        private void OnEnable()
+        public void Upgrade()
         {
-            _view.Upgraded += OnUpgraded;
-        }
-
-        private void OnDisable()
-        {
-            _view.Upgraded -= OnUpgraded;
-        }
-
-        private void OnUpgraded()
-        {
-            _store.Buy(_coast, () =>
+            _wallet.Buy(_coast, () =>
             {
                 _upLevel++;
                 _saver.Save(GetUpgradeName(), _upLevel);
                 SetUpgrade();
-                _view.Setup(_upLevel, _coast);
             });
         }
     }

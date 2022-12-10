@@ -1,6 +1,7 @@
 using PlayerAbilities.Move;
 using UI.Joystick;
 using UnityEngine;
+using UnityTools;
 
 namespace PlayerInput
 {
@@ -14,6 +15,9 @@ namespace PlayerInput
         
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_stick == null)
                 Debug.LogWarning("StickPointer was not found!", this);
             if (_movement == null)

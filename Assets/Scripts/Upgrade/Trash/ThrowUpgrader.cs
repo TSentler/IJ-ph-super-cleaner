@@ -1,6 +1,7 @@
 using PlayerAbilities.Throw;
 using Trash;
 using UnityEngine;
+using UnityTools;
 
 namespace Upgrade
 {
@@ -16,6 +17,9 @@ namespace Upgrade
         protected override void OnValidate()
         {
             base.OnValidate();
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_thrower == null)
                 Debug.LogWarning("VacuumThrower was not found!", this);
         }

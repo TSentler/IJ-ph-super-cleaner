@@ -1,7 +1,7 @@
 {
     "name": "Robber",
     "rootNamespace": "",
-    "references": [],
+    "references": ["GUID:03199192475ed684c975f84099a9bca1"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

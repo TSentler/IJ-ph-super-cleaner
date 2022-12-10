@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df751e01af9e853448a1073901b151f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _store: {fileID: 4227544883786060713}
+  _wallet: {fileID: 4227544883786060713}
   _moneyCounter: {fileID: 362696536709327771}
   _completer: {fileID: 362696536709327775}
 --- !u!1 &6122890841675454751
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 7713488313094833553}
   - component: {fileID: 4227544883786060713}
   m_Layer: 0
-  m_Name: Store
+  m_Name: Wallet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -642,9 +642,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _upLevelOverride: -1
   _coast: 200
-  _view: {fileID: 0}
   _upFactor: 0.15
-  _store: {fileID: 4227544883786060713}
+  _wallet: {fileID: 4227544883786060713}
   _movement: {fileID: 0}
   _runSpeed: 125
 --- !u!114 &8235921007716051571
@@ -661,9 +660,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _upLevelOverride: -1
   _coast: 200
-  _view: {fileID: 0}
   _upFactor: 0.1
-  _store: {fileID: 4227544883786060713}
+  _wallet: {fileID: 4227544883786060713}
   _thrower: {fileID: 0}
   _throwSpeed: 10
 --- !u!114 &2329670808917733364
@@ -680,8 +678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _upLevelOverride: -1
   _coast: 200
-  _view: {fileID: 0}
   _upFactor: 0.2
-  _store: {fileID: 4227544883786060713}
+  _wallet: {fileID: 4227544883786060713}
   _suckerBooster: {fileID: 0}
   _radius: 1.5

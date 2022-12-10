@@ -1,5 +1,6 @@
 using PlayerAbilities.Move;
 using UnityEngine;
+using UnityTools;
 
 namespace Upgrade.Move
 {
@@ -15,6 +16,9 @@ namespace Upgrade.Move
         protected override void OnValidate()
         {
             base.OnValidate();
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_movement == null)
                 Debug.LogWarning("Movement was not found!", this);
         }

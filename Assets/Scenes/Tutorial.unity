@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3668237, g: 0.73135805, b: 0.545956, a: 1}
+  m_IndirectSpecularColor: {r: 0.3668237, g: 0.731358, b: 0.54595596, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -64144,6 +64144,39 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1279400953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2329670808917733364, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
+  m_PrefabInstance: {fileID: 362696536377826674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5c6bb25e36bbe145ac194b59772a436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1279400954 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8235921007716051571, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
+  m_PrefabInstance: {fileID: 362696536377826674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddff1877b5a79740829008ca1514648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1279400955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8555956034503155398, guid: 2729ae957d6945745ab92b9ed975a0d1, type: 3}
+  m_PrefabInstance: {fileID: 362696536377826674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9be07f5d8be4e6499be3051de919b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1283673396
 GameObject:
   m_ObjectHideFlags: 0
@@ -78488,6 +78521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1572004072}
+  - component: {fileID: 1572004073}
   m_Layer: 0
   m_Name: GarbageRoot
   m_TagString: Untagged
@@ -78516,6 +78550,18 @@ Transform:
   m_Father: {fileID: 477951389}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1572004073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572004071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c51d37b0e30bd4885da6e5e44ee2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1573563601
 GameObject:
   m_ObjectHideFlags: 0
@@ -109638,6 +109684,14 @@ PrefabInstance:
       propertyPath: _store
       value: 
       objectReference: {fileID: 362696536377826675}
+    - target: {fileID: 1699343385831057075, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+      propertyPath: _wallet
+      value: 
+      objectReference: {fileID: 362696536377826675}
+    - target: {fileID: 1806558982845327440, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+      propertyPath: _upgrader
+      value: 
+      objectReference: {fileID: 1279400954}
     - target: {fileID: 1861857129399693415, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -109846,6 +109900,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4011766966906115869, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+      propertyPath: _upgrader
+      value: 
+      objectReference: {fileID: 1279400955}
     - target: {fileID: 4024970093309082107, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -110034,6 +110092,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6044323198861653625, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
+      propertyPath: _upgrader
+      value: 
+      objectReference: {fileID: 1279400953}
     - target: {fileID: 6213333105799709132, guid: caee2b23f5d62d144902391fd097a05a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

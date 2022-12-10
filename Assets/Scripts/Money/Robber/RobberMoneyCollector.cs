@@ -1,5 +1,6 @@
 using Robber;
 using UnityEngine;
+using UnityTools;
 
 namespace Money
 {
@@ -15,6 +16,9 @@ namespace Money
 
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_money == null)
                 Debug.LogWarning("Money was not found!", this);
             if (_moneyCounter == null)

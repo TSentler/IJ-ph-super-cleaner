@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityTools;
 
 namespace Robber
 {
@@ -21,6 +22,9 @@ namespace Robber
         
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_theftTarget == null)
                 Debug.LogWarning("RobberTarget was not found!", this);
             if (_exit == null)

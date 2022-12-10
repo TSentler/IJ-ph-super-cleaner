@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityTools;
 using Vacuum;
 
 namespace UI.Vacuum
@@ -12,6 +13,9 @@ namespace UI.Vacuum
 
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_allInCompletitionPanel == null || _allInGamePanel == null)
                 Debug.LogWarning("CountDown was not found!", this);
         }

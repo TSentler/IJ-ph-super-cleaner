@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityTools;
 using Vacuum;
 
 namespace UI.Trash
@@ -13,6 +14,9 @@ namespace UI.Trash
         
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_collectedText == null)
                 Debug.LogWarning("CollectedText was not found!", this);
             if (_collectedSlider == null)

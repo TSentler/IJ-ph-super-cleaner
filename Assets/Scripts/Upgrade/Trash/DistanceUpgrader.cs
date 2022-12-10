@@ -1,5 +1,6 @@
 using Trash.Boosters;
 using UnityEngine;
+using UnityTools;
 
 namespace Upgrade
 {
@@ -15,6 +16,9 @@ namespace Upgrade
         protected override void OnValidate()
         {
             base.OnValidate();
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_suckerBooster == null)
                 Debug.LogWarning("SuckerBooster was not found!", this);
         }

@@ -1,6 +1,7 @@
 using Money;
 using TMPro;
 using UnityEngine;
+using UnityTools;
 
 namespace UI.Money
 {
@@ -13,6 +14,9 @@ namespace UI.Money
 
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_moneyCounter == null)
                 Debug.LogWarning("MoneyCounter was not found!", this);
         }

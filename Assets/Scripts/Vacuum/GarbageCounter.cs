@@ -8,22 +8,16 @@ namespace Vacuum
 {
     public class GarbageCounter : MonoBehaviour
     {
-        [SerializeField] private List<GameObject> _garbageRoots;
-
+        private GarbageRoot[] _garbageRoots;
         private float _targetTrashPoints = 0f;
         
         public int TargetTrashPoints => Mathf.RoundToInt(_targetTrashPoints);
         
         public event UnityAction TargetTrashPointsChanged;
         
-        private void OnValidate()
-        {
-            if (_garbageRoots.Count == 0)
-                Debug.LogWarning("GarbageRoots was not found!", this);
-        }
-        
         private void Awake()
         {
+            _garbageRoots = FindObjectsOfType<GarbageRoot>();
             var targetTrashPoints = 0f;
             foreach (var root in _garbageRoots)
             {

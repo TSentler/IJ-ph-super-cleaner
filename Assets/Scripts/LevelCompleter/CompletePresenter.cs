@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityTools;
 
 namespace LevelCompleter
 {
@@ -14,6 +15,9 @@ namespace LevelCompleter
         
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_hide.Count == 0)
                 Debug.LogWarning("Hide panels was not found!", this);
             if (_lvlCompletionPanel == null)

@@ -1,17 +1,21 @@
 using LevelCompleter;
 using UnityEngine;
+using UnityTools;
 
 namespace Money.LevelCompleter
 {
     public class MoneyPerLevel : MonoBehaviour
     {
-        [SerializeField] private Store _store;
+        [SerializeField] private Wallet _wallet;
         [SerializeField] private MoneyCounter _moneyCounter;
         [SerializeField] private Completer _completer;
 
         private void OnValidate()
         {
-            if (_store == null)
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
+            if (_wallet == null)
                 Debug.LogWarning("Store was not found!", this);
             if (_moneyCounter == null)
                 Debug.LogWarning("MoneyCounter was not found!", this);
@@ -41,7 +45,7 @@ namespace Money.LevelCompleter
             if (_completer.IsCompleted == false)
                 return;
             
-            _store.Earn(money);
+            _wallet.Earn(money);
         }
     }
 }

@@ -1,5 +1,6 @@
 using LevelCompleter;
 using UnityEngine;
+using UnityTools;
 
 namespace UI.LevelCompleter
 {
@@ -12,6 +13,9 @@ namespace UI.LevelCompleter
 
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_timerText == null)
                 Debug.LogWarning("CountdownTimerText was not found!", this);
         }

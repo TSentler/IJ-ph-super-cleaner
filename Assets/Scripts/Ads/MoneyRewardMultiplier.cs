@@ -1,5 +1,6 @@
 using Money;
 using UnityEngine;
+using UnityTools;
 using YaVk;
 
 namespace Ads
@@ -13,6 +14,9 @@ namespace Ads
 
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_rewardAdsButton == null)
                 Debug.LogWarning("RewardAdsButton was not found!", this);
         }

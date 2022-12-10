@@ -1,5 +1,6 @@
 using LevelCompleter;
 using UnityEngine;
+using UnityTools;
 using Vacuum;
 using YaVk;
 
@@ -16,6 +17,9 @@ namespace Leaderboard
 
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_button == null)
                 Debug.LogWarning("Leaderboard Button was not found!", this);
             if (_view == null)

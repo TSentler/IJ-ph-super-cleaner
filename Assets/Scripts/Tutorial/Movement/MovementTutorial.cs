@@ -1,5 +1,6 @@
 using PlayerAbilities.Move;
 using UnityEngine;
+using UnityTools;
 using YaVk;
 
 namespace Tutorial
@@ -16,12 +17,13 @@ namespace Tutorial
         
         private void OnValidate()
         {
+            if (PrefabChecker.InPrefabFileOrStage(gameObject))
+                return;
+            
             if (_keyboardPanel == null)
                 Debug.LogWarning("KeyboardPanel was not found!", this);
             if (_stickPanel == null)
                 Debug.LogWarning("StickPanel was not found!", this);
-            if (_movement == null)
-                Debug.LogWarning("Movement was not found!", this);
         }
 
         private void Awake()
