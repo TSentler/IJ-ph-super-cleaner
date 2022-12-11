@@ -7,6 +7,8 @@ namespace Upgrade
 {
     public abstract class Upgrader : MonoBehaviour
     {
+        private readonly float _coastFactor = 1.3f;
+            
         [Min(-1), SerializeField] private int _upLevelOverride = -1;
         [Min(0), SerializeField] private int _coast;
         [Min(0), SerializeField] private float _upFactor = 0.1f;
@@ -16,7 +18,7 @@ namespace Upgrade
         private int _upLevel;
 
         public int UpLevel => _upLevel;
-        public int Coast => _coast;
+        public int Coast => (int)(_coast * Mathf.Pow(_coastFactor, _upLevel));
         
         protected float UpFactor => _upLevel * _upFactor;
 
@@ -51,7 +53,7 @@ namespace Upgrade
 
         public void Upgrade()
         {
-            _wallet.Buy(_coast, () =>
+            _wallet.Buy(Coast, () =>
             {
                 _upLevel++;
                 _saver.Save(GetUpgradeName(), _upLevel);

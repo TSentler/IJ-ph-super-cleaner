@@ -11397,7 +11397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43775f860d1e2424aa05a2938edb709c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _upgradeType: 0
   _upgrader: {fileID: 0}
   _coastText: {fileID: 3512324777292597358}
   _upLevelText: {fileID: 3991814113135213272}
@@ -11989,7 +11988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43775f860d1e2424aa05a2938edb709c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _upgradeType: 2
   _upgrader: {fileID: 0}
   _coastText: {fileID: 8161098110630450356}
   _upLevelText: {fileID: 5681479335496458564}
@@ -12777,7 +12775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43775f860d1e2424aa05a2938edb709c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _upgradeType: 1
   _upgrader: {fileID: 0}
   _coastText: {fileID: 2659426445534370660}
   _upLevelText: {fileID: 2083339252756634924}
