@@ -8,11 +8,11 @@ namespace Money
     public class RobberMoneyCollector : MonoBehaviour
     {
         [SerializeField] private GameObject _money;
-        [SerializeField] private MoneyCounter _moneyCounter;
         [SerializeField] private int _count;
 
         private Animator _animator;
         private SuckBehaviour _suckBehaviour;
+        private MoneyCounter _moneyCounter;
 
         private void OnValidate()
         {
@@ -21,14 +21,13 @@ namespace Money
             
             if (_money == null)
                 Debug.LogWarning("Money was not found!", this);
-            if (_moneyCounter == null)
-                Debug.LogWarning("MoneyCounter was not found!", this);
         }
 
         private void Awake()
         {
             _animator = GetComponent<Animator>();
             _suckBehaviour = _animator.GetBehaviour<SuckBehaviour>();
+            _moneyCounter = FindObjectOfType<MoneyCounter>();
         }
 
         private void OnEnable()
