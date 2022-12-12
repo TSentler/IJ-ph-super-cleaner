@@ -845,4 +845,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fragments: {fileID: 978605707685058085}
-  _maxVelocity: 100
+  _maxVelocity: 190

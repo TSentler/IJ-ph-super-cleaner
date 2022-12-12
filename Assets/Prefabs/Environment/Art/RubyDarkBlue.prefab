@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f483e3fbdcf633c6a8a95909ba1c7d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 3
+  _trashPoints: 3
   _speed: 10
 --- !u!114 &5211732343974203046
 MonoBehaviour:
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f483e3fbdcf633c6a8a95909ba1c7d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 3
+  _trashPoints: 3
   _speed: 10
 --- !u!114 &6114588247265208208
 MonoBehaviour:
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f483e3fbdcf633c6a8a95909ba1c7d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 3
+  _trashPoints: 3
   _speed: 10
 --- !u!114 &5111986034659664610
 MonoBehaviour:
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f483e3fbdcf633c6a8a95909ba1c7d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 3
+  _trashPoints: 3
   _speed: 10
 --- !u!114 &1498459198002007581
 MonoBehaviour:
@@ -943,4 +943,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fragments: {fileID: 6329295414669133869}
-  _maxVelocity: 150
+  _maxVelocity: 260
