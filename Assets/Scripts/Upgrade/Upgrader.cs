@@ -7,7 +7,7 @@ namespace Upgrade
 {
     public abstract class Upgrader : MonoBehaviour
     {
-        private readonly float _coastFactor = 1.3f;
+        private readonly int _coastFactor = 100;
             
         [Min(-1), SerializeField] private int _upLevelOverride = -1;
         [Min(0), SerializeField] private int _coast;
@@ -18,8 +18,8 @@ namespace Upgrade
         private int _upLevel;
 
         public int UpLevel => _upLevel;
-        public int Coast => (int)(_coast * Mathf.Pow(_coastFactor, _upLevel));
-        
+        public int Coast => _upLevel * (_upLevel + 1) / 2 * 100 + _coast;
+
         protected float UpFactor => _upLevel * _upFactor;
 
         protected abstract string GetUpgradeName();
