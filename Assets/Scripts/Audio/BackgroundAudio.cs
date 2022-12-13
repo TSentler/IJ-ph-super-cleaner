@@ -39,7 +39,7 @@ namespace Audio
 
         private void SetAudioState(bool isMute)
         {
-            isMute |= _isPlayerMuteAudio;
+            isMute |= _isPlayerMuteAudio || _socialNetwork.IsAds;
             // Use both pause and volume muting methods at the same time.
             // They're both broken in Web, but work perfect together. Trust me on this.
             AudioListener.pause = isMute;
@@ -48,8 +48,8 @@ namespace Audio
         
         public void SwitchGameAudio()
         {
+            _isPlayerMuteAudio = IsGameAudioOn;
             SetAudioState(IsGameAudioOn);
-            _isPlayerMuteAudio = IsGameAudioOn == false;
         }
     }
 }
