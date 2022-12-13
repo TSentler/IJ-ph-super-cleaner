@@ -1,5 +1,7 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.SceneManagement;
+#endif
 using UnityEngine;
 
 namespace UnityTools
@@ -10,8 +12,9 @@ namespace UnityTools
         {
 #if UNITY_EDITOR
             return InPrefabFile(checkedGameObject) || InPrefabStage();
-#endif
+#else
             return false;
+#endif
         }
         
         public static bool InPrefabFile(GameObject checkedGameObject)
@@ -20,8 +23,9 @@ namespace UnityTools
             return PrefabUtility.GetPrefabAssetType(checkedGameObject) !=
                     PrefabAssetType.NotAPrefab
                     && IsConnectedAtScenePrefab(checkedGameObject) == false;
-#endif
+#else
             return false;
+#endif
         }
         
         public static bool InPrefabStage()
@@ -31,8 +35,9 @@ namespace UnityTools
             bool isValidPrefabStage = prefabStage != null && prefabStage.stageHandle.IsValid();
 
             return isValidPrefabStage;
-#endif
+#else
             return false;
+#endif
         }
         
         public static bool IsConnectedAtScenePrefab(GameObject checkedGameObject)
@@ -43,8 +48,9 @@ namespace UnityTools
             bool prefabConnected = instanceStatus == PrefabInstanceStatus.Connected;
 
             return prefabConnected;
-#endif
+#else
             return true;
+#endif
         }
 
     }

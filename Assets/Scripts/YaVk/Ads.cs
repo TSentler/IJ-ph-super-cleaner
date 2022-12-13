@@ -1,5 +1,7 @@
 using System.Collections;
+#if CRAZY_GAMES
 using CrazyGames;
+#endif
 using UnityEngine;
 using UnityEngine.Events;
 using YaInterstitialAd = Agava.YandexGames.InterstitialAd;
