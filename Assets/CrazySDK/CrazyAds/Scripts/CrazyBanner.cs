@@ -33,6 +33,8 @@ namespace CrazyGames
             new Vector2(320, 100)
         };
 
+        public BannerSize Size => _bannerSize;
+        
         public Vector2 Position
         {
             get

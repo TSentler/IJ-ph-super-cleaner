@@ -698,16 +698,16 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: PROJECT:ResizeToFill
+  webGLTemplate: PROJECT:Crazy_2020
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 1
+  webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    WebGL: YANDEX_GAMES
+    WebGL: CRAZY_GAMES
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
