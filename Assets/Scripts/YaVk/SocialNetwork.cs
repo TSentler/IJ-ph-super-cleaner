@@ -24,7 +24,7 @@ namespace YaVk
         public event UnityAction AdsStarted, AdsEnded;
         
         public bool IsAds { get; private set; }
-
+        
         private void Awake()
         {
             _init = GetComponent<Initializer>();
@@ -56,12 +56,23 @@ namespace YaVk
             callback.Invoke(isMobile);
         }
 
+        public bool IsAdsAccess()
+        {
+#if ITCHIO_GAMES
+            return false;
+#endif
+            return true;
+        }
+        
         public void ShowInterstitialAds(
             UnityAction<bool> onCloseCallback = null,
             UnityAction<string> onErrorCallback = null,
             UnityAction onYaOpenCallback = null,
             UnityAction onYaOfflineCallback = null)
         {
+            if(IsAdsAccess() == false)
+                return;
+            
             IsAds = true;
             AdsStarted?.Invoke();
             onCloseCallback += wasShown =>
@@ -79,6 +90,9 @@ namespace YaVk
             UnityAction<string> onErrorCallback = null,
             UnityAction onYaOpenCallback = null)
         {
+            if(IsAdsAccess() == false)
+                return;
+            
             IsAds = true;
             AdsStarted?.Invoke();
             onCloseCallback += () =>
@@ -94,7 +108,7 @@ namespace YaVk
         public void GetLeaderboardPlayerEntry(
             UnityAction<LeaderboardEntryResponse> successCallback)
         {
-#if !UNITY_ddEBGL || UNITY_EDITOR
+#if !UNITY_WEBGL || UNITY_EDITOR
             successCallback?.Invoke(null);
 #elif VK_GAMES
             successCallback?.Invoke(null);
@@ -105,10 +119,10 @@ namespace YaVk
 
         public bool IsLeaderboardAccess()
         {
-#if VK_GAMES && !VK_GAMES_MOBILE || CRAZY_GAMES
-            return false;
-#endif
+#if VK_GAMES_MOBILE || YANDEX_GAMES 
             return true;
+#endif
+            return false;
         }
         
         public bool IsAutoLeaderboard()
