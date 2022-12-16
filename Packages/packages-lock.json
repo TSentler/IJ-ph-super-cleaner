@@ -12,7 +12,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "8a5d2bf9735cbe523f039d2c5e9b92b881b82749"
+      "hash": "95545446310191cf22364578584717651933831f"
     },
     "com.agava.webutility": {
       "version": "https://github.com/forcepusher/com.agava.webutility.git#2.0.0",
