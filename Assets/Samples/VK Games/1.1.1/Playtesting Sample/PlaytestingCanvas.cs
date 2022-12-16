@@ -43,7 +43,7 @@ namespace Agava.VKGames.Samples
 
         public void AddPlayerToCommunity()
         {
-            Community.InviteGroup(OnRewardedCallback);
+            Community.InviteToIJuniorGroup(OnRewardedCallback);
         }
 
         private void OnRewardedCallback()

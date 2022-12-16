@@ -18,7 +18,7 @@ namespace YaVk
 
         private void OnInvited()
         {
-            Community.InviteGroup(OnRewardedCallback);
+            Community.InviteToIJuniorGroup(OnRewardedCallback);
         }
 
         private void OnRewardedCallback()
