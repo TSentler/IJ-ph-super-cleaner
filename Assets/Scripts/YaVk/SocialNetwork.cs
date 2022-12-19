@@ -64,13 +64,23 @@ namespace YaVk
             return true;
         }
         
+        public bool IsInterstitialAdsAccess()
+        {
+            return IsAdsAccess() &&
+#if CRAZY_GAMES
+            false;
+#else
+            true;
+#endif
+        }
+        
         public void ShowInterstitialAds(
             UnityAction<bool> onCloseCallback = null,
             UnityAction<string> onErrorCallback = null,
             UnityAction onYaOpenCallback = null,
             UnityAction onYaOfflineCallback = null)
         {
-            if(IsAdsAccess() == false)
+            if(IsInterstitialAdsAccess() == false)
                 return;
             
             IsAds = true;
